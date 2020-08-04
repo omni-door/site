@@ -1,13 +1,36 @@
 {
+  "name": "omni-door-site",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
+    "antd": "^4.5.2",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.1.0",
     "next": "^9.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@next/bundle-analyzer": "^9.5.1",
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.1",
     "@types/node": "^14.0.27",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
+    "@umijs/babel-plugin-auto-css-modules": "^3.2.14",
+    "@zeit/next-less": "^1.0.1",
+    "babel-plugin-import": "^1.13.0",
+    "less": "^3.12.2",
+    "next-compose-plugins": "^2.2.0",
+    "sass": "^1.26.10",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }
 }
