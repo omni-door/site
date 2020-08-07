@@ -1,13 +1,24 @@
+const path = require('path');
 const withTM = require('next-transpile-modules');
+const withCss = require('@zeit/next-css');
 const withLess = require('@zeit/next-less');
 const withPlugin = require('next-compose-plugins');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 });
-
+const merge = require('webpack-merge');
+const webpackConfig = require('./configs/webpack.config.js');
+const omniConfig = require('./configs/omni.config');
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = withPlugin([
+  withCss({
+    cssModules: true,
+      cssLoaderOptions: {
+      importLoaders: 1,
+      localIdentName: "[local]___[hash:base64:6]",
+    }
+  }),
   withLess,
   withTM,
   withBundleAnalyzer
@@ -18,14 +29,7 @@ module.exports = withPlugin([
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
-  distDir: 'dist',
+  distDir: path.relative(__dirname, omniConfig.build.outDir) || 'dist',
   reactStrictMode: true,
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@components': path.join(__dirname, '/src/components'),
-      '@utils': path.join(__dirname, '/src/utils'),
-      '@api': path.join(__dirname, '/src/api')
-    };
-  }
+  webpack: (config) => merge(config, webpackConfig)
 });

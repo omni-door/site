@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
+import Head from 'next/head';
+import styles from '../src/styles/Home.module.css';
+console.info('styles', styles);
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by edi1232412421213ting{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -61,5 +61,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }

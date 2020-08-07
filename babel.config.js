@@ -7,7 +7,6 @@ module.exports = function (api) {
   ];
 
   const plugins = [
-    '../node_modules/@umijs/babel-plugin-auto-css-modules',
     ['@babel/plugin-proposal-decorators', { legacy: true }],
     [
       'import',
