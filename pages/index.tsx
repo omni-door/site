@@ -1,14 +1,17 @@
 import Head from 'next/head';
+import { Layout, Button } from 'antd';
 import styles from '../src/styles/Home.module.css';
-console.info('styles', styles);
+
+const { Header, Content, Footer } = Layout;
+
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Button type='primary'>123</Button>  
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -60,6 +63,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </div>
+    </Layout>
   );
 }

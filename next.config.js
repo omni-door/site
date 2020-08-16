@@ -11,10 +11,14 @@ const webpackConfig = require('./configs/webpack.config.js');
 const omniConfig = require('./configs/omni.config');
 const isProd = process.env.NODE_ENV === 'production';
 
+if (typeof require !== 'undefined') {
+  require.extensions['.css'] = file => {};
+}
+
 module.exports = withPlugin([
   withCss({
     cssModules: true,
-      cssLoaderOptions: {
+    cssLoaderOptions: {
       importLoaders: 1,
       localIdentName: "[local]___[hash:base64:6]",
     }
