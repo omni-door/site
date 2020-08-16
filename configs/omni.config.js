@@ -27,6 +27,16 @@ const server = {
       ]
     },
     {
+      page: 'start',
+      prettyUrl: ({ lang, step }) => `/${lang}/start/${step}`,
+      prettyUrlPatterns: [
+        { pattern: '/start' },
+        { pattern: '/start/:step' },
+        { pattern: '/:lang/start' },
+        { pattern: '/:lang/start/:step' }
+      ]
+    },
+    {
       page: 'docs',
       prettyUrl: ({ lang, article }) => `/${lang}/docz/${article}`,
       prettyUrlPatterns: [
