@@ -1,4 +1,4 @@
-import '../src/styles/globals.less';
+import '../src/styles/globals.css';
 
 function MyApp({ Component, pageProps }: any) {
   return <Component {...pageProps} />;

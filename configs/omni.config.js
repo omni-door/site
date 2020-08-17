@@ -46,7 +46,8 @@ const server = {
         { pattern: '/:lang/docs/:article' }
       ]
     }
-  ]
+  ],
+  
 };
 
 module.exports = {
@@ -119,7 +120,7 @@ module.exports = {
     test: false,
 
     // 样式文件类型 (stylesheet type)
-    stylesheet: 'css'
+    stylesheet: 'scss'
   },
 
   plugins: []

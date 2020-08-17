@@ -1,16 +1,13 @@
-import Head from 'next/head';
-import { Layout, Button } from 'antd';
-import styles from '../src/styles/Home.module.css';
-
-const { Header, Content, Footer } = Layout;
+import { Button } from 'antd';
+import Layout from '@components/Layout';
+import styles from '@/styles/Home.module.less';
 
 export default function Home() {
   return (
-    <Layout className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout
+      title='Omni-Door 任意门'
+      className={styles.home}
+    >
       <Button type='primary'>123</Button>  
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -52,17 +49,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </Layout>
   );
 }

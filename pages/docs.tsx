@@ -1,17 +1,17 @@
-import Head from 'next/head';
+import Layout from '@components/Layout';
+import styles from '@/styles/Docs.module.less';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Docs</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout
+      title='Omni-Door - Docs'
+      className={styles.docs}
+    >
 
       <main>
         Docs Contents
       </main>
 
-    </div>
+    </Layout>
   );
 }

@@ -1,17 +1,17 @@
-import Head from 'next/head';
+import Layout from '@components/Layout';
+import styles from '@/styles/Start.module.less';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Start</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout
+      title='Omni-Door - Start'
+      className={styles.start}
+    >
 
       <main>
         Start Contents
       </main>
 
-    </div>
+    </Layout>
   );
 }
