@@ -1,29 +1,42 @@
+const fs = require('fs')
 const path = require('path');
 const withTM = require('next-transpile-modules');
 const withCss = require('@zeit/next-css');
-const withLess = require('@zeit/next-less');
+const withSass = require('@zeit/next-sass');
 const withPlugin = require('next-compose-plugins');
+const lessToJS = require('less-vars-to-js')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 });
 const merge = require('webpack-merge');
 const webpackConfig = require('./configs/webpack.config.js');
 const omniConfig = require('./configs/omni.config');
+const withNextAntdLess = require('./configs/next-antd-less.config');
 const isProd = process.env.NODE_ENV === 'production';
 
 if (typeof require !== 'undefined') {
   require.extensions['.css'] = file => {};
 }
 
+// Where your antd-custom.less file lives
+const themeVariables = lessToJS(
+  fs.readFileSync(path.resolve(__dirname, './src/styles/antd.less'), 'utf8')
+);
+
 module.exports = withPlugin([
-  withCss({
+  withNextAntdLess({
     cssModules: true,
     cssLoaderOptions: {
       importLoaders: 1,
-      localIdentName: "[local]___[hash:base64:6]",
+      localIdentName: '[local]___[hash:base64:5]',
+    },
+    lessLoaderOptions: {
+      javascriptEnabled: true,
+      modifyVars: themeVariables
     }
   }),
-  withLess,
+  withSass,
+  withCss,
   withTM,
   withBundleAnalyzer
 ], {

@@ -11,11 +11,9 @@ module.exports = function (api) {
     [
       'import',
       {
-        'libraryName': 'antd',
-        'libraryDirectory': 'lib',
-        'style': 'css'
-      },
-      'antd'
+        libraryName: 'antd',
+        style: true
+      }
     ]
   ];
 
