@@ -35,7 +35,6 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
           <Menu
             className={styles['layout-header-menu']}
             mode='horizontal'
-            theme='dark'
             defaultSelectedKeys={[router.pathname]}
           >
             <Menu.Item key='/start' className={styles['layout-header-menu-item']}>
@@ -49,6 +48,7 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
               </Link>
             </Menu.Item>
           </Menu>
+          <a className={styles['layout-header-github']} target='_blank' href='https://github.com/omni-door/cli' />
         </nav>
       </Header>
       <Content className={styles['layout-content']}>

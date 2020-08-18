@@ -11,7 +11,7 @@ export default function Home() {
       <Button type='primary'>123</Button>  
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Omni Door
         </h1>
 
         <p className={styles.description}>
