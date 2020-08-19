@@ -2,7 +2,8 @@ import { Button } from 'antd';
 import Layout from '@components/Layout';
 import styles from '@/styles/Home.module.less';
 
-export default function Home() {
+function HomePage (props) {
+  console.info(123, props);
   return (
     <Layout
       title='Omni-Door 任意门'
@@ -52,3 +53,9 @@ export default function Home() {
     </Layout>
   );
 }
+
+HomePage.getInitialProps = async ctx => {
+  return { query: ctx.query };
+};
+
+export default HomePage;

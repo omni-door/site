@@ -2,8 +2,9 @@
 
 const path = require('path');
 const merge = require('webpack-merge');
+const routes = require('../routes');
 
-const server = {
+const serverOptions = {
   port: 6600, // 服务端口号 (server port)
   proxy:  [
     // {
@@ -16,52 +17,21 @@ const server = {
   ],
   // host: 'dev.domain.com', // 服务端host (server host)
   // https: true, // 以https协议启动服务 (start server with https)
-  routes: [
-    {
-      page: 'index',
-      prettyUrl: ({ lang }) => `/${lang}/home`,
-      prettyUrlPatterns: [
-        { pattern: '/' },
-        { pattern: '/home' },
-        { pattern: '/:lang/home' }
-      ]
-    },
-    {
-      page: 'start',
-      prettyUrl: ({ lang, step }) => `/${lang}/start/${step}`,
-      prettyUrlPatterns: [
-        { pattern: '/start' },
-        { pattern: '/start/:step' },
-        { pattern: '/:lang/start' },
-        { pattern: '/:lang/start/:step' }
-      ]
-    },
-    {
-      page: 'docs',
-      prettyUrl: ({ lang, article }) => `/${lang}/docz/${article}`,
-      prettyUrlPatterns: [
-        { pattern: '/docs' },
-        { pattern: '/docs/:article' },
-        { pattern: '/:lang/docs' },
-        { pattern: '/:lang/docs/:article' }
-      ]
-    }
-  ],
-  
+  routes
 };
 
 module.exports = {
   type: 'ssr-react', // 项目类型，请勿任意变动 (project type, please don't modify)
 
   dev: {
-    ...server,
+    ...serverOptions,
     port: 6200, // 自定义开发服务端口号 (custom dev-server port)
     // serverType: 'next',
   },
 
   server: {
     serverType: 'koa-next',
-    ...server
+    ...serverOptions
   },
 
   build: {

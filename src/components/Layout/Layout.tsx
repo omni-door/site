@@ -2,7 +2,7 @@ import React, { memo, FC } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Button } from 'antd';
 import styles from './style/Layout.module.less';
 
 const { Header, Content, Footer } = Layout;
@@ -16,6 +16,8 @@ export interface BasicLayoutProps {
 export const BasicLayout: FC<BasicLayoutProps> = props => {
   const { title = 'OMNI-DOOR', className = '', children } = props;
   const router = useRouter();
+  const { pathname, query, asPath } = router;
+  const name = pathname.replace(/\//g, '') || 'index';
 
   return (
     <Layout
@@ -27,7 +29,7 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
       </Head>
       <Header className={styles['layout-header']}>
         <nav className={styles['layout-header-nav']}>
-          <Link href='/'>
+          <Link as='/en' href='/[lang]'>
             <div className={styles['layout-header-logo']}>
               Omni-Door
             </div>
@@ -48,6 +50,7 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
               </Link>
             </Menu.Item>
           </Menu>
+          <Button></Button>
           <a className={styles['layout-header-github']} target='_blank' href='https://github.com/omni-door/cli' />
         </nav>
       </Header>

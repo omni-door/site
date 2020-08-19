@@ -1,7 +1,8 @@
 import Layout from '@components/Layout';
 import styles from '@/styles/Start.module.less';
 
-export default function Home() {
+function StartPage (props) {
+  console.info(456, props);
   return (
     <Layout
       title='Omni-Door - Start'
@@ -15,3 +16,9 @@ export default function Home() {
     </Layout>
   );
 }
+
+StartPage.getInitialProps = async ctx => {
+  return { query: ctx.query };
+};
+
+export default StartPage;

@@ -11,7 +11,8 @@ node_modules/
 .out/
 **/__test__/
 
-doczrc.js
+
+*.js
 .eslintrc.js
 *.config.js
 *.conf.js
