@@ -9,7 +9,9 @@ const locale = {
     pageTitle: 'Omni-Door',
     title: 'Omni-Door',
     subtitle: 'The general cli tool for frontend',
-    intro: '',
+    description: `提供前端项目从初始化、开发、构建、发布等一条龙服务。
+    支持基于 React 和 Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
+    你的项目想去哪里？不妨让任意门帮你！`,
     btn_start: 'Getting Started',
     btn_docs: 'Documentation',
     license: 'MIT',

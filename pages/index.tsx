@@ -19,7 +19,7 @@ function HomePage (props: MapCtxToProps) {
       title={pageTitle}
       page={props.page}
     >
-      <Home />
+      <Home { ...props }/>
     </Layout>
   );
 }

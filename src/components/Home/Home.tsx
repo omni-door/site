@@ -1,4 +1,5 @@
-import React, { memo } from 'react';
+import React, { memo, useContext } from 'react';
+import { UseLocale } from '@ctx/UseLocale';
 import styles from './style/Home.module.less';
 /* import types */
 import type { FC } from 'react';
@@ -6,7 +7,11 @@ import type { FC } from 'react';
 export interface HomeProps {}
 
 export const Home: FC<HomeProps> = props => {
-  const { children } = props;
+  const {
+    locale: {
+      home
+    }
+  } = useContext(UseLocale);
 
   return (
     <div
@@ -14,11 +19,15 @@ export const Home: FC<HomeProps> = props => {
     >
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Omni Door
+          {home.title}
         </h1>
 
+        <h2 className={styles.subtitle}>
+          {home.subtitle}
+        </h2>
+
         <p className={styles.description}>
-          Get started by edi1232412421213ting{' '}
+          {home.description}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
