@@ -6,6 +6,7 @@ const locale = {
     lang: '中文'
   },
   home: {
+    pageTitle: 'Omni-Door',
     title: 'Omni-Door',
     subtitle: 'The general cli tool for frontend',
     intro: '',
@@ -44,8 +45,12 @@ const locale = {
     ],
     demo: []
   },
-  docs: {},
-  start: {}
+  docs: {
+    pageTitle: 'Omni-Door - Docs'
+  },
+  start: {
+    pageTitle: 'Omni-Door - Start'
+  }
 };
 
 export default locale;

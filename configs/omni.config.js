@@ -90,7 +90,7 @@ module.exports = {
     test: false,
 
     // 样式文件类型 (stylesheet type)
-    stylesheet: 'scss'
+    stylesheet: 'less'
   },
 
   plugins: []

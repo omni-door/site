@@ -6,6 +6,7 @@ const locale = {
     lang: 'English'
   },
   home: {
+    pageTitle: '任意门',
     title: '任意门',
     subtitle: '前端通用脚手架',
     intro: '',
@@ -44,8 +45,12 @@ const locale = {
     ],
     demo: []
   },
-  docs: {},
-  start: {}
+  docs: {
+    pageTitle: '任意门 - 文档'
+  },
+  start: {
+    pageTitle: '任意门 - 开始使用'
+  }
 };
 
 export default locale;

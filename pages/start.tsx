@@ -1,20 +1,24 @@
+import { useContext } from 'react';
+import { UseLocale } from '@ctx/UseLocale';
 import Layout from '@components/Layout';
-import styles from '@/styles/Start.module.less';
+import Start from '@components/Start';
 import mapCtxToProps from '@utils/mapCtxToProps';
 import type { MapCtxToProps } from '@utils/mapCtxToProps';
 
 function StartPage (props: MapCtxToProps) {
+  const {
+    locale: {
+      start : {
+        pageTitle
+      }
+    }
+  } = useContext(UseLocale);
   return (
     <Layout
-      title='Omni-Door - Start'
-      className={styles.start}
+      title={pageTitle}
       page={props.page}
     >
-
-      <main>
-        Start Contents
-      </main>
-
+      <Start { ...props } />
     </Layout>
   );
 }

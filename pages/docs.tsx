@@ -1,21 +1,24 @@
+import { useContext } from 'react';
+import { UseLocale } from '@ctx/UseLocale';
 import Layout from '@components/Layout';
-import styles from '@/styles/Docs.module.less';
+import Docs from '@components/Docs';
 import mapCtxToProps from '@utils/mapCtxToProps';
 import type { MapCtxToProps } from '@utils/mapCtxToProps';
 
 function DocsPage (props: MapCtxToProps) {
-  console.info(789, props);
+  const {
+    locale: {
+      docs : {
+        pageTitle
+      }
+    }
+  } = useContext(UseLocale);
   return (
     <Layout
-      title='Omni-Door - Docs'
-      className={styles.docs}
+      title={pageTitle}
       page={props.page}
     >
-
-      <main>
-        Docs Contents
-      </main>
-
+      <Docs { ...props }/>
     </Layout>
   );
 }

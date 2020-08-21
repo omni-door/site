@@ -39,7 +39,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@next/bundle-analyzer": "^9.5.1",
-    "@omni-door/cli": "^2.0.0-next.11",
+    "@omni-door/cli": "^2.0.0-next.12",
     "@types/classnames": "^2.2.10",
     "@types/koa": "^2.11.3",
     "@types/koa-bodyparser": "^4.3.0",
