@@ -1,23 +1,32 @@
-import React, { memo, FC } from 'react';
+import React, { memo, useContext } from 'react';
+import { UseLocale } from '@ctx/UseLocale';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Layout, Menu, Button } from 'antd';
 import styles from './style/Layout.module.less';
+/* import types */
+import type { FC } from 'react';
 
 const { Header, Content, Footer } = Layout;
 
 export interface BasicLayoutProps {
   title?: string;
   className?: string;
+  page?: string;
   children?: any
 }
 
 export const BasicLayout: FC<BasicLayoutProps> = props => {
-  const { title = 'OMNI-DOOR', className = '', children } = props;
+  const { title = 'OMNI-DOOR', className = '', page = 'home', children } = props;
   const router = useRouter();
+  const {
+    locale: {
+      global
+    },
+    lang
+  } = useContext(UseLocale);
   const { pathname, query, asPath } = router;
-  const name = pathname.replace(/\//g, '') || 'index';
 
   return (
     <Layout
@@ -29,29 +38,35 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
       </Head>
       <Header className={styles['layout-header']}>
         <nav className={styles['layout-header-nav']}>
-          <Link as='/en' href='/[lang]'>
+          <Link href={`/${lang}/home`}>
             <div className={styles['layout-header-logo']}>
-              Omni-Door
+              { global.logo }
             </div>
           </Link>
           <Menu
             className={styles['layout-header-menu']}
             mode='horizontal'
-            defaultSelectedKeys={[router.pathname]}
+            defaultSelectedKeys={[page]}
           >
-            <Menu.Item key='/start' className={styles['layout-header-menu-item']}>
-              <Link href='/start'>
-                <a>Start</a>
+            <Menu.Item key='start' className={styles['layout-header-menu-item']}>
+              <Link href={`/${lang}/start`}>
+                <a>{global.start}</a>
               </Link>
             </Menu.Item>
-            <Menu.Item key='/docs' className={styles['layout-header-menu-item']}>
-              <Link href='/docs'>
-                <a>Docs</a>
+            <Menu.Item key='docs' className={styles['layout-header-menu-item']}>
+              <Link href={`/${lang}/docs`}>
+                <a>{global.docs}</a>
               </Link>
             </Menu.Item>
           </Menu>
-          <Button></Button>
-          <a className={styles['layout-header-github']} target='_blank' href='https://github.com/omni-door/cli' />
+          <div className={styles['layout-header-right']}>
+            <Button size='small' className={styles['layout-header-lang']}>
+              <Link href={`/${lang === 'cn' ? 'en' : 'cn'}/${page}`}>
+                <a>{global.lang}</a>
+              </Link>
+            </Button>
+            <a className={styles['layout-header-github']} target='_blank' href='https://github.com/omni-door/cli' />
+          </div>
         </nav>
       </Header>
       <Content className={styles['layout-content']}>

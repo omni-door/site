@@ -1,12 +1,15 @@
 import Layout from '@components/Layout';
 import styles from '@/styles/Docs.module.less';
+import mapCtxToProps from '@utils/mapCtxToProps';
+import type { MapCtxToProps } from '@utils/mapCtxToProps';
 
-function DocsPage (props) {
+function DocsPage (props: MapCtxToProps) {
   console.info(789, props);
   return (
     <Layout
       title='Omni-Door - Docs'
       className={styles.docs}
+      page={props.page}
     >
 
       <main>
@@ -17,8 +20,8 @@ function DocsPage (props) {
   );
 }
 
-DocsPage.getInitialProps = async ctx => {
-  return { query: ctx.query };
+DocsPage.getInitialProps = async (ctx: any) => {
+  return mapCtxToProps(ctx);
 };
 
 export default DocsPage;

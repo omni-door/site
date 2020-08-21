@@ -4,10 +4,11 @@
 
   &-header {
     background-color: #fff;
-    // color: #fff;
+    overflow: hidden;
     height: 15px;
     width: 100vw;
     padding: 0 20px;
+    border-bottom: 1px solid #f0f0f0;
 
     &-nav {
       width: 100%;
@@ -41,8 +42,24 @@
       }
     }
 
-    &-github {
+    &-right {
       float: right;
+      height: 100%;
+    }
+
+    &-lang {
+      display: inline-block;
+      vertical-align: top;
+      margin: 2px 8px 0 0;
+      font-size: 4px;
+      font-weight: 600;
+      width: 24px;
+      height: 12px;
+      padding: 1px;
+    }
+
+    &-github {
+      display: inline-block;
       background: url(/github.svg) no-repeat left center;
       background-size: 8px;
       width: 8px;

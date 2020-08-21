@@ -1,13 +1,18 @@
+import { useContext } from 'react';
+import { UseLocale } from '@ctx/UseLocale';
 import { Button } from 'antd';
 import Layout from '@components/Layout';
 import styles from '@/styles/Home.module.less';
+import mapCtxToProps from '@utils/mapCtxToProps';
+import type { MapCtxToProps } from '@utils/mapCtxToProps';
 
-function HomePage (props) {
-  console.info(123, props);
+function HomePage (props: MapCtxToProps) {
+  const locale = useContext(UseLocale);
   return (
     <Layout
       title='Omni-Door 任意门'
       className={styles.home}
+      page={props.page}
     >
       <Button type='primary'>123</Button>  
       <main className={styles.main}>
@@ -54,8 +59,8 @@ function HomePage (props) {
   );
 }
 
-HomePage.getInitialProps = async ctx => {
-  return { query: ctx.query };
+HomePage.getInitialProps = async (ctx: any) => {
+  return mapCtxToProps(ctx);
 };
 
 export default HomePage;
