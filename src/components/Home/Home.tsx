@@ -1,4 +1,5 @@
 import React, { memo, useContext } from 'react';
+import { Button, Card, Col, Row } from 'antd';
 import { UseLocale } from '@ctx/UseLocale';
 import styles from './style/Home.module.less';
 /* import types */
@@ -28,37 +29,38 @@ export const Home: FC<HomeProps> = props => {
 
         <p className={styles.description}>
           {home.description}
-          <code className={styles.code}>pages/index.js</code>
         </p>
 
+        <div className={styles.btn}>
+          <Button type='primary' className={styles['btn-start']} >{home.btn_start}</Button>
+          <Button className={styles['btn-docs']}>{home.btn_docs}</Button>
+        </div>
+        
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          {
+            home.why.map(v => {
+              return <Card
+                key={v.title}
+                size='small'
+                className={styles.card}
+                hoverable
+                title={v.title}
+                headStyle={{
+                  fontSize: '1.5rem',
+                  minHeight: '1vh'
+                }}
+                bodyStyle={{
+                  paddingTop: '1rem'
+                }}
+              >
+                <a href="https://nextjs.org/docs" className={styles['card-link']}>
+                  <h3 className={styles['card-subtitle']}>{v.subtitle} &rarr;</h3>
+                  <p className={styles['card-content']}>{v.intro}</p>
+                </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+              </Card>;
+            })
+          }
         </div>
       </main>
     </div>
