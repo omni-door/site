@@ -43,14 +43,16 @@
     }
 
     &-right {
+      display: flex;
       float: right;
       height: 100%;
+      justify-content: center;
+      align-items: center;
     }
 
     &-lang {
       display: inline-block;
-      vertical-align: top;
-      margin: 2px 8px 0 0;
+      margin: 0 8px 0 0;
       font-size: 4px;
       font-weight: 600;
       width: 24px;
@@ -65,7 +67,6 @@
       width: 8px;
       height: 100%;
       line-height: 15px;
-      vertical-align: top;
     }
   }
 
@@ -80,16 +81,19 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .layout {
+
     &-header {
+      min-width: 320px;
       height: 50px;
+      padding: 0 2vw;
 
       &-logo {
         background-size: 30px;
         padding-left: 35px;
         font-size: 12px;
-        width: 120px;
+        width: 80px;
         line-height: 50px;
       }
 
@@ -98,6 +102,17 @@
           font-size: 14px;
           line-height: 50px;
         }
+      }
+
+      &-lang {
+        font-size: 12px;
+        width: 72px;
+        height: 30px;
+      }
+
+      &-github {
+        width: 20px;
+        background-size: 20px;
       }
     }
 

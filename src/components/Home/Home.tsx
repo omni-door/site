@@ -1,5 +1,6 @@
 import React, { memo, useContext } from 'react';
 import { Button, Card, Col, Row } from 'antd';
+import Link from '@components/Link';
 import { UseLocale } from '@ctx/UseLocale';
 import styles from './style/Home.module.less';
 /* import types */
@@ -9,6 +10,7 @@ export interface HomeProps {}
 
 export const Home: FC<HomeProps> = props => {
   const {
+    lang,
     locale: {
       home
     }
@@ -32,13 +34,22 @@ export const Home: FC<HomeProps> = props => {
         </p>
 
         <div className={styles.btn}>
-          <Button type='primary' className={styles['btn-start']} >{home.btn_start}</Button>
-          <Button className={styles['btn-docs']}>{home.btn_docs}</Button>
+          <Button type='primary' className={styles['btn-start']} >
+            <Link page='start' params={{ lang }}>
+              <a> {home.btn_start} </a>
+            </Link>
+          </Button>
+          <Button className={styles['btn-docs']}>
+            <Link page='docs' params={{ lang }}>
+              <a> {home.btn_docs} </a>
+            </Link>
+          </Button>
         </div>
         
         <div className={styles.grid}>
           {
             home.why.map(v => {
+              const { route } = v;
               return <Card
                 key={v.title}
                 size='small'
@@ -53,11 +64,12 @@ export const Home: FC<HomeProps> = props => {
                   paddingTop: '1rem'
                 }}
               >
-                <a href="https://nextjs.org/docs" className={styles['card-link']}>
-                  <h3 className={styles['card-subtitle']}>{v.subtitle} &rarr;</h3>
-                  <p className={styles['card-content']}>{v.intro}</p>
-                </a>
-
+                <Link page={route.page} params={route.params}>
+                  <a className={styles['card-link']}>
+                    <h3 className={styles['card-subtitle']}>{v.subtitle} &rarr;</h3>
+                    <p className={styles['card-content']}>{v.intro}</p>
+                  </a>
+                </Link>
               </Card>;
             })
           }

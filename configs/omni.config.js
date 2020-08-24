@@ -2,7 +2,7 @@
 
 const path = require('path');
 const merge = require('webpack-merge');
-const routes = require('../routes');
+const { nextRouter } = require('../src/routes');
 
 const serverOptions = {
   port: 6600, // 服务端口号 (server port)
@@ -17,7 +17,7 @@ const serverOptions = {
   ],
   // host: 'dev.domain.com', // 服务端host (server host)
   // https: true, // 以https协议启动服务 (start server with https)
-  routes
+  nextRouter
 };
 
 module.exports = {

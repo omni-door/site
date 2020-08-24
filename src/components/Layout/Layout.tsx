@@ -1,8 +1,7 @@
 import React, { memo, useContext } from 'react';
 import { UseLocale } from '@ctx/UseLocale';
 import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from '@components/Link';
 import { Layout, Menu, Button } from 'antd';
 import styles from './style/Layout.module.less';
 /* import types */
@@ -19,14 +18,12 @@ export interface BasicLayoutProps {
 
 export const BasicLayout: FC<BasicLayoutProps> = props => {
   const { title = 'OMNI-DOOR', className = '', page = 'home', children } = props;
-  const router = useRouter();
   const {
     locale: {
       global
     },
     lang
   } = useContext(UseLocale);
-  const { pathname, query, asPath } = router;
 
   return (
     <Layout
@@ -38,7 +35,7 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
       </Head>
       <Header className={styles['layout-header']}>
         <nav className={styles['layout-header-nav']}>
-          <Link href={`/${lang}/home`}>
+          <Link page='home' params={ {lang} }>
             <div className={styles['layout-header-logo']}>
               { global.logo }
             </div>
@@ -49,12 +46,12 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
             defaultSelectedKeys={[page]}
           >
             <Menu.Item key='start' className={styles['layout-header-menu-item']}>
-              <Link href={`/${lang}/start`}>
+              <Link page='start' params={ {lang} }>
                 <a>{global.start}</a>
               </Link>
             </Menu.Item>
             <Menu.Item key='docs' className={styles['layout-header-menu-item']}>
-              <Link href={`/${lang}/docs`}>
+              <Link page='docs' params={ {lang} }>
                 <a>{global.docs}</a>
               </Link>
             </Menu.Item>
