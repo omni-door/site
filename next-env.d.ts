@@ -25,3 +25,5 @@ declare module '*.md' {
 }
 
 declare module 'next-url-prettifier';
+
+declare module 'react-markdown/plugins/html-parser';

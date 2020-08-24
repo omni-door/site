@@ -8,6 +8,10 @@ const lessToJS = require('less-vars-to-js')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 });
+const withMDX = require('@next/mdx')({
+  extension: /\.(mdx|md)?$/,
+  pageExtensions: ['js', 'jsx', 'md', 'mdx']
+});
 const merge = require('webpack-merge');
 const webpackConfig = require('./configs/webpack.config.js');
 const omniConfig = require('./configs/omni.config');
@@ -38,6 +42,7 @@ module.exports = withPlugin([
   withSass,
   withCss,
   withTM,
+  withMDX,
   withBundleAnalyzer
 ], {
   transpileModules: [],

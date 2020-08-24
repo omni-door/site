@@ -1,7 +1,6 @@
 'use strict';
 
 const path = require('path');
-const merge = require('webpack-merge');
 const { nextRouter } = require('../src/routes');
 
 const serverOptions = {
@@ -45,13 +44,6 @@ module.exports = {
     // 输出路径 (the directory for compiled project)
     // 务必使用绝对路径 (must be a absolute path)
     outDir: path.resolve(__dirname, '../dist'),
-
-    // 构建的资源是否加上hash，可选 'hash'、'contenthash'、'chunkhash' (whether the hash tag add to building result)
-    hash: true,
-
-    // 构建阶段的自定义配置回调 (The callback will be call in the build-process)
-    // 返回自定义的配置 (You can return your custom build configuration)
-    configuration: config => merge(config, require(path.resolve(__dirname, 'webpack.config.prod.js'))),
 
     reserve: {
       assets: [] // 构建结果保留其他资源的路径 (reserve other asset paths)

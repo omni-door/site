@@ -3,7 +3,9 @@ import styles from './style/Docs.module.less';
 /* import types */
 import type { FC } from 'react';
 
-export interface DocsProps {}
+export interface DocsProps {
+  lang: string;
+}
 
 export const Docs: FC<DocsProps> = props => {
   const { children } = props;

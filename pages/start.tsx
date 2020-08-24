@@ -7,6 +7,7 @@ import type { MapCtxToProps } from '@utils/mapCtxToProps';
 
 function StartPage (props: MapCtxToProps) {
   const {
+    lang,
     locale: {
       start : {
         pageTitle
@@ -18,7 +19,7 @@ function StartPage (props: MapCtxToProps) {
       title={pageTitle}
       page={props.page}
     >
-      <Start { ...props } />
+      <Start lang={lang} { ...props } />
     </Layout>
   );
 }

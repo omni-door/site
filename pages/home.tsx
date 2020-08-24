@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { UseLocale } from '@ctx/UseLocale';
-import { Button } from 'antd';
 import Layout from '@components/Layout';
 import mapCtxToProps from '@utils/mapCtxToProps';
 import type { MapCtxToProps } from '@utils/mapCtxToProps';
