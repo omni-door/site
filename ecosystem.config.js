@@ -1,0 +1,42 @@
+module.exports = {
+  apps: [
+    {
+      name: 'omni-door-site',
+      script: 'yarn start',
+      cwd: './',
+      ignore_watch: [
+        'node_modules',
+        'logs'
+      ],
+      instances: "max",
+      node_args: '--harmony',
+      env_test: {
+        NODE_ENV: 'test',
+        API_ENV: 'test',
+        PORT: 6200,
+      },
+      env_prod: {
+        NODE_ENV: 'prod',
+        API_ENV: 'prod',
+        PORT: 6600,
+      },
+      log_file: '/var/log/omni-door/site.log',
+      error_file: '/var/log/omni-door/site-err.log',
+      out_file: '/var/log/omni-door/site-out.log',
+      log_date_format: 'YYYY-MM-DD HH:mm Z' // 设置日志的日期格式
+    }
+  ],
+  deploy: {
+    production: {
+      user: 'root',
+      host: '106.12.176.91',
+      ref: 'origin/master',
+      repo: 'git@github.com:omni-door/site.git',
+      path: '/srv/omni-door',
+      'post-deploy': 'git pull && yarn && yarn build && yarn reload',
+      env: {
+        NODE_ENV: 'production'
+      }
+    }
+  }
+};

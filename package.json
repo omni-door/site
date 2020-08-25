@@ -15,7 +15,9 @@
     "lint:commit": "commitlint -e $HUSKY_GIT_PARAMS",
     "new": "omni new",
     "build": "omni build",
-    "release": "omni release"
+    "release": "omni release",
+    "deploy": "pm2 deploy ecosystem.config.js production setup",
+    "reload": "pm2 reload ecosystem.config.js production"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.16",
