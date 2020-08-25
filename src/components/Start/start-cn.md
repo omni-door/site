@@ -12,30 +12,31 @@
 
 - 使用npx：
     ```shell
-      npx @omni-door/cli init -s myProject
+    npx @omni-door/cli init -s myProject
     ```
 
 - 若要创建多个项目，把脚手架安装到全局：
-    ```shell
-      npm i -g @omni-door/cli
-    ```
+  ```shell
+  npm i -g @omni-door/cli
+  ```
+
   安装完成后执行初始化操作：
-    ```shell
-      omni init -s myProject
-    ```
+  ```shell
+  omni init -s myProject
+  ```
 > note: 项目名称为 `myProject`
 
 ## 运行开发环境
   ```shell
-    npm run dev
+  npm run dev
   ```
 
 ## 新建一个组件
   ```shell
-    npm run new
+  npm run new
   ```
 
 ## 构建项目
   ```shell
-    npm run build
+  npm run build
   ```

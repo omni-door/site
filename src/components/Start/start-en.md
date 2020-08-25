@@ -12,30 +12,30 @@ Note：
 
 - By npx：
     ```shell
-      npx @omni-door/cli init -s myProject
+    npx @omni-door/cli init -s myProject
     ```
 
 - Install cli to the global：
-    ```shell
-      npm i -g @omni-door/cli
-    ```
+  ```shell
+  npm i -g @omni-door/cli
+  ```
   Perform initialization after installation：
-    ```shell
-      omni init -s myProject
-    ```
+  ```shell
+  omni init -s myProject
+  ```
 > note: The project name is `myProject`
 
 ## Run project
   ```shell
-    npm run dev
+  npm run dev
   ```
 
 ## Create a Component
   ```shell
-    npm run new
+  npm run new
   ```
 
 ## Build project
   ```shell
-    npm run build
+  npm run build
   ```

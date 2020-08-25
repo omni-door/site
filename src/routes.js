@@ -61,7 +61,7 @@ const routes = [
   {
     page: 'docs',
     prettyUrl: ({ lang, article = '' }) =>
-      `/${lang}/docz/${article}`,
+      `/${lang}/docs/${article}`,
     prettyUrlPatterns: [
       { pattern: '/docs' },
       { pattern: '/docs/:article' },

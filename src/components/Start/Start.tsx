@@ -16,7 +16,6 @@ export const Start: FC<StartProps> = props => {
     <div
       className={styles.start}
     >
-      Start Content
       <Source />
     </div>
   );

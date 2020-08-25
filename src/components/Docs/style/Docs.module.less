@@ -1,4 +1,271 @@
 .docs {
-  display: block;
-  position: relative;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #3e3e3e;
+  line-height: 1.8;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  font-family: "Helvetica Neue",
+    Helvetica,
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+  &>* {
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  p {
+    margin: 1.5em 0px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1.5em 0px;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center !important;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: .8em;
+  }
+
+  h6 {
+    font-size: .4em;
+  }
+
+  h3 span {
+    /*增加对h3标题字体的修改*/
+    display: inline-block;
+    background: rgb(63, 63, 63);
+    /*深灰色背景*/
+    color: #ffffff;
+    /*白色字体*/
+    padding: 10px 16px;
+    border-radius: 10px;
+    /*边框添加圆角*/
+    box-shadow: 5px 5px 10px black;
+    /*黑色阴影*/
+  }
+
+  ul,
+  ol {
+    padding-left: 2rem;
+  }
+
+  ul {
+    /*无序列表*/
+    list-style-type: disc;
+    /*disc默认实心圆，circle空心圆，square方块*/
+    color: #1e6bb8;
+    margin-left: -0.5em;
+    /*引用竖线与左边框的距离*/
+  }
+
+  ol {
+    /*有序列表*/
+    list-style-type: decimal;
+    /*decimal阿拉伯数字，upper-roman大写罗马数字，lower-alpha*/
+    color: #1e6bb8;
+    margin-left: -0.5em;
+    /*引用竖线与左边框的距离*/
+  }
+
+  li {
+    margin-bottom: 0.5em;
+    color: #159957;
+
+    >* {
+      color: #3e3e3e;
+    }
+  }
+
+  pre code
+
+  /*代码块*/
+    {
+    font-family: Consolas, Inconsolata, Courier, monospace;
+    border-radius: 15px;
+    /*圆形边框*/
+  }
+
+  blockquote {
+    /*引用块*/
+    display: block;
+    /*block方块，none不显示，inline*/
+    padding: 1em 15px;
+    /*文字到引用竖线的距离*/
+    font-size: 0.9em;
+    padding-right: 15px;
+    margin: 1em 0;
+    /*行间距*/
+    color: #819198;
+    /*字体颜色*/
+    border-left: 4px solid #009688;
+    /*引用竖线宽度及颜色，solid实线，dashed虚线*/
+    background: #f2f7fb;
+    /*引用方框颜色*/
+    overflow: auto;
+    word-wrap: normal;
+    word-break: normal;
+    margin-left: 1.5em;
+    /*引用竖线与左边框的距离*/
+  }
+
+  blockquote p {
+    margin: 0px;
+  }
+
+  a {
+    /*超链接*/
+    text-decoration: none;
+    color: #1e6bb8;
+    word-wrap: break-word;
+  }
+
+  strong
+
+  /*强调*/
+    {
+    font-weight: bold;
+    color: #BF360C;
+  }
+
+  em
+
+  /*斜体*/
+    {
+    font-style: italic;
+    /*italic斜体，normal正常*/
+    color: #00ACC1;
+  }
+
+  del
+
+  /*删除线*/
+    {
+    font-style: italic;
+  }
+
+  strong em
+
+  /*强调的斜体*/
+    {
+    font-weight: bold;
+  }
+
+  hr {
+    /*分隔线*/
+
+    border-bottom: 2px solid #BF360C;
+    /*分割线的线宽及颜色*/
+    margin: 1em auto;
+    /*分割线行间距*/
+
+  }
+
+  code
+
+  /*行内代码*/
+    {
+    word-wrap: break-word;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+    color: #e96900;
+    background: #f8f8f8;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    /*图片水平居中*/
+    /* margin:0 0;  */
+    /*图片水平居左，如需要请打开*/
+    max-width: 100%;
+  }
+
+  figcaption
+
+  /*图片描述文字*/
+    {
+    margin-top: 10px;
+    text-align: center;
+    /* text-align:left;  */
+    /*当图片水平居左时，请打开*/
+    color: #999;
+    font-size: 0.7em;
+  }
+
+
+  /*================表格开始================*/
+  table {
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    font: inherit;
+    border: 0;
+    margin: 0 auto;
+  }
+
+  tbody {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  table tr {
+    border: 0;
+    border-top: 1px solid #CCC;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  table tr:nth-child(2n) {
+    background-color: #F8F8F8;
+  }
+
+  table tr th,
+  table tr td {
+    font-size: 16px;
+    border: 1px solid #CCC;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  table tr th {
+    font-weight: bold;
+    color: #eee;
+    border: 1px solid #009688;
+    background-color: #009688;
+  }
+
+  /*================表格结束================*/
 }
