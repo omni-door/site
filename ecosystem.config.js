@@ -34,7 +34,7 @@ module.exports = {
       repo: 'git@github.com:omni-door/site.git',
       path: '/home/ubuntu/www/omni-door',
       key: '~/.ssh/aws_free.pem',
-      'post-deploy': 'git pull && yarn && yarn build && yarn reload',
+      'post-deploy': 'git pull && yarn && yarn build -n && yarn reload',
       env: {
         NODE_ENV: 'production'
       }
