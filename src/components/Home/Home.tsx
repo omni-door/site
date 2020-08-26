@@ -36,12 +36,12 @@ export const Home: FC<HomeProps> = props => {
         <div className={styles.btn}>
           <Button type='primary' className={styles['btn-start']} >
             <Link page='start' params={{ lang }}>
-              <a> {home.btn_start} </a>
+              <a className={styles['btn-start-link']}> {home.btn_start} </a>
             </Link>
           </Button>
           <Button className={styles['btn-docs']}>
             <Link page='docs' params={{ lang }}>
-              <a> {home.btn_docs} </a>
+              <a className={styles['btn-docs-link']}> {home.btn_docs} </a>
             </Link>
           </Button>
         </div>

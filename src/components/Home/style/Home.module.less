@@ -47,7 +47,18 @@
     width: 45px;
     height: 15px;
     padding: 1px;
-    font-size: 6px;
+    position: relative;
+
+    &-link {
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      line-height: 15px;
+      top: 0;
+      left: 0;
+      font-size: 6px;
+    }
   }
 
   &-start {
@@ -108,7 +119,11 @@
     &-docs {
       width: 100px;
       height: 40px;
-      font-size: 12px;
+
+      &-link {
+        line-height: 40px;
+        font-size: 12px;
+      }
     }
   }
 
