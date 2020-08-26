@@ -20,9 +20,9 @@ module.exports = {
         API_ENV: 'prod',
         PORT: 6600,
       },
-      log_file: '/var/log/omni-door/site.log',
-      error_file: '/var/log/omni-door/site-err.log',
-      out_file: '/var/log/omni-door/site-out.log',
+      log_file: '/home/ubuntu/var/log/omni-door/site.log',
+      error_file: '/home/ubuntu/var/log/omni-door/site-err.log',
+      out_file: '/home/ubuntu/var/log/omni-door/site-out.log',
       log_date_format: 'YYYY-MM-DD HH:mm Z' // 设置日志的日期格式
     }
   ],
@@ -32,7 +32,7 @@ module.exports = {
       host: '18.188.122.175',
       ref: 'origin/master',
       repo: 'git@github.com:omni-door/site.git',
-      path: '/srv/omni-door',
+      path: '/home/ubuntu/www/omni-door',
       key: '~/.ssh/aws_free.pem',
       'post-deploy': 'git pull && yarn && yarn build && yarn reload',
       env: {
