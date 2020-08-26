@@ -59,7 +59,7 @@ module.exports = {
   },
 
   release: {
-    git: '', // 发布的git仓库地址 (project git repo url)
+    git: 'git@github.com:omni-door/site.git', // 发布的git仓库地址 (project git repo url)
     preflight: {
       test: false, // 发布前是否进行单元测试 (whether or not process unit-test)
       eslint: true, // 发布前是否进行eslint检测 (whether or not process eslint checking)
