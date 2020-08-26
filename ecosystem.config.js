@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'omni-door-site',
-      script: './node_modules/.bin/omni start',
+      script: 'omni start',
       cwd: './',
       ignore_watch: [
         'node_modules',
