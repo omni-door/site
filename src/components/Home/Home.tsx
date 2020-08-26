@@ -1,5 +1,5 @@
 import React, { memo, useContext } from 'react';
-import { Button, Card, Col, Row } from 'antd';
+import { Button, Card } from 'antd';
 import Link from '@components/Link';
 import { UseLocale } from '@ctx/UseLocale';
 import styles from './style/Home.module.less';
