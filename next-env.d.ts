@@ -1,5 +1,5 @@
-/// <reference types="next" />
-/// <reference types="next/types/global" />
+/// <reference types='next' />
+/// <reference types='next/types/global' />
 
 declare module '*.css';
 
@@ -23,7 +23,3 @@ declare module '*.md' {
   const content: string;
   export default content;
 }
-
-declare module 'next-url-prettifier';
-
-declare module 'react-markdown/plugins/html-parser';
