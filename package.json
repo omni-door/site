@@ -1,6 +1,6 @@
 {
   "name": "omni-door-site",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "omni dev",
     "start": "omni start",
@@ -15,7 +15,7 @@
     "lint:commit": "commitlint -e $HUSKY_GIT_PARAMS",
     "new": "omni new",
     "build": "omni build",
-    "release": "omni release && npm run deploy",
+    "release": "omni build && omni release && npm run deploy",
     "deploy": "pm2 deploy ecosystem.config.js production",
     "reload": "pm2 reload ecosystem.config.js production"
   },

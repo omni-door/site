@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Docs from './Docs';\nexport { Docs } from './Docs';\nexport default Docs;","map":null,"metadata":{},"sourceType":"module"}
