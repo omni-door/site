@@ -29,11 +29,11 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: '18.188.122.175',
+      host: '13.78.66.217',
       ref: 'origin/master',
       repo: 'git@github.com:omni-door/site.git',
       path: '/home/ubuntu/www/omni-door',
-      key: '~/.ssh/aws_free.pem',
+      key: '~/.ssh/azure-omni_key.pem',
       'post-deploy': 'git pull && yarn reload',
       env: {
         NODE_ENV: 'production'
