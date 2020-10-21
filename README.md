@@ -70,6 +70,12 @@ server {
 ```
 
 ### deploy and publish
+#### login server
+```sh
+cd /home/ubuntu/www/omni-door/source && yarn
+```
+
+#### in project
 ```sh
 yarn setup && yarn release
 ```
