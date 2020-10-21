@@ -20,20 +20,20 @@ module.exports = {
         API_ENV: 'prod',
         PORT: 6600,
       },
-      log_file: '/home/bobby/var/log/omni-door/site.log',
-      error_file: '/home/bobby/var/log/omni-door/site-err.log',
-      out_file: '/home/bobby/var/log/omni-door/site-out.log',
+      log_file: '/home/ubuntu/var/log/omni-door/site.log',
+      error_file: '/home/ubuntu/var/log/omni-door/site-err.log',
+      out_file: '/home/ubuntu/var/log/omni-door/site-out.log',
       log_date_format: 'YYYY-MM-DD HH:mm Z' // 设置日志的日期格式
     }
   ],
   deploy: {
     production: {
-      user: 'bobby',
-      host: '13.78.66.217',
+      user: 'ubuntu',
+      host: '52.12.201.88',
       ref: 'origin/master',
       repo: 'git@github.com:omni-door/site.git',
-      path: '/home/bobby/www/omni-door',
-      key: '~/.ssh/azure-omni_key.pem',
+      path: '/home/ubuntu/www/omni-door',
+      key: '~/.ssh/aws_oregon.pem',
       'post-deploy': 'git pull && yarn reload',
       env: {
         NODE_ENV: 'production'
