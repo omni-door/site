@@ -8,10 +8,10 @@ const locale = {
   home: {
     pageTitle: 'Omni-Door',
     title: 'Omni-Door',
-    subtitle: 'The general cli tool for frontend',
-    description: `提供前端项目从初始化、开发、构建、发布等一条龙服务。
-    支持基于 React 和 Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
-    你的项目想去哪里？不妨让任意门帮你！`,
+    subtitle:
+      'Where do you want your project to go? Let any Omni-Door help you!',
+    description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.
+      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
     btn_start: 'Getting Started',
     btn_docs: 'Documentation',
     license: 'MIT',
@@ -35,10 +35,10 @@ const locale = {
       {
         title: 'React-SPA',
         subtitle:
-          '基于 React 和 React-Router 的 SPA 项目',
-        intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
-          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
-          项目结构简单、前后端分离等需求…
+          'The SPA project based on react and react router',
+        intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
+          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
+          Project structure is simple, front and back end separation and other requirements…
           `,
         route: {
           page: 'docs',
@@ -51,10 +51,10 @@ const locale = {
       {
         title: 'React-SSR',
         subtitle:
-          '基于 React 和 NextJs 的 SSR 项目',
-        intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，
-          同时相比于 SPA 应用，也能有效的降低白屏时间，
-          无论是 PC 官网 还是 M 站，都是一个很好的选择…
+          'The SSR project based on react and nextjs',
+        intro: `SSR (server side render) server-side rendering application based on react + nextjs solves the problem of separation of SEO and front-end,
+          At the same time, compared with spa application, it can also effectively reduce the white screen time,
+          Whether it is PC official website or m station, it is a good choice…
           `,
         route: {
           page: 'docs',
@@ -66,10 +66,11 @@ const locale = {
       },
       {
         title: 'React-Component',
-        subtitle: '基于 React 的组件库项目',
-        intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
-          借助社区开源的组件库 Demo-UI 框架，如 docz、storybook、styleguidist 等，
-          让组件库的开发不再是遥不可及的技术难题…
+        subtitle:
+          'Component library project based on react',
+        intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
+          With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,
+          The development of component library is no longer a distant technical problem…
           `,
         route: {
           page: 'docs',
@@ -81,9 +82,10 @@ const locale = {
       },
       {
         title: 'toolkit',
-        subtitle: '类lodash、ramda工具库',
-        intro:
-          '纯逻辑组件？耦合了业务需求的功能模块？不想耦合任何 UI 框架 —— 工具库项目很可能是你需要的…',
+        subtitle:
+          'The tool library same as lodash or ramda',
+        intro: `Pure logic component? Function modules coupled with business requirements?
+          You don't want to couple any UI Frameworks - the tool library project is probably what you need…`,
         route: {
           page: 'docs',
           params: {

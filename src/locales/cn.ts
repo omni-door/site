@@ -8,10 +8,11 @@ const locale = {
   home: {
     pageTitle: '任意门',
     title: '任意门',
-    subtitle: '前端通用脚手架',
+    subtitle:
+      '你的项目想去哪里？不妨让任意门帮你！',
     description: `为前端项目的创建、开发、构建、发布提供一条龙服务。
-    支持基于 React 和 Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
-    你的项目想去哪里？不妨让任意门帮你！`,
+    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
+    `,
     btn_start: '开始使用',
     btn_docs: '文档',
     license: 'MIT',

@@ -1,68 +1,6 @@
 # 文档
 
-## 命令
-1. init [strategy] [options]
-    - omni init
-
-    - omni init latest
-
-    - omni init stable
-
-    - omni init -n
-
-    - omni init -rb basicReactSpaProject
-
-    - omni init -rs stardardReactSpaProject
-
-    - omni init -re entrieReactSpaProject
-
-    - omni init -rc reactComponentProject
-
-    - omni init -t toolkitProject
-
-    - omni init latest -rs stardardReactSpaProject -n
-
-2. dev [options]
-    - omni dev
-
-    - omni dev -p 8200
-
-    - omni dev -h dev.domain.com
-
-    - omni dev -p 8200 -h dev.domain.com
-
-3. new [name] [options]
-    - omni new
-
-    - omni new Button
-
-    - omni new -c
-
-    - omni new -c Button
-
-4. build [options]
-    - omni build
-
-    - omni build -n
-
-    - omni build -c $pathTo/build.config.js
-
-5. release [options]
-    - omni release
-
-    - omni release -n
-
-    - omni release -a
-
-    - omni release -i
-
-    - omni release -m
-
-    - omni release -t
-
-## 项目类型简介
-
-## 项目类型简介
+## 支持的项目类型简介
 
 ### SPA 应用
 - [x] 基于 [React](https://reactjs.org/) UI 框架
@@ -116,8 +54,6 @@
   ……
 
 ### toolkit 工具库项目
-- [x] 集成标准化初始化、构建、发布虎扑 [bridge-plugin](https://hupu.feishu.cn/docs/doccn8pGr7IYYV54ytpBsHT3tDd#bcLZTY) (@hupu/dandelion) 项目的能力
-
 - [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
 
 - [x] 使用 [rollup](https://rollupjs.org/guide/en) 打包
@@ -128,7 +64,197 @@
 
   ……
 
-## omni.config.js 详解
+## 脚手架命令清单
+你可以在命令行中简单输入 `omni -h` 查看所有的命令：
+
+```shell
+  Commands:
+
+    init [strategy] [options]  初始化你的项目，[strategy(策略)] 可用是stable(默认) 或 lastst
+    dev [options]              omni dev -p [port]
+    new <module> [options]     omni new [module] [-f | -c]
+    build                      根据 [omni.config.js] 打包构建你的项目
+    release [options]          根据 [omni.config.js] 发布你的项目
+```
+
+### omni init
+
+#### 初始化一个项目
+```shell
+omni init
+```
+
+#### 用最新的依赖@lastest初始化项目
+```shell
+omni init lastest
+```
+
+#### 初始化项目但不安装依赖
+```shell
+omni init -n
+```
+
+#### 套用模板一键初始化项目
+```shell
+omni init -t [projectName]
+```
+or
+```shell
+omni init --entire [projectName]
+```
+
+#### 选项
+```shell
+使用: omni init [strategy] [options]
+
+Arguments:
+
+  strategy                 stable or latest
+
+  Options:
+    -rb, --react_basic [name]       创建一个最基本的 React 单页应用
+    -rs, --react_standard [name]    创建一个标准的 React 单页应用
+    -re, --react_entire [name]      创建一个全量的 React 单页应用
+    -rS, --react_ssr [name]         创建一个 React SSR 应用
+    -rc, --react_components [name]  创建一个 React 组件库
+    -t, --toolkit [name]            创建一个工具库
+    -n, --no-install                初始化项目不安装任何依赖
+    -P, --path <path>               创建项目的工作路径
+    -h, --help               output usage information
+```
+
+### omni dev
+
+#### 各种用法
+```sh
+  omni dev
+
+  omni dev -p 8200 // 启动一个端口号为 8200 的开发服务
+
+  omni dev -h dev.domain.com // 启动一个host为 dev.domain.com 的开发服务
+
+
+  omni dev -p 8200 -h dev.domain.com // 启动一个端口号为 8200 且 host为 dev.domain.com 的 开发服务
+
+```
+
+#### 选项
+```shell
+使用: omni dev [options]
+
+omni dev [-p <port>] [-H <host>] [-P <path>]
+
+Options:
+  -p, --port <port>      根据指定的端口号启动开发服务
+  -H, --hostname <host>  根据指定的hostname启动开发服务
+  -P, --path <path>      启动开发服务的工作路径
+  -h, --help             output usage information
+```
+
+### omni start
+用法和 `omni dev` 略同
+
+#### 选项
+```shell
+使用: omni start [options]
+
+omni start [-p <port>] [-H <host>] [-P <path>]
+
+Options:
+  -p, --port <port>      根据指定的端口号启动生产服务
+  -H, --hostname <host>  根据指定的hostname启动生产服务
+  -P, --path <path>      启动生产服务的工作路径
+  -h, --help             output usage information
+```
+
+### omni new
+
+#### 各种用法
+```sh
+  omni new
+
+  omni new Button // 新建一个名为 Button 的组件
+
+  omni new -c // 新建一个类组件
+
+  omni new -c Button // 新建一个名为 Button 的类组件
+```
+
+#### 选项
+```shell
+使用: omni new [name] [options]
+
+omni new [name] [-f | -c] [-P <path>]
+
+Arguments:
+
+  module           可选！组件名称。
+
+Options:
+  -f, --function     创建一个函数组件
+  -c, --class        创建一个类组件
+  -P, --path <path>  创建组件的工作路径
+  -h, --help        output usage information
+```
+
+### omni build
+
+#### 各种用法
+```sh
+  omni build
+
+  omni build -n // 构建时避开所有预校验
+
+  omni build -c $pathTo/build.config.js // 根据指定路径构建项目
+```
+
+#### 选项
+```shell
+使用: omni build [options]
+
+根据 [omni.config.js] 的 build 字段构建项目
+
+Options:
+  -c, --config <path>  指定构建的配置文件路径
+  -n, --no-verify      绕过所有预检直接构建
+  -P, --path <path>    构建的工作路径
+  -h, --help           output usage information
+```
+
+### omni release
+
+#### 各种用法
+```sh
+  omni release
+
+  omni release -n // 发布时避开所有预校验
+
+  omni release -a // 发布时自动迭代版本号
+
+  omni release -i // 发布时忽略版本号的迭代
+
+  omni release -m // 发布时手动输入迭代版本号
+
+  omni release -t // 发布时指定 tag 名
+```
+
+#### 选项
+```shell
+使用: omni release [options]
+
+根据 [omni.config.js] 的 release 字段发布项目
+
+Options:
+  -a, --automatic         发布并自动迭代版本号
+  -i, --ignore            发布并忽视版本号的迭代
+  -m, --manual <version>  发布并手动指定版本号
+  -t, --tag <tag>         发布时指定tag
+  -n, --no-verify         绕过所有的预检直接发布
+  -P, --path <path>       发布的工作路径
+  -h, --help              output usage information
+```
+
+## 关于 「omni.config.js」 配置文件
 
 ### type 项目类型
 OMNI 会根据不同的项目类型决定整个初始化、构建、创建模板的过程

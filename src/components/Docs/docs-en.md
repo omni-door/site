@@ -1,132 +1,265 @@
-# 文档
+# Documentation
 
-## 命令
-1. init [strategy] [options]
-    - omni init
+## Project Type
 
-    - omni init latest
+### SPA
+- [x] Based on [React](https://reactjs.org/)
 
-    - omni init stable
+- [x] Based on [React-Router](https://reacttraining.com/react-router/web/example/basic) to implement front-end routing
 
-    - omni init -n
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
 
-    - omni init -rb basicReactSpaProject
+- [x] Use [webpack](https://webpack.js.org/) to package
 
-    - omni init -rs stardardReactSpaProject
+- [x] Comply [eslint](https://eslint.org/) standard
 
-    - omni init -re entrieReactSpaProject
+- [x] Comply [stylelint](https://stylelint.io/) standard
 
-    - omni init -rc reactComponentProject
+- [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
 
-    - omni init -t toolkitProject
-
-    - omni init latest -rs stardardReactSpaProject -n
-
-2. dev [options]
-    - omni dev
-
-    - omni dev -p 8200
-
-    - omni dev -h dev.domain.com
-
-    - omni dev -p 8200 -h dev.domain.com
-
-3. new [name] [options]
-    - omni new
-
-    - omni new Button
-
-    - omni new -c
-
-    - omni new -c Button
-
-4. build [options]
-    - omni build
-
-    - omni build -n
-
-    - omni build -c $pathTo/build.config.js
-
-5. release [options]
-    - omni release
-
-    - omni release -n
-
-    - omni release -a
-
-    - omni release -i
-
-    - omni release -m
-
-    - omni release -t
-
-## 项目类型简介
-
-### SPA 应用
-- [x] 基于 [React](https://reactjs.org/) UI 框架
-
-- [x] 基于 [React-Router](https://reacttraining.com/react-router/web/example/basic) 实现前端路由
-
-- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
-
-- [x] 使用 [webpack](https://webpack.js.org/) 打包
-
-- [x] 遵守 [eslint](https://eslint.org/) 规范
-
-- [x] 遵守 [stylelint](https://stylelint.io/) 规范
-
-- [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
-
-- [x] 无缝支持 [CSS Modules](https://github.com/css-modules/css-modules) 和 全局CSS，无需额外配置
+- [x] Seamless support [CSS Modules](https://github.com/css-modules/css-modules) and global-css without extra configuration
 
   ……
 
-### SSR 应用
-- [x] 基于 [React](https://reactjs.org/) 框架
+### SSR
+- [x] Based on [React](https://reactjs.org/)
 
-- [x] 基于 [nextjs](https://nextjs.org/) 企业级高性能 Node 框架
+- [x] Based on [nextjs](https://nextjs.org/) enterprise high performance node framework
 
-- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
 
-- [x] 支持 [koa](https://koajs.com/) 自定义 node 服务
+- [x] Support use [koa](https://koajs.com/) to custom node server
 
-- [x] 搜索引擎友好 [SEO](https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96)
-
-  ……
-
-### Component 组件(库)项目
-- [x] 支持 [storybook](https://storybook.js.org/)、[docz](https://docz.site/)、[styleguidist](https://react-styleguidist.js.org/) 多种组件库Demo和文档框架
-
-- [x] 基于 [React](https://reactjs.org/) 的组件库
-
-- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
-
-- [x] 使用 [gulp](https://gulpjs.com/) 打包
-
-- [x] 遵守 [eslint](https://eslint.org/) 规范
-
-- [x] 遵守 [stylelint](https://stylelint.io/) 规范
-
-- [x] 遵守 [commitlint](https://commitlint.js.org/) 规范
-
-- [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
+- [x] Search engine friendly [SEO](https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96)
 
   ……
 
-### toolkit 工具库项目
-- [x] 集成标准化初始化、构建、发布虎扑 [bridge-plugin](https://hupu.feishu.cn/docs/doccn8pGr7IYYV54ytpBsHT3tDd#bcLZTY) (@hupu/dandelion) 项目的能力
+### Component(library)
+- [x] Support multiple component library demo and document framework such as [storybook](https://storybook.js.org/), [docz](https://docz.site/) and [styleguidist](https://react-styleguidist.js.org/)
 
-- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
+- [x] Based on [React](https://reactjs.org/)
 
-- [x] 使用 [rollup](https://rollupjs.org/guide/en) 打包
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
 
-- [x] 遵守 [eslint](https://eslint.org/) 规范
+- [x] Use [gulp](https://gulpjs.com/) to package
 
-- [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
+- [x] Comply [eslint](https://eslint.org/) standard
+
+- [x] Comply [stylelint](https://stylelint.io/) standard
+
+- [x] Comply [commitlint](https://commitlint.js.org/) standard
+
+- [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
 
   ……
 
-# omni.config.js Detail
+### Toolkit
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
+
+- [x] Use [rollup](https://rollupjs.org/guide/en) to package
+
+- [x] Comply [eslint](https://eslint.org/) standard
+
+- [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
+
+  ……
+
+
+## Commands
+You can input `omni -h` in the command-line-tool to check all support commands：
+
+```shell
+  Commands:
+
+    init [options] [strategy]  initialize your project, [strategy] could be stable(default) or latest
+    dev [options]              omni dev [-p <port>] [-H <host>] [-P <path>]
+    start [options]            omni start [-p <port>] [-H <host>] [-P <path>]
+    new [options] [name]       omni new [name] [-f | -c] [-P <path>]
+    build [options]            build your project according to the [omni.config.js]'s build field
+    release [options]          publish your project according to the [omni.config.js]'s release field
+```
+
+### omni init
+
+#### Initial your project by answer several questions
+```shell
+omni init
+```
+
+#### Initial your project with lastest denpendencies
+```shell
+omni init lastest
+```
+
+#### Initial your project without install dependencies
+```shell
+omni init -n
+```
+
+#### Initial your project according to some template
+```shell
+omni init -t [projectName]
+```
+or
+```shell
+omni init --react_entire [projectName]
+```
+
+#### Options
+```shell
+Usage: omni init [strategy] [options]
+
+initialize your project, [strategy] could be stable(default) or latest
+
+Arguments:
+
+  strategy                 stable or latest
+
+Options:
+  -rb, --react_basic [name]       create a basic React SPA project
+  -rs, --react_standard [name]    create a standard React SPA project
+  -re, --react_entire [name]      create a most versatile React SPA project
+  -rS, --react_ssr [name]         create a React component library
+  -rc, --react_components [name]  create a React component library
+  -t, --toolkit [name]            create a toolkit project
+  -n, --no-install                init project without install dependencies
+  -P, --path <path>               the workpath for init the project
+  -h, --help                      output usage information
+```
+
+### omni dev
+
+#### Usage
+```sh
+  omni dev
+
+  omni dev -p 8200 // Start a dev-server with port 8200
+
+  omni dev -h dev.domain.com // Start a dev-server with hostname dev.domain.com
+
+
+  omni dev -p 8200 -h dev.domain.com // Start a dev-server with port 8200 and hostname dev.domain.com
+
+```
+
+#### Options
+```shell
+Usage: omni dev [options]
+
+omni dev [-p <port>] [-H <host>] [-P <path>]
+
+Options:
+  -p, --port <port>      start the dev-server according to the specified port
+  -H, --hostname <host>  start the dev-server according to the specified hostname
+  -P, --path <path>      the workpath for start the dev-server
+  -h, --help             output usage information
+```
+
+### omni start
+The usage same as `omni dev`
+
+#### Options
+```shell
+Usage: omni start [options]
+
+omni start [-p <port>] [-H <host>] [-P <path>]
+
+Options:
+  -p, --port <port>      start the prod-server according to the specified port
+  -H, --hostname <host>  start the prod-server according to the specified hostname
+  -P, --path <path>      the workpath for start the prod-server
+  -h, --help             output usage information
+```
+
+### omni new
+
+#### Usage
+```sh
+  omni new
+
+  omni new Button // Create a component which name is Button
+
+  omni new -c // Create a component which type is class
+
+  omni new -c Button // Create a component which name is Button and type is class
+```
+
+#### Options
+```shell
+Usage: omni new [name] [options]
+
+omni new [name] [-f | -c] [-P <path>]
+
+Arguments:
+
+  name              optional! The name of component.
+
+Options:
+  -f, --function    create a functional component
+  -c, --class       create a class component
+  -P, --path <path>  the workpath for create component
+  -h, --help        output usage information
+```
+
+### omni build
+
+#### Usage
+```sh
+  omni build
+
+  omni build -n // Build project bypass all pre-flight
+
+  omni build -c $pathTo/build.config.js // Build project according to specify config path
+```
+
+#### Options
+```shell
+Usage: omni build [options]
+
+build your project according to the [omni.config.js]'s build field
+
+Options:
+  -c, --config <path>  specify the path of config file
+  -n, --no-verify      bypass all pre-check before building
+  -P, --path <path>    the workpath for build project
+  -h, --help           output usage information
+```
+
+### omni release
+
+#### Usage
+```sh
+  omni release
+
+  omni release -n // Release project bypass all pre-flight
+
+  omni release -a // Release project that automatic iteration version
+
+  omni release -i // Release project that ignore automatic iteration version
+
+  omni release -m // Release project that manual iteration version
+
+  omni release -t // Release project that the tag will add to npm-package
+```
+
+#### Options
+```shell
+Usage: omni release [options]
+
+publish your project according to the [omni.config.js]'s release field
+
+Options:
+  -a, --automatic         automatic iteration version
+  -i, --ignore            ignore automatic iteration version
+  -m, --manual <version>  manual iteration version
+  -t, --tag <tag>         the tag will add to npm-package
+  -n, --no-verify         bypass unit-test eslint and stylelint check
+  -P, --path <path>       the workpath for release project
+  -h, --help              output usage information
+```
+
+
+# About「omni.config.js」config file
 
 ### type
 OMNI will process of initialization, construction and template creation according to different project types

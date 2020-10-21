@@ -88,2491 +88,319 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/docs.tsx");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "+YsH":
+/***/ "./node_modules/antd/lib/button/style/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/antd/lib/button/style/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9hbnRkL2xpYi9idXR0b24vc3R5bGUvaW5kZXguanMuanMiLCJzb3VyY2VzQ29udGVudCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./node_modules/antd/lib/button/style/index.js\n");
+
+/***/ }),
+
+/***/ "./node_modules/antd/lib/layout/style/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/antd/lib/layout/style/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9hbnRkL2xpYi9sYXlvdXQvc3R5bGUvaW5kZXguanMuanMiLCJzb3VyY2VzQ29udGVudCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./node_modules/antd/lib/layout/style/index.js\n");
+
+/***/ }),
+
+/***/ "./node_modules/antd/lib/menu/style/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/lib/menu/style/index.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9hbnRkL2xpYi9tZW51L3N0eWxlL2luZGV4LmpzLmpzIiwic291cmNlc0NvbnRlbnQiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/antd/lib/menu/style/index.js\n");
+
+/***/ }),
+
+/***/ "./pages/docs.tsx":
+/*!************************!*\
+  !*** ./pages/docs.tsx ***!
+  \************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-// UNUSED EXPORTS: mapCtxToProps
-
-// CONCATENATED MODULE: ./src/utils/paramsToQueryString.ts
-const isObject = param => param === Object(param);
-
-const paramsToStringList = entries => entries.reduce((result, [key, value]) => result.concat(Array.isArray(value) ? paramsToStringList(value.map(arrayValue => [`${key}[]`, arrayValue])) : [typeof value === 'string' || typeof value === 'number' ? `${key}=${value}` : '']), []);
-
-function paramsToQueryString(params) {
-  const paramsString = isObject(params) ? paramsToStringList(Object.keys(params).sort().map(key => [String(key), params[key]])).filter(chunk => chunk.length > 0).join('&') : '';
-  return paramsString.length > 0 ? `?${paramsString}` : '';
-}
-// CONCATENATED MODULE: ./src/utils/mapCtxToProps.ts
-
-function mapCtxToProps(ctx) {
-  const {
-    pathname,
-    query,
-    asPath
-  } = ctx;
-  return {
-    page: pathname.replace(/\//g, '') || 'home',
-    query: query,
-    path: asPath || `${pathname}${paramsToQueryString(query)}`
-  };
-}
-/* harmony default export */ var utils_mapCtxToProps = __webpack_exports__["a"] = (mapCtxToProps);
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ctx_UseLocale__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ctx/UseLocale */ \"./src/context/UseLocale.tsx\");\n/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Layout */ \"./src/components/Layout/index.ts\");\n/* harmony import */ var _components_Docs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Docs */ \"./src/components/Docs/index.ts\");\n/* harmony import */ var _utils_mapCtxToProps__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @utils/mapCtxToProps */ \"./src/utils/mapCtxToProps.ts\");\n\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\n\n\n\n\n\n\nfunction DocsPage(props) {\n  const {\n    lang,\n    locale: {\n      docs: {\n        pageTitle\n      }\n    }\n  } = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useContext\"])(_ctx_UseLocale__WEBPACK_IMPORTED_MODULE_1__[\"UseLocale\"]);\n  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    title: pageTitle,\n    page: props.page\n  }, __jsx(_components_Docs__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _extends({\n    lang: lang\n  }, props)));\n}\n\nDocsPage.getInitialProps = async ctx => {\n  return Object(_utils_mapCtxToProps__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(ctx);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (DocsPage);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9kb2NzLnRzeD84ZjFiIl0sIm5hbWVzIjpbIkRvY3NQYWdlIiwicHJvcHMiLCJsYW5nIiwibG9jYWxlIiwiZG9jcyIsInBhZ2VUaXRsZSIsInVzZUNvbnRleHQiLCJVc2VMb2NhbGUiLCJwYWdlIiwiZ2V0SW5pdGlhbFByb3BzIiwiY3R4IiwibWFwQ3R4VG9Qcm9wcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFHQSxTQUFTQSxRQUFULENBQW1CQyxLQUFuQixFQUF5QztBQUN2QyxRQUFNO0FBQ0pDLFFBREk7QUFFSkMsVUFBTSxFQUFFO0FBQ05DLFVBQUksRUFBRztBQUNMQztBQURLO0FBREQ7QUFGSixNQU9GQyx3REFBVSxDQUFDQyx3REFBRCxDQVBkO0FBUUEsU0FDRSxNQUFDLDBEQUFEO0FBQ0UsU0FBSyxFQUFFRixTQURUO0FBRUUsUUFBSSxFQUFFSixLQUFLLENBQUNPO0FBRmQsS0FJRSxNQUFDLHdEQUFEO0FBQU0sUUFBSSxFQUFFTjtBQUFaLEtBQXVCRCxLQUF2QixFQUpGLENBREY7QUFRRDs7QUFFREQsUUFBUSxDQUFDUyxlQUFULEdBQTJCLE1BQU9DLEdBQVAsSUFBb0I7QUFDN0MsU0FBT0Msb0VBQWEsQ0FBQ0QsR0FBRCxDQUFwQjtBQUNELENBRkQ7O0FBSWVWLHVFQUFmIiwiZmlsZSI6Ii4vcGFnZXMvZG9jcy50c3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VDb250ZXh0IH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgVXNlTG9jYWxlIH0gZnJvbSAnQGN0eC9Vc2VMb2NhbGUnO1xuaW1wb3J0IExheW91dCBmcm9tICdAY29tcG9uZW50cy9MYXlvdXQnO1xuaW1wb3J0IERvY3MgZnJvbSAnQGNvbXBvbmVudHMvRG9jcyc7XG5pbXBvcnQgbWFwQ3R4VG9Qcm9wcyBmcm9tICdAdXRpbHMvbWFwQ3R4VG9Qcm9wcyc7XG5pbXBvcnQgdHlwZSB7IE1hcEN0eFRvUHJvcHMgfSBmcm9tICdAdXRpbHMvbWFwQ3R4VG9Qcm9wcyc7XG5cbmZ1bmN0aW9uIERvY3NQYWdlIChwcm9wczogTWFwQ3R4VG9Qcm9wcykge1xuICBjb25zdCB7XG4gICAgbGFuZyxcbiAgICBsb2NhbGU6IHtcbiAgICAgIGRvY3MgOiB7XG4gICAgICAgIHBhZ2VUaXRsZVxuICAgICAgfVxuICAgIH1cbiAgfSA9IHVzZUNvbnRleHQoVXNlTG9jYWxlKTtcbiAgcmV0dXJuIChcbiAgICA8TGF5b3V0XG4gICAgICB0aXRsZT17cGFnZVRpdGxlfVxuICAgICAgcGFnZT17cHJvcHMucGFnZX1cbiAgICA+XG4gICAgICA8RG9jcyBsYW5nPXtsYW5nfSB7IC4uLnByb3BzIH0vPlxuICAgIDwvTGF5b3V0PlxuICApO1xufVxuXG5Eb2NzUGFnZS5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyAoY3R4OiBhbnkpID0+IHtcbiAgcmV0dXJuIG1hcEN0eFRvUHJvcHMoY3R4KTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IERvY3NQYWdlOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/docs.tsx\n");
 
 /***/ }),
 
-/***/ "0rFR":
+/***/ "./src/components/Docs/Docs.tsx":
+/*!**************************************!*\
+  !*** ./src/components/Docs/Docs.tsx ***!
+  \**************************************/
+/*! exports provided: Docs, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Docs\", function() { return Docs; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _docs_cn_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./docs-cn.md */ \"./src/components/Docs/docs-cn.md\");\n/* harmony import */ var _docs_en_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./docs-en.md */ \"./src/components/Docs/docs-en.md\");\n/* harmony import */ var _style_Docs_module_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style/Docs.module.less */ \"./src/components/Docs/style/Docs.module.less\");\n/* harmony import */ var _style_Docs_module_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_Docs_module_less__WEBPACK_IMPORTED_MODULE_3__);\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\n\n\n\n/* import types */\n\nconst Docs = props => {\n  const {\n    lang\n  } = props;\n  const Source = lang === 'cn' ? _docs_cn_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"] : _docs_en_md__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n  return __jsx(\"div\", {\n    className: _style_Docs_module_less__WEBPACK_IMPORTED_MODULE_3___default.a.docs\n  }, __jsx(Source, null));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react__WEBPACK_IMPORTED_MODULE_0__[\"memo\"])(Docs));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9Eb2NzL0RvY3MudHN4P2Y5MzkiXSwibmFtZXMiOlsiRG9jcyIsInByb3BzIiwibGFuZyIsIlNvdXJjZSIsIlNvdXJjZUNuIiwiU291cmNlRW4iLCJzdHlsZXMiLCJkb2NzIiwibWVtbyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFPTyxNQUFNQSxJQUFtQixHQUFHQyxLQUFLLElBQUk7QUFDMUMsUUFBTTtBQUFFQztBQUFGLE1BQVdELEtBQWpCO0FBQ0EsUUFBTUUsTUFBTSxHQUFHRCxJQUFJLEtBQUssSUFBVCxHQUFnQkUsbURBQWhCLEdBQTJCQyxtREFBMUM7QUFFQSxTQUNFO0FBQ0UsYUFBUyxFQUFFQyw4REFBTSxDQUFDQztBQURwQixLQUdFLE1BQUMsTUFBRCxPQUhGLENBREY7QUFPRCxDQVhNO0FBYVFDLGlIQUFJLENBQUNSLElBQUQsQ0FBbkIiLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9Eb2NzL0RvY3MudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IG1lbW8gfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgU291cmNlQ24gZnJvbSAnLi9kb2NzLWNuLm1kJztcbmltcG9ydCBTb3VyY2VFbiBmcm9tICcuL2RvY3MtZW4ubWQnO1xuaW1wb3J0IHN0eWxlcyBmcm9tICcuL3N0eWxlL0RvY3MubW9kdWxlLmxlc3MnO1xuLyogaW1wb3J0IHR5cGVzICovXG5pbXBvcnQgdHlwZSB7IEZDIH0gZnJvbSAncmVhY3QnO1xuXG5leHBvcnQgaW50ZXJmYWNlIERvY3NQcm9wcyB7XG4gIGxhbmc6IHN0cmluZztcbn1cblxuZXhwb3J0IGNvbnN0IERvY3M6IEZDPERvY3NQcm9wcz4gPSBwcm9wcyA9PiB7XG4gIGNvbnN0IHsgbGFuZyB9ID0gcHJvcHM7XG4gIGNvbnN0IFNvdXJjZSA9IGxhbmcgPT09ICdjbicgPyBTb3VyY2VDbiA6IFNvdXJjZUVuO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdlxuICAgICAgY2xhc3NOYW1lPXtzdHlsZXMuZG9jc31cbiAgICA+XG4gICAgICA8U291cmNlIC8+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBtZW1vKERvY3MpO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Docs/Docs.tsx\n");
+
+/***/ }),
+
+/***/ "./src/components/Docs/docs-cn.md":
+/*!****************************************!*\
+  !*** ./src/components/Docs/docs-cn.md ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return MDXContent; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/react */ \"@mdx-js/react\");\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__);\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n/* @jsx mdx */\n\nconst layoutProps = {};\nconst MDXLayout = \"wrapper\";\nfunction MDXContent(_ref) {\n  let {\n    components\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h1\", null, `文档`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h2\", null, `支持的项目类型简介`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `SPA 应用`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `基于 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reactjs.org/\"\n  }), `React`), ` UI 框架`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `基于 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reacttraining.com/react-router/web/example/basic\"\n  }), `React-Router`), ` 实现前端路由`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` 进行开发`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://webpack.js.org/\"\n  }), `webpack`), ` 打包`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `遵守 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://eslint.org/\"\n  }), `eslint`), ` 规范`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `遵守 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://stylelint.io/\"\n  }), `stylelint`), ` 规范`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `采用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://prettier.io/docs/en/install.html\"\n  }), `prettier`), ` 美化代码格式`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `无缝支持 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://github.com/css-modules/css-modules\"\n  }), `CSS Modules`), ` 和 全局CSS，无需额外配置`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `SSR 应用`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `基于 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reactjs.org/\"\n  }), `React`), ` 框架`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `基于 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://nextjs.org/\"\n  }), `nextjs`), ` 企业级高性能 Node 框架`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` 进行开发`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `支持 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://koajs.com/\"\n  }), `koa`), ` 自定义 node 服务`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `搜索引擎友好 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96\"\n  }), `SEO`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `Component 组件(库)项目`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `支持 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://storybook.js.org/\"\n  }), `storybook`), `、`, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://docz.site/\"\n  }), `docz`), `、`, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://react-styleguidist.js.org/\"\n  }), `styleguidist`), ` 多种组件库Demo和文档框架`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `基于 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reactjs.org/\"\n  }), `React`), ` 的组件库`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` 进行开发`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://gulpjs.com/\"\n  }), `gulp`), ` 打包`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `遵守 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://eslint.org/\"\n  }), `eslint`), ` 规范`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `遵守 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://stylelint.io/\"\n  }), `stylelint`), ` 规范`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `遵守 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://commitlint.js.org/\"\n  }), `commitlint`), ` 规范`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `采用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://prettier.io/docs/en/install.html\"\n  }), `prettier`), ` 美化代码格式`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `toolkit 工具库项目`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` 进行开发`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `使用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://rollupjs.org/guide/en\"\n  }), `rollup`), ` 打包`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `遵守 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://eslint.org/\"\n  }), `eslint`), ` 规范`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `采用 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://prettier.io/docs/en/install.html\"\n  }), `prettier`), ` 美化代码格式`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h2\", null, `脚手架命令清单`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `你可以在命令行中简单输入 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `omni -h`), ` 查看所有的命令：`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `  Commands:\n\n    init [strategy] [options]  初始化你的项目，[strategy(策略)] 可用是stable(默认) 或 lastst\n    dev [options]              omni dev -p [port]\n    new <module> [options]     omni new [module] [-f | -c]\n    build                      根据 [omni.config.js] 打包构建你的项目\n    release [options]          根据 [omni.config.js] 发布你的项目\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni init`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `初始化一个项目`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `用最新的依赖@lastest初始化项目`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init lastest\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `初始化项目但不安装依赖`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init -n\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `套用模板一键初始化项目`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init -t [projectName]\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `or`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init --entire [projectName]\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `选项`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `使用: omni init [strategy] [options]\n\nArguments:\n\n  strategy                 stable or latest\n\n  Options:\n    -rb, --react_basic [name]       创建一个最基本的 React 单页应用\n    -rs, --react_standard [name]    创建一个标准的 React 单页应用\n    -re, --react_entire [name]      创建一个全量的 React 单页应用\n    -rS, --react_ssr [name]         创建一个 React SSR 应用\n    -rc, --react_components [name]  创建一个 React 组件库\n    -t, --toolkit [name]            创建一个工具库\n    -n, --no-install                初始化项目不安装任何依赖\n    -P, --path <path>               创建项目的工作路径\n    -h, --help               output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni dev`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `各种用法`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni dev\n\n  omni dev -p 8200 // 启动一个端口号为 8200 的开发服务\n\n  omni dev -h dev.domain.com // 启动一个host为 dev.domain.com 的开发服务\n\n\n  omni dev -p 8200 -h dev.domain.com // 启动一个端口号为 8200 且 host为 dev.domain.com 的 开发服务\n\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `选项`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `使用: omni dev [options]\n\nomni dev [-p <port>] [-H <host>] [-P <path>]\n\nOptions:\n  -p, --port <port>      根据指定的端口号启动开发服务\n  -H, --hostname <host>  根据指定的hostname启动开发服务\n  -P, --path <path>      启动开发服务的工作路径\n  -h, --help             output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni start`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `用法和 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `omni dev`), ` 略同`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `选项`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `使用: omni start [options]\n\nomni start [-p <port>] [-H <host>] [-P <path>]\n\nOptions:\n  -p, --port <port>      根据指定的端口号启动生产服务\n  -H, --hostname <host>  根据指定的hostname启动生产服务\n  -P, --path <path>      启动生产服务的工作路径\n  -h, --help             output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni new`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `各种用法`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni new\n\n  omni new Button // 新建一个名为 Button 的组件\n\n  omni new -c // 新建一个类组件\n\n  omni new -c Button // 新建一个名为 Button 的类组件\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `选项`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `使用: omni new [name] [options]\n\nomni new [name] [-f | -c] [-P <path>]\n\nArguments:\n\n  module           可选！组件名称。\n\nOptions:\n  -f, --function     创建一个函数组件\n  -c, --class        创建一个类组件\n  -P, --path <path>  创建组件的工作路径\n  -h, --help        output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni build`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `各种用法`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni build\n\n  omni build -n // 构建时避开所有预校验\n\n  omni build -c $pathTo/build.config.js // 根据指定路径构建项目\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `选项`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `使用: omni build [options]\n\n根据 [omni.config.js] 的 build 字段构建项目\n\nOptions:\n  -c, --config <path>  指定构建的配置文件路径\n  -n, --no-verify      绕过所有预检直接构建\n  -P, --path <path>    构建的工作路径\n  -h, --help           output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni release`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `各种用法`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni release\n\n  omni release -n // 发布时避开所有预校验\n\n  omni release -a // 发布时自动迭代版本号\n\n  omni release -i // 发布时忽略版本号的迭代\n\n  omni release -m // 发布时手动输入迭代版本号\n\n  omni release -t // 发布时指定 tag 名\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `选项`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `使用: omni release [options]\n\n根据 [omni.config.js] 的 release 字段发布项目\n\nOptions:\n  -a, --automatic         发布并自动迭代版本号\n  -i, --ignore            发布并忽视版本号的迭代\n  -m, --manual <version>  发布并手动指定版本号\n  -t, --tag <tag>         发布时指定tag\n  -n, --no-verify         绕过所有的预检直接发布\n  -P, --path <path>       发布的工作路径\n  -h, --help              output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h2\", null, `关于 「omni.config.js」 配置文件`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `type 项目类型`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `OMNI 会根据不同的项目类型决定整个初始化、构建、创建模板的过程`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `目前支持的项目类型有：`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `spa-react - React单页应用`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `ssr-react - React服务端渲染应用`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `component-react - React组件库`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `toolkit - SDK工具包`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `dev 开发服务`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `开发服务基于express，搭配 webpack-dev-middleware、webpack-hot-middleware、http-proxy-middleware 等中间件，实现了热更新、接口代理等常用功能，并提供了中间件的自定义、端口号、log日志输出级别、webpack配置等个性化定制方案。`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `middleware - 中间件配置，参考下面👇的类型：`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `{\n  route: string;\n  callback: (req: any, res: any) => Promise<void>;\n}\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `  or`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `(params: {\n  ip: string;\n  port: number;\n  host?: string;\n  logLevel: LOGLEVEL;\n  proxyConfig?: (ProxyItem | ProxyFn)[];\n}) => {\n  route: string;\n  callback: (req: any, res: any) => Promise<void>;\n}\n`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `webpack - 开发服务端webpack配置`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `proxy - 开发服务代理配置`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `{\n  route: '/api', // 代理API的本地服务的地址\n  config: {\n    target: 'http://www.api.com/api', // 代理API的实际地址\n    changeOrigin: true // 是否改变host\n  }\n}\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `  or`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `(params: {\n  ip: string;\n  port: number;\n  host?: string;\n  logLevel: LOGLEVEL;\n  middlewareConfig?: (MiddlewareItem | MiddlewareFn)[];\n}) => {\n  route: string;\n  config: Config;\n}\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `  更多配置详见 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://github.com/chimurai/http-proxy-middleware\"\n  }), `http-proxy-middleware`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `port - 开发服务启动的端口号`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `host - 开发服务启动的host`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `https - 开发服务以https协议启动，可自定义 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `key`), ` 和 `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `cert`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `serverType - 开发服务的类型`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `logLevel - 开发服务日志输出等级，可选 'debug'、'info'、'warn'、'error'、'silent'`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `build 构建配置`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `autoRelease - 构建完成后是否自动发布`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `srcDir - 构建资源输入路径`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `outDir - 构建结果输出路径`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `esmDir - 构建结果输出路径(符合es6 module规范)`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `hash - 构建的资源是否加上hash，可选 'contenthash'、'chunkhash'、'hash'(传入true则是contenthash)`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `configuration - 构建阶段的自定义配置回调，返回自定义的配置`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `reserve - 配置未经过打包，但需要保留进构建结果的资源`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `style - 构建结果是否保留样式文件`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `assets - 构建结果保留其他资源的路径`)))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `preflight - 构建前的飞行检查`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `typescript - 是否处理ts或tsx文件`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `test - 是否进行单元测试 `)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `eslint - 是否进行eslint检测`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `prettier - 是否进行prettier检测`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `stylelint - 是否进行stylelint检测`))))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `release`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `git - 发布的git仓库地址`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `npm - 发布的npm仓库地址`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `preflight - 发布前的飞行检查`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `test - 发布前是否进行单元测试`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `eslint - 发布前是否进行eslint检测`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `prettier - 发布前是否进行prettier检测`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `stylelint - 发布前是否进行stylelint检测`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `commitlint - 发布前是否进行commitlint检测`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `branch - 发布前进行分支检测，设置为空字符串则不会检测`))))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `template 新建模板配置`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `root - 生成模板的根路径`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `typescript - 是否创建ts文件`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `test - 是否创建单元测试文件`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `stylesheet - 样式文件类型`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `readme - `, `[true, 'mdx']`, ` (`, `[是否生成ReadMe文件, 创建md 或 mdx文件]`, `)`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `plugins`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `插件集合，插件需满足下面的类型：`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `type OmniPlugin = {\n  name: string;\n  stage: PluginStage;\n  handler: PluginHandler;\n};\n\ntype PluginStage = 'new' | 'build' | 'release';\ninterface PluginHandler {\n  (config: Omit<OmniConfig, 'plugins'>): Promise<any>;\n}\n`)));\n}\n;\nMDXContent.isMDXComponent = true;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9Eb2NzL2RvY3MtY24ubWQ/OTdmMyJdLCJuYW1lcyI6WyJsYXlvdXRQcm9wcyIsIk1EWExheW91dCIsIk1EWENvbnRlbnQiLCJjb21wb25lbnRzIiwicHJvcHMiLCJpc01EWENvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFDQTtBQUNBO0FBRUE7O0FBSUEsTUFBTUEsV0FBVyxHQUFHLEVBQXBCO0FBR0EsTUFBTUMsU0FBUyxHQUFHLFNBQWxCO0FBQ2UsU0FBU0MsVUFBVCxPQUdaO0FBQUEsTUFIZ0M7QUFDakNDO0FBRGlDLEdBR2hDO0FBQUEsTUFERUMsS0FDRjs7QUFDRCxTQUFPLDBEQUFDLFNBQUQsZUFBZUosV0FBZixFQUFnQ0ksS0FBaEM7QUFBdUMsY0FBVSxFQUFFRCxVQUFuRDtBQUErRCxXQUFPLEVBQUM7QUFBdkUsTUFDTCxzRUFBTSxJQUFOLENBREssRUFFTCxzRUFBTSxXQUFOLENBRkssRUFHTCxzRUFBTSxRQUFOLENBSEssRUFJTCxnRUFBUTtBQUNOLGlCQUFhO0FBRFAsR0FBUixFQUdFO0FBQUksY0FBVSxFQUFDO0FBQWYsS0FBd0I7QUFDdEIsaUJBQWE7QUFEUyxHQUF4QixHQUdFO0FBQUcsY0FBVSxFQUFDO0FBQWQsS0FBbUI7QUFBTyxjQUFVLEVBQUM7QUFBbEIsS0FBMEI7QUFDekMsWUFBUSxVQURpQztBQUV6QyxlQUFXLElBRjhCO0FBR3pDLGdCQUFZO0FBSDZCLEdBQTFCLEVBQW5CLEVBSWUsR0FKZixFQUlvQixLQUpwQixFQUl5QjtBQUFHLGNBQVUsRUFBQztBQUFkLEtBQXNCO0FBQzNDLFlBQVE7QUFEbUMsR0FBdEIsR0FFbEIsT0FGa0IsQ0FKekIsRUFNb0IsUUFOcEIsQ0FIRixDQUhGLEVBY0U7QUFBSSxjQUFVLEVBQUM7QUFBZixLQUF3QjtBQUN0QixpQkFBYTtBQURTLEdBQXhCLEdBR0U7QUFBRyxjQUFVLEVBQUM7QUFBZCxLQUFtQjtBQUFPLGNBQVUs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QUFBSSxjQUFVLEVBQUM7QUFBZixLQUNFO0FBQUcsY0FBVSxFQUFDO0FBQWQsS0FBcUIsbUJBQXJCLENBREYsQ0FQRixFQVVFO0FBQUksY0FBVSxFQUFDO0FBQWYsS0FDRTtBQUFHLGNBQVUsRUFBQztBQUFkLEtBQXFCLHFCQUFyQixDQURGLENBVkYsRUFhRTtBQUFJLGNBQVUsRUFBQztBQUFmLEtBQ0U7QUFBRyxjQUFVLEVBQUM7QUFBZCxLQUFxQixXQUFyQixFQUFrQyxlQUFsQyxFQUFtRCxJQUFuRCxFQUF5RCw4QkFBekQsRUFBeUYsR0FBekYsQ0FERixDQWJGLENBN3BCSyxFQThxQkwsc0VBQU0sU0FBTixDQTlxQkssRUErcUJMLHFFQUFLLGtCQUFMLENBL3FCSyxFQWdyQkwsdUVBQUs7QUFBTSxjQUFVLEVBQUM7QUFBakIsS0FBMkI7QUFDNUIsaUJBQWE7QUFEZSxHQUEzQixHQUVFOzs7Ozs7Ozs7O0NBRkYsQ0FBTCxDQWhyQkssQ0FBUDtBQThyQkQ7QUFFRDtBQUNBRCxVQUFVLENBQUNHLGNBQVgsR0FBNEIsSUFBNUIiLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9Eb2NzL2RvY3MtY24ubWQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCB7IG1keCB9IGZyb20gJ0BtZHgtanMvcmVhY3QnXG5cbi8qIEBqc3ggbWR4ICovXG5cblxuXG5jb25zdCBsYXlvdXRQcm9wcyA9IHtcbiAgXG59O1xuY29uc3QgTURYTGF5b3V0ID0gXCJ3cmFwcGVyXCJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIE1EWENvbnRlbnQoe1xuICBjb21wb25lbnRzLFxuICAuLi5wcm9wc1xufSkge1xuICByZXR1cm4gPE1EWExheW91dCB7Li4ubGF5b3V0UHJvcHN9IHsuLi5wcm9wc30gY29tcG9uZW50cz17Y29tcG9uZW50c30gbWR4VHlwZT1cIk1EWExheW91dFwiPlxuICAgIDxoMT57YOaWh+aho2B9PC9oMT5cbiAgICA8aDI+e2DmlK/mjIHnmoTpobnnm67nsbvlnovnroDku4tgfTwvaDI+XG4gICAgPGgzPntgU1BBIOW6lOeUqGB9PC9oMz5cbiAgICA8dWwgey4uLntcbiAgICAgIFwiY2xhc3NOYW1lXCI6IFwiY29udGFpbnMtdGFzay1saXN0XCJcbiAgICB9fT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5Z+65LqOIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9yZWFjdGpzLm9yZy9cIlxuICAgICAgICAgIH19PntgUmVhY3RgfTwvYT57YCBVSSDmoYbmnrZgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YOWfuuS6jiBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vcmVhY3R0cmFpbmluZy5jb20vcmVhY3Qtcm91dGVyL3dlYi9leGFtcGxlL2Jhc2ljXCJcbiAgICAgICAgICB9fT57YFJlYWN0LVJvdXRlcmB9PC9hPntgIOWunueOsOWJjeerr+i3r+eUsWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5L2/55SoIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly93d3cudHlwZXNjcmlwdGxhbmcub3JnL1wiXG4gICAgICAgICAgfX0+e2B0eXBlc2NyaXB0YH08L2E+e2Ag6L+b6KGM5byA5Y+RYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2Dkvb/nlKggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3dlYnBhY2suanMub3JnL1wiXG4gICAgICAgICAgfX0+e2B3ZWJwYWNrYH08L2E+e2Ag5omT5YyFYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2DpgbXlroggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2VzbGludC5vcmcvXCJcbiAgICAgICAgICB9fT57YGVzbGludGB9PC9hPntgIOinhOiMg2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg6YG15a6IIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9zdHlsZWxpbnQuaW8vXCJcbiAgICAgICAgICB9fT57YHN0eWxlbGludGB9PC9hPntgIOinhOiMg2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg6YeH55SoIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9wcmV0dGllci5pby9kb2NzL2VuL2luc3RhbGwuaHRtbFwiXG4gICAgICAgICAgfX0+e2BwcmV0dGllcmB9PC9hPntgIOe+juWMluS7o+eggeagvOW8j2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5peg57yd5pSv5oyBIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9naXRodWIuY29tL2Nzcy1tb2R1bGVzL2Nzcy1tb2R1bGVzXCJcbiAgICAgICAgICB9fT57YENTUyBNb2R1bGVzYH08L2E+e2Ag5ZKMIOWFqOWxgENTU++8jOaXoOmcgOmineWklumFjee9rmB9PC9wPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YOKApuKApmB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YFNTUiDlupTnlKhgfTwvaDM+XG4gICAgPHVsIHsuLi57XG4gICAgICBcImNsYXNzTmFtZVwiOiBcImNvbnRhaW5zLXRhc2stbGlzdFwiXG4gICAgfX0+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YOWfuuS6jiBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vcmVhY3Rqcy5vcmcvXCJcbiAgICAgICAgICB9fT57YFJlYWN0YH08L2E+e2Ag5qGG5p62YH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2Dln7rkuo4gYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL25leHRqcy5vcmcvXCJcbiAgICAgICAgICB9fT57YG5leHRqc2B9PC9hPntgIOS8geS4mue6p+mrmOaAp+iDvSBOb2RlIOahhuaetmB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5L2/55SoIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly93d3cudHlwZXNjcmlwdGxhbmcub3JnL1wiXG4gICAgICAgICAgfX0+e2B0eXBlc2NyaXB0YH08L2E+e2Ag6L+b6KGM5byA5Y+RYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2DmlK/mjIEgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2tvYWpzLmNvbS9cIlxuICAgICAgICAgIH19Pntga29hYH08L2E+e2Ag6Ieq5a6a5LmJIG5vZGUg5pyN5YqhYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2DmkJzntKLlvJXmk47lj4vlpb0gYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3poLndpa2lwZWRpYS5vcmcvd2lraS8lRTYlOTAlOUMlRTUlQjAlOEIlRTUlQkMlOTUlRTYlOTMlOEUlRTYlOUMlODAlRTQlQkQlQjMlRTUlOEMlOTZcIlxuICAgICAgICAgIH19PntgU0VPYH08L2E+PC9wPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YOKApuKApmB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YENvbXBvbmVudCDnu4Tku7Yo5bqTKemhueebrmB9PC9oMz5cbiAgICA8dWwgey4uLntcbiAgICAgIFwiY2xhc3NOYW1lXCI6IFwiY29udGFpbnMtdGFzay1saXN0XCJcbiAgICB9fT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5pSv5oyBIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9zdG9yeWJvb2suanMub3JnL1wiXG4gICAgICAgICAgfX0+e2BzdG9yeWJvb2tgfTwvYT57YOOAgWB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9kb2N6LnNpdGUvXCJcbiAgICAgICAgICB9fT57YGRvY3pgfTwvYT57YOOAgWB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9yZWFjdC1zdHlsZWd1aWRpc3QuanMub3JnL1wiXG4gICAgICAgICAgfX0+e2BzdHlsZWd1aWRpc3RgfTwvYT57YCDlpJrnp43nu4Tku7blupNEZW1v5ZKM5paH5qGj5qGG5p62YH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2Dln7rkuo4gYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3JlYWN0anMub3JnL1wiXG4gICAgICAgICAgfX0+e2BSZWFjdGB9PC9hPntgIOeahOe7hOS7tuW6k2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5L2/55SoIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly93d3cudHlwZXNjcmlwdGxhbmcub3JnL1wiXG4gICAgICAgICAgfX0+e2B0eXBlc2NyaXB0YH08L2E+e2Ag6L+b6KGM5byA5Y+RYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2Dkvb/nlKggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2d1bHBqcy5jb20vXCJcbiAgICAgICAgICB9fT57YGd1bHBgfTwvYT57YCDmiZPljIVgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YOmBteWuiCBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vZXNsaW50Lm9yZy9cIlxuICAgICAgICAgIH19PntgZXNsaW50YH08L2E+e2Ag6KeE6IyDYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2DpgbXlroggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3N0eWxlbGludC5pby9cIlxuICAgICAgICAgIH19Pntgc3R5bGVsaW50YH08L2E+e2Ag6KeE6IyDYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2DpgbXlroggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2NvbW1pdGxpbnQuanMub3JnL1wiXG4gICAgICAgICAgfX0+e2Bjb21taXRsaW50YH08L2E+e2Ag6KeE6IyDYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2Dph4fnlKggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3ByZXR0aWVyLmlvL2RvY3MvZW4vaW5zdGFsbC5odG1sXCJcbiAgICAgICAgICB9fT57YHByZXR0aWVyYH08L2E+e2Ag576O5YyW5Luj56CB5qC85byPYH08L3A+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntg4oCm4oCmYH08L3A+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+XG4gICAgPGgzPntgdG9vbGtpdCDlt6XlhbflupPpobnnm65gfTwvaDM+XG4gICAgPHVsIHsuLi57XG4gICAgICBcImNsYXNzTmFtZVwiOiBcImNvbnRhaW5zLXRhc2stbGlzdFwiXG4gICAgfX0+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YOS9v+eUqCBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vd3d3LnR5cGVzY3JpcHRsYW5nLm9yZy9cIlxuICAgICAgICAgIH19PntgdHlwZXNjcmlwdGB9PC9hPntgIOi/m+ihjOW8gOWPkWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg5L2/55SoIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9yb2xsdXBqcy5vcmcvZ3VpZGUvZW5cIlxuICAgICAgICAgIH19Pntgcm9sbHVwYH08L2E+e2Ag5omT5YyFYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2DpgbXlroggYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2VzbGludC5vcmcvXCJcbiAgICAgICAgICB9fT57YGVzbGludGB9PC9hPntgIOinhOiMg2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtg6YeH55SoIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9wcmV0dGllci5pby9kb2NzL2VuL2luc3RhbGwuaHRtbFwiXG4gICAgICAgICAgfX0+e2BwcmV0dGllcmB9PC9hPntgIOe+juWMluS7o+eggeagvOW8j2B9PC9wPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YOKApuKApmB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMj57YOiEmuaJi+aetuWRveS7pOa4heWNlWB9PC9oMj5cbiAgICA8cD57YOS9oOWPr+S7peWcqOWRveS7pOihjOS4reeugOWNlei+k+WFpSBgfTxpbmxpbmVDb2RlIHBhcmVudE5hbWU9XCJwXCI+e2BvbW5pIC1oYH08L2lubGluZUNvZGU+e2Ag5p+l55yL5omA5pyJ55qE5ZG95Luk77yaYH08L3A+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YCAgQ29tbWFuZHM6XG5cbiAgICBpbml0IFtzdHJhdGVneV0gW29wdGlvbnNdICDliJ3lp4vljJbkvaDnmoTpobnnm67vvIxbc3RyYXRlZ3ko562W55WlKV0g5Y+v55So5pivc3RhYmxlKOm7mOiupCkg5oiWIGxhc3RzdFxuICAgIGRldiBbb3B0aW9uc10gICAgICAgICAgICAgIG9tbmkgZGV2IC1wIFtwb3J0XVxuICAgIG5ldyA8bW9kdWxlPiBbb3B0aW9uc10gICAgIG9tbmkgbmV3IFttb2R1bGVdIFstZiB8IC1jXVxuICAgIGJ1aWxkICAgICAgICAgICAgICAgICAgICAgIOagueaNriBbb21uaS5jb25maWcuanNdIOaJk+WMheaehOW7uuS9oOeahOmhueebrlxuICAgIHJlbGVhc2UgW29wdGlvbnNdICAgICAgICAgIOagueaNriBbb21uaS5jb25maWcuanNdIOWPkeW4g+S9oOeahOmhueebrlxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGgzPntgb21uaSBpbml0YH08L2gzPlxuICAgIDxoND57YOWIneWni+WMluS4gOS4qumhueebrmB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19Pntgb21uaSBpbml0XG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2DnlKjmnIDmlrDnmoTkvp3otZZAbGFzdGVzdOWIneWni+WMlumhueebrmB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19Pntgb21uaSBpbml0IGxhc3Rlc3RcbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoND57YOWIneWni+WMlumhueebruS9huS4jeWuieijheS+nei1lmB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19Pntgb21uaSBpbml0IC1uXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2DlpZfnlKjmqKHmnb/kuIDplK7liJ3lp4vljJbpobnnm65gfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YG9tbmkgaW5pdCAtdCBbcHJvamVjdE5hbWVdXG5gfTwvY29kZT48L3ByZT5cbiAgICA8cD57YG9yYH08L3A+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YG9tbmkgaW5pdCAtLWVudGlyZSBbcHJvamVjdE5hbWVdXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2DpgInpoblgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YOS9v+eUqDogb21uaSBpbml0IFtzdHJhdGVneV0gW29wdGlvbnNdXG5cbkFyZ3VtZW50czpcblxuICBzdHJhdGVneSAgICAgICAgICAgICAgICAgc3RhYmxlIG9yIGxhdGVzdFxuXG4gIE9wdGlvbnM6XG4gICAgLXJiLCAtLXJlYWN0X2Jhc2ljIFtuYW1lXSAgICAgICDliJvlu7rkuIDkuKrmnIDln7rmnKznmoQgUmVhY3Qg5Y2V6aG15bqU55SoXG4gICAgLXJzLCAtLXJlYWN0X3N0YW5kYXJkIFtuYW1lXSAgICDliJvlu7rkuIDkuKrmoIflh4bnmoQgUmVhY3Qg5Y2V6aG15bqU55SoXG4gICAgLXJlLCAtLXJlYWN0X2VudGlyZSBbbmFtZV0gICAgICDliJvlu7rkuIDkuKrlhajph4/nmoQgUmVhY3Qg5Y2V6aG15bqU55SoXG4gICAgLXJTLCAtLXJlYWN0X3NzciBbbmFtZV0gICAgICAgICDliJvlu7rkuIDkuKogUmVhY3QgU1NSIOW6lOeUqFxuICAgIC1yYywgLS1yZWFjdF9jb21wb25lbnRzIFtuYW1lXSAg5Yib5bu65LiA5LiqIFJlYWN0IOe7hOS7tuW6k1xuICAgIC10LCAtLXRvb2xraXQgW25hbWVdICAgICAgICAgICAg5Yib5bu65LiA5Liq5bel5YW35bqTXG4gICAgLW4sIC0tbm8taW5zdGFsbCAgICAgICAgICAgICAgICDliJ3lp4vljJbpobnnm67kuI3lronoo4Xku7vkvZXkvp3otZZcbiAgICAtUCwgLS1wYXRoIDxwYXRoPiAgICAgICAgICAgICAgIOWIm+W7uumhueebrueahOW3peS9nOi3r+W+hFxuICAgIC1oLCAtLWhlbHAgICAgICAgICAgICAgICBvdXRwdXQgdXNhZ2UgaW5mb3JtYXRpb25cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoMz57YG9tbmkgZGV2YH08L2gzPlxuICAgIDxoND57YOWQhOenjeeUqOazlWB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoXCJcbiAgICAgIH19PntgICBvbW5pIGRldlxuXG4gIG9tbmkgZGV2IC1wIDgyMDAgLy8g5ZCv5Yqo5LiA5Liq56uv5Y+j5Y+35Li6IDgyMDAg55qE5byA5Y+R5pyN5YqhXG5cbiAgb21uaSBkZXYgLWggZGV2LmRvbWFpbi5jb20gLy8g5ZCv5Yqo5LiA5LiqaG9zdOS4uiBkZXYuZG9tYWluLmNvbSDnmoTlvIDlj5HmnI3liqFcblxuXG4gIG9tbmkgZGV2IC1wIDgyMDAgLWggZGV2LmRvbWFpbi5jb20gLy8g5ZCv5Yqo5LiA5Liq56uv5Y+j5Y+35Li6IDgyMDAg5LiUIGhvc3TkuLogZGV2LmRvbWFpbi5jb20g55qEIOW8gOWPkeacjeWKoVxuXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2DpgInpoblgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YOS9v+eUqDogb21uaSBkZXYgW29wdGlvbnNdXG5cbm9tbmkgZGV2IFstcCA8cG9ydD5dIFstSCA8aG9zdD5dIFstUCA8cGF0aD5dXG5cbk9wdGlvbnM6XG4gIC1wLCAtLXBvcnQgPHBvcnQ+ICAgICAg5qC55o2u5oyH5a6a55qE56uv5Y+j5Y+35ZCv5Yqo5byA5Y+R5pyN5YqhXG4gIC1ILCAtLWhvc3RuYW1lIDxob3N0PiAg5qC55o2u5oyH5a6a55qEaG9zdG5hbWXlkK/liqjlvIDlj5HmnI3liqFcbiAgLVAsIC0tcGF0aCA8cGF0aD4gICAgICDlkK/liqjlvIDlj5HmnI3liqHnmoTlt6XkvZzot6/lvoRcbiAgLWgsIC0taGVscCAgICAgICAgICAgICBvdXRwdXQgdXNhZ2UgaW5mb3JtYXRpb25cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoMz57YG9tbmkgc3RhcnRgfTwvaDM+XG4gICAgPHA+e2DnlKjms5XlkowgYH08aW5saW5lQ29kZSBwYXJlbnROYW1lPVwicFwiPntgb21uaSBkZXZgfTwvaW5saW5lQ29kZT57YCDnlaXlkIxgfTwvcD5cbiAgICA8aDQ+e2DpgInpoblgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YOS9v+eUqDogb21uaSBzdGFydCBbb3B0aW9uc11cblxub21uaSBzdGFydCBbLXAgPHBvcnQ+XSBbLUggPGhvc3Q+XSBbLVAgPHBhdGg+XVxuXG5PcHRpb25zOlxuICAtcCwgLS1wb3J0IDxwb3J0PiAgICAgIOagueaNruaMh+WumueahOerr+WPo+WPt+WQr+WKqOeUn+S6p+acjeWKoVxuICAtSCwgLS1ob3N0bmFtZSA8aG9zdD4gIOagueaNruaMh+WumueahGhvc3RuYW1l5ZCv5Yqo55Sf5Lqn5pyN5YqhXG4gIC1QLCAtLXBhdGggPHBhdGg+ICAgICAg5ZCv5Yqo55Sf5Lqn5pyN5Yqh55qE5bel5L2c6Lev5b6EXG4gIC1oLCAtLWhlbHAgICAgICAgICAgICAgb3V0cHV0IHVzYWdlIGluZm9ybWF0aW9uXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDM+e2BvbW5pIG5ld2B9PC9oMz5cbiAgICA8aDQ+e2DlkITnp43nlKjms5VgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaFwiXG4gICAgICB9fT57YCAgb21uaSBuZXdcblxuICBvbW5pIG5ldyBCdXR0b24gLy8g5paw5bu65LiA5Liq5ZCN5Li6IEJ1dHRvbiDnmoTnu4Tku7ZcblxuICBvbW5pIG5ldyAtYyAvLyDmlrDlu7rkuIDkuKrnsbvnu4Tku7ZcblxuICBvbW5pIG5ldyAtYyBCdXR0b24gLy8g5paw5bu65LiA5Liq5ZCN5Li6IEJ1dHRvbiDnmoTnsbvnu4Tku7ZcbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoND57YOmAiemhuWB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19Pntg5L2/55SoOiBvbW5pIG5ldyBbbmFtZV0gW29wdGlvbnNdXG5cbm9tbmkgbmV3IFtuYW1lXSBbLWYgfCAtY10gWy1QIDxwYXRoPl1cblxuQXJndW1lbnRzOlxuXG4gIG1vZHVsZSAgICAgICAgICAg5Y+v6YCJ77yB57uE5Lu25ZCN56ew44CCXG5cbk9wdGlvbnM6XG4gIC1mLCAtLWZ1bmN0aW9uICAgICDliJvlu7rkuIDkuKrlh73mlbDnu4Tku7ZcbiAgLWMsIC0tY2xhc3MgICAgICAgIOWIm+W7uuS4gOS4quexu+e7hOS7tlxuICAtUCwgLS1wYXRoIDxwYXRoPiAg5Yib5bu657uE5Lu255qE5bel5L2c6Lev5b6EXG4gIC1oLCAtLWhlbHAgICAgICAgIG91dHB1dCB1c2FnZSBpbmZvcm1hdGlvblxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGgzPntgb21uaSBidWlsZGB9PC9oMz5cbiAgICA8aDQ+e2DlkITnp43nlKjms5VgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaFwiXG4gICAgICB9fT57YCAgb21uaSBidWlsZFxuXG4gIG9tbmkgYnVpbGQgLW4gLy8g5p6E5bu65pe26YG/5byA5omA5pyJ6aKE5qCh6aqMXG5cbiAgb21uaSBidWlsZCAtYyAkcGF0aFRvL2J1aWxkLmNvbmZpZy5qcyAvLyDmoLnmja7mjIflrprot6/lvoTmnoTlu7rpobnnm65cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoND57YOmAiemhuWB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19Pntg5L2/55SoOiBvbW5pIGJ1aWxkIFtvcHRpb25zXVxuXG7moLnmja4gW29tbmkuY29uZmlnLmpzXSDnmoQgYnVpbGQg5a2X5q615p6E5bu66aG555uuXG5cbk9wdGlvbnM6XG4gIC1jLCAtLWNvbmZpZyA8cGF0aD4gIOaMh+WumuaehOW7uueahOmFjee9ruaWh+S7tui3r+W+hFxuICAtbiwgLS1uby12ZXJpZnkgICAgICDnu5Xov4fmiYDmnInpooTmo4Dnm7TmjqXmnoTlu7pcbiAgLVAsIC0tcGF0aCA8cGF0aD4gICAg5p6E5bu655qE5bel5L2c6Lev5b6EXG4gIC1oLCAtLWhlbHAgICAgICAgICAgIG91dHB1dCB1c2FnZSBpbmZvcm1hdGlvblxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGgzPntgb21uaSByZWxlYXNlYH08L2gzPlxuICAgIDxoND57YOWQhOenjeeUqOazlWB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoXCJcbiAgICAgIH19PntgICBvbW5pIHJlbGVhc2VcblxuICBvbW5pIHJlbGVhc2UgLW4gLy8g5Y+R5biD5pe26YG/5byA5omA5pyJ6aKE5qCh6aqMXG5cbiAgb21uaSByZWxlYXNlIC1hIC8vIOWPkeW4g+aXtuiHquWKqOi/reS7o+eJiOacrOWPt1xuXG4gIG9tbmkgcmVsZWFzZSAtaSAvLyDlj5HluIPml7blv73nlaXniYjmnKzlj7fnmoTov63ku6NcblxuICBvbW5pIHJlbGVhc2UgLW0gLy8g5Y+R5biD5pe25omL5Yqo6L6T5YWl6L+t5Luj54mI5pys5Y+3XG5cbiAgb21uaSByZWxlYXNlIC10IC8vIOWPkeW4g+aXtuaMh+WumiB0YWcg5ZCNXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2DpgInpoblgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YOS9v+eUqDogb21uaSByZWxlYXNlIFtvcHRpb25zXVxuXG7moLnmja4gW29tbmkuY29uZmlnLmpzXSDnmoQgcmVsZWFzZSDlrZfmrrXlj5HluIPpobnnm65cblxuT3B0aW9uczpcbiAgLWEsIC0tYXV0b21hdGljICAgICAgICAg5Y+R5biD5bm26Ieq5Yqo6L+t5Luj54mI5pys5Y+3XG4gIC1pLCAtLWlnbm9yZSAgICAgICAgICAgIOWPkeW4g+W5tuW/veinhueJiOacrOWPt+eahOi/reS7o1xuICAtbSwgLS1tYW51YWwgPHZlcnNpb24+ICDlj5HluIPlubbmiYvliqjmjIflrprniYjmnKzlj7dcbiAgLXQsIC0tdGFnIDx0YWc+ICAgICAgICAg5Y+R5biD5pe25oyH5a6adGFnXG4gIC1uLCAtLW5vLXZlcmlmeSAgICAgICAgIOe7lei/h+aJgOacieeahOmihOajgOebtOaOpeWPkeW4g1xuICAtUCwgLS1wYXRoIDxwYXRoPiAgICAgICDlj5HluIPnmoTlt6XkvZzot6/lvoRcbiAgLWgsIC0taGVscCAgICAgICAgICAgICAgb3V0cHV0IHVzYWdlIGluZm9ybWF0aW9uXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDI+e2DlhbPkuo4g44CMb21uaS5jb25maWcuanPjgI0g6YWN572u5paH5Lu2YH08L2gyPlxuICAgIDxoMz57YHR5cGUg6aG555uu57G75Z6LYH08L2gzPlxuICAgIDxwPntgT01OSSDkvJrmoLnmja7kuI3lkIznmoTpobnnm67nsbvlnovlhrPlrprmlbTkuKrliJ3lp4vljJbjgIHmnoTlu7rjgIHliJvlu7rmqKHmnb/nmoTov4fnqItgfTwvcD5cbiAgICA8cD57YOebruWJjeaUr+aMgeeahOmhueebruexu+Wei+acie+8mmB9PC9wPlxuICAgIDx1bD5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzcGEtcmVhY3QgLSBSZWFjdOWNlemhteW6lOeUqGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bzc3ItcmVhY3QgLSBSZWFjdOacjeWKoeerr+a4suafk+W6lOeUqGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bjb21wb25lbnQtcmVhY3QgLSBSZWFjdOe7hOS7tuW6k2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2B0b29sa2l0IC0gU0RL5bel5YW35YyFYH08L3A+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+XG4gICAgPGgzPntgZGV2IOW8gOWPkeacjeWKoWB9PC9oMz5cbiAgICA8cD57YOW8gOWPkeacjeWKoeWfuuS6jmV4cHJlc3PvvIzmkK3phY0gd2VicGFjay1kZXYtbWlkZGxld2FyZeOAgXdlYnBhY2staG90LW1pZGRsZXdhcmXjgIFodHRwLXByb3h5LW1pZGRsZXdhcmUg562J5Lit6Ze05Lu277yM5a6e546w5LqG54Ot5pu05paw44CB5o6l5Y+j5Luj55CG562J5bi455So5Yqf6IO977yM5bm25o+Q5L6b5LqG5Lit6Ze05Lu255qE6Ieq5a6a5LmJ44CB56uv5Y+j5Y+344CBbG9n5pel5b+X6L6T5Ye657qn5Yir44CBd2VicGFja+mFjee9ruetieS4quaAp+WMluWumuWItuaWueahiOOAgmB9PC9wPlxuICAgIDx1bD5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BtaWRkbGV3YXJlIC0g5Lit6Ze05Lu26YWN572u77yM5Y+C6ICD5LiL6Z2i8J+Rh+eahOexu+Wei++8mmB9PC9wPlxuICAgICAgICA8cHJlIHBhcmVudE5hbWU9XCJsaVwiPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS10c1wiXG4gICAgICAgICAgfX0+e2B7XG4gIHJvdXRlOiBzdHJpbmc7XG4gIGNhbGxiYWNrOiAocmVxOiBhbnksIHJlczogYW55KSA9PiBQcm9taXNlPHZvaWQ+O1xufVxuYH08L2NvZGU+PC9wcmU+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgICBvcmB9PC9wPlxuICAgICAgICA8cHJlIHBhcmVudE5hbWU9XCJsaVwiPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS10c1wiXG4gICAgICAgICAgfX0+e2AocGFyYW1zOiB7XG4gIGlwOiBzdHJpbmc7XG4gIHBvcnQ6IG51bWJlcjtcbiAgaG9zdD86IHN0cmluZztcbiAgbG9nTGV2ZWw6IExPR0xFVkVMO1xuICBwcm94eUNvbmZpZz86IChQcm94eUl0ZW0gfCBQcm94eUZuKVtdO1xufSkgPT4ge1xuICByb3V0ZTogc3RyaW5nO1xuICBjYWxsYmFjazogKHJlcTogYW55LCByZXM6IGFueSkgPT4gUHJvbWlzZTx2b2lkPjtcbn1cbmB9PC9jb2RlPjwvcHJlPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2B3ZWJwYWNrIC0g5byA5Y+R5pyN5Yqh56uvd2VicGFja+mFjee9rmB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bwcm94eSAtIOW8gOWPkeacjeWKoeS7o+eQhumFjee9rmB9PC9wPlxuICAgICAgICA8cHJlIHBhcmVudE5hbWU9XCJsaVwiPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS10c1wiXG4gICAgICAgICAgfX0+e2B7XG4gIHJvdXRlOiAnL2FwaScsIC8vIOS7o+eQhkFQSeeahOacrOWcsOacjeWKoeeahOWcsOWdgFxuICBjb25maWc6IHtcbiAgICB0YXJnZXQ6ICdodHRwOi8vd3d3LmFwaS5jb20vYXBpJywgLy8g5Luj55CGQVBJ55qE5a6e6ZmF5Zyw5Z2AXG4gICAgY2hhbmdlT3JpZ2luOiB0cnVlIC8vIOaYr+WQpuaUueWPmGhvc3RcbiAgfVxufVxuYH08L2NvZGU+PC9wcmU+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgICBvcmB9PC9wPlxuICAgICAgICA8cHJlIHBhcmVudE5hbWU9XCJsaVwiPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS10c1wiXG4gICAgICAgICAgfX0+e2AocGFyYW1zOiB7XG4gIGlwOiBzdHJpbmc7XG4gIHBvcnQ6IG51bWJlcjtcbiAgaG9zdD86IHN0cmluZztcbiAgbG9nTGV2ZWw6IExPR0xFVkVMO1xuICBtaWRkbGV3YXJlQ29uZmlnPzogKE1pZGRsZXdhcmVJdGVtIHwgTWlkZGxld2FyZUZuKVtdO1xufSkgPT4ge1xuICByb3V0ZTogc3RyaW5nO1xuICBjb25maWc6IENvbmZpZztcbn1cbmB9PC9jb2RlPjwvcHJlPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YCAg5pu05aSa6YWN572u6K+m6KeBIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9naXRodWIuY29tL2NoaW11cmFpL2h0dHAtcHJveHktbWlkZGxld2FyZVwiXG4gICAgICAgICAgfX0+e2BodHRwLXByb3h5LW1pZGRsZXdhcmVgfTwvYT48L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHBvcnQgLSDlvIDlj5HmnI3liqHlkK/liqjnmoTnq6/lj6Plj7dgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgaG9zdCAtIOW8gOWPkeacjeWKoeWQr+WKqOeahGhvc3RgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgaHR0cHMgLSDlvIDlj5HmnI3liqHku6VodHRwc+WNj+iuruWQr+WKqO+8jOWPr+iHquWumuS5iSBgfTxpbmxpbmVDb2RlIHBhcmVudE5hbWU9XCJwXCI+e2BrZXlgfTwvaW5saW5lQ29kZT57YCDlkowgYH08aW5saW5lQ29kZSBwYXJlbnROYW1lPVwicFwiPntgY2VydGB9PC9pbmxpbmVDb2RlPjwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgc2VydmVyVHlwZSAtIOW8gOWPkeacjeWKoeeahOexu+Wei2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bsb2dMZXZlbCAtIOW8gOWPkeacjeWKoeaXpeW/l+i+k+WHuuetiee6p++8jOWPr+mAiSAnZGVidWcn44CBJ2luZm8n44CBJ3dhcm4n44CBJ2Vycm9yJ+OAgSdzaWxlbnQnYH08L3A+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+XG4gICAgPGgzPntgYnVpbGQg5p6E5bu66YWN572uYH08L2gzPlxuICAgIDx1bD5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BhdXRvUmVsZWFzZSAtIOaehOW7uuWujOaIkOWQjuaYr+WQpuiHquWKqOWPkeW4g2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzcmNEaXIgLSDmnoTlu7rotYTmupDovpPlhaXot6/lvoRgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgb3V0RGlyIC0g5p6E5bu657uT5p6c6L6T5Ye66Lev5b6EYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGVzbURpciAtIOaehOW7uue7k+aenOi+k+WHuui3r+W+hCjnrKblkIhlczYgbW9kdWxl6KeE6IyDKWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BoYXNoIC0g5p6E5bu655qE6LWE5rqQ5piv5ZCm5Yqg5LiKaGFzaO+8jOWPr+mAiSAnY29udGVudGhhc2gn44CBJ2NodW5raGFzaCfjgIEnaGFzaCco5Lyg5YWldHJ1ZeWImeaYr2NvbnRlbnRoYXNoKWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bjb25maWd1cmF0aW9uIC0g5p6E5bu66Zi25q6155qE6Ieq5a6a5LmJ6YWN572u5Zue6LCD77yM6L+U5Zue6Ieq5a6a5LmJ55qE6YWN572uYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHJlc2VydmUgLSDphY3nva7mnKrnu4/ov4fmiZPljIXvvIzkvYbpnIDopoHkv53nlZnov5vmnoTlu7rnu5PmnpznmoTotYTmupBgfTwvcD5cbiAgICAgICAgPHVsIHBhcmVudE5hbWU9XCJsaVwiPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgc3R5bGUgLSDmnoTlu7rnu5PmnpzmmK/lkKbkv53nlZnmoLflvI/mlofku7ZgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgYXNzZXRzIC0g5p6E5bu657uT5p6c5L+d55WZ5YW25LuW6LWE5rqQ55qE6Lev5b6EYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgPC91bD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgcHJlZmxpZ2h0IC0g5p6E5bu65YmN55qE6aOe6KGM5qOA5p+lYH08L3A+XG4gICAgICAgIDx1bCBwYXJlbnROYW1lPVwibGlcIj5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHR5cGVzY3JpcHQgLSDmmK/lkKblpITnkIZ0c+aIlnRzeOaWh+S7tmB9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2B0ZXN0IC0g5piv5ZCm6L+b6KGM5Y2V5YWD5rWL6K+VIGB9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Blc2xpbnQgLSDmmK/lkKbov5vooYxlc2xpbnTmo4DmtYtgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgcHJldHRpZXIgLSDmmK/lkKbov5vooYxwcmV0dGllcuajgOa1i2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzdHlsZWxpbnQgLSDmmK/lkKbov5vooYxzdHlsZWxpbnTmo4DmtYtgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICA8L3VsPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YHJlbGVhc2VgfTwvaDM+XG4gICAgPHVsPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGdpdCAtIOWPkeW4g+eahGdpdOS7k+W6k+WcsOWdgGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BucG0gLSDlj5HluIPnmoRucG3ku5PlupPlnLDlnYBgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgcHJlZmxpZ2h0IC0g5Y+R5biD5YmN55qE6aOe6KGM5qOA5p+lYH08L3A+XG4gICAgICAgIDx1bCBwYXJlbnROYW1lPVwibGlcIj5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHRlc3QgLSDlj5HluIPliY3mmK/lkKbov5vooYzljZXlhYPmtYvor5VgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgZXNsaW50IC0g5Y+R5biD5YmN5piv5ZCm6L+b6KGMZXNsaW505qOA5rWLYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHByZXR0aWVyIC0g5Y+R5biD5YmN5piv5ZCm6L+b6KGMcHJldHRpZXLmo4DmtYtgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgc3R5bGVsaW50IC0g5Y+R5biD5YmN5piv5ZCm6L+b6KGMc3R5bGVsaW505qOA5rWLYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGNvbW1pdGxpbnQgLSDlj5HluIPliY3mmK/lkKbov5vooYxjb21taXRsaW505qOA5rWLYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGJyYW5jaCAtIOWPkeW4g+WJjei/m+ihjOWIhuaUr+ajgOa1i++8jOiuvue9ruS4uuepuuWtl+espuS4suWImeS4jeS8muajgOa1i2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgIDwvdWw+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+XG4gICAgPGgzPntgdGVtcGxhdGUg5paw5bu65qih5p2/6YWN572uYH08L2gzPlxuICAgIDx1bD5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Byb290IC0g55Sf5oiQ5qih5p2/55qE5qC56Lev5b6EYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHR5cGVzY3JpcHQgLSDmmK/lkKbliJvlu7p0c+aWh+S7tmB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2B0ZXN0IC0g5piv5ZCm5Yib5bu65Y2V5YWD5rWL6K+V5paH5Lu2YH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHN0eWxlc2hlZXQgLSDmoLflvI/mlofku7bnsbvlnotgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgcmVhZG1lIC0gYH17YFt0cnVlLCAnbWR4J11gfXtgIChgfXtgW+aYr+WQpueUn+aIkFJlYWRNZeaWh+S7tiwg5Yib5bu6bWQg5oiWIG1keOaWh+S7tl1gfXtgKWB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YHBsdWdpbnNgfTwvaDM+XG4gICAgPHA+e2Dmj5Lku7bpm4blkIjvvIzmj5Lku7bpnIDmu6HotrPkuIvpnaLnmoTnsbvlnovvvJpgfTwvcD5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXRzXCJcbiAgICAgIH19PntgdHlwZSBPbW5pUGx1Z2luID0ge1xuICBuYW1lOiBzdHJpbmc7XG4gIHN0YWdlOiBQbHVnaW5TdGFnZTtcbiAgaGFuZGxlcjogUGx1Z2luSGFuZGxlcjtcbn07XG5cbnR5cGUgUGx1Z2luU3RhZ2UgPSAnbmV3JyB8ICdidWlsZCcgfCAncmVsZWFzZSc7XG5pbnRlcmZhY2UgUGx1Z2luSGFuZGxlciB7XG4gIChjb25maWc6IE9taXQ8T21uaUNvbmZpZywgJ3BsdWdpbnMnPik6IFByb21pc2U8YW55Pjtcbn1cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDwvTURYTGF5b3V0Pjtcbn1cblxuO1xuTURYQ29udGVudC5pc01EWENvbXBvbmVudCA9IHRydWU7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Docs/docs-cn.md\n");
+
+/***/ }),
+
+/***/ "./src/components/Docs/docs-en.md":
+/*!****************************************!*\
+  !*** ./src/components/Docs/docs-en.md ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return MDXContent; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/react */ \"@mdx-js/react\");\n/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__);\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n/* @jsx mdx */\n\nconst layoutProps = {};\nconst MDXLayout = \"wrapper\";\nfunction MDXContent(_ref) {\n  let {\n    components\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h1\", null, `Documentation`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h2\", null, `Project Type`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `SPA`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Based on `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reactjs.org/\"\n  }), `React`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Based on `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reacttraining.com/react-router/web/example/basic\"\n  }), `React-Router`), ` to implement front-end routing`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` to develop`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://webpack.js.org/\"\n  }), `webpack`), ` to package`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Comply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://eslint.org/\"\n  }), `eslint`), ` standard`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Comply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://stylelint.io/\"\n  }), `stylelint`), ` standard`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Apply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://prettier.io/docs/en/install.html\"\n  }), `prettier`), ` to format code`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Seamless support `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://github.com/css-modules/css-modules\"\n  }), `CSS Modules`), ` and global-css without extra configuration`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `SSR`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Based on `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reactjs.org/\"\n  }), `React`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Based on `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://nextjs.org/\"\n  }), `nextjs`), ` enterprise high performance node framework`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` to develop`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Support use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://koajs.com/\"\n  }), `koa`), ` to custom node server`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Search engine friendly `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96\"\n  }), `SEO`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `Component(library)`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Support multiple component library demo and document framework such as `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://storybook.js.org/\"\n  }), `storybook`), `, `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://docz.site/\"\n  }), `docz`), ` and `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://react-styleguidist.js.org/\"\n  }), `styleguidist`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Based on `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://reactjs.org/\"\n  }), `React`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` to develop`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://gulpjs.com/\"\n  }), `gulp`), ` to package`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Comply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://eslint.org/\"\n  }), `eslint`), ` standard`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Comply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://stylelint.io/\"\n  }), `stylelint`), ` standard`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Comply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://commitlint.js.org/\"\n  }), `commitlint`), ` standard`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Apply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://prettier.io/docs/en/install.html\"\n  }), `prettier`), ` to format code`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `Toolkit`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    \"className\": \"contains-task-list\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://www.typescriptlang.org/\"\n  }), `typescript`), ` to develop`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Use `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://rollupjs.org/guide/en\"\n  }), `rollup`), ` to package`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Comply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://eslint.org/\"\n  }), `eslint`), ` standard`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", _extends({\n    parentName: \"ul\"\n  }, {\n    \"className\": \"task-list-item\"\n  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"input\", _extends({\n    parentName: \"p\"\n  }, {\n    \"type\": \"checkbox\",\n    \"checked\": true,\n    \"disabled\": true\n  })), ` `, `Apply `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://prettier.io/docs/en/install.html\"\n  }), `prettier`), ` to format code`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `……`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h2\", null, `Commands`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `You can input `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `omni -h`), ` in the command-line-tool to check all support commands：`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `  Commands:\n\n    init [options] [strategy]  initialize your project, [strategy] could be stable(default) or latest\n    dev [options]              omni dev [-p <port>] [-H <host>] [-P <path>]\n    start [options]            omni start [-p <port>] [-H <host>] [-P <path>]\n    new [options] [name]       omni new [name] [-f | -c] [-P <path>]\n    build [options]            build your project according to the [omni.config.js]'s build field\n    release [options]          publish your project according to the [omni.config.js]'s release field\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni init`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Initial your project by answer several questions`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Initial your project with lastest denpendencies`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init lastest\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Initial your project without install dependencies`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init -n\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Initial your project according to some template`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init -t [projectName]\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `or`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `omni init --react_entire [projectName]\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Options`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `Usage: omni init [strategy] [options]\n\ninitialize your project, [strategy] could be stable(default) or latest\n\nArguments:\n\n  strategy                 stable or latest\n\nOptions:\n  -rb, --react_basic [name]       create a basic React SPA project\n  -rs, --react_standard [name]    create a standard React SPA project\n  -re, --react_entire [name]      create a most versatile React SPA project\n  -rS, --react_ssr [name]         create a React component library\n  -rc, --react_components [name]  create a React component library\n  -t, --toolkit [name]            create a toolkit project\n  -n, --no-install                init project without install dependencies\n  -P, --path <path>               the workpath for init the project\n  -h, --help                      output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni dev`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Usage`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni dev\n\n  omni dev -p 8200 // Start a dev-server with port 8200\n\n  omni dev -h dev.domain.com // Start a dev-server with hostname dev.domain.com\n\n\n  omni dev -p 8200 -h dev.domain.com // Start a dev-server with port 8200 and hostname dev.domain.com\n\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Options`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `Usage: omni dev [options]\n\nomni dev [-p <port>] [-H <host>] [-P <path>]\n\nOptions:\n  -p, --port <port>      start the dev-server according to the specified port\n  -H, --hostname <host>  start the dev-server according to the specified hostname\n  -P, --path <path>      the workpath for start the dev-server\n  -h, --help             output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni start`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `The usage same as `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `omni dev`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Options`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `Usage: omni start [options]\n\nomni start [-p <port>] [-H <host>] [-P <path>]\n\nOptions:\n  -p, --port <port>      start the prod-server according to the specified port\n  -H, --hostname <host>  start the prod-server according to the specified hostname\n  -P, --path <path>      the workpath for start the prod-server\n  -h, --help             output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni new`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Usage`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni new\n\n  omni new Button // Create a component which name is Button\n\n  omni new -c // Create a component which type is class\n\n  omni new -c Button // Create a component which name is Button and type is class\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Options`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `Usage: omni new [name] [options]\n\nomni new [name] [-f | -c] [-P <path>]\n\nArguments:\n\n  name              optional! The name of component.\n\nOptions:\n  -f, --function    create a functional component\n  -c, --class       create a class component\n  -P, --path <path>  the workpath for create component\n  -h, --help        output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni build`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Usage`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni build\n\n  omni build -n // Build project bypass all pre-flight\n\n  omni build -c $pathTo/build.config.js // Build project according to specify config path\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Options`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `Usage: omni build [options]\n\nbuild your project according to the [omni.config.js]'s build field\n\nOptions:\n  -c, --config <path>  specify the path of config file\n  -n, --no-verify      bypass all pre-check before building\n  -P, --path <path>    the workpath for build project\n  -h, --help           output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `omni release`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Usage`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-sh\"\n  }), `  omni release\n\n  omni release -n // Release project bypass all pre-flight\n\n  omni release -a // Release project that automatic iteration version\n\n  omni release -i // Release project that ignore automatic iteration version\n\n  omni release -m // Release project that manual iteration version\n\n  omni release -t // Release project that the tag will add to npm-package\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h4\", null, `Options`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-shell\"\n  }), `Usage: omni release [options]\n\npublish your project according to the [omni.config.js]'s release field\n\nOptions:\n  -a, --automatic         automatic iteration version\n  -i, --ignore            ignore automatic iteration version\n  -m, --manual <version>  manual iteration version\n  -t, --tag <tag>         the tag will add to npm-package\n  -n, --no-verify         bypass unit-test eslint and stylelint check\n  -P, --path <path>       the workpath for release project\n  -h, --help              output usage information\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h1\", null, `About「omni.config.js」config file`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `type`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `OMNI will process of initialization, construction and template creation according to different project types`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `The project types:`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `spa-react - React single-page-application`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `ssr-react - React server-side-render application`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `component-react - React Component Library`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `toolkit - SDK Library `))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `dev`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `The dev-server based on express, realizing hot-update, api-proxy and other common functions. Provide personalized customization schemes such as middleware customization, port number, log output level and webpack configuration.`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `middleware - middleware configuration:`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `{\n  route: string;\n  callback: (req: any, res: any) => Promise<void>;\n}\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `  or`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `(params: {\n  ip: string;\n  port: number;\n  host?: string;\n  logLevel: LOGLEVEL;\n  proxyConfig?: (ProxyItem | ProxyFn)[];\n}) => {\n  route: string;\n  callback: (req: any, res: any) => Promise<void>;\n}\n`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `webpack - dev-server webpack configuration`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `proxy - dev-server proxy configuration`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `{\n  route: '/api', // Address of the local service for the proxy API\n  config: {\n    target: 'http://www.api.com/api', // The actual address of the proxy API\n    changeOrigin: true // whether change the host\n  }\n}\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `  or`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `(params: {\n  ip: string;\n  port: number;\n  host?: string;\n  logLevel: LOGLEVEL;\n  middlewareConfig?: (MiddlewareItem | MiddlewareFn)[];\n}) => {\n  route: string;\n  config: Config;\n}\n`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `  For more configuration, see `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://github.com/chimurai/http-proxy-middleware\"\n  }), `http-proxy-middleware`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `port - dev-server port`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `host - dev-server host`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `https - start dev-server with https protocol which could custom `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `key`), ` and `, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"inlineCode\", {\n    parentName: \"p\"\n  }, `cert`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `serverType - dev-server type`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `logLevel - The log-level which dev-server will apply, optional 'debug', 'info', 'warn', 'error', 'silent'`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `build`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `autoRelease - auto release project after build success`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `srcDir - the build source directory`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `outDir - the directory for compiled project`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `esmDir - es6 module compiled directory`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `hash - whether the hash tag add to building result, optional 'contenthash', 'chunkhash' and 'hash'(true equal 'contenthash')`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `configuration - The callback will be call in the build-process, you can return your custom build configuration`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `reserve - Configure resources that are not packaged but need to be kept in the build result`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `style - whether or not reserve the stylesheet files`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `assets - reserve other asset paths`)))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `preflight - the flight check before build`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `typescript - whether or not process the ts or tsx files`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `test - whether or not process unit-test`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `eslint - whether or not process eslint check`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `prettier - whether or not process prettier check`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `stylelint - whether or not process stylelint check`))))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `release`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `git - project git repo url`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `npm - npm depository url`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `preflight - the flight check before release`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", {\n    parentName: \"li\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `test - whether or not process unit-test`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `eslint - whether or not process eslint check`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `prettier - whether or not process prettier check`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `stylelint - whether or not process stylelint check`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `commitlint - whether or not process commitlint check`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `branch - only can release in this branch, set empty string to ignore this check`))))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `template`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"ul\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `root - the root directory for generate template`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `typescript - whether or not apply typescript`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `test - whether or not generate unit-test file`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `stylesheet - stylesheet type`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"li\", {\n    parentName: \"ul\"\n  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", {\n    parentName: \"li\"\n  }, `readme - `, `[true, 'mdx']`, ` (`, `[whether or not README.md, generate mdx or md file]`, `)`))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"h3\", null, `plugins`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"p\", null, `plugin must meet following types:`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"pre\", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__[\"mdx\"])(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-ts\"\n  }), `type OmniPlugin = {\n  name: string;\n  stage: PluginStage;\n  handler: PluginHandler;\n};\n\ntype PluginStage = 'new' | 'build' | 'release';\ninterface PluginHandler {\n  (config: Omit<OmniConfig, 'plugins'>): Promise<any>;\n}\n`)));\n}\n;\nMDXContent.isMDXComponent = true;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9Eb2NzL2RvY3MtZW4ubWQ/ZjMwNCJdLCJuYW1lcyI6WyJsYXlvdXRQcm9wcyIsIk1EWExheW91dCIsIk1EWENvbnRlbnQiLCJjb21wb25lbnRzIiwicHJvcHMiLCJpc01EWENvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFDQTtBQUNBO0FBRUE7O0FBSUEsTUFBTUEsV0FBVyxHQUFHLEVBQXBCO0FBR0EsTUFBTUMsU0FBUyxHQUFHLFNBQWxCO0FBQ2UsU0FBU0MsVUFBVCxPQUdaO0FBQUEsTUFIZ0M7QUFDakNDO0FBRGlDLEdBR2hDO0FBQUEsTUFERUMsS0FDRjs7QUFDRCxTQUFPLDBEQUFDLFNBQUQsZUFBZUosV0FBZixFQUFnQ0ksS0FBaEM7QUFBdUMsY0FBVSxFQUFFRCxVQUFuRDtBQUErRCxXQUFPLEVBQUM7QUFBdkUsTUFDTCxzRUFBTSxlQUFOLENBREssRUFFTCxzRUFBTSxjQUFOLENBRkssRUFHTCxzRUFBTSxLQUFOLENBSEssRUFJTCxnRUFBUTtBQUNOLGlCQUFhO0FBRFAsR0FBUixFQUdFO0FBQUksY0FBVSxFQUFDO0FBQWYsS0FBd0I7QUFDdEIsaUJBQWE7QUFEUyxHQUF4QixHQUdFO0FBQUcsY0FBVSxFQUFDO0FBQWQsS0FBbUI7QUFBTyxjQUFVLEVBQUM7QUFBbEIsS0FBMEI7QUFDekMsWUFBUSxVQURpQztBQUV6QyxlQUFXLElBRjhCO0FBR3pDLGdCQUFZO0FBSDZCLEdBQTFCLEVBQW5CLEVBSWUsR0FKZixFQUlvQixXQUpwQixFQUkrQjtBQUFHLGNBQVUsRUFBQztBQUFkLEtBQXNCO0FBQ2pELFlBQVE7QUFEeUMsR0FBdEIsR0FFeEIsT0FGd0IsQ0FKL0IsQ0FIRixDQUhGLEVBY0U7QUFBSSxjQUFVLEVBQUM7QUFBZixLQUF3QjtBQUN0QixpQkFBYTtBQURTLEdBQXhCLEdBR0U7QUFBRyxjQUFVLEVBQUM7QUFBZCxLQUFtQjtBQUFPLGNBQVUsRUFBQztBQUFsQixL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RUFBQztBQUFkLEtBQXFCLCtDQUFyQixDQURGLENBUEYsRUFVRTtBQUFJLGNBQVUsRUFBQztBQUFmLEtBQ0U7QUFBRyxjQUFVLEVBQUM7QUFBZCxLQUFxQiw4QkFBckIsQ0FERixDQVZGLEVBYUU7QUFBSSxjQUFVLEVBQUM7QUFBZixLQUNFO0FBQUcsY0FBVSxFQUFDO0FBQWQsS0FBcUIsV0FBckIsRUFBa0MsZUFBbEMsRUFBbUQsSUFBbkQsRUFBeUQscURBQXpELEVBQWdILEdBQWhILENBREYsQ0FiRixDQWhxQkssRUFpckJMLHNFQUFNLFNBQU4sQ0FqckJLLEVBa3JCTCxxRUFBSyxtQ0FBTCxDQWxyQkssRUFtckJMLHVFQUFLO0FBQU0sY0FBVSxFQUFDO0FBQWpCLEtBQTJCO0FBQzVCLGlCQUFhO0FBRGUsR0FBM0IsR0FFRTs7Ozs7Ozs7OztDQUZGLENBQUwsQ0FuckJLLENBQVA7QUFpc0JEO0FBRUQ7QUFDQUQsVUFBVSxDQUFDRyxjQUFYLEdBQTRCLElBQTVCIiwiZmlsZSI6Ii4vc3JjL2NvbXBvbmVudHMvRG9jcy9kb2NzLWVuLm1kLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgeyBtZHggfSBmcm9tICdAbWR4LWpzL3JlYWN0J1xuXG4vKiBAanN4IG1keCAqL1xuXG5cblxuY29uc3QgbGF5b3V0UHJvcHMgPSB7XG4gIFxufTtcbmNvbnN0IE1EWExheW91dCA9IFwid3JhcHBlclwiXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBNRFhDb250ZW50KHtcbiAgY29tcG9uZW50cyxcbiAgLi4ucHJvcHNcbn0pIHtcbiAgcmV0dXJuIDxNRFhMYXlvdXQgey4uLmxheW91dFByb3BzfSB7Li4ucHJvcHN9IGNvbXBvbmVudHM9e2NvbXBvbmVudHN9IG1keFR5cGU9XCJNRFhMYXlvdXRcIj5cbiAgICA8aDE+e2BEb2N1bWVudGF0aW9uYH08L2gxPlxuICAgIDxoMj57YFByb2plY3QgVHlwZWB9PC9oMj5cbiAgICA8aDM+e2BTUEFgfTwvaDM+XG4gICAgPHVsIHsuLi57XG4gICAgICBcImNsYXNzTmFtZVwiOiBcImNvbnRhaW5zLXRhc2stbGlzdFwiXG4gICAgfX0+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YEJhc2VkIG9uIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9yZWFjdGpzLm9yZy9cIlxuICAgICAgICAgIH19PntgUmVhY3RgfTwvYT48L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BCYXNlZCBvbiBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vcmVhY3R0cmFpbmluZy5jb20vcmVhY3Qtcm91dGVyL3dlYi9leGFtcGxlL2Jhc2ljXCJcbiAgICAgICAgICB9fT57YFJlYWN0LVJvdXRlcmB9PC9hPntgIHRvIGltcGxlbWVudCBmcm9udC1lbmQgcm91dGluZ2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtgVXNlIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly93d3cudHlwZXNjcmlwdGxhbmcub3JnL1wiXG4gICAgICAgICAgfX0+e2B0eXBlc2NyaXB0YH08L2E+e2AgdG8gZGV2ZWxvcGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtgVXNlIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly93ZWJwYWNrLmpzLm9yZy9cIlxuICAgICAgICAgIH19Pntgd2VicGFja2B9PC9hPntgIHRvIHBhY2thZ2VgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YENvbXBseSBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vZXNsaW50Lm9yZy9cIlxuICAgICAgICAgIH19PntgZXNsaW50YH08L2E+e2Agc3RhbmRhcmRgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YENvbXBseSBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vc3R5bGVsaW50LmlvL1wiXG4gICAgICAgICAgfX0+e2BzdHlsZWxpbnRgfTwvYT57YCBzdGFuZGFyZGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtgQXBwbHkgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3ByZXR0aWVyLmlvL2RvY3MvZW4vaW5zdGFsbC5odG1sXCJcbiAgICAgICAgICB9fT57YHByZXR0aWVyYH08L2E+e2AgdG8gZm9ybWF0IGNvZGVgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YFNlYW1sZXNzIHN1cHBvcnQgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2dpdGh1Yi5jb20vY3NzLW1vZHVsZXMvY3NzLW1vZHVsZXNcIlxuICAgICAgICAgIH19PntgQ1NTIE1vZHVsZXNgfTwvYT57YCBhbmQgZ2xvYmFsLWNzcyB3aXRob3V0IGV4dHJhIGNvbmZpZ3VyYXRpb25gfTwvcD5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2DigKbigKZgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgPC91bD5cbiAgICA8aDM+e2BTU1JgfTwvaDM+XG4gICAgPHVsIHsuLi57XG4gICAgICBcImNsYXNzTmFtZVwiOiBcImNvbnRhaW5zLXRhc2stbGlzdFwiXG4gICAgfX0+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YEJhc2VkIG9uIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9yZWFjdGpzLm9yZy9cIlxuICAgICAgICAgIH19PntgUmVhY3RgfTwvYT48L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BCYXNlZCBvbiBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vbmV4dGpzLm9yZy9cIlxuICAgICAgICAgIH19PntgbmV4dGpzYH08L2E+e2AgZW50ZXJwcmlzZSBoaWdoIHBlcmZvcm1hbmNlIG5vZGUgZnJhbWV3b3JrYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BVc2UgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3d3dy50eXBlc2NyaXB0bGFuZy5vcmcvXCJcbiAgICAgICAgICB9fT57YHR5cGVzY3JpcHRgfTwvYT57YCB0byBkZXZlbG9wYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BTdXBwb3J0IHVzZSBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8va29hanMuY29tL1wiXG4gICAgICAgICAgfX0+e2Brb2FgfTwvYT57YCB0byBjdXN0b20gbm9kZSBzZXJ2ZXJgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YFNlYXJjaCBlbmdpbmUgZnJpZW5kbHkgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3poLndpa2lwZWRpYS5vcmcvd2lraS8lRTYlOTAlOUMlRTUlQjAlOEIlRTUlQkMlOTUlRTYlOTMlOEUlRTYlOUMlODAlRTQlQkQlQjMlRTUlOEMlOTZcIlxuICAgICAgICAgIH19PntgU0VPYH08L2E+PC9wPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YOKApuKApmB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YENvbXBvbmVudChsaWJyYXJ5KWB9PC9oMz5cbiAgICA8dWwgey4uLntcbiAgICAgIFwiY2xhc3NOYW1lXCI6IFwiY29udGFpbnMtdGFzay1saXN0XCJcbiAgICB9fT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtgU3VwcG9ydCBtdWx0aXBsZSBjb21wb25lbnQgbGlicmFyeSBkZW1vIGFuZCBkb2N1bWVudCBmcmFtZXdvcmsgc3VjaCBhcyBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vc3Rvcnlib29rLmpzLm9yZy9cIlxuICAgICAgICAgIH19Pntgc3Rvcnlib29rYH08L2E+e2AsIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9kb2N6LnNpdGUvXCJcbiAgICAgICAgICB9fT57YGRvY3pgfTwvYT57YCBhbmQgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3JlYWN0LXN0eWxlZ3VpZGlzdC5qcy5vcmcvXCJcbiAgICAgICAgICB9fT57YHN0eWxlZ3VpZGlzdGB9PC9hPjwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YEJhc2VkIG9uIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9yZWFjdGpzLm9yZy9cIlxuICAgICAgICAgIH19PntgUmVhY3RgfTwvYT48L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BVc2UgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3d3dy50eXBlc2NyaXB0bGFuZy5vcmcvXCJcbiAgICAgICAgICB9fT57YHR5cGVzY3JpcHRgfTwvYT57YCB0byBkZXZlbG9wYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BVc2UgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2d1bHBqcy5jb20vXCJcbiAgICAgICAgICB9fT57YGd1bHBgfTwvYT57YCB0byBwYWNrYWdlYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BDb21wbHkgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2VzbGludC5vcmcvXCJcbiAgICAgICAgICB9fT57YGVzbGludGB9PC9hPntgIHN0YW5kYXJkYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BDb21wbHkgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3N0eWxlbGludC5pby9cIlxuICAgICAgICAgIH19Pntgc3R5bGVsaW50YH08L2E+e2Agc3RhbmRhcmRgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJ0YXNrLWxpc3QtaXRlbVwiXG4gICAgICB9fT5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+PGlucHV0IHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwidHlwZVwiOiBcImNoZWNrYm94XCIsXG4gICAgICAgICAgICBcImNoZWNrZWRcIjogdHJ1ZSxcbiAgICAgICAgICAgIFwiZGlzYWJsZWRcIjogdHJ1ZVxuICAgICAgICAgIH19PjwvaW5wdXQ+e2AgYH17YENvbXBseSBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vY29tbWl0bGludC5qcy5vcmcvXCJcbiAgICAgICAgICB9fT57YGNvbW1pdGxpbnRgfTwvYT57YCBzdGFuZGFyZGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcInRhc2stbGlzdC1pdGVtXCJcbiAgICAgIH19PlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj48aW5wdXQgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJ0eXBlXCI6IFwiY2hlY2tib3hcIixcbiAgICAgICAgICAgIFwiY2hlY2tlZFwiOiB0cnVlLFxuICAgICAgICAgICAgXCJkaXNhYmxlZFwiOiB0cnVlXG4gICAgICAgICAgfX0+PC9pbnB1dD57YCBgfXtgQXBwbHkgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3ByZXR0aWVyLmlvL2RvY3MvZW4vaW5zdGFsbC5odG1sXCJcbiAgICAgICAgICB9fT57YHByZXR0aWVyYH08L2E+e2AgdG8gZm9ybWF0IGNvZGVgfTwvcD5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2DigKbigKZgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgPC91bD5cbiAgICA8aDM+e2BUb29sa2l0YH08L2gzPlxuICAgIDx1bCB7Li4ue1xuICAgICAgXCJjbGFzc05hbWVcIjogXCJjb250YWlucy10YXNrLWxpc3RcIlxuICAgIH19PlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BVc2UgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3d3dy50eXBlc2NyaXB0bGFuZy5vcmcvXCJcbiAgICAgICAgICB9fT57YHR5cGVzY3JpcHRgfTwvYT57YCB0byBkZXZlbG9wYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BVc2UgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL3JvbGx1cGpzLm9yZy9ndWlkZS9lblwiXG4gICAgICAgICAgfX0+e2Byb2xsdXBgfTwvYT57YCB0byBwYWNrYWdlYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BDb21wbHkgYH08YSBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcImhyZWZcIjogXCJodHRwczovL2VzbGludC5vcmcvXCJcbiAgICAgICAgICB9fT57YGVzbGludGB9PC9hPntgIHN0YW5kYXJkYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwidGFzay1saXN0LWl0ZW1cIlxuICAgICAgfX0+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPjxpbnB1dCBwYXJlbnROYW1lPVwicFwiIHsuLi57XG4gICAgICAgICAgICBcInR5cGVcIjogXCJjaGVja2JveFwiLFxuICAgICAgICAgICAgXCJjaGVja2VkXCI6IHRydWUsXG4gICAgICAgICAgICBcImRpc2FibGVkXCI6IHRydWVcbiAgICAgICAgICB9fT48L2lucHV0PntgIGB9e2BBcHBseSBgfTxhIHBhcmVudE5hbWU9XCJwXCIgey4uLntcbiAgICAgICAgICAgIFwiaHJlZlwiOiBcImh0dHBzOi8vcHJldHRpZXIuaW8vZG9jcy9lbi9pbnN0YWxsLmh0bWxcIlxuICAgICAgICAgIH19PntgcHJldHRpZXJgfTwvYT57YCB0byBmb3JtYXQgY29kZWB9PC9wPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YOKApuKApmB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMj57YENvbW1hbmRzYH08L2gyPlxuICAgIDxwPntgWW91IGNhbiBpbnB1dCBgfTxpbmxpbmVDb2RlIHBhcmVudE5hbWU9XCJwXCI+e2BvbW5pIC1oYH08L2lubGluZUNvZGU+e2AgaW4gdGhlIGNvbW1hbmQtbGluZS10b29sIHRvIGNoZWNrIGFsbCBzdXBwb3J0IGNvbW1hbmRz77yaYH08L3A+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YCAgQ29tbWFuZHM6XG5cbiAgICBpbml0IFtvcHRpb25zXSBbc3RyYXRlZ3ldICBpbml0aWFsaXplIHlvdXIgcHJvamVjdCwgW3N0cmF0ZWd5XSBjb3VsZCBiZSBzdGFibGUoZGVmYXVsdCkgb3IgbGF0ZXN0XG4gICAgZGV2IFtvcHRpb25zXSAgICAgICAgICAgICAgb21uaSBkZXYgWy1wIDxwb3J0Pl0gWy1IIDxob3N0Pl0gWy1QIDxwYXRoPl1cbiAgICBzdGFydCBbb3B0aW9uc10gICAgICAgICAgICBvbW5pIHN0YXJ0IFstcCA8cG9ydD5dIFstSCA8aG9zdD5dIFstUCA8cGF0aD5dXG4gICAgbmV3IFtvcHRpb25zXSBbbmFtZV0gICAgICAgb21uaSBuZXcgW25hbWVdIFstZiB8IC1jXSBbLVAgPHBhdGg+XVxuICAgIGJ1aWxkIFtvcHRpb25zXSAgICAgICAgICAgIGJ1aWxkIHlvdXIgcHJvamVjdCBhY2NvcmRpbmcgdG8gdGhlIFtvbW5pLmNvbmZpZy5qc10ncyBidWlsZCBmaWVsZFxuICAgIHJlbGVhc2UgW29wdGlvbnNdICAgICAgICAgIHB1Ymxpc2ggeW91ciBwcm9qZWN0IGFjY29yZGluZyB0byB0aGUgW29tbmkuY29uZmlnLmpzXSdzIHJlbGVhc2UgZmllbGRcbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoMz57YG9tbmkgaW5pdGB9PC9oMz5cbiAgICA8aDQ+e2BJbml0aWFsIHlvdXIgcHJvamVjdCBieSBhbnN3ZXIgc2V2ZXJhbCBxdWVzdGlvbnNgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YG9tbmkgaW5pdFxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGg0PntgSW5pdGlhbCB5b3VyIHByb2plY3Qgd2l0aCBsYXN0ZXN0IGRlbnBlbmRlbmNpZXNgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaGVsbFwiXG4gICAgICB9fT57YG9tbmkgaW5pdCBsYXN0ZXN0XG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2BJbml0aWFsIHlvdXIgcHJvamVjdCB3aXRob3V0IGluc3RhbGwgZGVwZW5kZW5jaWVzYH08L2g0PlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hlbGxcIlxuICAgICAgfX0+e2BvbW5pIGluaXQgLW5cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoND57YEluaXRpYWwgeW91ciBwcm9qZWN0IGFjY29yZGluZyB0byBzb21lIHRlbXBsYXRlYH08L2g0PlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hlbGxcIlxuICAgICAgfX0+e2BvbW5pIGluaXQgLXQgW3Byb2plY3ROYW1lXVxuYH08L2NvZGU+PC9wcmU+XG4gICAgPHA+e2BvcmB9PC9wPlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hlbGxcIlxuICAgICAgfX0+e2BvbW5pIGluaXQgLS1yZWFjdF9lbnRpcmUgW3Byb2plY3ROYW1lXVxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGg0PntgT3B0aW9uc2B9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19PntgVXNhZ2U6IG9tbmkgaW5pdCBbc3RyYXRlZ3ldIFtvcHRpb25zXVxuXG5pbml0aWFsaXplIHlvdXIgcHJvamVjdCwgW3N0cmF0ZWd5XSBjb3VsZCBiZSBzdGFibGUoZGVmYXVsdCkgb3IgbGF0ZXN0XG5cbkFyZ3VtZW50czpcblxuICBzdHJhdGVneSAgICAgICAgICAgICAgICAgc3RhYmxlIG9yIGxhdGVzdFxuXG5PcHRpb25zOlxuICAtcmIsIC0tcmVhY3RfYmFzaWMgW25hbWVdICAgICAgIGNyZWF0ZSBhIGJhc2ljIFJlYWN0IFNQQSBwcm9qZWN0XG4gIC1ycywgLS1yZWFjdF9zdGFuZGFyZCBbbmFtZV0gICAgY3JlYXRlIGEgc3RhbmRhcmQgUmVhY3QgU1BBIHByb2plY3RcbiAgLXJlLCAtLXJlYWN0X2VudGlyZSBbbmFtZV0gICAgICBjcmVhdGUgYSBtb3N0IHZlcnNhdGlsZSBSZWFjdCBTUEEgcHJvamVjdFxuICAtclMsIC0tcmVhY3Rfc3NyIFtuYW1lXSAgICAgICAgIGNyZWF0ZSBhIFJlYWN0IGNvbXBvbmVudCBsaWJyYXJ5XG4gIC1yYywgLS1yZWFjdF9jb21wb25lbnRzIFtuYW1lXSAgY3JlYXRlIGEgUmVhY3QgY29tcG9uZW50IGxpYnJhcnlcbiAgLXQsIC0tdG9vbGtpdCBbbmFtZV0gICAgICAgICAgICBjcmVhdGUgYSB0b29sa2l0IHByb2plY3RcbiAgLW4sIC0tbm8taW5zdGFsbCAgICAgICAgICAgICAgICBpbml0IHByb2plY3Qgd2l0aG91dCBpbnN0YWxsIGRlcGVuZGVuY2llc1xuICAtUCwgLS1wYXRoIDxwYXRoPiAgICAgICAgICAgICAgIHRoZSB3b3JrcGF0aCBmb3IgaW5pdCB0aGUgcHJvamVjdFxuICAtaCwgLS1oZWxwICAgICAgICAgICAgICAgICAgICAgIG91dHB1dCB1c2FnZSBpbmZvcm1hdGlvblxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGgzPntgb21uaSBkZXZgfTwvaDM+XG4gICAgPGg0PntgVXNhZ2VgfTwvaDQ+XG4gICAgPHByZT48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS1zaFwiXG4gICAgICB9fT57YCAgb21uaSBkZXZcblxuICBvbW5pIGRldiAtcCA4MjAwIC8vIFN0YXJ0IGEgZGV2LXNlcnZlciB3aXRoIHBvcnQgODIwMFxuXG4gIG9tbmkgZGV2IC1oIGRldi5kb21haW4uY29tIC8vIFN0YXJ0IGEgZGV2LXNlcnZlciB3aXRoIGhvc3RuYW1lIGRldi5kb21haW4uY29tXG5cblxuICBvbW5pIGRldiAtcCA4MjAwIC1oIGRldi5kb21haW4uY29tIC8vIFN0YXJ0IGEgZGV2LXNlcnZlciB3aXRoIHBvcnQgODIwMCBhbmQgaG9zdG5hbWUgZGV2LmRvbWFpbi5jb21cblxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGg0PntgT3B0aW9uc2B9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19PntgVXNhZ2U6IG9tbmkgZGV2IFtvcHRpb25zXVxuXG5vbW5pIGRldiBbLXAgPHBvcnQ+XSBbLUggPGhvc3Q+XSBbLVAgPHBhdGg+XVxuXG5PcHRpb25zOlxuICAtcCwgLS1wb3J0IDxwb3J0PiAgICAgIHN0YXJ0IHRoZSBkZXYtc2VydmVyIGFjY29yZGluZyB0byB0aGUgc3BlY2lmaWVkIHBvcnRcbiAgLUgsIC0taG9zdG5hbWUgPGhvc3Q+ICBzdGFydCB0aGUgZGV2LXNlcnZlciBhY2NvcmRpbmcgdG8gdGhlIHNwZWNpZmllZCBob3N0bmFtZVxuICAtUCwgLS1wYXRoIDxwYXRoPiAgICAgIHRoZSB3b3JrcGF0aCBmb3Igc3RhcnQgdGhlIGRldi1zZXJ2ZXJcbiAgLWgsIC0taGVscCAgICAgICAgICAgICBvdXRwdXQgdXNhZ2UgaW5mb3JtYXRpb25cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoMz57YG9tbmkgc3RhcnRgfTwvaDM+XG4gICAgPHA+e2BUaGUgdXNhZ2Ugc2FtZSBhcyBgfTxpbmxpbmVDb2RlIHBhcmVudE5hbWU9XCJwXCI+e2BvbW5pIGRldmB9PC9pbmxpbmVDb2RlPjwvcD5cbiAgICA8aDQ+e2BPcHRpb25zYH08L2g0PlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hlbGxcIlxuICAgICAgfX0+e2BVc2FnZTogb21uaSBzdGFydCBbb3B0aW9uc11cblxub21uaSBzdGFydCBbLXAgPHBvcnQ+XSBbLUggPGhvc3Q+XSBbLVAgPHBhdGg+XVxuXG5PcHRpb25zOlxuICAtcCwgLS1wb3J0IDxwb3J0PiAgICAgIHN0YXJ0IHRoZSBwcm9kLXNlcnZlciBhY2NvcmRpbmcgdG8gdGhlIHNwZWNpZmllZCBwb3J0XG4gIC1ILCAtLWhvc3RuYW1lIDxob3N0PiAgc3RhcnQgdGhlIHByb2Qtc2VydmVyIGFjY29yZGluZyB0byB0aGUgc3BlY2lmaWVkIGhvc3RuYW1lXG4gIC1QLCAtLXBhdGggPHBhdGg+ICAgICAgdGhlIHdvcmtwYXRoIGZvciBzdGFydCB0aGUgcHJvZC1zZXJ2ZXJcbiAgLWgsIC0taGVscCAgICAgICAgICAgICBvdXRwdXQgdXNhZ2UgaW5mb3JtYXRpb25cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoMz57YG9tbmkgbmV3YH08L2gzPlxuICAgIDxoND57YFVzYWdlYH08L2g0PlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hcIlxuICAgICAgfX0+e2AgIG9tbmkgbmV3XG5cbiAgb21uaSBuZXcgQnV0dG9uIC8vIENyZWF0ZSBhIGNvbXBvbmVudCB3aGljaCBuYW1lIGlzIEJ1dHRvblxuXG4gIG9tbmkgbmV3IC1jIC8vIENyZWF0ZSBhIGNvbXBvbmVudCB3aGljaCB0eXBlIGlzIGNsYXNzXG5cbiAgb21uaSBuZXcgLWMgQnV0dG9uIC8vIENyZWF0ZSBhIGNvbXBvbmVudCB3aGljaCBuYW1lIGlzIEJ1dHRvbiBhbmQgdHlwZSBpcyBjbGFzc1xuYH08L2NvZGU+PC9wcmU+XG4gICAgPGg0PntgT3B0aW9uc2B9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19PntgVXNhZ2U6IG9tbmkgbmV3IFtuYW1lXSBbb3B0aW9uc11cblxub21uaSBuZXcgW25hbWVdIFstZiB8IC1jXSBbLVAgPHBhdGg+XVxuXG5Bcmd1bWVudHM6XG5cbiAgbmFtZSAgICAgICAgICAgICAgb3B0aW9uYWwhIFRoZSBuYW1lIG9mIGNvbXBvbmVudC5cblxuT3B0aW9uczpcbiAgLWYsIC0tZnVuY3Rpb24gICAgY3JlYXRlIGEgZnVuY3Rpb25hbCBjb21wb25lbnRcbiAgLWMsIC0tY2xhc3MgICAgICAgY3JlYXRlIGEgY2xhc3MgY29tcG9uZW50XG4gIC1QLCAtLXBhdGggPHBhdGg+ICB0aGUgd29ya3BhdGggZm9yIGNyZWF0ZSBjb21wb25lbnRcbiAgLWgsIC0taGVscCAgICAgICAgb3V0cHV0IHVzYWdlIGluZm9ybWF0aW9uXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDM+e2BvbW5pIGJ1aWxkYH08L2gzPlxuICAgIDxoND57YFVzYWdlYH08L2g0PlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hcIlxuICAgICAgfX0+e2AgIG9tbmkgYnVpbGRcblxuICBvbW5pIGJ1aWxkIC1uIC8vIEJ1aWxkIHByb2plY3QgYnlwYXNzIGFsbCBwcmUtZmxpZ2h0XG5cbiAgb21uaSBidWlsZCAtYyAkcGF0aFRvL2J1aWxkLmNvbmZpZy5qcyAvLyBCdWlsZCBwcm9qZWN0IGFjY29yZGluZyB0byBzcGVjaWZ5IGNvbmZpZyBwYXRoXG5gfTwvY29kZT48L3ByZT5cbiAgICA8aDQ+e2BPcHRpb25zYH08L2g0PlxuICAgIDxwcmU+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2Utc2hlbGxcIlxuICAgICAgfX0+e2BVc2FnZTogb21uaSBidWlsZCBbb3B0aW9uc11cblxuYnVpbGQgeW91ciBwcm9qZWN0IGFjY29yZGluZyB0byB0aGUgW29tbmkuY29uZmlnLmpzXSdzIGJ1aWxkIGZpZWxkXG5cbk9wdGlvbnM6XG4gIC1jLCAtLWNvbmZpZyA8cGF0aD4gIHNwZWNpZnkgdGhlIHBhdGggb2YgY29uZmlnIGZpbGVcbiAgLW4sIC0tbm8tdmVyaWZ5ICAgICAgYnlwYXNzIGFsbCBwcmUtY2hlY2sgYmVmb3JlIGJ1aWxkaW5nXG4gIC1QLCAtLXBhdGggPHBhdGg+ICAgIHRoZSB3b3JrcGF0aCBmb3IgYnVpbGQgcHJvamVjdFxuICAtaCwgLS1oZWxwICAgICAgICAgICBvdXRwdXQgdXNhZ2UgaW5mb3JtYXRpb25cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDxoMz57YG9tbmkgcmVsZWFzZWB9PC9oMz5cbiAgICA8aDQ+e2BVc2FnZWB9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoXCJcbiAgICAgIH19PntgICBvbW5pIHJlbGVhc2VcblxuICBvbW5pIHJlbGVhc2UgLW4gLy8gUmVsZWFzZSBwcm9qZWN0IGJ5cGFzcyBhbGwgcHJlLWZsaWdodFxuXG4gIG9tbmkgcmVsZWFzZSAtYSAvLyBSZWxlYXNlIHByb2plY3QgdGhhdCBhdXRvbWF0aWMgaXRlcmF0aW9uIHZlcnNpb25cblxuICBvbW5pIHJlbGVhc2UgLWkgLy8gUmVsZWFzZSBwcm9qZWN0IHRoYXQgaWdub3JlIGF1dG9tYXRpYyBpdGVyYXRpb24gdmVyc2lvblxuXG4gIG9tbmkgcmVsZWFzZSAtbSAvLyBSZWxlYXNlIHByb2plY3QgdGhhdCBtYW51YWwgaXRlcmF0aW9uIHZlcnNpb25cblxuICBvbW5pIHJlbGVhc2UgLXQgLy8gUmVsZWFzZSBwcm9qZWN0IHRoYXQgdGhlIHRhZyB3aWxsIGFkZCB0byBucG0tcGFja2FnZVxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGg0PntgT3B0aW9uc2B9PC9oND5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXNoZWxsXCJcbiAgICAgIH19PntgVXNhZ2U6IG9tbmkgcmVsZWFzZSBbb3B0aW9uc11cblxucHVibGlzaCB5b3VyIHByb2plY3QgYWNjb3JkaW5nIHRvIHRoZSBbb21uaS5jb25maWcuanNdJ3MgcmVsZWFzZSBmaWVsZFxuXG5PcHRpb25zOlxuICAtYSwgLS1hdXRvbWF0aWMgICAgICAgICBhdXRvbWF0aWMgaXRlcmF0aW9uIHZlcnNpb25cbiAgLWksIC0taWdub3JlICAgICAgICAgICAgaWdub3JlIGF1dG9tYXRpYyBpdGVyYXRpb24gdmVyc2lvblxuICAtbSwgLS1tYW51YWwgPHZlcnNpb24+ICBtYW51YWwgaXRlcmF0aW9uIHZlcnNpb25cbiAgLXQsIC0tdGFnIDx0YWc+ICAgICAgICAgdGhlIHRhZyB3aWxsIGFkZCB0byBucG0tcGFja2FnZVxuICAtbiwgLS1uby12ZXJpZnkgICAgICAgICBieXBhc3MgdW5pdC10ZXN0IGVzbGludCBhbmQgc3R5bGVsaW50IGNoZWNrXG4gIC1QLCAtLXBhdGggPHBhdGg+ICAgICAgIHRoZSB3b3JrcGF0aCBmb3IgcmVsZWFzZSBwcm9qZWN0XG4gIC1oLCAtLWhlbHAgICAgICAgICAgICAgIG91dHB1dCB1c2FnZSBpbmZvcm1hdGlvblxuYH08L2NvZGU+PC9wcmU+XG4gICAgPGgxPntgQWJvdXTjgIxvbW5pLmNvbmZpZy5qc+OAjWNvbmZpZyBmaWxlYH08L2gxPlxuICAgIDxoMz57YHR5cGVgfTwvaDM+XG4gICAgPHA+e2BPTU5JIHdpbGwgcHJvY2VzcyBvZiBpbml0aWFsaXphdGlvbiwgY29uc3RydWN0aW9uIGFuZCB0ZW1wbGF0ZSBjcmVhdGlvbiBhY2NvcmRpbmcgdG8gZGlmZmVyZW50IHByb2plY3QgdHlwZXNgfTwvcD5cbiAgICA8cD57YFRoZSBwcm9qZWN0IHR5cGVzOmB9PC9wPlxuICAgIDx1bD5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzcGEtcmVhY3QgLSBSZWFjdCBzaW5nbGUtcGFnZS1hcHBsaWNhdGlvbmB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bzc3ItcmVhY3QgLSBSZWFjdCBzZXJ2ZXItc2lkZS1yZW5kZXIgYXBwbGljYXRpb25gfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgY29tcG9uZW50LXJlYWN0IC0gUmVhY3QgQ29tcG9uZW50IExpYnJhcnlgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgdG9vbGtpdCAtIFNESyBMaWJyYXJ5IGB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YGRldmB9PC9oMz5cbiAgICA8cD57YFRoZSBkZXYtc2VydmVyIGJhc2VkIG9uIGV4cHJlc3MsIHJlYWxpemluZyBob3QtdXBkYXRlLCBhcGktcHJveHkgYW5kIG90aGVyIGNvbW1vbiBmdW5jdGlvbnMuIFByb3ZpZGUgcGVyc29uYWxpemVkIGN1c3RvbWl6YXRpb24gc2NoZW1lcyBzdWNoIGFzIG1pZGRsZXdhcmUgY3VzdG9taXphdGlvbiwgcG9ydCBudW1iZXIsIGxvZyBvdXRwdXQgbGV2ZWwgYW5kIHdlYnBhY2sgY29uZmlndXJhdGlvbi5gfTwvcD5cbiAgICA8dWw+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgbWlkZGxld2FyZSAtIG1pZGRsZXdhcmUgY29uZmlndXJhdGlvbjpgfTwvcD5cbiAgICAgICAgPHByZSBwYXJlbnROYW1lPVwibGlcIj48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2UtdHNcIlxuICAgICAgICAgIH19Pntge1xuICByb3V0ZTogc3RyaW5nO1xuICBjYWxsYmFjazogKHJlcTogYW55LCByZXM6IGFueSkgPT4gUHJvbWlzZTx2b2lkPjtcbn1cbmB9PC9jb2RlPjwvcHJlPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YCAgb3JgfTwvcD5cbiAgICAgICAgPHByZSBwYXJlbnROYW1lPVwibGlcIj48Y29kZSBwYXJlbnROYW1lPVwicHJlXCIgey4uLntcbiAgICAgICAgICAgIFwiY2xhc3NOYW1lXCI6IFwibGFuZ3VhZ2UtdHNcIlxuICAgICAgICAgIH19PntgKHBhcmFtczoge1xuICBpcDogc3RyaW5nO1xuICBwb3J0OiBudW1iZXI7XG4gIGhvc3Q/OiBzdHJpbmc7XG4gIGxvZ0xldmVsOiBMT0dMRVZFTDtcbiAgcHJveHlDb25maWc/OiAoUHJveHlJdGVtIHwgUHJveHlGbilbXTtcbn0pID0+IHtcbiAgcm91dGU6IHN0cmluZztcbiAgY2FsbGJhY2s6IChyZXE6IGFueSwgcmVzOiBhbnkpID0+IFByb21pc2U8dm9pZD47XG59XG5gfTwvY29kZT48L3ByZT5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgd2VicGFjayAtIGRldi1zZXJ2ZXIgd2VicGFjayBjb25maWd1cmF0aW9uYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHByb3h5IC0gZGV2LXNlcnZlciBwcm94eSBjb25maWd1cmF0aW9uYH08L3A+XG4gICAgICAgIDxwcmUgcGFyZW50TmFtZT1cImxpXCI+PGNvZGUgcGFyZW50TmFtZT1cInByZVwiIHsuLi57XG4gICAgICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXRzXCJcbiAgICAgICAgICB9fT57YHtcbiAgcm91dGU6ICcvYXBpJywgLy8gQWRkcmVzcyBvZiB0aGUgbG9jYWwgc2VydmljZSBmb3IgdGhlIHByb3h5IEFQSVxuICBjb25maWc6IHtcbiAgICB0YXJnZXQ6ICdodHRwOi8vd3d3LmFwaS5jb20vYXBpJywgLy8gVGhlIGFjdHVhbCBhZGRyZXNzIG9mIHRoZSBwcm94eSBBUElcbiAgICBjaGFuZ2VPcmlnaW46IHRydWUgLy8gd2hldGhlciBjaGFuZ2UgdGhlIGhvc3RcbiAgfVxufVxuYH08L2NvZGU+PC9wcmU+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgICBvcmB9PC9wPlxuICAgICAgICA8cHJlIHBhcmVudE5hbWU9XCJsaVwiPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICAgICAgXCJjbGFzc05hbWVcIjogXCJsYW5ndWFnZS10c1wiXG4gICAgICAgICAgfX0+e2AocGFyYW1zOiB7XG4gIGlwOiBzdHJpbmc7XG4gIHBvcnQ6IG51bWJlcjtcbiAgaG9zdD86IHN0cmluZztcbiAgbG9nTGV2ZWw6IExPR0xFVkVMO1xuICBtaWRkbGV3YXJlQ29uZmlnPzogKE1pZGRsZXdhcmVJdGVtIHwgTWlkZGxld2FyZUZuKVtdO1xufSkgPT4ge1xuICByb3V0ZTogc3RyaW5nO1xuICBjb25maWc6IENvbmZpZztcbn1cbmB9PC9jb2RlPjwvcHJlPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YCAgRm9yIG1vcmUgY29uZmlndXJhdGlvbiwgc2VlIGB9PGEgcGFyZW50TmFtZT1cInBcIiB7Li4ue1xuICAgICAgICAgICAgXCJocmVmXCI6IFwiaHR0cHM6Ly9naXRodWIuY29tL2NoaW11cmFpL2h0dHAtcHJveHktbWlkZGxld2FyZVwiXG4gICAgICAgICAgfX0+e2BodHRwLXByb3h5LW1pZGRsZXdhcmVgfTwvYT48L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHBvcnQgLSBkZXYtc2VydmVyIHBvcnRgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgaG9zdCAtIGRldi1zZXJ2ZXIgaG9zdGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BodHRwcyAtIHN0YXJ0IGRldi1zZXJ2ZXIgd2l0aCBodHRwcyBwcm90b2NvbCB3aGljaCBjb3VsZCBjdXN0b20gYH08aW5saW5lQ29kZSBwYXJlbnROYW1lPVwicFwiPntga2V5YH08L2lubGluZUNvZGU+e2AgYW5kIGB9PGlubGluZUNvZGUgcGFyZW50TmFtZT1cInBcIj57YGNlcnRgfTwvaW5saW5lQ29kZT48L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHNlcnZlclR5cGUgLSBkZXYtc2VydmVyIHR5cGVgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgbG9nTGV2ZWwgLSBUaGUgbG9nLWxldmVsIHdoaWNoIGRldi1zZXJ2ZXIgd2lsbCBhcHBseSwgb3B0aW9uYWwgJ2RlYnVnJywgJ2luZm8nLCAnd2FybicsICdlcnJvcicsICdzaWxlbnQnYH08L3A+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+XG4gICAgPGgzPntgYnVpbGRgfTwvaDM+XG4gICAgPHVsPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGF1dG9SZWxlYXNlIC0gYXV0byByZWxlYXNlIHByb2plY3QgYWZ0ZXIgYnVpbGQgc3VjY2Vzc2B9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzcmNEaXIgLSB0aGUgYnVpbGQgc291cmNlIGRpcmVjdG9yeWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BvdXREaXIgLSB0aGUgZGlyZWN0b3J5IGZvciBjb21waWxlZCBwcm9qZWN0YH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGVzbURpciAtIGVzNiBtb2R1bGUgY29tcGlsZWQgZGlyZWN0b3J5YH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGhhc2ggLSB3aGV0aGVyIHRoZSBoYXNoIHRhZyBhZGQgdG8gYnVpbGRpbmcgcmVzdWx0LCBvcHRpb25hbCAnY29udGVudGhhc2gnLCAnY2h1bmtoYXNoJyBhbmQgJ2hhc2gnKHRydWUgZXF1YWwgJ2NvbnRlbnRoYXNoJylgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgY29uZmlndXJhdGlvbiAtIFRoZSBjYWxsYmFjayB3aWxsIGJlIGNhbGwgaW4gdGhlIGJ1aWxkLXByb2Nlc3MsIHlvdSBjYW4gcmV0dXJuIHlvdXIgY3VzdG9tIGJ1aWxkIGNvbmZpZ3VyYXRpb25gfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgcmVzZXJ2ZSAtIENvbmZpZ3VyZSByZXNvdXJjZXMgdGhhdCBhcmUgbm90IHBhY2thZ2VkIGJ1dCBuZWVkIHRvIGJlIGtlcHQgaW4gdGhlIGJ1aWxkIHJlc3VsdGB9PC9wPlxuICAgICAgICA8dWwgcGFyZW50TmFtZT1cImxpXCI+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzdHlsZSAtIHdoZXRoZXIgb3Igbm90IHJlc2VydmUgdGhlIHN0eWxlc2hlZXQgZmlsZXNgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgYXNzZXRzIC0gcmVzZXJ2ZSBvdGhlciBhc3NldCBwYXRoc2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgIDwvdWw+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHByZWZsaWdodCAtIHRoZSBmbGlnaHQgY2hlY2sgYmVmb3JlIGJ1aWxkYH08L3A+XG4gICAgICAgIDx1bCBwYXJlbnROYW1lPVwibGlcIj5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHR5cGVzY3JpcHQgLSB3aGV0aGVyIG9yIG5vdCBwcm9jZXNzIHRoZSB0cyBvciB0c3ggZmlsZXNgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgdGVzdCAtIHdoZXRoZXIgb3Igbm90IHByb2Nlc3MgdW5pdC10ZXN0YH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGVzbGludCAtIHdoZXRoZXIgb3Igbm90IHByb2Nlc3MgZXNsaW50IGNoZWNrYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHByZXR0aWVyIC0gd2hldGhlciBvciBub3QgcHJvY2VzcyBwcmV0dGllciBjaGVja2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzdHlsZWxpbnQgLSB3aGV0aGVyIG9yIG5vdCBwcm9jZXNzIHN0eWxlbGludCBjaGVja2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgIDwvdWw+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+XG4gICAgPGgzPntgcmVsZWFzZWB9PC9oMz5cbiAgICA8dWw+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgZ2l0IC0gcHJvamVjdCBnaXQgcmVwbyB1cmxgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgbnBtIC0gbnBtIGRlcG9zaXRvcnkgdXJsYH08L3A+XG4gICAgICA8L2xpPlxuICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHByZWZsaWdodCAtIHRoZSBmbGlnaHQgY2hlY2sgYmVmb3JlIHJlbGVhc2VgfTwvcD5cbiAgICAgICAgPHVsIHBhcmVudE5hbWU9XCJsaVwiPlxuICAgICAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgdGVzdCAtIHdoZXRoZXIgb3Igbm90IHByb2Nlc3MgdW5pdC10ZXN0YH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGVzbGludCAtIHdoZXRoZXIgb3Igbm90IHByb2Nlc3MgZXNsaW50IGNoZWNrYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YHByZXR0aWVyIC0gd2hldGhlciBvciBub3QgcHJvY2VzcyBwcmV0dGllciBjaGVja2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2BzdHlsZWxpbnQgLSB3aGV0aGVyIG9yIG5vdCBwcm9jZXNzIHN0eWxlbGludCBjaGVja2B9PC9wPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpIHBhcmVudE5hbWU9XCJ1bFwiPlxuICAgICAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Bjb21taXRsaW50IC0gd2hldGhlciBvciBub3QgcHJvY2VzcyBjb21taXRsaW50IGNoZWNrYH08L3A+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgICAgICA8cCBwYXJlbnROYW1lPVwibGlcIj57YGJyYW5jaCAtIG9ubHkgY2FuIHJlbGVhc2UgaW4gdGhpcyBicmFuY2gsIHNldCBlbXB0eSBzdHJpbmcgdG8gaWdub3JlIHRoaXMgY2hlY2tgfTwvcD5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICA8L3VsPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YHRlbXBsYXRlYH08L2gzPlxuICAgIDx1bD5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2Byb290IC0gdGhlIHJvb3QgZGlyZWN0b3J5IGZvciBnZW5lcmF0ZSB0ZW1wbGF0ZWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2B0eXBlc2NyaXB0IC0gd2hldGhlciBvciBub3QgYXBwbHkgdHlwZXNjcmlwdGB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2B0ZXN0IC0gd2hldGhlciBvciBub3QgZ2VuZXJhdGUgdW5pdC10ZXN0IGZpbGVgfTwvcD5cbiAgICAgIDwvbGk+XG4gICAgICA8bGkgcGFyZW50TmFtZT1cInVsXCI+XG4gICAgICAgIDxwIHBhcmVudE5hbWU9XCJsaVwiPntgc3R5bGVzaGVldCAtIHN0eWxlc2hlZXQgdHlwZWB9PC9wPlxuICAgICAgPC9saT5cbiAgICAgIDxsaSBwYXJlbnROYW1lPVwidWxcIj5cbiAgICAgICAgPHAgcGFyZW50TmFtZT1cImxpXCI+e2ByZWFkbWUgLSBgfXtgW3RydWUsICdtZHgnXWB9e2AgKGB9e2Bbd2hldGhlciBvciBub3QgUkVBRE1FLm1kLCBnZW5lcmF0ZSBtZHggb3IgbWQgZmlsZV1gfXtgKWB9PC9wPlxuICAgICAgPC9saT5cbiAgICA8L3VsPlxuICAgIDxoMz57YHBsdWdpbnNgfTwvaDM+XG4gICAgPHA+e2BwbHVnaW4gbXVzdCBtZWV0IGZvbGxvd2luZyB0eXBlczpgfTwvcD5cbiAgICA8cHJlPjxjb2RlIHBhcmVudE5hbWU9XCJwcmVcIiB7Li4ue1xuICAgICAgICBcImNsYXNzTmFtZVwiOiBcImxhbmd1YWdlLXRzXCJcbiAgICAgIH19PntgdHlwZSBPbW5pUGx1Z2luID0ge1xuICBuYW1lOiBzdHJpbmc7XG4gIHN0YWdlOiBQbHVnaW5TdGFnZTtcbiAgaGFuZGxlcjogUGx1Z2luSGFuZGxlcjtcbn07XG5cbnR5cGUgUGx1Z2luU3RhZ2UgPSAnbmV3JyB8ICdidWlsZCcgfCAncmVsZWFzZSc7XG5pbnRlcmZhY2UgUGx1Z2luSGFuZGxlciB7XG4gIChjb25maWc6IE9taXQ8T21uaUNvbmZpZywgJ3BsdWdpbnMnPik6IFByb21pc2U8YW55Pjtcbn1cbmB9PC9jb2RlPjwvcHJlPlxuICAgIDwvTURYTGF5b3V0Pjtcbn1cblxuO1xuTURYQ29udGVudC5pc01EWENvbXBvbmVudCA9IHRydWU7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Docs/docs-en.md\n");
+
+/***/ }),
+
+/***/ "./src/components/Docs/index.ts":
+/*!**************************************!*\
+  !*** ./src/components/Docs/index.ts ***!
+  \**************************************/
+/*! exports provided: Docs, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Docs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Docs */ \"./src/components/Docs/Docs.tsx\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Docs\", function() { return _Docs__WEBPACK_IMPORTED_MODULE_0__[\"Docs\"]; });\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Docs__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9Eb2NzL2luZGV4LnRzP2I3NjUiXSwibmFtZXMiOlsiRG9jcyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUVBO0FBQ2VBLDRHQUFmIiwiZmlsZSI6Ii4vc3JjL2NvbXBvbmVudHMvRG9jcy9pbmRleC50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBEb2NzIGZyb20gJy4vRG9jcyc7XG5cbmV4cG9ydCB7IERvY3MgfSBmcm9tICcuL0RvY3MnO1xuZXhwb3J0IGRlZmF1bHQgRG9jcztcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/components/Docs/index.ts\n");
+
+/***/ }),
+
+/***/ "./src/components/Docs/style/Docs.module.less":
+/*!****************************************************!*\
+  !*** ./src/components/Docs/style/Docs.module.less ***!
+  \****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next-url-prettifier");
+eval("module.exports = {\n\t\"docs\": \"docs___3NQIG\"\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9Eb2NzL3N0eWxlL0RvY3MubW9kdWxlLmxlc3M/YjUzYiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0EiLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9Eb2NzL3N0eWxlL0RvY3MubW9kdWxlLmxlc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHtcblx0XCJkb2NzXCI6IFwiZG9jc19fXzNOUUlHXCJcbn07Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Docs/style/Docs.module.less\n");
 
 /***/ }),
 
-/***/ 2:
+/***/ "./src/components/Layout/Layout.tsx":
+/*!******************************************!*\
+  !*** ./src/components/Layout/Layout.tsx ***!
+  \******************************************/
+/*! exports provided: BasicLayout, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"BasicLayout\", function() { return BasicLayout; });\n/* harmony import */ var antd_lib_button_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/button/style */ \"./node_modules/antd/lib/button/style/index.js\");\n/* harmony import */ var antd_lib_button_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button_style__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/button */ \"antd/lib/button\");\n/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd/lib/menu/style */ \"./node_modules/antd/lib/menu/style/index.js\");\n/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/lib/menu */ \"antd/lib/menu\");\n/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd/lib/layout/style */ \"./node_modules/antd/lib/layout/style/index.js\");\n/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd/lib/layout */ \"antd/lib/layout\");\n/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _ctx_UseLocale__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ctx/UseLocale */ \"./src/context/UseLocale.tsx\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _components_Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @components/Link */ \"./src/components/Link/index.ts\");\n/* harmony import */ var _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style/Layout.module.less */ \"./src/components/Layout/style/Layout.module.less\");\n/* harmony import */ var _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10__);\n\n\n\n\n\n\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;\n\n\n\n\n\n/* import types */\n\nconst {\n  Header,\n  Content,\n  Footer\n} = antd_lib_layout__WEBPACK_IMPORTED_MODULE_5___default.a;\nconst BasicLayout = props => {\n  const {\n    title = 'OMNI-DOOR',\n    className = '',\n    page = 'home',\n    children\n  } = props;\n  const {\n    locale: {\n      global\n    },\n    lang\n  } = Object(react__WEBPACK_IMPORTED_MODULE_6__[\"useContext\"])(_ctx_UseLocale__WEBPACK_IMPORTED_MODULE_7__[\"UseLocale\"]);\n  return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_5___default.a, {\n    className: [_style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout'], className].join(' ')\n  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_8___default.a, null, __jsx(\"title\", null, \" \", title, \" \"), __jsx(\"link\", {\n    rel: \"icon\",\n    type: \"image/x-icon\",\n    href: \"/favicon.ico\"\n  })), __jsx(Header, {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header']\n  }, __jsx(\"nav\", {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-nav']\n  }, __jsx(_components_Link__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n    page: \"home\",\n    params: {\n      lang\n    }\n  }, __jsx(\"div\", {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-logo']\n  }, global.logo)), __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-menu'],\n    mode: \"horizontal\",\n    defaultSelectedKeys: [page]\n  }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a.Item, {\n    key: \"start\",\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-menu-item']\n  }, __jsx(_components_Link__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n    page: \"start\",\n    params: {\n      lang\n    }\n  }, __jsx(\"a\", null, global.start))), __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a.Item, {\n    key: \"docs\",\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-menu-item']\n  }, __jsx(_components_Link__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n    page: \"docs\",\n    params: {\n      lang\n    }\n  }, __jsx(\"a\", null, global.docs)))), __jsx(\"div\", {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-right']\n  }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {\n    size: \"small\",\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-lang']\n  }, __jsx(_components_Link__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n    href: `/${lang === 'cn' ? 'en' : 'cn'}/${page}`\n  }, __jsx(\"a\", null, global.lang))), __jsx(\"a\", {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-header-github'],\n    target: \"_blank\",\n    href: \"https://github.com/omni-door/cli\"\n  })))), __jsx(Content, {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-content']\n  }, children), __jsx(Footer, {\n    className: _style_Layout_module_less__WEBPACK_IMPORTED_MODULE_10___default.a['layout-footer']\n  }, \"Copyright \\xA9 2020 @omni-door\"));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react__WEBPACK_IMPORTED_MODULE_6__[\"memo\"])(BasicLayout));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MYXlvdXQvTGF5b3V0LnRzeD9lMTcyIl0sIm5hbWVzIjpbIkhlYWRlciIsIkNvbnRlbnQiLCJGb290ZXIiLCJCYXNpY0xheW91dCIsInByb3BzIiwidGl0bGUiLCJjbGFzc05hbWUiLCJwYWdlIiwiY2hpbGRyZW4iLCJsb2NhbGUiLCJnbG9iYWwiLCJsYW5nIiwidXNlQ29udGV4dCIsIlVzZUxvY2FsZSIsInN0eWxlcyIsImpvaW4iLCJsb2dvIiwic3RhcnQiLCJkb2NzIiwibWVtbyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7O0FBR0EsTUFBTTtBQUFFQSxRQUFGO0FBQVVDLFNBQVY7QUFBbUJDO0FBQW5CLDBEQUFOO0FBU08sTUFBTUMsV0FBaUMsR0FBR0MsS0FBSyxJQUFJO0FBQ3hELFFBQU07QUFBRUMsU0FBSyxHQUFHLFdBQVY7QUFBdUJDLGFBQVMsR0FBRyxFQUFuQztBQUF1Q0MsUUFBSSxHQUFHLE1BQTlDO0FBQXNEQztBQUF0RCxNQUFtRUosS0FBekU7QUFDQSxRQUFNO0FBQ0pLLFVBQU0sRUFBRTtBQUNOQztBQURNLEtBREo7QUFJSkM7QUFKSSxNQUtGQyx3REFBVSxDQUFDQyx3REFBRCxDQUxkO0FBT0EsU0FDRTtBQUNFLGFBQVMsRUFBRSxDQUFDQyxpRUFBTSxDQUFDLFFBQUQsQ0FBUCxFQUFtQlIsU0FBbkIsRUFBOEJTLElBQTlCLENBQW1DLEdBQW5DO0FBRGIsS0FHRSxNQUFDLGdEQUFELFFBQ0UsMEJBQVVWLEtBQVYsTUFERixFQUVFO0FBQU0sT0FBRyxFQUFDLE1BQVY7QUFBaUIsUUFBSSxFQUFDLGNBQXRCO0FBQXFDLFFBQUksRUFBQztBQUExQyxJQUZGLENBSEYsRUFPRSxNQUFDLE1BQUQ7QUFBUSxhQUFTLEVBQUVTLGlFQUFNLENBQUMsZUFBRDtBQUF6QixLQUNFO0FBQUssYUFBUyxFQUFFQSxpRUFBTSxDQUFDLG1CQUFEO0FBQXRCLEtBQ0UsTUFBQyx3REFBRDtBQUFNLFFBQUksRUFBQyxNQUFYO0FBQWtCLFVBQU0sRUFBRztBQUFDSDtBQUFEO0FBQTNCLEtBQ0U7QUFBSyxhQUFTLEVBQUVHLGlFQUFNLENBQUMsb0JBQUQ7QUFBdEIsS0FDSUosTUFBTSxDQUFDTSxJQURYLENBREYsQ0FERixFQU1FO0FBQ0UsYUFBUyxFQUFFRixpRUFBTSxDQUFDLG9CQUFELENBRG5CO0FBRUUsUUFBSSxFQUFDLFlBRlA7QUFHRSx1QkFBbUIsRUFBRSxDQUFDUCxJQUFEO0FBSHZCLEtBS0UsMkRBQU0sSUFBTjtBQUFXLE9BQUcsRUFBQyxPQUFmO0FBQXVCLGFBQVMsRUFBRU8saUVBQU0sQ0FBQyx5QkFBRDtBQUF4QyxLQUNFLE1BQUMsd0RBQUQ7QUFBTSxRQUFJLEVBQUMsT0FBWDtBQUFtQixVQUFNLEVBQUc7QUFBQ0g7QUFBRDtBQUE1QixLQUNFLGlCQUFJRCxNQUFNLENBQUNPLEtBQVgsQ0FERixDQURGLENBTEYsRUFVRSwyREFBTSxJQUFOO0FBQVcsT0FBRyxFQUFDLE1BQWY7QUFBc0IsYUFBUyxFQUFFSCxpRUFBTSxDQUFDLHlCQUFEO0FBQXZDLEtBQ0UsTUFBQyx3REFBRDtBQUFNLFFBQUksRUFBQyxNQUFYO0FBQWtCLFVBQU0sRUFBRztBQUFDSDtBQUFEO0FBQTNCLEtBQ0UsaUJBQUlELE1BQU0sQ0FBQ1EsSUFBWCxDQURGLENBREYsQ0FWRixDQU5GLEVBc0JFO0FBQUssYUFBUyxFQUFFSixpRUFBTSxDQUFDLHFCQUFEO0FBQXRCLEtBQ0U7QUFBUSxRQUFJLEVBQUMsT0FBYjtBQUFxQixhQUFTLEVBQUVBLGlFQUFNLENBQUMsb0JBQUQ7QUFBdEMsS0FDRSxNQUFDLHdEQUFEO0FBQU0sUUFBSSxFQUFHLElBQUdILElBQUksS0FBSyxJQUFULEdBQWdCLElBQWhCLEdBQXVCLElBQUssSUFBR0osSUFBSztBQUFwRCxLQUNFLGlCQUFJRyxNQUFNLENBQUNDLElBQVgsQ0FERixDQURGLENBREYsRUFNRTtBQUFHLGFBQVMsRUFBRUcsaUVBQU0sQ0FBQyxzQkFBRCxDQUFwQjtBQUE4QyxVQUFNLEVBQUMsUUFBckQ7QUFBOEQsUUFBSSxFQUFDO0FBQW5FLElBTkYsQ0F0QkYsQ0FERixDQVBGLEVBd0NFLE1BQUMsT0FBRDtBQUFTLGFBQVMsRUFBRUEsaUVBQU0sQ0FBQyxnQkFBRDtBQUExQixLQUNJTixRQURKLENBeENGLEVBMkNFLE1BQUMsTUFBRDtBQUFRLGFBQVMsRUFBRU0saUVBQU0sQ0FBQyxlQUFEO0FBQXpCLHNDQTNDRixDQURGO0FBaURELENBMURNO0FBNERRSyxpSEFBSSxDQUFDaEIsV0FBRCxDQUFuQiIsImZpbGUiOiIuL3NyYy9jb21wb25lbnRzL0xheW91dC9MYXlvdXQudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IG1lbW8sIHVzZUNvbnRleHQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBVc2VMb2NhbGUgfSBmcm9tICdAY3R4L1VzZUxvY2FsZSc7XG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IExpbmsgZnJvbSAnQGNvbXBvbmVudHMvTGluayc7XG5pbXBvcnQgeyBMYXlvdXQsIE1lbnUsIEJ1dHRvbiB9IGZyb20gJ2FudGQnO1xuaW1wb3J0IHN0eWxlcyBmcm9tICcuL3N0eWxlL0xheW91dC5tb2R1bGUubGVzcyc7XG4vKiBpbXBvcnQgdHlwZXMgKi9cbmltcG9ydCB0eXBlIHsgRkMgfSBmcm9tICdyZWFjdCc7XG5cbmNvbnN0IHsgSGVhZGVyLCBDb250ZW50LCBGb290ZXIgfSA9IExheW91dDtcblxuZXhwb3J0IGludGVyZmFjZSBCYXNpY0xheW91dFByb3BzIHtcbiAgdGl0bGU/OiBzdHJpbmc7XG4gIGNsYXNzTmFtZT86IHN0cmluZztcbiAgcGFnZT86IHN0cmluZztcbiAgY2hpbGRyZW4/OiBhbnlcbn1cblxuZXhwb3J0IGNvbnN0IEJhc2ljTGF5b3V0OiBGQzxCYXNpY0xheW91dFByb3BzPiA9IHByb3BzID0+IHtcbiAgY29uc3QgeyB0aXRsZSA9ICdPTU5JLURPT1InLCBjbGFzc05hbWUgPSAnJywgcGFnZSA9ICdob21lJywgY2hpbGRyZW4gfSA9IHByb3BzO1xuICBjb25zdCB7XG4gICAgbG9jYWxlOiB7XG4gICAgICBnbG9iYWxcbiAgICB9LFxuICAgIGxhbmdcbiAgfSA9IHVzZUNvbnRleHQoVXNlTG9jYWxlKTtcblxuICByZXR1cm4gKFxuICAgIDxMYXlvdXRcbiAgICAgIGNsYXNzTmFtZT17W3N0eWxlc1snbGF5b3V0J10sIGNsYXNzTmFtZV0uam9pbignICcpfVxuICAgID5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8dGl0bGU+IHsgdGl0bGUgfSA8L3RpdGxlPlxuICAgICAgICA8bGluayByZWw9J2ljb24nIHR5cGU9J2ltYWdlL3gtaWNvbicgaHJlZj0nL2Zhdmljb24uaWNvJyAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPEhlYWRlciBjbGFzc05hbWU9e3N0eWxlc1snbGF5b3V0LWhlYWRlciddfT5cbiAgICAgICAgPG5hdiBjbGFzc05hbWU9e3N0eWxlc1snbGF5b3V0LWhlYWRlci1uYXYnXX0+XG4gICAgICAgICAgPExpbmsgcGFnZT0naG9tZScgcGFyYW1zPXsge2xhbmd9IH0+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzWydsYXlvdXQtaGVhZGVyLWxvZ28nXX0+XG4gICAgICAgICAgICAgIHsgZ2xvYmFsLmxvZ28gfVxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgIDxNZW51XG4gICAgICAgICAgICBjbGFzc05hbWU9e3N0eWxlc1snbGF5b3V0LWhlYWRlci1tZW51J119XG4gICAgICAgICAgICBtb2RlPSdob3Jpem9udGFsJ1xuICAgICAgICAgICAgZGVmYXVsdFNlbGVjdGVkS2V5cz17W3BhZ2VdfVxuICAgICAgICAgID5cbiAgICAgICAgICAgIDxNZW51Lkl0ZW0ga2V5PSdzdGFydCcgY2xhc3NOYW1lPXtzdHlsZXNbJ2xheW91dC1oZWFkZXItbWVudS1pdGVtJ119PlxuICAgICAgICAgICAgICA8TGluayBwYWdlPSdzdGFydCcgcGFyYW1zPXsge2xhbmd9IH0+XG4gICAgICAgICAgICAgICAgPGE+e2dsb2JhbC5zdGFydH08L2E+XG4gICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgIDwvTWVudS5JdGVtPlxuICAgICAgICAgICAgPE1lbnUuSXRlbSBrZXk9J2RvY3MnIGNsYXNzTmFtZT17c3R5bGVzWydsYXlvdXQtaGVhZGVyLW1lbnUtaXRlbSddfT5cbiAgICAgICAgICAgICAgPExpbmsgcGFnZT0nZG9jcycgcGFyYW1zPXsge2xhbmd9IH0+XG4gICAgICAgICAgICAgICAgPGE+e2dsb2JhbC5kb2NzfTwvYT5cbiAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgPC9NZW51Lkl0ZW0+XG4gICAgICAgICAgPC9NZW51PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXNbJ2xheW91dC1oZWFkZXItcmlnaHQnXX0+XG4gICAgICAgICAgICA8QnV0dG9uIHNpemU9J3NtYWxsJyBjbGFzc05hbWU9e3N0eWxlc1snbGF5b3V0LWhlYWRlci1sYW5nJ119PlxuICAgICAgICAgICAgICA8TGluayBocmVmPXtgLyR7bGFuZyA9PT0gJ2NuJyA/ICdlbicgOiAnY24nfS8ke3BhZ2V9YH0+XG4gICAgICAgICAgICAgICAgPGE+e2dsb2JhbC5sYW5nfTwvYT5cbiAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgPC9CdXR0b24+XG4gICAgICAgICAgICA8YSBjbGFzc05hbWU9e3N0eWxlc1snbGF5b3V0LWhlYWRlci1naXRodWInXX0gdGFyZ2V0PSdfYmxhbmsnIGhyZWY9J2h0dHBzOi8vZ2l0aHViLmNvbS9vbW5pLWRvb3IvY2xpJyAvPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L25hdj5cbiAgICAgIDwvSGVhZGVyPlxuICAgICAgPENvbnRlbnQgY2xhc3NOYW1lPXtzdHlsZXNbJ2xheW91dC1jb250ZW50J119PlxuICAgICAgICB7IGNoaWxkcmVuIH1cbiAgICAgIDwvQ29udGVudD5cbiAgICAgIDxGb290ZXIgY2xhc3NOYW1lPXtzdHlsZXNbJ2xheW91dC1mb290ZXInXX0+XG4gICAgICAgIENvcHlyaWdodCDCqSAyMDIwIEBvbW5pLWRvb3JcbiAgICAgIDwvRm9vdGVyPlxuICAgIDwvTGF5b3V0PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgbWVtbyhCYXNpY0xheW91dCk7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/Layout/Layout.tsx\n");
+
+/***/ }),
+
+/***/ "./src/components/Layout/index.ts":
+/*!****************************************!*\
+  !*** ./src/components/Layout/index.ts ***!
+  \****************************************/
+/*! exports provided: Layout, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout */ \"./src/components/Layout/Layout.tsx\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Layout\", function() { return _Layout__WEBPACK_IMPORTED_MODULE_0__[\"BasicLayout\"]; });\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Layout__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MYXlvdXQvaW5kZXgudHM/MzYwZCJdLCJuYW1lcyI6WyJMYXlvdXQiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFFQTtBQUNlQSw4R0FBZiIsImZpbGUiOiIuL3NyYy9jb21wb25lbnRzL0xheW91dC9pbmRleC50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMYXlvdXQgZnJvbSAnLi9MYXlvdXQnO1xuXG5leHBvcnQgeyBCYXNpY0xheW91dCBhcyBMYXlvdXQgfSBmcm9tICcuL0xheW91dCc7XG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/Layout/index.ts\n");
+
+/***/ }),
+
+/***/ "./src/components/Layout/style/Layout.module.less":
+/*!********************************************************!*\
+  !*** ./src/components/Layout/style/Layout.module.less ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = {\n\t\"layout\": \"layout___3A7bD\",\n\t\"layout-header\": \"layout-header___Q3gM3\",\n\t\"layout-header-nav\": \"layout-header-nav___2mLmA\",\n\t\"layout-header-logo\": \"layout-header-logo___3mId9\",\n\t\"layout-header-menu\": \"layout-header-menu___1vMUS\",\n\t\"layout-header-menu-item\": \"layout-header-menu-item___zi16w\",\n\t\"layout-header-right\": \"layout-header-right___1E1pF\",\n\t\"layout-header-lang\": \"layout-header-lang___z0mmG\",\n\t\"layout-header-github\": \"layout-header-github___2TvOP\",\n\t\"layout-footer\": \"layout-footer___cAFTp\"\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MYXlvdXQvc3R5bGUvTGF5b3V0Lm1vZHVsZS5sZXNzPzRlNDQiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6Ii4vc3JjL2NvbXBvbmVudHMvTGF5b3V0L3N0eWxlL0xheW91dC5tb2R1bGUubGVzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0ge1xuXHRcImxheW91dFwiOiBcImxheW91dF9fXzNBN2JEXCIsXG5cdFwibGF5b3V0LWhlYWRlclwiOiBcImxheW91dC1oZWFkZXJfX19RM2dNM1wiLFxuXHRcImxheW91dC1oZWFkZXItbmF2XCI6IFwibGF5b3V0LWhlYWRlci1uYXZfX18ybUxtQVwiLFxuXHRcImxheW91dC1oZWFkZXItbG9nb1wiOiBcImxheW91dC1oZWFkZXItbG9nb19fXzNtSWQ5XCIsXG5cdFwibGF5b3V0LWhlYWRlci1tZW51XCI6IFwibGF5b3V0LWhlYWRlci1tZW51X19fMXZNVVNcIixcblx0XCJsYXlvdXQtaGVhZGVyLW1lbnUtaXRlbVwiOiBcImxheW91dC1oZWFkZXItbWVudS1pdGVtX19femkxNndcIixcblx0XCJsYXlvdXQtaGVhZGVyLXJpZ2h0XCI6IFwibGF5b3V0LWhlYWRlci1yaWdodF9fXzFFMXBGXCIsXG5cdFwibGF5b3V0LWhlYWRlci1sYW5nXCI6IFwibGF5b3V0LWhlYWRlci1sYW5nX19fejBtbUdcIixcblx0XCJsYXlvdXQtaGVhZGVyLWdpdGh1YlwiOiBcImxheW91dC1oZWFkZXItZ2l0aHViX19fMlR2T1BcIixcblx0XCJsYXlvdXQtZm9vdGVyXCI6IFwibGF5b3V0LWZvb3Rlcl9fX2NBRlRwXCJcbn07Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Layout/style/Layout.module.less\n");
+
+/***/ }),
+
+/***/ "./src/components/Link/Link.tsx":
+/*!**************************************!*\
+  !*** ./src/components/Link/Link.tsx ***!
+  \**************************************/
+/*! exports provided: Link, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Link\", function() { return Link; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_url_prettifier__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-url-prettifier */ \"next-url-prettifier\");\n/* harmony import */ var next_url_prettifier__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_url_prettifier__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../routes */ \"./src/routes.js\");\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_2__);\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\n\n\n/* import types */\n\nconst Link = props => {\n  const {\n    href,\n    page,\n    params = null,\n    children\n  } = props;\n  return __jsx(next_url_prettifier__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    href: href,\n    route: page ? _routes__WEBPACK_IMPORTED_MODULE_2__[\"nextRouter\"].linkPage(page, params) : null\n  }, children);\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react__WEBPACK_IMPORTED_MODULE_0__[\"memo\"])(Link));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MaW5rL0xpbmsudHN4P2ViOWIiXSwibmFtZXMiOlsiTGluayIsInByb3BzIiwiaHJlZiIsInBhZ2UiLCJwYXJhbXMiLCJjaGlsZHJlbiIsIm5leHRSb3V0ZXIiLCJsaW5rUGFnZSIsIm1lbW8iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBOztBQVVPLE1BQU1BLElBQW1CLEdBQUdDLEtBQUssSUFBSTtBQUMxQyxRQUFNO0FBQUVDLFFBQUY7QUFBUUMsUUFBUjtBQUFjQyxVQUFNLEdBQUcsSUFBdkI7QUFBNkJDO0FBQTdCLE1BQTBDSixLQUFoRDtBQUVBLFNBQ0UsTUFBQyx3REFBRDtBQUNFLFFBQUksRUFBRUMsSUFEUjtBQUVFLFNBQUssRUFBR0MsSUFBSSxHQUFHRyxrREFBVSxDQUFDQyxRQUFYLENBQW9CSixJQUFwQixFQUEwQkMsTUFBMUIsQ0FBSCxHQUF1QztBQUZyRCxLQUlJQyxRQUpKLENBREY7QUFRRCxDQVhNO0FBYVFHLGlIQUFJLENBQUNSLElBQUQsQ0FBbkIiLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9MaW5rL0xpbmsudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IG1lbW8gfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBMaW5rIGFzIE5leHRMaW5rIH0gZnJvbSAnbmV4dC11cmwtcHJldHRpZmllcic7XG5pbXBvcnQgeyBuZXh0Um91dGVyIH0gZnJvbSAnLi4vLi4vcm91dGVzJztcbi8qIGltcG9ydCB0eXBlcyAqL1xuaW1wb3J0IHR5cGUgeyBGQyB9IGZyb20gJ3JlYWN0JztcblxuZXhwb3J0IGludGVyZmFjZSBMaW5rUHJvcHMge1xuICBocmVmPzogc3RyaW5nO1xuICBwYWdlPzogc3RyaW5nO1xuICBwYXJhbXM/OiB7IFtwcm9wczogc3RyaW5nXTogYW55OyB9O1xuICBjaGlsZHJlbj86IFJlYWN0LlJlYWN0Tm9kZTtcbn1cblxuZXhwb3J0IGNvbnN0IExpbms6IEZDPExpbmtQcm9wcz4gPSBwcm9wcyA9PiB7XG4gIGNvbnN0IHsgaHJlZiwgcGFnZSwgcGFyYW1zID0gbnVsbCwgY2hpbGRyZW4gfSA9IHByb3BzO1xuXG4gIHJldHVybiAoXG4gICAgPE5leHRMaW5rXG4gICAgICBocmVmPXtocmVmfVxuICAgICAgcm91dGU9eyBwYWdlID8gbmV4dFJvdXRlci5saW5rUGFnZShwYWdlLCBwYXJhbXMpIDogbnVsbH1cbiAgICA+XG4gICAgICB7IGNoaWxkcmVuIH1cbiAgICA8L05leHRMaW5rPlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgbWVtbyhMaW5rKTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/components/Link/Link.tsx\n");
+
+/***/ }),
+
+/***/ "./src/components/Link/index.ts":
+/*!**************************************!*\
+  !*** ./src/components/Link/index.ts ***!
+  \**************************************/
+/*! exports provided: Link, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Link */ \"./src/components/Link/Link.tsx\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Link\", function() { return _Link__WEBPACK_IMPORTED_MODULE_0__[\"Link\"]; });\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Link__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MaW5rL2luZGV4LnRzPzQ0ZTgiXSwibmFtZXMiOlsiTGluayJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUVBO0FBQ2VBLDRHQUFmIiwiZmlsZSI6Ii4vc3JjL2NvbXBvbmVudHMvTGluay9pbmRleC50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJy4vTGluayc7XG5cbmV4cG9ydCB7IExpbmsgfSBmcm9tICcuL0xpbmsnO1xuZXhwb3J0IGRlZmF1bHQgTGluaztcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/components/Link/index.ts\n");
+
+/***/ }),
+
+/***/ "./src/context/UseLocale.tsx":
+/*!***********************************!*\
+  !*** ./src/context/UseLocale.tsx ***!
+  \***********************************/
+/*! exports provided: UseLocale, UseLocaleProvider, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"UseLocale\", function() { return UseLocale; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"UseLocaleProvider\", function() { return UseLocaleProvider; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _locale_cn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @locale/cn */ \"./src/locales/cn.ts\");\n/* harmony import */ var _locale_en__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @locale/en */ \"./src/locales/en.ts\");\n\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nconst locales = {\n  cn: _locale_cn__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  en: _locale_en__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n};\nconst initLang = 'cn';\nconst ctxInitState = {\n  lang: initLang,\n  locale: locales[initLang],\n  setLang: lang => console.warn('初始化未完成')\n};\nconst UseLocale = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createContext\"])(ctxInitState);\nconst UseLocaleProvider = props => {\n  var _props$lang, _locales;\n\n  const setLang = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useCallback\"])(function (lang) {\n    let locale = locales[lang];\n\n    if (!locale) {\n      locale = ctxInitState.locale;\n      lang = ctxInitState.lang;\n    }\n\n    setState(states => _objectSpread(_objectSpread({}, states), {}, {\n      locale,\n      lang\n    }));\n  }, []);\n  const initState = {\n    lang: (_props$lang = props === null || props === void 0 ? void 0 : props.lang) !== null && _props$lang !== void 0 ? _props$lang : ctxInitState.lang,\n    locale: (_locales = locales[props === null || props === void 0 ? void 0 : props.lang]) !== null && _locales !== void 0 ? _locales : ctxInitState.locale,\n    setLang\n  };\n  const {\n    0: state,\n    1: setState\n  } = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(initState);\n  return __jsx(UseLocale.Provider, {\n    value: state\n  }, props.children);\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (UseLocaleProvider);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29udGV4dC9Vc2VMb2NhbGUudHN4P2NiYWQiXSwibmFtZXMiOlsibG9jYWxlcyIsImNuIiwibG9jYWxlX2NuIiwiZW4iLCJsb2NhbGVfZW4iLCJpbml0TGFuZyIsImN0eEluaXRTdGF0ZSIsImxhbmciLCJsb2NhbGUiLCJzZXRMYW5nIiwiY29uc29sZSIsIndhcm4iLCJVc2VMb2NhbGUiLCJjcmVhdGVDb250ZXh0IiwiVXNlTG9jYWxlUHJvdmlkZXIiLCJwcm9wcyIsInVzZUNhbGxiYWNrIiwic2V0U3RhdGUiLCJzdGF0ZXMiLCJpbml0U3RhdGUiLCJzdGF0ZSIsInVzZVN0YXRlIiwiY2hpbGRyZW4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUtBO0FBQ0E7QUFFQSxNQUFNQSxPQUFPLEdBQUc7QUFDZEMsSUFBRSxFQUFFQyxrREFEVTtBQUVkQyxJQUFFLEVBQUVDLGtEQUFTQTtBQUZDLENBQWhCO0FBS0EsTUFBTUMsUUFBUSxHQUFHLElBQWpCO0FBQ0EsTUFBTUMsWUFBWSxHQUFHO0FBQ25CQyxNQUFJLEVBQUVGLFFBRGE7QUFFbkJHLFFBQU0sRUFBRVIsT0FBTyxDQUFDSyxRQUFELENBRkk7QUFHbkJJLFNBQU8sRUFBR0YsSUFBRCxJQUFrQkcsT0FBTyxDQUFDQyxJQUFSLENBQWEsUUFBYjtBQUhSLENBQXJCO0FBTU8sTUFBTUMsU0FBUyxHQUFHQywyREFBYSxDQUFDUCxZQUFELENBQS9CO0FBR0EsTUFBTVEsaUJBQWlCLEdBQUlDLEtBQUQsSUFBZ0I7QUFBQTs7QUFDL0MsUUFBTU4sT0FBTyxHQUFHTyx5REFBVyxDQUFDLFVBQVVULElBQVYsRUFBd0I7QUFDbEQsUUFBSUMsTUFBTSxHQUFHUixPQUFPLENBQUNPLElBQUQsQ0FBcEI7O0FBQ0EsUUFBSSxDQUFDQyxNQUFMLEVBQWE7QUFDWEEsWUFBTSxHQUFHRixZQUFZLENBQUNFLE1BQXRCO0FBQ0FELFVBQUksR0FBR0QsWUFBWSxDQUFDQyxJQUFwQjtBQUNEOztBQUNEVSxZQUFRLENBQUNDLE1BQU0sb0NBQ1ZBLE1BRFU7QUFFYlYsWUFGYTtBQUdiRDtBQUhhLE1BQVAsQ0FBUjtBQUtELEdBWDBCLEVBV3hCLEVBWHdCLENBQTNCO0FBYUEsUUFBTVksU0FBUyxHQUFHO0FBQ2hCWixRQUFJLGlCQUFFUSxLQUFGLGFBQUVBLEtBQUYsdUJBQUVBLEtBQUssQ0FBRVIsSUFBVCxxREFBaUJELFlBQVksQ0FBQ0MsSUFEbEI7QUFFaEJDLFVBQU0sY0FBRVIsT0FBTyxDQUFDZSxLQUFELGFBQUNBLEtBQUQsdUJBQUNBLEtBQUssQ0FBRVIsSUFBUixDQUFULCtDQUFrREQsWUFBWSxDQUFDRSxNQUZyRDtBQUdoQkM7QUFIZ0IsR0FBbEI7QUFNQSxRQUFNO0FBQUEsT0FBQ1csS0FBRDtBQUFBLE9BQVFIO0FBQVIsTUFBb0JJLHNEQUFRLENBQUNGLFNBQUQsQ0FBbEM7QUFFQSxTQUNFLE1BQUMsU0FBRCxDQUFXLFFBQVg7QUFBb0IsU0FBSyxFQUFHQztBQUE1QixLQUNJTCxLQUFLLENBQUNPLFFBRFYsQ0FERjtBQUtELENBM0JNO0FBNkJRUixnRkFBZiIsImZpbGUiOiIuL3NyYy9jb250ZXh0L1VzZUxvY2FsZS50c3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBjcmVhdGVDb250ZXh0LFxuICB1c2VTdGF0ZSxcbiAgdXNlQ2FsbGJhY2tcbn0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGxvY2FsZV9jbiBmcm9tICdAbG9jYWxlL2NuJztcbmltcG9ydCBsb2NhbGVfZW4gZnJvbSAnQGxvY2FsZS9lbic7XG5cbmNvbnN0IGxvY2FsZXMgPSB7XG4gIGNuOiBsb2NhbGVfY24sXG4gIGVuOiBsb2NhbGVfZW5cbn07XG5cbmNvbnN0IGluaXRMYW5nID0gJ2NuJztcbmNvbnN0IGN0eEluaXRTdGF0ZSA9IHtcbiAgbGFuZzogaW5pdExhbmcsXG4gIGxvY2FsZTogbG9jYWxlc1tpbml0TGFuZ10sXG4gIHNldExhbmc6IChsYW5nOiBzdHJpbmcpID0+IGNvbnNvbGUud2Fybign5Yid5aeL5YyW5pyq5a6M5oiQJylcbn07XG5cbmV4cG9ydCBjb25zdCBVc2VMb2NhbGUgPSBjcmVhdGVDb250ZXh0KGN0eEluaXRTdGF0ZSk7XG5cblxuZXhwb3J0IGNvbnN0IFVzZUxvY2FsZVByb3ZpZGVyID0gKHByb3BzOiBhbnkpID0+IHtcbiAgY29uc3Qgc2V0TGFuZyA9IHVzZUNhbGxiYWNrKGZ1bmN0aW9uIChsYW5nOiBzdHJpbmcpIHtcbiAgICBsZXQgbG9jYWxlID0gbG9jYWxlc1tsYW5nIGFzIGtleW9mIHR5cGVvZiBsb2NhbGVzXTtcbiAgICBpZiAoIWxvY2FsZSkge1xuICAgICAgbG9jYWxlID0gY3R4SW5pdFN0YXRlLmxvY2FsZTtcbiAgICAgIGxhbmcgPSBjdHhJbml0U3RhdGUubGFuZztcbiAgICB9XG4gICAgc2V0U3RhdGUoc3RhdGVzID0+ICh7XG4gICAgICAuLi5zdGF0ZXMsXG4gICAgICBsb2NhbGUsXG4gICAgICBsYW5nXG4gICAgfSkpO1xuICB9LCBbXSk7XG5cbiAgY29uc3QgaW5pdFN0YXRlID0ge1xuICAgIGxhbmc6IHByb3BzPy5sYW5nID8/IGN0eEluaXRTdGF0ZS5sYW5nLFxuICAgIGxvY2FsZTogbG9jYWxlc1twcm9wcz8ubGFuZyBhcyBrZXlvZiB0eXBlb2YgbG9jYWxlc10gPz8gY3R4SW5pdFN0YXRlLmxvY2FsZSxcbiAgICBzZXRMYW5nXG4gIH07XG5cbiAgY29uc3QgW3N0YXRlLCBzZXRTdGF0ZV0gPSB1c2VTdGF0ZShpbml0U3RhdGUpO1xuXG4gIHJldHVybiAoXG4gICAgPFVzZUxvY2FsZS5Qcm92aWRlciB2YWx1ZT17IHN0YXRlIH0gPlxuICAgICAgeyBwcm9wcy5jaGlsZHJlbiB9XG4gICAgPC9Vc2VMb2NhbGUuUHJvdmlkZXI+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBVc2VMb2NhbGVQcm92aWRlcjtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/context/UseLocale.tsx\n");
+
+/***/ }),
+
+/***/ "./src/locales/cn.ts":
+/*!***************************!*\
+  !*** ./src/locales/cn.ts ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst locale = {\n  global: {\n    logo: '任意门',\n    start: '开始',\n    docs: '文档',\n    lang: 'English'\n  },\n  home: {\n    pageTitle: '任意门',\n    title: '任意门',\n    subtitle: '你的项目想去哪里？不妨让任意门帮你！',\n    description: `为前端项目的创建、开发、构建、发布提供一条龙服务。\n    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。\n    `,\n    btn_start: '开始使用',\n    btn_docs: '文档',\n    license: 'MIT',\n    why: [{\n      title: '各种轮子随你挑',\n      subtitle: '一行命令即可构建一个完整的前端项目工程',\n      intro: `集成typescript；\n          可无缝对接 ESlint、Prettier、Stylelint、Commitlint 等各种 lint 工具，\n          更可以接入单元测试\n          `,\n      route: {\n        page: 'start',\n        params: {\n          lang: 'cn'\n        }\n      }\n    }, {\n      title: 'React单页应用',\n      subtitle: '基于 React 和 React-Router 的 SPA 项目',\n      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，\n          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、\n          项目结构简单、前后端分离等需求…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'spa-react'\n        }\n      }\n    }, {\n      title: 'React服务端渲染应用',\n      subtitle: '基于 React 和 NextJs 的 SSR 项目',\n      intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，\n          同时相比于 SPA 应用，也能有效的降低白屏时间，\n          无论是 PC 官网 还是 M 站，都是一个很好的选择…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'ssr-react'\n        }\n      }\n    }, {\n      title: 'React组件库',\n      subtitle: '基于 React 的组件库项目',\n      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；\n          借助社区开源的组件库 Demo-UI 框架，如 docz、storybook、styleguidist 等，\n          让组件库的开发不再是遥不可及的技术难题…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'component-react'\n        }\n      }\n    }, {\n      title: '工具库',\n      subtitle: '类lodash、ramda工具库',\n      intro: '纯逻辑组件？耦合了业务需求的功能模块？不想耦合任何 UI 框架 —— 工具库项目很可能是你需要的…',\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'toolkit'\n        }\n      }\n    }],\n    demo: []\n  },\n  docs: {\n    pageTitle: '任意门 - 文档'\n  },\n  start: {\n    pageTitle: '任意门 - 开始使用'\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (locale);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvbG9jYWxlcy9jbi50cz9lMzg0Il0sIm5hbWVzIjpbImxvY2FsZSIsImdsb2JhbCIsImxvZ28iLCJzdGFydCIsImRvY3MiLCJsYW5nIiwiaG9tZSIsInBhZ2VUaXRsZSIsInRpdGxlIiwic3VidGl0bGUiLCJkZXNjcmlwdGlvbiIsImJ0bl9zdGFydCIsImJ0bl9kb2NzIiwibGljZW5zZSIsIndoeSIsImludHJvIiwicm91dGUiLCJwYWdlIiwicGFyYW1zIiwiYXJ0aWNsZSIsImRlbW8iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEsTUFBTUEsTUFBTSxHQUFHO0FBQ2JDLFFBQU0sRUFBRTtBQUNOQyxRQUFJLEVBQUUsS0FEQTtBQUVOQyxTQUFLLEVBQUUsSUFGRDtBQUdOQyxRQUFJLEVBQUUsSUFIQTtBQUlOQyxRQUFJLEVBQUU7QUFKQSxHQURLO0FBT2JDLE1BQUksRUFBRTtBQUNKQyxhQUFTLEVBQUUsS0FEUDtBQUVKQyxTQUFLLEVBQUUsS0FGSDtBQUdKQyxZQUFRLEVBQ04sb0JBSkU7QUFLSkMsZUFBVyxFQUFHOztLQUxWO0FBUUpDLGFBQVMsRUFBRSxNQVJQO0FBU0pDLFlBQVEsRUFBRSxJQVROO0FBVUpDLFdBQU8sRUFBRSxLQVZMO0FBV0pDLE9BQUcsRUFBRSxDQUNIO0FBQ0VOLFdBQUssRUFBRSxTQURUO0FBRUVDLGNBQVEsRUFDTixxQkFISjtBQUlFTSxXQUFLLEVBQUc7OztXQUpWO0FBUUVDLFdBQUssRUFBRTtBQUNMQyxZQUFJLEVBQUUsT0FERDtBQUVMQyxjQUFNLEVBQUU7QUFDTmIsY0FBSSxFQUFFO0FBREE7QUFGSDtBQVJULEtBREcsRUFnQkg7QUFDRUcsV0FBSyxFQUFFLFdBRFQ7QUFFRUMsY0FBUSxFQUNOLGtDQUhKO0FBSUVNLFdBQUssRUFBRzs7O1dBSlY7QUFRRUMsV0FBSyxFQUFFO0FBQ0xDLFlBQUksRUFBRSxNQUREO0FBRUxDLGNBQU0sRUFBRTtBQUNOYixjQUFJLEVBQUUsSUFEQTtBQUVOYyxpQkFBTyxFQUFFO0FBRkg7QUFGSDtBQVJULEtBaEJHLEVBZ0NIO0FBQ0VYLFdBQUssRUFBRSxjQURUO0FBRUVDLGNBQVEsRUFDTiw0QkFISjtBQUlFTSxXQUFLLEVBQUc7OztXQUpWO0FBUUVDLFdBQUssRUFBRTtBQUNMQyxZQUFJLEVBQUUsTUFERDtBQUVMQyxjQUFNLEVBQUU7QUFDTmIsY0FBSSxFQUFFLElBREE7QUFFTmMsaUJBQU8sRUFBRTtBQUZIO0FBRkg7QUFSVCxLQWhDRyxFQWdESDtBQUNFWCxXQUFLLEVBQUUsVUFEVDtBQUVFQyxjQUFRLEVBQUUsaUJBRlo7QUFHRU0sV0FBSyxFQUFHOzs7V0FIVjtBQU9FQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBUFQsS0FoREcsRUErREg7QUFDRVgsV0FBSyxFQUFFLEtBRFQ7QUFFRUMsY0FBUSxFQUFFLGtCQUZaO0FBR0VNLFdBQUssRUFDSCxtREFKSjtBQUtFQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBTFQsS0EvREcsQ0FYRDtBQXdGSkMsUUFBSSxFQUFFO0FBeEZGLEdBUE87QUFpR2JoQixNQUFJLEVBQUU7QUFDSkcsYUFBUyxFQUFFO0FBRFAsR0FqR087QUFvR2JKLE9BQUssRUFBRTtBQUNMSSxhQUFTLEVBQUU7QUFETjtBQXBHTSxDQUFmO0FBeUdlUCxxRUFBZiIsImZpbGUiOiIuL3NyYy9sb2NhbGVzL2NuLnRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgbG9jYWxlID0ge1xuICBnbG9iYWw6IHtcbiAgICBsb2dvOiAn5Lu75oSP6ZeoJyxcbiAgICBzdGFydDogJ+W8gOWniycsXG4gICAgZG9jczogJ+aWh+ahoycsXG4gICAgbGFuZzogJ0VuZ2xpc2gnXG4gIH0sXG4gIGhvbWU6IHtcbiAgICBwYWdlVGl0bGU6ICfku7vmhI/pl6gnLFxuICAgIHRpdGxlOiAn5Lu75oSP6ZeoJyxcbiAgICBzdWJ0aXRsZTpcbiAgICAgICfkvaDnmoTpobnnm67mg7Pljrvlk6rph4zvvJ/kuI3lpqjorqnku7vmhI/pl6jluK7kvaDvvIEnLFxuICAgIGRlc2NyaXB0aW9uOiBg5Li65YmN56uv6aG555uu55qE5Yib5bu644CB5byA5Y+R44CB5p6E5bu644CB5Y+R5biD5o+Q5L6b5LiA5p2h6b6Z5pyN5Yqh44CCXG4gICAg5pSv5oyB5Z+65LqOIFJlYWN0IOeahOWNlemhteW6lOeUqChTUEEp44CB5pyN5Yqh56uv5riy5p+T5bqU55SoKFNTUinjgIHnu4Tku7blupPjgIHnsbtsb2Rhc2jlt6Xlhbfpm4bnrYnlpJrnp43liY3nq6/luLjop4Hpobnnm67jgIJcbiAgICBgLFxuICAgIGJ0bl9zdGFydDogJ+W8gOWni+S9v+eUqCcsXG4gICAgYnRuX2RvY3M6ICfmlofmoaMnLFxuICAgIGxpY2Vuc2U6ICdNSVQnLFxuICAgIHdoeTogW1xuICAgICAge1xuICAgICAgICB0aXRsZTogJ+WQhOenjei9ruWtkOmaj+S9oOaMkScsXG4gICAgICAgIHN1YnRpdGxlOlxuICAgICAgICAgICfkuIDooYzlkb3ku6TljbPlj6/mnoTlu7rkuIDkuKrlrozmlbTnmoTliY3nq6/pobnnm67lt6XnqIsnLFxuICAgICAgICBpbnRybzogYOmbhuaIkHR5cGVzY3JpcHTvvJtcbiAgICAgICAgICDlj6/ml6DnvJ3lr7nmjqUgRVNsaW5044CBUHJldHRpZXLjgIFTdHlsZWxpbnTjgIFDb21taXRsaW50IOetieWQhOenjSBsaW50IOW3peWFt++8jFxuICAgICAgICAgIOabtOWPr+S7peaOpeWFpeWNleWFg+a1i+ivlVxuICAgICAgICAgIGAsXG4gICAgICAgIHJvdXRlOiB7XG4gICAgICAgICAgcGFnZTogJ3N0YXJ0JyxcbiAgICAgICAgICBwYXJhbXM6IHtcbiAgICAgICAgICAgIGxhbmc6ICdjbidcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3TljZXpobXlupTnlKgnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAn5Z+65LqOIFJlYWN0IOWSjCBSZWFjdC1Sb3V0ZXIg55qEIFNQQSDpobnnm64nLFxuICAgICAgICBpbnRybzogYFNQQShTaW5nbGUtQXBwbGljYXRpb24tQXBwKSDljZXpobXlupTnlKjmmK/njrDlnKjnmoTliY3nq6/lvIDlj5HogIXkvb/nlKjpopHnjofmnIDpq5jnmoTkuIDnp43pobnnm67mqKHlvI/vvIxcbiAgICAgICAgICDml6DorrrmmK/pgILphY3kuo7np7vliqjnq6/nmoRINe+8jOi/mOaYr+acjeWKoeS6juS4reWQjuWPsOeahFBD6aG555uu77yM6YO95b6I5aW955qE5ruh6Laz5LqG5byA5Y+R5ZGo5pyf55+t44CB5oiQ5pys5L2O44CBXG4gICAgICAgICAg6aG555uu57uT5p6E566A5Y2V44CB5YmN5ZCO56uv5YiG56a7562J6ZyA5rGC4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnY24nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3NwYS1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3TmnI3liqHnq6/muLLmn5PlupTnlKgnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAn5Z+65LqOIFJlYWN0IOWSjCBOZXh0SnMg55qEIFNTUiDpobnnm64nLFxuICAgICAgICBpbnRybzogYOWfuuS6jiBSZWFjdCArIE5leHRKcyDnmoQgU1NSKFNlcnZlci1TaWRlLVJlbmRlcikg5pyN5Yqh56uv5riy5p+T5bqU55So6Kej5Yaz5LqGIFNFTyDlkozliY3lkI7nq6/liIbnprvnmoTpl67popjvvIxcbiAgICAgICAgICDlkIzml7bnm7jmr5Tkuo4gU1BBIOW6lOeUqO+8jOS5n+iDveacieaViOeahOmZjeS9jueZveWxj+aXtumXtO+8jFxuICAgICAgICAgIOaXoOiuuuaYryBQQyDlrpjnvZEg6L+Y5pivIE0g56uZ77yM6YO95piv5LiA5Liq5b6I5aW955qE6YCJ5oup4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnY24nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3Nzci1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3Tnu4Tku7blupMnLFxuICAgICAgICBzdWJ0aXRsZTogJ+WfuuS6jiBSZWFjdCDnmoTnu4Tku7blupPpobnnm64nLFxuICAgICAgICBpbnRybzogYOS4gOWll+WxnuS6juiHquW3seWboumYn+aIluWFrOWPuOWGhemDqOS9v+eUqOeahOe7hOS7tuW6k++8jOWHoOS5juaYr+avj+S4quWFrOWPuOWJjeerr+WboumYn+eahOagh+mFje+8m1xuICAgICAgICAgIOWAn+WKqeekvuWMuuW8gOa6kOeahOe7hOS7tuW6kyBEZW1vLVVJIOahhuaetu+8jOWmgiBkb2N644CBc3Rvcnlib29r44CBc3R5bGVndWlkaXN0IOetie+8jFxuICAgICAgICAgIOiuqee7hOS7tuW6k+eahOW8gOWPkeS4jeWGjeaYr+mBpeS4jeWPr+WPiueahOaKgOacr+mavumimOKAplxuICAgICAgICAgIGAsXG4gICAgICAgIHJvdXRlOiB7XG4gICAgICAgICAgcGFnZTogJ2RvY3MnLFxuICAgICAgICAgIHBhcmFtczoge1xuICAgICAgICAgICAgbGFuZzogJ2NuJyxcbiAgICAgICAgICAgIGFydGljbGU6ICdjb21wb25lbnQtcmVhY3QnXG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9LFxuICAgICAge1xuICAgICAgICB0aXRsZTogJ+W3peWFt+W6kycsXG4gICAgICAgIHN1YnRpdGxlOiAn57G7bG9kYXNo44CBcmFtZGHlt6XlhbflupMnLFxuICAgICAgICBpbnRybzpcbiAgICAgICAgICAn57qv6YC76L6R57uE5Lu277yf6ICm5ZCI5LqG5Lia5Yqh6ZyA5rGC55qE5Yqf6IO95qih5Z2X77yf5LiN5oOz6ICm5ZCI5Lu75L2VIFVJIOahhuaetiDigJTigJQg5bel5YW35bqT6aG555uu5b6I5Y+v6IO95piv5L2g6ZyA6KaB55qE4oCmJyxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnY24nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3Rvb2xraXQnXG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG4gICAgXSxcbiAgICBkZW1vOiBbXVxuICB9LFxuICBkb2NzOiB7XG4gICAgcGFnZVRpdGxlOiAn5Lu75oSP6ZeoIC0g5paH5qGjJ1xuICB9LFxuICBzdGFydDoge1xuICAgIHBhZ2VUaXRsZTogJ+S7u+aEj+mXqCAtIOW8gOWni+S9v+eUqCdcbiAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgbG9jYWxlOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/locales/cn.ts\n");
+
+/***/ }),
+
+/***/ "./src/locales/en.ts":
+/*!***************************!*\
+  !*** ./src/locales/en.ts ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst locale = {\n  global: {\n    logo: 'Omni-Door',\n    start: 'Start',\n    docs: 'Docs',\n    lang: '中文'\n  },\n  home: {\n    pageTitle: 'Omni-Door',\n    title: 'Omni-Door',\n    subtitle: 'Where do you want your project to go? Let any Omni-Door help you!',\n    description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.\n      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,\n    btn_start: 'Getting Started',\n    btn_docs: 'Documentation',\n    license: 'MIT',\n    why: [{\n      title: 'Many kinds of wheels are up to you',\n      subtitle: 'A complete front-end project project can be built in one line of command',\n      intro: `Integrating typescript;\n          Seamless docking of eslint, prettier, stylelint, commitlint,\n          It can also access unit-test\n          `,\n      route: {\n        page: 'start',\n        params: {\n          lang: 'en'\n        }\n      }\n    }, {\n      title: 'React-SPA',\n      subtitle: 'The SPA project based on react and react router',\n      intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,\n          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost\n          Project structure is simple, front and back end separation and other requirements…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'spa-react'\n        }\n      }\n    }, {\n      title: 'React-SSR',\n      subtitle: 'The SSR project based on react and nextjs',\n      intro: `SSR (server side render) server-side rendering application based on react + nextjs solves the problem of separation of SEO and front-end,\n          At the same time, compared with spa application, it can also effectively reduce the white screen time,\n          Whether it is PC official website or m station, it is a good choice…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'ssr-react'\n        }\n      }\n    }, {\n      title: 'React-Component',\n      subtitle: 'Component library project based on react',\n      intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;\n          With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,\n          The development of component library is no longer a distant technical problem…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'component-react'\n        }\n      }\n    }, {\n      title: 'toolkit',\n      subtitle: 'The tool library same as lodash or ramda',\n      intro: `Pure logic component? Function modules coupled with business requirements?\n          You don't want to couple any UI Frameworks - the tool library project is probably what you need…`,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'toolkit'\n        }\n      }\n    }],\n    demo: []\n  },\n  docs: {\n    pageTitle: 'Omni-Door - Docs'\n  },\n  start: {\n    pageTitle: 'Omni-Door - Start'\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (locale);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvbG9jYWxlcy9lbi50cz9hODRlIl0sIm5hbWVzIjpbImxvY2FsZSIsImdsb2JhbCIsImxvZ28iLCJzdGFydCIsImRvY3MiLCJsYW5nIiwiaG9tZSIsInBhZ2VUaXRsZSIsInRpdGxlIiwic3VidGl0bGUiLCJkZXNjcmlwdGlvbiIsImJ0bl9zdGFydCIsImJ0bl9kb2NzIiwibGljZW5zZSIsIndoeSIsImludHJvIiwicm91dGUiLCJwYWdlIiwicGFyYW1zIiwiYXJ0aWNsZSIsImRlbW8iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEsTUFBTUEsTUFBTSxHQUFHO0FBQ2JDLFFBQU0sRUFBRTtBQUNOQyxRQUFJLEVBQUUsV0FEQTtBQUVOQyxTQUFLLEVBQUUsT0FGRDtBQUdOQyxRQUFJLEVBQUUsTUFIQTtBQUlOQyxRQUFJLEVBQUU7QUFKQSxHQURLO0FBT2JDLE1BQUksRUFBRTtBQUNKQyxhQUFTLEVBQUUsV0FEUDtBQUVKQyxTQUFLLEVBQUUsV0FGSDtBQUdKQyxZQUFRLEVBQ04sbUVBSkU7QUFLSkMsZUFBVyxFQUFHOzhLQUxWO0FBT0pDLGFBQVMsRUFBRSxpQkFQUDtBQVFKQyxZQUFRLEVBQUUsZUFSTjtBQVNKQyxXQUFPLEVBQUUsS0FUTDtBQVVKQyxPQUFHLEVBQUUsQ0FDSDtBQUNFTixXQUFLLEVBQ0gsb0NBRko7QUFHRUMsY0FBUSxFQUNOLDBFQUpKO0FBS0VNLFdBQUssRUFBRzs7O1dBTFY7QUFTRUMsV0FBSyxFQUFFO0FBQ0xDLFlBQUksRUFBRSxPQUREO0FBRUxDLGNBQU0sRUFBRTtBQUNOYixjQUFJLEVBQUU7QUFEQTtBQUZIO0FBVFQsS0FERyxFQWlCSDtBQUNFRyxXQUFLLEVBQUUsV0FEVDtBQUVFQyxjQUFRLEVBQ04saURBSEo7QUFJRU0sV0FBSyxFQUFHOzs7V0FKVjtBQVFFQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBUlQsS0FqQkcsRUFpQ0g7QUFDRVgsV0FBSyxFQUFFLFdBRFQ7QUFFRUMsY0FBUSxFQUNOLDJDQUhKO0FBSUVNLFdBQUssRUFBRzs7O1dBSlY7QUFRRUMsV0FBSyxFQUFFO0FBQ0xDLFlBQUksRUFBRSxNQUREO0FBRUxDLGNBQU0sRUFBRTtBQUNOYixjQUFJLEVBQUUsSUFEQTtBQUVOYyxpQkFBTyxFQUFFO0FBRkg7QUFGSDtBQVJULEtBakNHLEVBaURIO0FBQ0VYLFdBQUssRUFBRSxpQkFEVDtBQUVFQyxjQUFRLEVBQ04sMENBSEo7QUFJRU0sV0FBSyxFQUFHOzs7V0FKVjtBQVFFQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBUlQsS0FqREcsRUFpRUg7QUFDRVgsV0FBSyxFQUFFLFNBRFQ7QUFFRUMsY0FBUSxFQUNOLDBDQUhKO0FBSUVNLFdBQUssRUFBRzsyR0FKVjtBQU1FQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBTlQsS0FqRUcsQ0FWRDtBQTBGSkMsUUFBSSxFQUFFO0FBMUZGLEdBUE87QUFtR2JoQixNQUFJLEVBQUU7QUFDSkcsYUFBUyxFQUFFO0FBRFAsR0FuR087QUFzR2JKLE9BQUssRUFBRTtBQUNMSSxhQUFTLEVBQUU7QUFETjtBQXRHTSxDQUFmO0FBMkdlUCxxRUFBZiIsImZpbGUiOiIuL3NyYy9sb2NhbGVzL2VuLnRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgbG9jYWxlID0ge1xuICBnbG9iYWw6IHtcbiAgICBsb2dvOiAnT21uaS1Eb29yJyxcbiAgICBzdGFydDogJ1N0YXJ0JyxcbiAgICBkb2NzOiAnRG9jcycsXG4gICAgbGFuZzogJ+S4reaWhydcbiAgfSxcbiAgaG9tZToge1xuICAgIHBhZ2VUaXRsZTogJ09tbmktRG9vcicsXG4gICAgdGl0bGU6ICdPbW5pLURvb3InLFxuICAgIHN1YnRpdGxlOlxuICAgICAgJ1doZXJlIGRvIHlvdSB3YW50IHlvdXIgcHJvamVjdCB0byBnbz8gTGV0IGFueSBPbW5pLURvb3IgaGVscCB5b3UhJyxcbiAgICBkZXNjcmlwdGlvbjogYFByb3ZpZGUgZnJvbnQtZW5kIHByb2plY3RzIGZyb20gdGhlIGluaXRpYWxpemF0aW9uLCBkZXZlbG9wbWVudCwgY29uc3RydWN0aW9uLCByZWxlYXNlIGFuZCBvdGhlciBvbmUtc3RvcCBzZXJ2aWNlcy5cbiAgICAgIEl0IHN1cHBvcnRzIG1hbnkgY29tbW9uIGZyb250LWVuZCBwcm9qZWN0cyBzdWNoIGFzIHNpbmdsZSBwYWdlIGFwcGxpY2F0aW9uIChTUEEpLCBzZXJ2ZXItc2lkZSByZW5kZXJpbmcgYXBwbGljYXRpb24gKFNTUiksIGNvbXBvbmVudCBsaWJyYXJ5LCBsb2Rhc2ggbGlrZSB0b29sc2V0LCBldGMuYCxcbiAgICBidG5fc3RhcnQ6ICdHZXR0aW5nIFN0YXJ0ZWQnLFxuICAgIGJ0bl9kb2NzOiAnRG9jdW1lbnRhdGlvbicsXG4gICAgbGljZW5zZTogJ01JVCcsXG4gICAgd2h5OiBbXG4gICAgICB7XG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgICdNYW55IGtpbmRzIG9mIHdoZWVscyBhcmUgdXAgdG8geW91JyxcbiAgICAgICAgc3VidGl0bGU6XG4gICAgICAgICAgJ0EgY29tcGxldGUgZnJvbnQtZW5kIHByb2plY3QgcHJvamVjdCBjYW4gYmUgYnVpbHQgaW4gb25lIGxpbmUgb2YgY29tbWFuZCcsXG4gICAgICAgIGludHJvOiBgSW50ZWdyYXRpbmcgdHlwZXNjcmlwdDtcbiAgICAgICAgICBTZWFtbGVzcyBkb2NraW5nIG9mIGVzbGludCwgcHJldHRpZXIsIHN0eWxlbGludCwgY29tbWl0bGludCxcbiAgICAgICAgICBJdCBjYW4gYWxzbyBhY2Nlc3MgdW5pdC10ZXN0XG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnc3RhcnQnLFxuICAgICAgICAgIHBhcmFtczoge1xuICAgICAgICAgICAgbGFuZzogJ2VuJ1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgdGl0bGU6ICdSZWFjdC1TUEEnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAnVGhlIFNQQSBwcm9qZWN0IGJhc2VkIG9uIHJlYWN0IGFuZCByZWFjdCByb3V0ZXInLFxuICAgICAgICBpbnRybzogYFNQQShTaW5nbGUtQXBwbGljYXRpb24tQXBwKSAgaXMgdGhlIG1vc3QgZnJlcXVlbnRseSB1c2VkIHByb2plY3QgbW9kZSBieSBmcm9udC1lbmQgZGV2ZWxvcGVycyxcbiAgICAgICAgICBXaGV0aGVyIGl0IGlzIHRoZSBINSBzdWl0YWJsZSBmb3IgbW9iaWxlIHRlcm1pbmFsIG9yIHRoZSBQQyBwcm9qZWN0IHNlcnZpbmcgZm9yIHRoZSBtaWRkbGUgYW5kIGJhY2sgb2ZmaWNlLCBpdCBjYW4gbWVldCB0aGUgcmVxdWlyZW1lbnRzIG9mIHNob3J0IGRldmVsb3BtZW50IGN5Y2xlLCBsb3cgY29zdCwgYW5kIGxvdyBjb3N0XG4gICAgICAgICAgUHJvamVjdCBzdHJ1Y3R1cmUgaXMgc2ltcGxlLCBmcm9udCBhbmQgYmFjayBlbmQgc2VwYXJhdGlvbiBhbmQgb3RoZXIgcmVxdWlyZW1lbnRz4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnZW4nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3NwYS1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3QtU1NSJyxcbiAgICAgICAgc3VidGl0bGU6XG4gICAgICAgICAgJ1RoZSBTU1IgcHJvamVjdCBiYXNlZCBvbiByZWFjdCBhbmQgbmV4dGpzJyxcbiAgICAgICAgaW50cm86IGBTU1IgKHNlcnZlciBzaWRlIHJlbmRlcikgc2VydmVyLXNpZGUgcmVuZGVyaW5nIGFwcGxpY2F0aW9uIGJhc2VkIG9uIHJlYWN0ICsgbmV4dGpzIHNvbHZlcyB0aGUgcHJvYmxlbSBvZiBzZXBhcmF0aW9uIG9mIFNFTyBhbmQgZnJvbnQtZW5kLFxuICAgICAgICAgIEF0IHRoZSBzYW1lIHRpbWUsIGNvbXBhcmVkIHdpdGggc3BhIGFwcGxpY2F0aW9uLCBpdCBjYW4gYWxzbyBlZmZlY3RpdmVseSByZWR1Y2UgdGhlIHdoaXRlIHNjcmVlbiB0aW1lLFxuICAgICAgICAgIFdoZXRoZXIgaXQgaXMgUEMgb2ZmaWNpYWwgd2Vic2l0ZSBvciBtIHN0YXRpb24sIGl0IGlzIGEgZ29vZCBjaG9pY2XigKZcbiAgICAgICAgICBgLFxuICAgICAgICByb3V0ZToge1xuICAgICAgICAgIHBhZ2U6ICdkb2NzJyxcbiAgICAgICAgICBwYXJhbXM6IHtcbiAgICAgICAgICAgIGxhbmc6ICdlbicsXG4gICAgICAgICAgICBhcnRpY2xlOiAnc3NyLXJlYWN0J1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgdGl0bGU6ICdSZWFjdC1Db21wb25lbnQnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAnQ29tcG9uZW50IGxpYnJhcnkgcHJvamVjdCBiYXNlZCBvbiByZWFjdCcsXG4gICAgICAgIGludHJvOiBgQSBzZXQgb2YgY29tcG9uZW50IGxpYnJhcmllcyBmb3IgdGhlaXIgb3duIHRlYW0gb3IgaW50ZXJuYWwgdXNlIGlzIGFsbW9zdCB0aGUgc3RhbmRhcmQgY29uZmlndXJhdGlvbiBmb3IgZnJvbnQtZW5kIHRlYW1zIG9mIGVhY2ggY29tcGFueTtcbiAgICAgICAgICBXaXRoIHRoZSBoZWxwIG9mIGNvbW11bml0eSBvcGVuIHNvdXJjZSBjb21wb25lbnQgbGlicmFyeSBkZW1vIFVJIGZyYW1ld29yaywgc3VjaCBhcyBkb2N6LCBzdG9yeWJvb2ssIHN0eWxlZ3VpZGlzdCwgZXRjLFxuICAgICAgICAgIFRoZSBkZXZlbG9wbWVudCBvZiBjb21wb25lbnQgbGlicmFyeSBpcyBubyBsb25nZXIgYSBkaXN0YW50IHRlY2huaWNhbCBwcm9ibGVt4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnZW4nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ2NvbXBvbmVudC1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAndG9vbGtpdCcsXG4gICAgICAgIHN1YnRpdGxlOlxuICAgICAgICAgICdUaGUgdG9vbCBsaWJyYXJ5IHNhbWUgYXMgbG9kYXNoIG9yIHJhbWRhJyxcbiAgICAgICAgaW50cm86IGBQdXJlIGxvZ2ljIGNvbXBvbmVudD8gRnVuY3Rpb24gbW9kdWxlcyBjb3VwbGVkIHdpdGggYnVzaW5lc3MgcmVxdWlyZW1lbnRzP1xuICAgICAgICAgIFlvdSBkb24ndCB3YW50IHRvIGNvdXBsZSBhbnkgVUkgRnJhbWV3b3JrcyAtIHRoZSB0b29sIGxpYnJhcnkgcHJvamVjdCBpcyBwcm9iYWJseSB3aGF0IHlvdSBuZWVk4oCmYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnZW4nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3Rvb2xraXQnXG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG4gICAgXSxcbiAgICBkZW1vOiBbXVxuICB9LFxuICBkb2NzOiB7XG4gICAgcGFnZVRpdGxlOiAnT21uaS1Eb29yIC0gRG9jcydcbiAgfSxcbiAgc3RhcnQ6IHtcbiAgICBwYWdlVGl0bGU6ICdPbW5pLURvb3IgLSBTdGFydCdcbiAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgbG9jYWxlOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/locales/en.ts\n");
+
+/***/ }),
+
+/***/ "./src/routes.js":
+/*!***********************!*\
+  !*** ./src/routes.js ***!
+  \***********************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("jxtp");
-
-
-/***/ }),
-
-/***/ "I008":
-/***/ (function(module, exports) {
-
-module.exports = {
-	"layout": "layout___3A7bD",
-	"layout-header": "layout-header___Q3gM3",
-	"layout-header-nav": "layout-header-nav___2mLmA",
-	"layout-header-logo": "layout-header-logo___3mId9",
-	"layout-header-menu": "layout-header-menu___1vMUS",
-	"layout-header-menu-item": "layout-header-menu-item___zi16w",
-	"layout-header-right": "layout-header-right___1E1pF",
-	"layout-header-lang": "layout-header-lang___z0mmG",
-	"layout-header-github": "layout-header-github___2TvOP",
-	"layout-footer": "layout-footer___cAFTp"
-};
+eval("// The route base on next-url-prettifier\n// https://github.com/BDav24/next-url-prettifier\n// Client Usage: https://github.com/BDav24/next-url-prettifier#in-your-components\nconst UrlPrettifier = __webpack_require__(/*! next-url-prettifier */ \"next-url-prettifier\").default;\n\nclass NextUrlRouter extends UrlPrettifier {\n  constructor(routes, options = {}) {\n    super(routes, options);\n    this.root = options.root || '';\n    this.linkPage = this.linkPage.bind(this);\n    this.forEachPattern = this.forEachPattern.bind(this);\n  }\n\n  linkPage(pageName, params) {\n    const route = this.routes.find(currentRoute => currentRoute.page === pageName);\n    const obj = {\n      as: '',\n      href: `/${pageName}${this.paramsToQueryString(params)}`\n    };\n\n    if (route && route.prettyUrl) {\n      obj.as = this.root + (typeof route.prettyUrl === 'string' ? route.prettyUrl : route.prettyUrl(params));\n    }\n\n    return obj;\n  }\n\n  forEachPattern(apply) {\n    this.routes.forEach(route => {\n      this.getPrettyUrlPatterns(route).forEach(prettyPattern => apply({\n        page: route.page,\n        beforeRender: route.beforeRender,\n        pattern: this.root + prettyPattern.pattern,\n        defaultParams: prettyPattern.defaultParams\n      }));\n    });\n  }\n\n}\n\nconst routes = [{\n  page: 'home',\n  prettyUrl: ({\n    lang\n  }) => `/${lang}/home`,\n  prettyUrlPatterns: [{\n    pattern: '/'\n  }, {\n    pattern: '/home'\n  }, {\n    pattern: '/:lang/home'\n  }]\n}, {\n  page: 'start',\n  prettyUrl: ({\n    lang,\n    step = ''\n  }) => `/${lang}/start/${step}`,\n  prettyUrlPatterns: [{\n    pattern: '/start'\n  }, {\n    pattern: '/start/:step'\n  }, {\n    pattern: '/:lang/start'\n  }, {\n    pattern: '/:lang/start/:step'\n  }]\n}, {\n  page: 'docs',\n  prettyUrl: ({\n    lang,\n    article = ''\n  }) => `/${lang}/docs/${article}`,\n  prettyUrlPatterns: [{\n    pattern: '/docs'\n  }, {\n    pattern: '/docs/:article'\n  }, {\n    pattern: '/:lang/docs'\n  }, {\n    pattern: '/:lang/docs/:article'\n  }]\n}];\nconst nextRouter = new NextUrlRouter(routes);\nmodule.exports = {\n  nextRouter,\n  routes\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcm91dGVzLmpzPzU2NjUiXSwibmFtZXMiOlsiVXJsUHJldHRpZmllciIsInJlcXVpcmUiLCJkZWZhdWx0IiwiTmV4dFVybFJvdXRlciIsImNvbnN0cnVjdG9yIiwicm91dGVzIiwib3B0aW9ucyIsInJvb3QiLCJsaW5rUGFnZSIsImJpbmQiLCJmb3JFYWNoUGF0dGVybiIsInBhZ2VOYW1lIiwicGFyYW1zIiwicm91dGUiLCJmaW5kIiwiY3VycmVudFJvdXRlIiwicGFnZSIsIm9iaiIsImFzIiwiaHJlZiIsInBhcmFtc1RvUXVlcnlTdHJpbmciLCJwcmV0dHlVcmwiLCJhcHBseSIsImZvckVhY2giLCJnZXRQcmV0dHlVcmxQYXR0ZXJucyIsInByZXR0eVBhdHRlcm4iLCJiZWZvcmVSZW5kZXIiLCJwYXR0ZXJuIiwiZGVmYXVsdFBhcmFtcyIsImxhbmciLCJwcmV0dHlVcmxQYXR0ZXJucyIsInN0ZXAiLCJhcnRpY2xlIiwibmV4dFJvdXRlciIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBLE1BQU1BLGFBQWEsR0FBR0MsbUJBQU8sQ0FBQyxnREFBRCxDQUFQLENBQStCQyxPQUFyRDs7QUFFQSxNQUFNQyxhQUFOLFNBQTRCSCxhQUE1QixDQUEwQztBQUN4Q0ksYUFBVyxDQUFFQyxNQUFGLEVBQVVDLE9BQU8sR0FBRyxFQUFwQixFQUF3QjtBQUNqQyxVQUFNRCxNQUFOLEVBQWNDLE9BQWQ7QUFDQSxTQUFLQyxJQUFMLEdBQVlELE9BQU8sQ0FBQ0MsSUFBUixJQUFnQixFQUE1QjtBQUNBLFNBQUtDLFFBQUwsR0FBZ0IsS0FBS0EsUUFBTCxDQUFjQyxJQUFkLENBQW1CLElBQW5CLENBQWhCO0FBQ0EsU0FBS0MsY0FBTCxHQUFzQixLQUFLQSxjQUFMLENBQW9CRCxJQUFwQixDQUF5QixJQUF6QixDQUF0QjtBQUNEOztBQUVERCxVQUFRLENBQUVHLFFBQUYsRUFBWUMsTUFBWixFQUFvQjtBQUMxQixVQUFNQyxLQUFLLEdBQUcsS0FBS1IsTUFBTCxDQUFZUyxJQUFaLENBQWlCQyxZQUFZLElBQUlBLFlBQVksQ0FBQ0MsSUFBYixLQUFzQkwsUUFBdkQsQ0FBZDtBQUNBLFVBQU1NLEdBQUcsR0FBRztBQUNWQyxRQUFFLEVBQUUsRUFETTtBQUVWQyxVQUFJLEVBQUcsSUFBR1IsUUFBUyxHQUFFLEtBQUtTLG1CQUFMLENBQXlCUixNQUF6QixDQUFpQztBQUY1QyxLQUFaOztBQUlBLFFBQUlDLEtBQUssSUFBSUEsS0FBSyxDQUFDUSxTQUFuQixFQUE4QjtBQUM1QkosU0FBRyxDQUFDQyxFQUFKLEdBQVMsS0FBS1gsSUFBTCxJQUFhLE9BQU9NLEtBQUssQ0FBQ1EsU0FBYixLQUEyQixRQUEzQixHQUFzQ1IsS0FBSyxDQUFDUSxTQUE1QyxHQUF3RFIsS0FBSyxDQUFDUSxTQUFOLENBQWdCVCxNQUFoQixDQUFyRSxDQUFUO0FBQ0Q7O0FBQ0QsV0FBT0ssR0FBUDtBQUNEOztBQUVEUCxnQkFBYyxDQUFFWSxLQUFGLEVBQVM7QUFDckIsU0FBS2pCLE1BQUwsQ0FBWWtCLE9BQVosQ0FBcUJWLEtBQUQsSUFBVztBQUM3QixXQUFLVyxvQkFBTCxDQUEwQlgsS0FBMUIsRUFBaUNVLE9BQWpDLENBQXlDRSxhQUFhLElBQ3BESCxLQUFLLENBQUM7QUFDSk4sWUFBSSxFQUFFSCxLQUFLLENBQUNHLElBRFI7QUFFSlUsb0JBQVksRUFBRWIsS0FBSyxDQUFDYSxZQUZoQjtBQUdKQyxlQUFPLEVBQUUsS0FBS3BCLElBQUwsR0FBWWtCLGFBQWEsQ0FBQ0UsT0FIL0I7QUFJSkMscUJBQWEsRUFBRUgsYUFBYSxDQUFDRztBQUp6QixPQUFELENBRFA7QUFRRCxLQVREO0FBVUQ7O0FBL0J1Qzs7QUFrQzFDLE1BQU12QixNQUFNLEdBQUcsQ0FDYjtBQUNFVyxNQUFJLEVBQUUsTUFEUjtBQUVFSyxXQUFTLEVBQUUsQ0FBQztBQUFFUTtBQUFGLEdBQUQsS0FBZSxJQUFHQSxJQUFLLE9BRnBDO0FBR0VDLG1CQUFpQixFQUFFLENBQ2pCO0FBQUVILFdBQU8sRUFBRTtBQUFYLEdBRGlCLEVBRWpCO0FBQUVBLFdBQU8sRUFBRTtBQUFYLEdBRmlCLEVBR2pCO0FBQUVBLFdBQU8sRUFBRTtBQUFYLEdBSGlCO0FBSHJCLENBRGEsRUFVYjtBQUNFWCxNQUFJLEVBQUUsT0FEUjtBQUVFSyxXQUFTLEVBQUUsQ0FBQztBQUFFUSxRQUFGO0FBQVFFLFFBQUksR0FBRztBQUFmLEdBQUQsS0FDUixJQUFHRixJQUFLLFVBQVNFLElBQUssRUFIM0I7QUFJRUQsbUJBQWlCLEVBQUUsQ0FDakI7QUFBRUgsV0FBTyxFQUFFO0FBQVgsR0FEaUIsRUFFakI7QUFBRUEsV0FBTyxFQUFFO0FBQVgsR0FGaUIsRUFHakI7QUFBRUEsV0FBTyxFQUFFO0FBQVgsR0FIaUIsRUFJakI7QUFBRUEsV0FBTyxFQUFFO0FBQVgsR0FKaUI7QUFKckIsQ0FWYSxFQXFCYjtBQUNFWCxNQUFJLEVBQUUsTUFEUjtBQUVFSyxXQUFTLEVBQUUsQ0FBQztBQUFFUSxRQUFGO0FBQVFHLFdBQU8sR0FBRztBQUFsQixHQUFELEtBQ1IsSUFBR0gsSUFBSyxTQUFRRyxPQUFRLEVBSDdCO0FBSUVGLG1CQUFpQixFQUFFLENBQ2pCO0FBQUVILFdBQU8sRUFBRTtBQUFYLEdBRGlCLEVBRWpCO0FBQUVBLFdBQU8sRUFBRTtBQUFYLEdBRmlCLEVBR2pCO0FBQUVBLFdBQU8sRUFBRTtBQUFYLEdBSGlCLEVBSWpCO0FBQUVBLFdBQU8sRUFBRTtBQUFYLEdBSmlCO0FBSnJCLENBckJhLENBQWY7QUFrQ0EsTUFBTU0sVUFBVSxHQUFHLElBQUk5QixhQUFKLENBQWtCRSxNQUFsQixDQUFuQjtBQUVBNkIsTUFBTSxDQUFDQyxPQUFQLEdBQWlCO0FBQ2ZGLFlBRGU7QUFFZjVCO0FBRmUsQ0FBakIiLCJmaWxlIjoiLi9zcmMvcm91dGVzLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gVGhlIHJvdXRlIGJhc2Ugb24gbmV4dC11cmwtcHJldHRpZmllclxuLy8gaHR0cHM6Ly9naXRodWIuY29tL0JEYXYyNC9uZXh0LXVybC1wcmV0dGlmaWVyXG4vLyBDbGllbnQgVXNhZ2U6IGh0dHBzOi8vZ2l0aHViLmNvbS9CRGF2MjQvbmV4dC11cmwtcHJldHRpZmllciNpbi15b3VyLWNvbXBvbmVudHNcbmNvbnN0IFVybFByZXR0aWZpZXIgPSByZXF1aXJlKCduZXh0LXVybC1wcmV0dGlmaWVyJykuZGVmYXVsdDtcblxuY2xhc3MgTmV4dFVybFJvdXRlciBleHRlbmRzIFVybFByZXR0aWZpZXIge1xuICBjb25zdHJ1Y3RvciAocm91dGVzLCBvcHRpb25zID0ge30pIHtcbiAgICBzdXBlcihyb3V0ZXMsIG9wdGlvbnMpO1xuICAgIHRoaXMucm9vdCA9IG9wdGlvbnMucm9vdCB8fCAnJztcbiAgICB0aGlzLmxpbmtQYWdlID0gdGhpcy5saW5rUGFnZS5iaW5kKHRoaXMpO1xuICAgIHRoaXMuZm9yRWFjaFBhdHRlcm4gPSB0aGlzLmZvckVhY2hQYXR0ZXJuLmJpbmQodGhpcyk7XG4gIH1cblxuICBsaW5rUGFnZSAocGFnZU5hbWUsIHBhcmFtcykge1xuICAgIGNvbnN0IHJvdXRlID0gdGhpcy5yb3V0ZXMuZmluZChjdXJyZW50Um91dGUgPT4gY3VycmVudFJvdXRlLnBhZ2UgPT09IHBhZ2VOYW1lKTtcbiAgICBjb25zdCBvYmogPSB7XG4gICAgICBhczogJycsXG4gICAgICBocmVmOiBgLyR7cGFnZU5hbWV9JHt0aGlzLnBhcmFtc1RvUXVlcnlTdHJpbmcocGFyYW1zKX1gXG4gICAgfTtcbiAgICBpZiAocm91dGUgJiYgcm91dGUucHJldHR5VXJsKSB7XG4gICAgICBvYmouYXMgPSB0aGlzLnJvb3QgKyAodHlwZW9mIHJvdXRlLnByZXR0eVVybCA9PT0gJ3N0cmluZycgPyByb3V0ZS5wcmV0dHlVcmwgOiByb3V0ZS5wcmV0dHlVcmwocGFyYW1zKSk7XG4gICAgfVxuICAgIHJldHVybiBvYmo7XG4gIH1cblxuICBmb3JFYWNoUGF0dGVybiAoYXBwbHkpIHtcbiAgICB0aGlzLnJvdXRlcy5mb3JFYWNoKChyb3V0ZSkgPT4ge1xuICAgICAgdGhpcy5nZXRQcmV0dHlVcmxQYXR0ZXJucyhyb3V0ZSkuZm9yRWFjaChwcmV0dHlQYXR0ZXJuID0+XG4gICAgICAgIGFwcGx5KHtcbiAgICAgICAgICBwYWdlOiByb3V0ZS5wYWdlLFxuICAgICAgICAgIGJlZm9yZVJlbmRlcjogcm91dGUuYmVmb3JlUmVuZGVyLFxuICAgICAgICAgIHBhdHRlcm46IHRoaXMucm9vdCArIHByZXR0eVBhdHRlcm4ucGF0dGVybixcbiAgICAgICAgICBkZWZhdWx0UGFyYW1zOiBwcmV0dHlQYXR0ZXJuLmRlZmF1bHRQYXJhbXNcbiAgICAgICAgfSlcbiAgICAgICk7XG4gICAgfSk7XG4gIH1cbn1cblxuY29uc3Qgcm91dGVzID0gW1xuICB7XG4gICAgcGFnZTogJ2hvbWUnLFxuICAgIHByZXR0eVVybDogKHsgbGFuZyB9KSA9PiBgLyR7bGFuZ30vaG9tZWAsXG4gICAgcHJldHR5VXJsUGF0dGVybnM6IFtcbiAgICAgIHsgcGF0dGVybjogJy8nIH0sXG4gICAgICB7IHBhdHRlcm46ICcvaG9tZScgfSxcbiAgICAgIHsgcGF0dGVybjogJy86bGFuZy9ob21lJyB9XG4gICAgXVxuICB9LFxuICB7XG4gICAgcGFnZTogJ3N0YXJ0JyxcbiAgICBwcmV0dHlVcmw6ICh7IGxhbmcsIHN0ZXAgPSAnJyB9KSA9PlxuICAgICAgYC8ke2xhbmd9L3N0YXJ0LyR7c3RlcH1gLFxuICAgIHByZXR0eVVybFBhdHRlcm5zOiBbXG4gICAgICB7IHBhdHRlcm46ICcvc3RhcnQnIH0sXG4gICAgICB7IHBhdHRlcm46ICcvc3RhcnQvOnN0ZXAnIH0sXG4gICAgICB7IHBhdHRlcm46ICcvOmxhbmcvc3RhcnQnIH0sXG4gICAgICB7IHBhdHRlcm46ICcvOmxhbmcvc3RhcnQvOnN0ZXAnIH1cbiAgICBdXG4gIH0sXG4gIHtcbiAgICBwYWdlOiAnZG9jcycsXG4gICAgcHJldHR5VXJsOiAoeyBsYW5nLCBhcnRpY2xlID0gJycgfSkgPT5cbiAgICAgIGAvJHtsYW5nfS9kb2NzLyR7YXJ0aWNsZX1gLFxuICAgIHByZXR0eVVybFBhdHRlcm5zOiBbXG4gICAgICB7IHBhdHRlcm46ICcvZG9jcycgfSxcbiAgICAgIHsgcGF0dGVybjogJy9kb2NzLzphcnRpY2xlJyB9LFxuICAgICAgeyBwYXR0ZXJuOiAnLzpsYW5nL2RvY3MnIH0sXG4gICAgICB7IHBhdHRlcm46ICcvOmxhbmcvZG9jcy86YXJ0aWNsZScgfVxuICAgIF1cbiAgfVxuXTtcblxuY29uc3QgbmV4dFJvdXRlciA9IG5ldyBOZXh0VXJsUm91dGVyKHJvdXRlcyk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBuZXh0Um91dGVyLFxuICByb3V0ZXNcbn07Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/routes.js\n");
 
 /***/ }),
 
-/***/ "MaXC":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "Ng2+":
+/***/ "./src/utils/mapCtxToProps.ts":
+/*!************************************!*\
+  !*** ./src/utils/mapCtxToProps.ts ***!
+  \************************************/
+/*! exports provided: mapCtxToProps, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-// UNUSED EXPORTS: Layout
-
-// EXTERNAL MODULE: ./node_modules/antd/lib/button/style/index.js
-var style = __webpack_require__("MaXC");
-
-// EXTERNAL MODULE: external "antd/lib/button"
-var button_ = __webpack_require__("eGmO");
-var button_default = /*#__PURE__*/__webpack_require__.n(button_);
-
-// EXTERNAL MODULE: ./node_modules/antd/lib/menu/style/index.js
-var menu_style = __webpack_require__("PFYH");
-
-// EXTERNAL MODULE: external "antd/lib/menu"
-var menu_ = __webpack_require__("a5Fm");
-var menu_default = /*#__PURE__*/__webpack_require__.n(menu_);
-
-// EXTERNAL MODULE: ./node_modules/antd/lib/layout/style/index.js
-var layout_style = __webpack_require__("ppZR");
-
-// EXTERNAL MODULE: external "antd/lib/layout"
-var layout_ = __webpack_require__("VzA1");
-var layout_default = /*#__PURE__*/__webpack_require__.n(layout_);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./src/context/UseLocale.tsx + 2 modules
-var UseLocale = __webpack_require__("y63i");
-
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// EXTERNAL MODULE: ./src/components/Link/index.ts + 1 modules
-var Link = __webpack_require__("ROha");
-
-// EXTERNAL MODULE: ./src/components/Layout/style/Layout.module.less
-var Layout_module = __webpack_require__("I008");
-var Layout_module_default = /*#__PURE__*/__webpack_require__.n(Layout_module);
-
-// CONCATENATED MODULE: ./src/components/Layout/Layout.tsx
-
-
-
-
-
-
-var __jsx = external_react_default.a.createElement;
-
-
-
-
-
-/* import types */
-
-const {
-  Header,
-  Content,
-  Footer
-} = layout_default.a;
-const BasicLayout = props => {
-  const {
-    title = 'OMNI-DOOR',
-    className = '',
-    page = 'home',
-    children
-  } = props;
-  const {
-    locale: {
-      global
-    },
-    lang
-  } = Object(external_react_["useContext"])(UseLocale["a" /* UseLocale */]);
-  return __jsx(layout_default.a, {
-    className: [Layout_module_default.a['layout'], className].join(' ')
-  }, __jsx(head_default.a, null, __jsx("title", null, " ", title, " "), __jsx("link", {
-    rel: "icon",
-    type: "image/x-icon",
-    href: "/favicon.ico"
-  })), __jsx(Header, {
-    className: Layout_module_default.a['layout-header']
-  }, __jsx("nav", {
-    className: Layout_module_default.a['layout-header-nav']
-  }, __jsx(Link["a" /* default */], {
-    page: "home",
-    params: {
-      lang
-    }
-  }, __jsx("div", {
-    className: Layout_module_default.a['layout-header-logo']
-  }, global.logo)), __jsx(menu_default.a, {
-    className: Layout_module_default.a['layout-header-menu'],
-    mode: "horizontal",
-    defaultSelectedKeys: [page]
-  }, __jsx(menu_default.a.Item, {
-    key: "start",
-    className: Layout_module_default.a['layout-header-menu-item']
-  }, __jsx(Link["a" /* default */], {
-    page: "start",
-    params: {
-      lang
-    }
-  }, __jsx("a", null, global.start))), __jsx(menu_default.a.Item, {
-    key: "docs",
-    className: Layout_module_default.a['layout-header-menu-item']
-  }, __jsx(Link["a" /* default */], {
-    page: "docs",
-    params: {
-      lang
-    }
-  }, __jsx("a", null, global.docs)))), __jsx("div", {
-    className: Layout_module_default.a['layout-header-right']
-  }, __jsx(button_default.a, {
-    size: "small",
-    className: Layout_module_default.a['layout-header-lang']
-  }, __jsx(Link["a" /* default */], {
-    href: `/${lang === 'cn' ? 'en' : 'cn'}/${page}`
-  }, __jsx("a", null, global.lang))), __jsx("a", {
-    className: Layout_module_default.a['layout-header-github'],
-    target: "_blank",
-    href: "https://github.com/omni-door/cli"
-  })))), __jsx(Content, {
-    className: Layout_module_default.a['layout-content']
-  }, children), __jsx(Footer, {
-    className: Layout_module_default.a['layout-footer']
-  }, "Copyright \xA9 2020 @omni-door"));
-};
-/* harmony default export */ var Layout = (Object(external_react_["memo"])(BasicLayout));
-// CONCATENATED MODULE: ./src/components/Layout/index.ts
-
-
-/* harmony default export */ var components_Layout = __webpack_exports__["a"] = (Layout);
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mapCtxToProps\", function() { return mapCtxToProps; });\n/* harmony import */ var _paramsToQueryString__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./paramsToQueryString */ \"./src/utils/paramsToQueryString.ts\");\n\nfunction mapCtxToProps(ctx) {\n  const {\n    pathname,\n    query,\n    asPath\n  } = ctx;\n  return {\n    page: pathname.replace(/\\//g, '') || 'home',\n    query: query,\n    path: asPath || `${pathname}${Object(_paramsToQueryString__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(query)}`\n  };\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (mapCtxToProps);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvdXRpbHMvbWFwQ3R4VG9Qcm9wcy50cz9mOThiIl0sIm5hbWVzIjpbIm1hcEN0eFRvUHJvcHMiLCJjdHgiLCJwYXRobmFtZSIsInF1ZXJ5IiwiYXNQYXRoIiwicGFnZSIsInJlcGxhY2UiLCJwYXRoIiwicGFyYW1zVG9RdWVyeVN0cmluZyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFRTyxTQUFTQSxhQUFULENBQXVCQyxHQUF2QixFQUFpQztBQUN0QyxRQUFNO0FBQUVDLFlBQUY7QUFBWUMsU0FBWjtBQUFtQkM7QUFBbkIsTUFBOEJILEdBQXBDO0FBQ0EsU0FBTztBQUNMSSxRQUFJLEVBQUdILFFBQVEsQ0FBQ0ksT0FBVCxDQUFpQixLQUFqQixFQUF3QixFQUF4QixLQUErQixNQURqQztBQUVMSCxTQUFLLEVBQUVBLEtBRkY7QUFHTEksUUFBSSxFQUNESCxNQUFNLElBQ0osR0FBRUYsUUFBUyxHQUFFTSxvRUFBbUIsQ0FBQ0wsS0FBRCxDQUFRO0FBTHhDLEdBQVA7QUFPRDtBQUVjSCw0RUFBZiIsImZpbGUiOiIuL3NyYy91dGlscy9tYXBDdHhUb1Byb3BzLnRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHBhcmFtc1RvUXVlcnlTdHJpbmcgZnJvbSAnLi9wYXJhbXNUb1F1ZXJ5U3RyaW5nJztcblxuZXhwb3J0IHR5cGUgTWFwQ3R4VG9Qcm9wcyA9IHtcbiAgcGFnZTogc3RyaW5nO1xuICBxdWVyeTogc3RyaW5nO1xuICBwYXRoOiBzdHJpbmc7XG59O1xuXG5leHBvcnQgZnVuY3Rpb24gbWFwQ3R4VG9Qcm9wcyhjdHg6IGFueSkge1xuICBjb25zdCB7IHBhdGhuYW1lLCBxdWVyeSwgYXNQYXRoIH0gPSBjdHg7XG4gIHJldHVybiB7XG4gICAgcGFnZTogKHBhdGhuYW1lLnJlcGxhY2UoL1xcLy9nLCAnJykgfHwgJ2hvbWUnKSBhcyBzdHJpbmcsXG4gICAgcXVlcnk6IHF1ZXJ5IGFzIHN0cmluZyxcbiAgICBwYXRoOlxuICAgICAgKGFzUGF0aCB8fFxuICAgICAgICBgJHtwYXRobmFtZX0ke3BhcmFtc1RvUXVlcnlTdHJpbmcocXVlcnkpfWApIGFzIHN0cmluZ1xuICB9O1xufVxuXG5leHBvcnQgZGVmYXVsdCBtYXBDdHhUb1Byb3BzOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/utils/mapCtxToProps.ts\n");
 
 /***/ }),
 
-/***/ "PFYH":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "ROha":
+/***/ "./src/utils/paramsToQueryString.ts":
+/*!******************************************!*\
+  !*** ./src/utils/paramsToQueryString.ts ***!
+  \******************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-// UNUSED EXPORTS: Link
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: external "next-url-prettifier"
-var external_next_url_prettifier_ = __webpack_require__("0rFR");
-
-// EXTERNAL MODULE: ./src/routes.js
-var routes = __webpack_require__("VmXB");
-
-// CONCATENATED MODULE: ./src/components/Link/Link.tsx
-var __jsx = external_react_default.a.createElement;
-
-
-
-/* import types */
-
-const Link = props => {
-  const {
-    href,
-    page,
-    params = null,
-    children
-  } = props;
-  return __jsx(external_next_url_prettifier_["Link"], {
-    href: href,
-    route: page ? routes["nextRouter"].linkPage(page, params) : null
-  }, children);
-};
-/* harmony default export */ var Link_Link = (Object(external_react_["memo"])(Link));
-// CONCATENATED MODULE: ./src/components/Link/index.ts
-
-
-/* harmony default export */ var components_Link = __webpack_exports__["a"] = (Link_Link);
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return paramsToQueryString; });\nconst isObject = param => param === Object(param);\n\nconst paramsToStringList = entries => entries.reduce((result, [key, value]) => result.concat(Array.isArray(value) ? paramsToStringList(value.map(arrayValue => [`${key}[]`, arrayValue])) : [typeof value === 'string' || typeof value === 'number' ? `${key}=${value}` : '']), []);\n\nfunction paramsToQueryString(params) {\n  const paramsString = isObject(params) ? paramsToStringList(Object.keys(params).sort().map(key => [String(key), params[key]])).filter(chunk => chunk.length > 0).join('&') : '';\n  return paramsString.length > 0 ? `?${paramsString}` : '';\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvdXRpbHMvcGFyYW1zVG9RdWVyeVN0cmluZy50cz8wOTg2Il0sIm5hbWVzIjpbImlzT2JqZWN0IiwicGFyYW0iLCJPYmplY3QiLCJwYXJhbXNUb1N0cmluZ0xpc3QiLCJlbnRyaWVzIiwicmVkdWNlIiwicmVzdWx0Iiwia2V5IiwidmFsdWUiLCJjb25jYXQiLCJBcnJheSIsImlzQXJyYXkiLCJtYXAiLCJhcnJheVZhbHVlIiwicGFyYW1zVG9RdWVyeVN0cmluZyIsInBhcmFtcyIsInBhcmFtc1N0cmluZyIsImtleXMiLCJzb3J0IiwiU3RyaW5nIiwiZmlsdGVyIiwiY2h1bmsiLCJsZW5ndGgiLCJqb2luIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUEsTUFBTUEsUUFBUSxHQUFJQyxLQUFELElBQ2ZBLEtBQUssS0FBS0MsTUFBTSxDQUFDRCxLQUFELENBRGxCOztBQUlBLE1BQU1FLGtCQUFrQixHQUFJQyxPQUFELElBQ3pCQSxPQUFPLENBQUNDLE1BQVIsQ0FDRSxDQUFDQyxNQUFELEVBQW1CLENBQUNDLEdBQUQsRUFBTUMsS0FBTixDQUFuQixLQUNFRixNQUFNLENBQUNHLE1BQVAsQ0FBY0MsS0FBSyxDQUFDQyxPQUFOLENBQWNILEtBQWQsSUFDVkwsa0JBQWtCLENBQ2xCSyxLQUFLLENBQUNJLEdBQU4sQ0FBV0MsVUFBRCxJQUFvQyxDQUFFLEdBQUVOLEdBQUksSUFBUixFQUFhTSxVQUFiLENBQTlDLENBRGtCLENBRFIsR0FJVixDQUFDLE9BQU9MLEtBQVAsS0FBaUIsUUFBakIsSUFBNkIsT0FBT0EsS0FBUCxLQUFpQixRQUE5QyxHQUEwRCxHQUFFRCxHQUFJLElBQUdDLEtBQU0sRUFBekUsR0FBNkUsRUFBOUUsQ0FKSixDQUZKLEVBT0UsRUFQRixDQURGOztBQVllLFNBQVNNLG1CQUFULENBQTZCQyxNQUE3QixFQUFrRDtBQUMvRCxRQUFNQyxZQUFvQixHQUFHaEIsUUFBUSxDQUFDZSxNQUFELENBQVIsR0FDekJaLGtCQUFrQixDQUNsQkQsTUFBTSxDQUFDZSxJQUFQLENBQVlGLE1BQVosRUFDR0csSUFESCxHQUVHTixHQUZILENBRVFMLEdBQUQsSUFBeUMsQ0FBQ1ksTUFBTSxDQUFDWixHQUFELENBQVAsRUFBY1EsTUFBTSxDQUFDUixHQUFELENBQXBCLENBRmhELENBRGtCLENBQWxCLENBS0NhLE1BTEQsQ0FLU0MsS0FBRCxJQUE0QkEsS0FBSyxDQUFDQyxNQUFOLEdBQWUsQ0FMbkQsRUFNQ0MsSUFORCxDQU1NLEdBTk4sQ0FEeUIsR0FRekIsRUFSSjtBQVVBLFNBQU9QLFlBQVksQ0FBQ00sTUFBYixHQUFzQixDQUF0QixHQUEyQixJQUFHTixZQUFhLEVBQTNDLEdBQStDLEVBQXREO0FBQ0QiLCJmaWxlIjoiLi9zcmMvdXRpbHMvcGFyYW1zVG9RdWVyeVN0cmluZy50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGlzT2JqZWN0ID0gKHBhcmFtOiBhbnkpOiBib29sZWFuID0+XG4gIHBhcmFtID09PSBPYmplY3QocGFyYW0pO1xuXG5cbmNvbnN0IHBhcmFtc1RvU3RyaW5nTGlzdCA9IChlbnRyaWVzOiBbc3RyaW5nLCBhbnldW10pOiBzdHJpbmdbXSA9PlxuICBlbnRyaWVzLnJlZHVjZShcbiAgICAocmVzdWx0OiBzdHJpbmdbXSwgW2tleSwgdmFsdWVdOiBbc3RyaW5nLCBhbnldKTogc3RyaW5nW10gPT5cbiAgICAgIHJlc3VsdC5jb25jYXQoQXJyYXkuaXNBcnJheSh2YWx1ZSlcbiAgICAgICAgPyBwYXJhbXNUb1N0cmluZ0xpc3QoXG4gICAgICAgICAgdmFsdWUubWFwKChhcnJheVZhbHVlOiBhbnkpOiBbc3RyaW5nLCBhbnldID0+IFtgJHtrZXl9W11gLCBhcnJheVZhbHVlXSlcbiAgICAgICAgKVxuICAgICAgICA6IFt0eXBlb2YgdmFsdWUgPT09ICdzdHJpbmcnIHx8IHR5cGVvZiB2YWx1ZSA9PT0gJ251bWJlcicgPyBgJHtrZXl9PSR7dmFsdWV9YCA6ICcnXSksXG4gICAgW11cbiAgKVxuICA7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHBhcmFtc1RvUXVlcnlTdHJpbmcocGFyYW1zOiBhbnkpOiBzdHJpbmcge1xuICBjb25zdCBwYXJhbXNTdHJpbmc6IHN0cmluZyA9IGlzT2JqZWN0KHBhcmFtcylcbiAgICA/IHBhcmFtc1RvU3RyaW5nTGlzdChcbiAgICAgIE9iamVjdC5rZXlzKHBhcmFtcylcbiAgICAgICAgLnNvcnQoKVxuICAgICAgICAubWFwKChrZXk6IHN0cmluZyB8IG51bWJlcik6IFtzdHJpbmcsIGFueV0gPT4gW1N0cmluZyhrZXkpLCBwYXJhbXNba2V5XV0pXG4gICAgKVxuICAgICAgLmZpbHRlcigoY2h1bms6IHN0cmluZyk6IGJvb2xlYW4gPT4gY2h1bmsubGVuZ3RoID4gMClcbiAgICAgIC5qb2luKCcmJylcbiAgICA6ICcnXG4gICAgO1xuICByZXR1cm4gcGFyYW1zU3RyaW5nLmxlbmd0aCA+IDAgPyBgPyR7cGFyYW1zU3RyaW5nfWAgOiAnJztcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/utils/paramsToQueryString.ts\n");
 
 /***/ }),
 
-/***/ "VmXB":
-/***/ (function(module, exports, __webpack_require__) {
-
-// The route base on next-url-prettifier
-// https://github.com/BDav24/next-url-prettifier
-// Client Usage: https://github.com/BDav24/next-url-prettifier#in-your-components
-const UrlPrettifier = __webpack_require__("0rFR").default;
-
-class NextUrlRouter extends UrlPrettifier {
-  constructor(routes, options = {}) {
-    super(routes, options);
-    this.root = options.root || '';
-    this.linkPage = this.linkPage.bind(this);
-    this.forEachPattern = this.forEachPattern.bind(this);
-  }
-
-  linkPage(pageName, params) {
-    const route = this.routes.find(currentRoute => currentRoute.page === pageName);
-    const obj = {
-      as: '',
-      href: `/${pageName}${this.paramsToQueryString(params)}`
-    };
-
-    if (route && route.prettyUrl) {
-      obj.as = this.root + (typeof route.prettyUrl === 'string' ? route.prettyUrl : route.prettyUrl(params));
-    }
-
-    return obj;
-  }
-
-  forEachPattern(apply) {
-    this.routes.forEach(route => {
-      this.getPrettyUrlPatterns(route).forEach(prettyPattern => apply({
-        page: route.page,
-        beforeRender: route.beforeRender,
-        pattern: this.root + prettyPattern.pattern,
-        defaultParams: prettyPattern.defaultParams
-      }));
-    });
-  }
-
-}
-
-const routes = [{
-  page: 'home',
-  prettyUrl: ({
-    lang
-  }) => `/${lang}/home`,
-  prettyUrlPatterns: [{
-    pattern: '/'
-  }, {
-    pattern: '/home'
-  }, {
-    pattern: '/:lang/home'
-  }]
-}, {
-  page: 'start',
-  prettyUrl: ({
-    lang,
-    step = ''
-  }) => `/${lang}/start/${step}`,
-  prettyUrlPatterns: [{
-    pattern: '/start'
-  }, {
-    pattern: '/start/:step'
-  }, {
-    pattern: '/:lang/start'
-  }, {
-    pattern: '/:lang/start/:step'
-  }]
-}, {
-  page: 'docs',
-  prettyUrl: ({
-    lang,
-    article = ''
-  }) => `/${lang}/docs/${article}`,
-  prettyUrlPatterns: [{
-    pattern: '/docs'
-  }, {
-    pattern: '/docs/:article'
-  }, {
-    pattern: '/:lang/docs'
-  }, {
-    pattern: '/:lang/docs/:article'
-  }]
-}];
-const nextRouter = new NextUrlRouter(routes);
-module.exports = {
-  nextRouter,
-  routes
-};
-
-/***/ }),
-
-/***/ "VzA1":
+/***/ "@mdx-js/react":
+/*!********************************!*\
+  !*** external "@mdx-js/react" ***!
+  \********************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("antd/lib/layout");
+eval("module.exports = require(\"@mdx-js/react\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWR4LWpzL3JlYWN0XCI/M2UxMyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJAbWR4LWpzL3JlYWN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiQG1keC1qcy9yZWFjdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@mdx-js/react\n");
 
 /***/ }),
 
-/***/ "a5Fm":
+/***/ "antd/lib/button":
+/*!**********************************!*\
+  !*** external "antd/lib/button" ***!
+  \**********************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("antd/lib/menu");
+eval("module.exports = require(\"antd/lib/button\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJhbnRkL2xpYi9idXR0b25cIj9lMzA5Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6ImFudGQvbGliL2J1dHRvbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcImFudGQvbGliL2J1dHRvblwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///antd/lib/button\n");
 
 /***/ }),
 
-/***/ "c2Xn":
+/***/ "antd/lib/layout":
+/*!**********************************!*\
+  !*** external "antd/lib/layout" ***!
+  \**********************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@mdx-js/react");
+eval("module.exports = require(\"antd/lib/layout\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJhbnRkL2xpYi9sYXlvdXRcIj83MmUwIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6ImFudGQvbGliL2xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcImFudGQvbGliL2xheW91dFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///antd/lib/layout\n");
 
 /***/ }),
 
-/***/ "cDcd":
+/***/ "antd/lib/menu":
+/*!********************************!*\
+  !*** external "antd/lib/menu" ***!
+  \********************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react");
+eval("module.exports = require(\"antd/lib/menu\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJhbnRkL2xpYi9tZW51XCI/YmI3ZCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJhbnRkL2xpYi9tZW51LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiYW50ZC9saWIvbWVudVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///antd/lib/menu\n");
 
 /***/ }),
 
-/***/ "eGmO":
+/***/ "next-url-prettifier":
+/*!**************************************!*\
+  !*** external "next-url-prettifier" ***!
+  \**************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("antd/lib/button");
+eval("module.exports = require(\"next-url-prettifier\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0LXVybC1wcmV0dGlmaWVyXCI/YmFjMyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJuZXh0LXVybC1wcmV0dGlmaWVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwibmV4dC11cmwtcHJldHRpZmllclwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next-url-prettifier\n");
 
 /***/ }),
 
-/***/ "fZ0C":
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"docs": "docs___3NQIG"
-};
+eval("module.exports = require(\"next/head\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0L2hlYWRcIj81ZWYyIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Im5leHQvaGVhZC5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIm5leHQvaGVhZFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next/head\n");
 
 /***/ }),
 
-/***/ "jxtp":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./src/context/UseLocale.tsx + 2 modules
-var UseLocale = __webpack_require__("y63i");
-
-// EXTERNAL MODULE: ./src/components/Layout/index.ts + 1 modules
-var Layout = __webpack_require__("Ng2+");
-
-// EXTERNAL MODULE: external "@mdx-js/react"
-var react_ = __webpack_require__("c2Xn");
-
-// CONCATENATED MODULE: ./src/components/Docs/docs-cn.md
-var __jsx = external_react_default.a.createElement;
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-/* @jsx mdx */
-
-const layoutProps = {};
-const MDXLayout = "wrapper";
-function MDXContent(_ref) {
-  let {
-    components
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["components"]);
-
-  return Object(react_["mdx"])(MDXLayout, _extends({}, layoutProps, props, {
-    components: components,
-    mdxType: "MDXLayout"
-  }), Object(react_["mdx"])("h1", null, `文档`), Object(react_["mdx"])("h2", null, `命令`), Object(react_["mdx"])("ol", null, Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `init `, `[strategy][options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init latest`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init stable`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -n`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -rb basicReactSpaProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -rs stardardReactSpaProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -re entrieReactSpaProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -rc reactComponentProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -t toolkitProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init latest -rs stardardReactSpaProject -n`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `dev `, `[options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev -p 8200`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev -h dev.domain.com`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev -p 8200 -h dev.domain.com`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `new `, `[name][options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new Button`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new -c`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new -c Button`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `build `, `[options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni build`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni build -n`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni build -c $pathTo/build.config.js`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `release `, `[options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -n`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -a`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -i`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -m`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -t`))))), Object(react_["mdx"])("h2", null, `项目类型简介`), Object(react_["mdx"])("h2", null, `项目类型简介`), Object(react_["mdx"])("h3", null, `SPA 应用`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://reactjs.org/"
-  }), `React`), ` UI 框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://reacttraining.com/react-router/web/example/basic"
-  }), `React-Router`), ` 实现前端路由`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://webpack.js.org/"
-  }), `webpack`), ` 打包`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://stylelint.io/"
-  }), `stylelint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `无缝支持 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/css-modules/css-modules"
-  }), `CSS Modules`), ` 和 全局CSS，无需额外配置`), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `SSR 应用`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://reactjs.org/"
-  }), `React`), ` 框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://nextjs.org/"
-  }), `nextjs`), ` 企业级高性能 Node 框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `支持 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://koajs.com/"
-  }), `koa`), ` 自定义 node 服务`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `搜索引擎友好 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96"
-  }), `SEO`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `Component 组件(库)项目`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `支持 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://storybook.js.org/"
-  }), `storybook`), `、`, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://docz.site/"
-  }), `docz`), `、`, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://react-styleguidist.js.org/"
-  }), `styleguidist`), ` 多种组件库Demo和文档框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://reactjs.org/"
-  }), `React`), ` 的组件库`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://gulpjs.com/"
-  }), `gulp`), ` 打包`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://stylelint.io/"
-  }), `stylelint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://commitlint.js.org/"
-  }), `commitlint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `toolkit 工具库项目`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `集成标准化初始化、构建、发布虎扑 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://hupu.feishu.cn/docs/doccn8pGr7IYYV54ytpBsHT3tDd#bcLZTY"
-  }), `bridge-plugin`), ` (@hupu/dandelion) 项目的能力`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://rollupjs.org/guide/en"
-  }), `rollup`), ` 打包`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h2", null, `omni.config.js 详解`), Object(react_["mdx"])("h3", null, `type 项目类型`), Object(react_["mdx"])("p", null, `OMNI 会根据不同的项目类型决定整个初始化、构建、创建模板的过程`), Object(react_["mdx"])("p", null, `目前支持的项目类型有：`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `spa-react - React单页应用`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `ssr-react - React服务端渲染应用`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `component-react - React组件库`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `toolkit - SDK工具包`))), Object(react_["mdx"])("h3", null, `dev 开发服务`), Object(react_["mdx"])("p", null, `开发服务基于express，搭配 webpack-dev-middleware、webpack-hot-middleware、http-proxy-middleware 等中间件，实现了热更新、接口代理等常用功能，并提供了中间件的自定义、端口号、log日志输出级别、webpack配置等个性化定制方案。`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `middleware - 中间件配置，参考下面👇的类型：`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `{
-  route: string;
-  callback: (req: any, res: any) => Promise<void>;
-}
-`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `  or`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `(params: {
-  ip: string;
-  port: number;
-  host?: string;
-  logLevel: LOGLEVEL;
-  proxyConfig?: (ProxyItem | ProxyFn)[];
-}) => {
-  route: string;
-  callback: (req: any, res: any) => Promise<void>;
-}
-`))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `webpack - 开发服务端webpack配置`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `proxy - 开发服务代理配置`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `{
-  route: '/api', // 代理API的本地服务的地址
-  config: {
-    target: 'http://www.api.com/api', // 代理API的实际地址
-    changeOrigin: true // 是否改变host
-  }
-}
-`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `  or`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `(params: {
-  ip: string;
-  port: number;
-  host?: string;
-  logLevel: LOGLEVEL;
-  middlewareConfig?: (MiddlewareItem | MiddlewareFn)[];
-}) => {
-  route: string;
-  config: Config;
-}
-`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `  更多配置详见 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/chimurai/http-proxy-middleware"
-  }), `http-proxy-middleware`))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `port - 开发服务启动的端口号`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `host - 开发服务启动的host`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `https - 开发服务以https协议启动，可自定义 `, Object(react_["mdx"])("inlineCode", {
-    parentName: "p"
-  }, `key`), ` 和 `, Object(react_["mdx"])("inlineCode", {
-    parentName: "p"
-  }, `cert`))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `serverType - 开发服务的类型`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `logLevel - 开发服务日志输出等级，可选 'debug'、'info'、'warn'、'error'、'silent'`))), Object(react_["mdx"])("h3", null, `build 构建配置`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `autoRelease - 构建完成后是否自动发布`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `srcDir - 构建资源输入路径`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `outDir - 构建结果输出路径`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `esmDir - 构建结果输出路径(符合es6 module规范)`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `hash - 构建的资源是否加上hash，可选 'contenthash'、'chunkhash'、'hash'(传入true则是contenthash)`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `configuration - 构建阶段的自定义配置回调，返回自定义的配置`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `reserve - 配置未经过打包，但需要保留进构建结果的资源`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `style - 构建结果是否保留样式文件`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `assets - 构建结果保留其他资源的路径`)))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `preflight - 构建前的飞行检查`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `typescript - 是否处理ts或tsx文件`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `test - 是否进行单元测试 `)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `eslint - 是否进行eslint检测`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `prettier - 是否进行prettier检测`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `stylelint - 是否进行stylelint检测`))))), Object(react_["mdx"])("h3", null, `release`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `git - 发布的git仓库地址`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `npm - 发布的npm仓库地址`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `preflight - 发布前的飞行检查`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `test - 发布前是否进行单元测试`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `eslint - 发布前是否进行eslint检测`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `prettier - 发布前是否进行prettier检测`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `stylelint - 发布前是否进行stylelint检测`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `commitlint - 发布前是否进行commitlint检测`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `branch - 发布前进行分支检测，设置为空字符串则不会检测`))))), Object(react_["mdx"])("h3", null, `template 新建模板配置`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `root - 生成模板的根路径`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `typescript - 是否创建ts文件`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `test - 是否创建单元测试文件`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `stylesheet - 样式文件类型`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `readme - `, `[true, 'mdx']`, ` (`, `[是否生成ReadMe文件, 创建md 或 mdx文件]`, `)`))), Object(react_["mdx"])("h3", null, `plugins`), Object(react_["mdx"])("p", null, `插件集合，插件需满足下面的类型：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `type OmniPlugin = {
-  name: string;
-  stage: PluginStage;
-  handler: PluginHandler;
-};
-
-type PluginStage = 'new' | 'build' | 'release';
-interface PluginHandler {
-  (config: Omit<OmniConfig, 'plugins'>): Promise<any>;
-}
-`)));
-}
-;
-MDXContent.isMDXComponent = true;
-// CONCATENATED MODULE: ./src/components/Docs/docs-en.md
-var docs_en_jsx = external_react_default.a.createElement;
-
-function docs_en_extends() { docs_en_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return docs_en_extends.apply(this, arguments); }
-
-function docs_en_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = docs_en_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function docs_en_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-/* @jsx mdx */
-
-const docs_en_layoutProps = {};
-const docs_en_MDXLayout = "wrapper";
-function docs_en_MDXContent(_ref) {
-  let {
-    components
-  } = _ref,
-      props = docs_en_objectWithoutProperties(_ref, ["components"]);
-
-  return Object(react_["mdx"])(docs_en_MDXLayout, docs_en_extends({}, docs_en_layoutProps, props, {
-    components: components,
-    mdxType: "MDXLayout"
-  }), Object(react_["mdx"])("h1", null, `文档`), Object(react_["mdx"])("h2", null, `命令`), Object(react_["mdx"])("ol", null, Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `init `, `[strategy][options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init latest`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init stable`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -n`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -rb basicReactSpaProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -rs stardardReactSpaProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -re entrieReactSpaProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -rc reactComponentProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init -t toolkitProject`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni init latest -rs stardardReactSpaProject -n`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `dev `, `[options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev -p 8200`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev -h dev.domain.com`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni dev -p 8200 -h dev.domain.com`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `new `, `[name][options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new Button`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new -c`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni new -c Button`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `build `, `[options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni build`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni build -n`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni build -c $pathTo/build.config.js`)))), Object(react_["mdx"])("li", {
-    parentName: "ol"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `release `, `[options]`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -n`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -a`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -i`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -m`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `omni release -t`))))), Object(react_["mdx"])("h2", null, `项目类型简介`), Object(react_["mdx"])("h3", null, `SPA 应用`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://reactjs.org/"
-  }), `React`), ` UI 框架`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://reacttraining.com/react-router/web/example/basic"
-  }), `React-Router`), ` 实现前端路由`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://webpack.js.org/"
-  }), `webpack`), ` 打包`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://stylelint.io/"
-  }), `stylelint`), ` 规范`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `无缝支持 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/css-modules/css-modules"
-  }), `CSS Modules`), ` 和 全局CSS，无需额外配置`), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `SSR 应用`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://reactjs.org/"
-  }), `React`), ` 框架`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://nextjs.org/"
-  }), `nextjs`), ` 企业级高性能 Node 框架`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `支持 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://koajs.com/"
-  }), `koa`), ` 自定义 node 服务`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `搜索引擎友好 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96"
-  }), `SEO`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `Component 组件(库)项目`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `支持 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://storybook.js.org/"
-  }), `storybook`), `、`, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://docz.site/"
-  }), `docz`), `、`, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://react-styleguidist.js.org/"
-  }), `styleguidist`), ` 多种组件库Demo和文档框架`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://reactjs.org/"
-  }), `React`), ` 的组件库`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://gulpjs.com/"
-  }), `gulp`), ` 打包`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://stylelint.io/"
-  }), `stylelint`), ` 规范`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://commitlint.js.org/"
-  }), `commitlint`), ` 规范`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `toolkit 工具库项目`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `集成标准化初始化、构建、发布虎扑 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://hupu.feishu.cn/docs/doccn8pGr7IYYV54ytpBsHT3tDd#bcLZTY"
-  }), `bridge-plugin`), ` (@hupu/dandelion) 项目的能力`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://rollupjs.org/guide/en"
-  }), `rollup`), ` 打包`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h1", null, `omni.config.js Detail`), Object(react_["mdx"])("h3", null, `type`), Object(react_["mdx"])("p", null, `OMNI will process of initialization, construction and template creation according to different project types`), Object(react_["mdx"])("p", null, `The project types:`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `spa-react - React single-page-application`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `ssr-react - React server-side-render application`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `component-react - React Component Library`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `toolkit - SDK Library `))), Object(react_["mdx"])("h3", null, `dev`), Object(react_["mdx"])("p", null, `The dev-server based on express, realizing hot-update, api-proxy and other common functions. Provide personalized customization schemes such as middleware customization, port number, log output level and webpack configuration.`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `middleware - middleware configuration:`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `{
-  route: string;
-  callback: (req: any, res: any) => Promise<void>;
-}
-`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `  or`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `(params: {
-  ip: string;
-  port: number;
-  host?: string;
-  logLevel: LOGLEVEL;
-  proxyConfig?: (ProxyItem | ProxyFn)[];
-}) => {
-  route: string;
-  callback: (req: any, res: any) => Promise<void>;
-}
-`))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `webpack - dev-server webpack configuration`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `proxy - dev-server proxy configuration`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `{
-  route: '/api', // Address of the local service for the proxy API
-  config: {
-    target: 'http://www.api.com/api', // The actual address of the proxy API
-    changeOrigin: true // whether change the host
-  }
-}
-`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `  or`), Object(react_["mdx"])("pre", {
-    parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `(params: {
-  ip: string;
-  port: number;
-  host?: string;
-  logLevel: LOGLEVEL;
-  middlewareConfig?: (MiddlewareItem | MiddlewareFn)[];
-}) => {
-  route: string;
-  config: Config;
-}
-`)), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `  For more configuration, see `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/chimurai/http-proxy-middleware"
-  }), `http-proxy-middleware`))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `port - dev-server port`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `host - dev-server host`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `https - start dev-server with https protocol which could custom `, Object(react_["mdx"])("inlineCode", {
-    parentName: "p"
-  }, `key`), ` and `, Object(react_["mdx"])("inlineCode", {
-    parentName: "p"
-  }, `cert`))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `serverType - dev-server type`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `logLevel - The log-level which dev-server will apply, optional 'debug', 'info', 'warn', 'error', 'silent'`))), Object(react_["mdx"])("h3", null, `build`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `autoRelease - auto release project after build success`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `srcDir - the build source directory`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `outDir - the directory for compiled project`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `esmDir - es6 module compiled directory`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `hash - whether the hash tag add to building result, optional 'contenthash', 'chunkhash' and 'hash'(true equal 'contenthash')`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `configuration - The callback will be call in the build-process, you can return your custom build configuration`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `reserve - Configure resources that are not packaged but need to be kept in the build result`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `style - whether or not reserve the stylesheet files`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `assets - reserve other asset paths`)))), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `preflight - the flight check before build`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `typescript - whether or not process the ts or tsx files`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `test - whether or not process unit-test`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `eslint - whether or not process eslint check`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `prettier - whether or not process prettier check`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `stylelint - whether or not process stylelint check`))))), Object(react_["mdx"])("h3", null, `release`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `git - project git repo url`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `npm - npm depository url`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `preflight - the flight check before release`), Object(react_["mdx"])("ul", {
-    parentName: "li"
-  }, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `test - whether or not process unit-test`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `eslint - whether or not process eslint check`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `prettier - whether or not process prettier check`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `stylelint - whether or not process stylelint check`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `commitlint - whether or not process commitlint check`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `branch - only can release in this branch, set empty string to ignore this check`))))), Object(react_["mdx"])("h3", null, `template`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `root - the root directory for generate template`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `typescript - whether or not apply typescript`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `test - whether or not generate unit-test file`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `stylesheet - stylesheet type`)), Object(react_["mdx"])("li", {
-    parentName: "ul"
-  }, Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, `readme - `, `[true, 'mdx']`, ` (`, `[whether or not README.md, generate mdx or md file]`, `)`))), Object(react_["mdx"])("h3", null, `plugins`), Object(react_["mdx"])("p", null, `plugin must meet following types:`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
-    "className": "language-ts"
-  }), `type OmniPlugin = {
-  name: string;
-  stage: PluginStage;
-  handler: PluginHandler;
-};
-
-type PluginStage = 'new' | 'build' | 'release';
-interface PluginHandler {
-  (config: Omit<OmniConfig, 'plugins'>): Promise<any>;
-}
-`)));
-}
-;
-docs_en_MDXContent.isMDXComponent = true;
-// EXTERNAL MODULE: ./src/components/Docs/style/Docs.module.less
-var Docs_module = __webpack_require__("fZ0C");
-var Docs_module_default = /*#__PURE__*/__webpack_require__.n(Docs_module);
-
-// CONCATENATED MODULE: ./src/components/Docs/Docs.tsx
-var Docs_jsx = external_react_default.a.createElement;
-
-
-
-
-/* import types */
-
-const Docs = props => {
-  const {
-    lang
-  } = props;
-  const Source = lang === 'cn' ? MDXContent : docs_en_MDXContent;
-  return Docs_jsx("div", {
-    className: Docs_module_default.a.docs
-  }, Docs_jsx(Source, null));
-};
-/* harmony default export */ var Docs_Docs = (Object(external_react_["memo"])(Docs));
-// CONCATENATED MODULE: ./src/components/Docs/index.ts
-
-
-/* harmony default export */ var components_Docs = (Docs_Docs);
-// EXTERNAL MODULE: ./src/utils/mapCtxToProps.ts + 1 modules
-var mapCtxToProps = __webpack_require__("+YsH");
-
-// CONCATENATED MODULE: ./pages/docs.tsx
-
-var docs_jsx = external_react_default.a.createElement;
-
-function docs_extends() { docs_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return docs_extends.apply(this, arguments); }
-
-
-
-
-
-
-
-function DocsPage(props) {
-  const {
-    lang,
-    locale: {
-      docs: {
-        pageTitle
-      }
-    }
-  } = Object(external_react_["useContext"])(UseLocale["a" /* UseLocale */]);
-  return docs_jsx(Layout["a" /* default */], {
-    title: pageTitle,
-    page: props.page
-  }, docs_jsx(components_Docs, docs_extends({
-    lang: lang
-  }, props)));
-}
-
-DocsPage.getInitialProps = async ctx => {
-  return Object(mapCtxToProps["a" /* default */])(ctx);
-};
-
-/* harmony default export */ var docs = __webpack_exports__["default"] = (DocsPage);
-
-/***/ }),
-
-/***/ "ppZR":
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-
-
-/***/ }),
-
-/***/ "xnum":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "y63i":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ UseLocale; });
-
-// UNUSED EXPORTS: UseLocaleProvider
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// CONCATENATED MODULE: ./src/locales/cn.ts
-const locale = {
-  global: {
-    logo: '任意门',
-    start: '开始',
-    docs: '文档',
-    lang: 'English'
-  },
-  home: {
-    pageTitle: '任意门',
-    title: '任意门',
-    subtitle: '前端通用脚手架',
-    description: `为前端项目的创建、开发、构建、发布提供一条龙服务。
-    支持基于 React 和 Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
-    你的项目想去哪里？不妨让任意门帮你！`,
-    btn_start: '开始使用',
-    btn_docs: '文档',
-    license: 'MIT',
-    why: [{
-      title: '各种轮子随你挑',
-      subtitle: '一行命令即可构建一个完整的前端项目工程',
-      intro: `集成typescript；
-          可无缝对接 ESlint、Prettier、Stylelint、Commitlint 等各种 lint 工具，
-          更可以接入单元测试
-          `,
-      route: {
-        page: 'start',
-        params: {
-          lang: 'cn'
-        }
-      }
-    }, {
-      title: 'React单页应用',
-      subtitle: '基于 React 和 React-Router 的 SPA 项目',
-      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
-          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
-          项目结构简单、前后端分离等需求…
-          `,
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'cn',
-          article: 'spa-react'
-        }
-      }
-    }, {
-      title: 'React服务端渲染应用',
-      subtitle: '基于 React 和 NextJs 的 SSR 项目',
-      intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，
-          同时相比于 SPA 应用，也能有效的降低白屏时间，
-          无论是 PC 官网 还是 M 站，都是一个很好的选择…
-          `,
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'cn',
-          article: 'ssr-react'
-        }
-      }
-    }, {
-      title: 'React组件库',
-      subtitle: '基于 React 的组件库项目',
-      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
-          借助社区开源的组件库 Demo-UI 框架，如 docz、storybook、styleguidist 等，
-          让组件库的开发不再是遥不可及的技术难题…
-          `,
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'cn',
-          article: 'component-react'
-        }
-      }
-    }, {
-      title: '工具库',
-      subtitle: '类lodash、ramda工具库',
-      intro: '纯逻辑组件？耦合了业务需求的功能模块？不想耦合任何 UI 框架 —— 工具库项目很可能是你需要的…',
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'cn',
-          article: 'toolkit'
-        }
-      }
-    }],
-    demo: []
-  },
-  docs: {
-    pageTitle: '任意门 - 文档'
-  },
-  start: {
-    pageTitle: '任意门 - 开始使用'
-  }
-};
-/* harmony default export */ var cn = (locale);
-// CONCATENATED MODULE: ./src/locales/en.ts
-const en_locale = {
-  global: {
-    logo: 'Omni-Door',
-    start: 'Start',
-    docs: 'Docs',
-    lang: '中文'
-  },
-  home: {
-    pageTitle: 'Omni-Door',
-    title: 'Omni-Door',
-    subtitle: 'The general cli tool for frontend',
-    description: `提供前端项目从初始化、开发、构建、发布等一条龙服务。
-    支持基于 React 和 Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
-    你的项目想去哪里？不妨让任意门帮你！`,
-    btn_start: 'Getting Started',
-    btn_docs: 'Documentation',
-    license: 'MIT',
-    why: [{
-      title: 'Many kinds of wheels are up to you',
-      subtitle: 'A complete front-end project project can be built in one line of command',
-      intro: `Integrating typescript;
-          Seamless docking of eslint, prettier, stylelint, commitlint,
-          It can also access unit-test
-          `,
-      route: {
-        page: 'start',
-        params: {
-          lang: 'en'
-        }
-      }
-    }, {
-      title: 'React-SPA',
-      subtitle: '基于 React 和 React-Router 的 SPA 项目',
-      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
-          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
-          项目结构简单、前后端分离等需求…
-          `,
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'en',
-          article: 'spa-react'
-        }
-      }
-    }, {
-      title: 'React-SSR',
-      subtitle: '基于 React 和 NextJs 的 SSR 项目',
-      intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，
-          同时相比于 SPA 应用，也能有效的降低白屏时间，
-          无论是 PC 官网 还是 M 站，都是一个很好的选择…
-          `,
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'en',
-          article: 'ssr-react'
-        }
-      }
-    }, {
-      title: 'React-Component',
-      subtitle: '基于 React 的组件库项目',
-      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
-          借助社区开源的组件库 Demo-UI 框架，如 docz、storybook、styleguidist 等，
-          让组件库的开发不再是遥不可及的技术难题…
-          `,
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'en',
-          article: 'component-react'
-        }
-      }
-    }, {
-      title: 'toolkit',
-      subtitle: '类lodash、ramda工具库',
-      intro: '纯逻辑组件？耦合了业务需求的功能模块？不想耦合任何 UI 框架 —— 工具库项目很可能是你需要的…',
-      route: {
-        page: 'docs',
-        params: {
-          lang: 'en',
-          article: 'toolkit'
-        }
-      }
-    }],
-    demo: []
-  },
-  docs: {
-    pageTitle: 'Omni-Door - Docs'
-  },
-  start: {
-    pageTitle: 'Omni-Door - Start'
-  }
-};
-/* harmony default export */ var en = (en_locale);
-// CONCATENATED MODULE: ./src/context/UseLocale.tsx
-
-var __jsx = external_react_default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-const locales = {
-  cn: cn,
-  en: en
-};
-const initLang = 'cn';
-const ctxInitState = {
-  lang: initLang,
-  locale: locales[initLang],
-  setLang: lang => console.warn('初始化未完成')
-};
-const UseLocale = Object(external_react_["createContext"])(ctxInitState);
-const UseLocaleProvider = props => {
-  var _props$lang, _locales;
-
-  const setLang = Object(external_react_["useCallback"])(function (lang) {
-    let locale = locales[lang];
-
-    if (!locale) {
-      locale = ctxInitState.locale;
-      lang = ctxInitState.lang;
-    }
-
-    setState(states => _objectSpread(_objectSpread({}, states), {}, {
-      locale,
-      lang
-    }));
-  }, []);
-  const initState = {
-    lang: (_props$lang = props === null || props === void 0 ? void 0 : props.lang) !== null && _props$lang !== void 0 ? _props$lang : ctxInitState.lang,
-    locale: (_locales = locales[props === null || props === void 0 ? void 0 : props.lang]) !== null && _locales !== void 0 ? _locales : ctxInitState.locale,
-    setLang
-  };
-  const {
-    0: state,
-    1: setState
-  } = Object(external_react_["useState"])(initState);
-  return __jsx(UseLocale.Provider, {
-    value: state
-  }, props.children);
-};
-/* harmony default export */ var context_UseLocale = __webpack_exports__["b"] = (UseLocaleProvider);
+eval("module.exports = require(\"react\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdFwiPzU4OGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react\n");
 
 /***/ })
 

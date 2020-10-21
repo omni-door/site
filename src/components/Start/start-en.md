@@ -10,20 +10,21 @@ Note：
 
 ## Initialize a project
 
-- By npx：
+1. One method is use npx：
     ```shell
     npx @omni-door/cli init -s myProject
     ```
 
-- Install cli to the global：
+2. Otherwise you can install cli to the global：
   ```shell
   npm i -g @omni-door/cli
   ```
-  Perform initialization after installation：
+  Then Perform initialization after installation：
   ```shell
   omni init -s myProject
   ```
-> note: The project name is `myProject`
+
+> note: The project name will be `myProject`
 
 ## Run project
   ```shell
@@ -38,4 +39,9 @@ Note：
 ## Build project
   ```shell
   npm run build
+  ```
+
+## Release project
+  ```shell
+  npm run release
   ```
