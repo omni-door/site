@@ -93,85 +93,320 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/_app.tsx":
-/*!************************!*\
-  !*** ./pages/_app.tsx ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ctx_UseLocale__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ctx/UseLocale */ \"./src/context/UseLocale.tsx\");\n/* harmony import */ var _src_styles_globals_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/styles/globals.css */ \"./src/styles/globals.css\");\n/* harmony import */ var _src_styles_globals_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_styles_globals_css__WEBPACK_IMPORTED_MODULE_2__);\n\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\n\n\nfunction MyApp({\n  Component,\n  pageProps\n}) {\n  var _pageProps$query;\n\n  return __jsx(_ctx_UseLocale__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    lang: pageProps === null || pageProps === void 0 ? void 0 : (_pageProps$query = pageProps.query) === null || _pageProps$query === void 0 ? void 0 : _pageProps$query.lang\n  }, __jsx(Component, pageProps));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (MyApp);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9fYXBwLnRzeD83MjE2Il0sIm5hbWVzIjpbIk15QXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwicXVlcnkiLCJsYW5nIl0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBO0FBQ0E7O0FBRUEsU0FBU0EsS0FBVCxDQUFlO0FBQUVDLFdBQUY7QUFBYUM7QUFBYixDQUFmLEVBQThDO0FBQUE7O0FBQzVDLFNBQU8sTUFBQyxzREFBRDtBQUFtQixRQUFJLEVBQUVBLFNBQUYsYUFBRUEsU0FBRiwyQ0FBRUEsU0FBUyxDQUFFQyxLQUFiLHFEQUFFLGlCQUFrQkM7QUFBM0MsS0FDTCxNQUFDLFNBQUQsRUFBZ0JGLFNBQWhCLENBREssQ0FBUDtBQUdEOztBQUVjRixvRUFBZiIsImZpbGUiOiIuL3BhZ2VzL19hcHAudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFVzZUxvY2FsZVByb3ZpZGVyIGZyb20gJ0BjdHgvVXNlTG9jYWxlJztcbmltcG9ydCAnLi4vc3JjL3N0eWxlcy9nbG9iYWxzLmNzcyc7XG5cbmZ1bmN0aW9uIE15QXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfTogYW55KSB7XG4gIHJldHVybiA8VXNlTG9jYWxlUHJvdmlkZXIgbGFuZz17cGFnZVByb3BzPy5xdWVyeT8ubGFuZ30+XG4gICAgPENvbXBvbmVudCB7IC4uLnBhZ2VQcm9wcyB9IC8+XG4gIDwvVXNlTG9jYWxlUHJvdmlkZXI+O1xufVxuXG5leHBvcnQgZGVmYXVsdCBNeUFwcDtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_app.tsx\n");
-
-/***/ }),
-
-/***/ "./src/context/UseLocale.tsx":
-/*!***********************************!*\
-  !*** ./src/context/UseLocale.tsx ***!
-  \***********************************/
-/*! exports provided: UseLocale, UseLocaleProvider, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"UseLocale\", function() { return UseLocale; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"UseLocaleProvider\", function() { return UseLocaleProvider; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _locale_cn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @locale/cn */ \"./src/locales/cn.ts\");\n/* harmony import */ var _locale_en__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @locale/en */ \"./src/locales/en.ts\");\n\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nconst locales = {\n  cn: _locale_cn__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  en: _locale_en__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n};\nconst initLang = 'cn';\nconst ctxInitState = {\n  lang: initLang,\n  locale: locales[initLang],\n  setLang: lang => console.warn('初始化未完成')\n};\nconst UseLocale = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createContext\"])(ctxInitState);\nconst UseLocaleProvider = props => {\n  var _props$lang, _locales;\n\n  const setLang = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useCallback\"])(function (lang) {\n    let locale = locales[lang];\n\n    if (!locale) {\n      locale = ctxInitState.locale;\n      lang = ctxInitState.lang;\n    }\n\n    setState(states => _objectSpread(_objectSpread({}, states), {}, {\n      locale,\n      lang\n    }));\n  }, []);\n  const initState = {\n    lang: (_props$lang = props === null || props === void 0 ? void 0 : props.lang) !== null && _props$lang !== void 0 ? _props$lang : ctxInitState.lang,\n    locale: (_locales = locales[props === null || props === void 0 ? void 0 : props.lang]) !== null && _locales !== void 0 ? _locales : ctxInitState.locale,\n    setLang\n  };\n  const {\n    0: state,\n    1: setState\n  } = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(initState);\n  return __jsx(UseLocale.Provider, {\n    value: state\n  }, props.children);\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (UseLocaleProvider);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29udGV4dC9Vc2VMb2NhbGUudHN4P2NiYWQiXSwibmFtZXMiOlsibG9jYWxlcyIsImNuIiwibG9jYWxlX2NuIiwiZW4iLCJsb2NhbGVfZW4iLCJpbml0TGFuZyIsImN0eEluaXRTdGF0ZSIsImxhbmciLCJsb2NhbGUiLCJzZXRMYW5nIiwiY29uc29sZSIsIndhcm4iLCJVc2VMb2NhbGUiLCJjcmVhdGVDb250ZXh0IiwiVXNlTG9jYWxlUHJvdmlkZXIiLCJwcm9wcyIsInVzZUNhbGxiYWNrIiwic2V0U3RhdGUiLCJzdGF0ZXMiLCJpbml0U3RhdGUiLCJzdGF0ZSIsInVzZVN0YXRlIiwiY2hpbGRyZW4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUtBO0FBQ0E7QUFFQSxNQUFNQSxPQUFPLEdBQUc7QUFDZEMsSUFBRSxFQUFFQyxrREFEVTtBQUVkQyxJQUFFLEVBQUVDLGtEQUFTQTtBQUZDLENBQWhCO0FBS0EsTUFBTUMsUUFBUSxHQUFHLElBQWpCO0FBQ0EsTUFBTUMsWUFBWSxHQUFHO0FBQ25CQyxNQUFJLEVBQUVGLFFBRGE7QUFFbkJHLFFBQU0sRUFBRVIsT0FBTyxDQUFDSyxRQUFELENBRkk7QUFHbkJJLFNBQU8sRUFBR0YsSUFBRCxJQUFrQkcsT0FBTyxDQUFDQyxJQUFSLENBQWEsUUFBYjtBQUhSLENBQXJCO0FBTU8sTUFBTUMsU0FBUyxHQUFHQywyREFBYSxDQUFDUCxZQUFELENBQS9CO0FBR0EsTUFBTVEsaUJBQWlCLEdBQUlDLEtBQUQsSUFBZ0I7QUFBQTs7QUFDL0MsUUFBTU4sT0FBTyxHQUFHTyx5REFBVyxDQUFDLFVBQVVULElBQVYsRUFBd0I7QUFDbEQsUUFBSUMsTUFBTSxHQUFHUixPQUFPLENBQUNPLElBQUQsQ0FBcEI7O0FBQ0EsUUFBSSxDQUFDQyxNQUFMLEVBQWE7QUFDWEEsWUFBTSxHQUFHRixZQUFZLENBQUNFLE1BQXRCO0FBQ0FELFVBQUksR0FBR0QsWUFBWSxDQUFDQyxJQUFwQjtBQUNEOztBQUNEVSxZQUFRLENBQUNDLE1BQU0sb0NBQ1ZBLE1BRFU7QUFFYlYsWUFGYTtBQUdiRDtBQUhhLE1BQVAsQ0FBUjtBQUtELEdBWDBCLEVBV3hCLEVBWHdCLENBQTNCO0FBYUEsUUFBTVksU0FBUyxHQUFHO0FBQ2hCWixRQUFJLGlCQUFFUSxLQUFGLGFBQUVBLEtBQUYsdUJBQUVBLEtBQUssQ0FBRVIsSUFBVCxxREFBaUJELFlBQVksQ0FBQ0MsSUFEbEI7QUFFaEJDLFVBQU0sY0FBRVIsT0FBTyxDQUFDZSxLQUFELGFBQUNBLEtBQUQsdUJBQUNBLEtBQUssQ0FBRVIsSUFBUixDQUFULCtDQUFrREQsWUFBWSxDQUFDRSxNQUZyRDtBQUdoQkM7QUFIZ0IsR0FBbEI7QUFNQSxRQUFNO0FBQUEsT0FBQ1csS0FBRDtBQUFBLE9BQVFIO0FBQVIsTUFBb0JJLHNEQUFRLENBQUNGLFNBQUQsQ0FBbEM7QUFFQSxTQUNFLE1BQUMsU0FBRCxDQUFXLFFBQVg7QUFBb0IsU0FBSyxFQUFHQztBQUE1QixLQUNJTCxLQUFLLENBQUNPLFFBRFYsQ0FERjtBQUtELENBM0JNO0FBNkJRUixnRkFBZiIsImZpbGUiOiIuL3NyYy9jb250ZXh0L1VzZUxvY2FsZS50c3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBjcmVhdGVDb250ZXh0LFxuICB1c2VTdGF0ZSxcbiAgdXNlQ2FsbGJhY2tcbn0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGxvY2FsZV9jbiBmcm9tICdAbG9jYWxlL2NuJztcbmltcG9ydCBsb2NhbGVfZW4gZnJvbSAnQGxvY2FsZS9lbic7XG5cbmNvbnN0IGxvY2FsZXMgPSB7XG4gIGNuOiBsb2NhbGVfY24sXG4gIGVuOiBsb2NhbGVfZW5cbn07XG5cbmNvbnN0IGluaXRMYW5nID0gJ2NuJztcbmNvbnN0IGN0eEluaXRTdGF0ZSA9IHtcbiAgbGFuZzogaW5pdExhbmcsXG4gIGxvY2FsZTogbG9jYWxlc1tpbml0TGFuZ10sXG4gIHNldExhbmc6IChsYW5nOiBzdHJpbmcpID0+IGNvbnNvbGUud2Fybign5Yid5aeL5YyW5pyq5a6M5oiQJylcbn07XG5cbmV4cG9ydCBjb25zdCBVc2VMb2NhbGUgPSBjcmVhdGVDb250ZXh0KGN0eEluaXRTdGF0ZSk7XG5cblxuZXhwb3J0IGNvbnN0IFVzZUxvY2FsZVByb3ZpZGVyID0gKHByb3BzOiBhbnkpID0+IHtcbiAgY29uc3Qgc2V0TGFuZyA9IHVzZUNhbGxiYWNrKGZ1bmN0aW9uIChsYW5nOiBzdHJpbmcpIHtcbiAgICBsZXQgbG9jYWxlID0gbG9jYWxlc1tsYW5nIGFzIGtleW9mIHR5cGVvZiBsb2NhbGVzXTtcbiAgICBpZiAoIWxvY2FsZSkge1xuICAgICAgbG9jYWxlID0gY3R4SW5pdFN0YXRlLmxvY2FsZTtcbiAgICAgIGxhbmcgPSBjdHhJbml0U3RhdGUubGFuZztcbiAgICB9XG4gICAgc2V0U3RhdGUoc3RhdGVzID0+ICh7XG4gICAgICAuLi5zdGF0ZXMsXG4gICAgICBsb2NhbGUsXG4gICAgICBsYW5nXG4gICAgfSkpO1xuICB9LCBbXSk7XG5cbiAgY29uc3QgaW5pdFN0YXRlID0ge1xuICAgIGxhbmc6IHByb3BzPy5sYW5nID8/IGN0eEluaXRTdGF0ZS5sYW5nLFxuICAgIGxvY2FsZTogbG9jYWxlc1twcm9wcz8ubGFuZyBhcyBrZXlvZiB0eXBlb2YgbG9jYWxlc10gPz8gY3R4SW5pdFN0YXRlLmxvY2FsZSxcbiAgICBzZXRMYW5nXG4gIH07XG5cbiAgY29uc3QgW3N0YXRlLCBzZXRTdGF0ZV0gPSB1c2VTdGF0ZShpbml0U3RhdGUpO1xuXG4gIHJldHVybiAoXG4gICAgPFVzZUxvY2FsZS5Qcm92aWRlciB2YWx1ZT17IHN0YXRlIH0gPlxuICAgICAgeyBwcm9wcy5jaGlsZHJlbiB9XG4gICAgPC9Vc2VMb2NhbGUuUHJvdmlkZXI+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBVc2VMb2NhbGVQcm92aWRlcjtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/context/UseLocale.tsx\n");
-
-/***/ }),
-
-/***/ "./src/locales/cn.ts":
-/*!***************************!*\
-  !*** ./src/locales/cn.ts ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst locale = {\n  global: {\n    logo: '任意门',\n    start: '开始',\n    docs: '文档',\n    lang: 'English'\n  },\n  home: {\n    pageTitle: '任意门',\n    title: '任意门',\n    subtitle: '你的项目想去哪里？不妨让任意门帮你！',\n    description: `为前端项目的创建、开发、构建、发布提供一条龙服务。\n    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。\n    `,\n    btn_start: '开始使用',\n    btn_docs: '文档',\n    license: 'MIT',\n    why: [{\n      title: '各种轮子随你挑',\n      subtitle: '一行命令即可构建一个完整的前端项目工程',\n      intro: `集成typescript；\n          可无缝对接 ESlint、Prettier、Stylelint、Commitlint 等各种 lint 工具，\n          更可以接入单元测试\n          `,\n      route: {\n        page: 'start',\n        params: {\n          lang: 'cn'\n        }\n      }\n    }, {\n      title: 'React单页应用',\n      subtitle: '基于 React 和 React-Router 的 SPA 项目',\n      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，\n          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、\n          项目结构简单、前后端分离等需求…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'spa-react'\n        }\n      }\n    }, {\n      title: 'React服务端渲染应用',\n      subtitle: '基于 React 和 NextJs 的 SSR 项目',\n      intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，\n          同时相比于 SPA 应用，也能有效的降低白屏时间，\n          无论是 PC 官网 还是 M 站，都是一个很好的选择…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'ssr-react'\n        }\n      }\n    }, {\n      title: 'React组件库',\n      subtitle: '基于 React 的组件库项目',\n      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；\n          借助社区开源的组件库 Demo-UI 框架，如 docz、storybook、styleguidist 等，\n          让组件库的开发不再是遥不可及的技术难题…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'component-react'\n        }\n      }\n    }, {\n      title: '工具库',\n      subtitle: '类lodash、ramda工具库',\n      intro: '纯逻辑组件？耦合了业务需求的功能模块？不想耦合任何 UI 框架 —— 工具库项目很可能是你需要的…',\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'cn',\n          article: 'toolkit'\n        }\n      }\n    }],\n    demo: []\n  },\n  docs: {\n    pageTitle: '任意门 - 文档'\n  },\n  start: {\n    pageTitle: '任意门 - 开始使用'\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (locale);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvbG9jYWxlcy9jbi50cz9lMzg0Il0sIm5hbWVzIjpbImxvY2FsZSIsImdsb2JhbCIsImxvZ28iLCJzdGFydCIsImRvY3MiLCJsYW5nIiwiaG9tZSIsInBhZ2VUaXRsZSIsInRpdGxlIiwic3VidGl0bGUiLCJkZXNjcmlwdGlvbiIsImJ0bl9zdGFydCIsImJ0bl9kb2NzIiwibGljZW5zZSIsIndoeSIsImludHJvIiwicm91dGUiLCJwYWdlIiwicGFyYW1zIiwiYXJ0aWNsZSIsImRlbW8iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEsTUFBTUEsTUFBTSxHQUFHO0FBQ2JDLFFBQU0sRUFBRTtBQUNOQyxRQUFJLEVBQUUsS0FEQTtBQUVOQyxTQUFLLEVBQUUsSUFGRDtBQUdOQyxRQUFJLEVBQUUsSUFIQTtBQUlOQyxRQUFJLEVBQUU7QUFKQSxHQURLO0FBT2JDLE1BQUksRUFBRTtBQUNKQyxhQUFTLEVBQUUsS0FEUDtBQUVKQyxTQUFLLEVBQUUsS0FGSDtBQUdKQyxZQUFRLEVBQ04sb0JBSkU7QUFLSkMsZUFBVyxFQUFHOztLQUxWO0FBUUpDLGFBQVMsRUFBRSxNQVJQO0FBU0pDLFlBQVEsRUFBRSxJQVROO0FBVUpDLFdBQU8sRUFBRSxLQVZMO0FBV0pDLE9BQUcsRUFBRSxDQUNIO0FBQ0VOLFdBQUssRUFBRSxTQURUO0FBRUVDLGNBQVEsRUFDTixxQkFISjtBQUlFTSxXQUFLLEVBQUc7OztXQUpWO0FBUUVDLFdBQUssRUFBRTtBQUNMQyxZQUFJLEVBQUUsT0FERDtBQUVMQyxjQUFNLEVBQUU7QUFDTmIsY0FBSSxFQUFFO0FBREE7QUFGSDtBQVJULEtBREcsRUFnQkg7QUFDRUcsV0FBSyxFQUFFLFdBRFQ7QUFFRUMsY0FBUSxFQUNOLGtDQUhKO0FBSUVNLFdBQUssRUFBRzs7O1dBSlY7QUFRRUMsV0FBSyxFQUFFO0FBQ0xDLFlBQUksRUFBRSxNQUREO0FBRUxDLGNBQU0sRUFBRTtBQUNOYixjQUFJLEVBQUUsSUFEQTtBQUVOYyxpQkFBTyxFQUFFO0FBRkg7QUFGSDtBQVJULEtBaEJHLEVBZ0NIO0FBQ0VYLFdBQUssRUFBRSxjQURUO0FBRUVDLGNBQVEsRUFDTiw0QkFISjtBQUlFTSxXQUFLLEVBQUc7OztXQUpWO0FBUUVDLFdBQUssRUFBRTtBQUNMQyxZQUFJLEVBQUUsTUFERDtBQUVMQyxjQUFNLEVBQUU7QUFDTmIsY0FBSSxFQUFFLElBREE7QUFFTmMsaUJBQU8sRUFBRTtBQUZIO0FBRkg7QUFSVCxLQWhDRyxFQWdESDtBQUNFWCxXQUFLLEVBQUUsVUFEVDtBQUVFQyxjQUFRLEVBQUUsaUJBRlo7QUFHRU0sV0FBSyxFQUFHOzs7V0FIVjtBQU9FQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBUFQsS0FoREcsRUErREg7QUFDRVgsV0FBSyxFQUFFLEtBRFQ7QUFFRUMsY0FBUSxFQUFFLGtCQUZaO0FBR0VNLFdBQUssRUFDSCxtREFKSjtBQUtFQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBTFQsS0EvREcsQ0FYRDtBQXdGSkMsUUFBSSxFQUFFO0FBeEZGLEdBUE87QUFpR2JoQixNQUFJLEVBQUU7QUFDSkcsYUFBUyxFQUFFO0FBRFAsR0FqR087QUFvR2JKLE9BQUssRUFBRTtBQUNMSSxhQUFTLEVBQUU7QUFETjtBQXBHTSxDQUFmO0FBeUdlUCxxRUFBZiIsImZpbGUiOiIuL3NyYy9sb2NhbGVzL2NuLnRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgbG9jYWxlID0ge1xuICBnbG9iYWw6IHtcbiAgICBsb2dvOiAn5Lu75oSP6ZeoJyxcbiAgICBzdGFydDogJ+W8gOWniycsXG4gICAgZG9jczogJ+aWh+ahoycsXG4gICAgbGFuZzogJ0VuZ2xpc2gnXG4gIH0sXG4gIGhvbWU6IHtcbiAgICBwYWdlVGl0bGU6ICfku7vmhI/pl6gnLFxuICAgIHRpdGxlOiAn5Lu75oSP6ZeoJyxcbiAgICBzdWJ0aXRsZTpcbiAgICAgICfkvaDnmoTpobnnm67mg7Pljrvlk6rph4zvvJ/kuI3lpqjorqnku7vmhI/pl6jluK7kvaDvvIEnLFxuICAgIGRlc2NyaXB0aW9uOiBg5Li65YmN56uv6aG555uu55qE5Yib5bu644CB5byA5Y+R44CB5p6E5bu644CB5Y+R5biD5o+Q5L6b5LiA5p2h6b6Z5pyN5Yqh44CCXG4gICAg5pSv5oyB5Z+65LqOIFJlYWN0IOeahOWNlemhteW6lOeUqChTUEEp44CB5pyN5Yqh56uv5riy5p+T5bqU55SoKFNTUinjgIHnu4Tku7blupPjgIHnsbtsb2Rhc2jlt6Xlhbfpm4bnrYnlpJrnp43liY3nq6/luLjop4Hpobnnm67jgIJcbiAgICBgLFxuICAgIGJ0bl9zdGFydDogJ+W8gOWni+S9v+eUqCcsXG4gICAgYnRuX2RvY3M6ICfmlofmoaMnLFxuICAgIGxpY2Vuc2U6ICdNSVQnLFxuICAgIHdoeTogW1xuICAgICAge1xuICAgICAgICB0aXRsZTogJ+WQhOenjei9ruWtkOmaj+S9oOaMkScsXG4gICAgICAgIHN1YnRpdGxlOlxuICAgICAgICAgICfkuIDooYzlkb3ku6TljbPlj6/mnoTlu7rkuIDkuKrlrozmlbTnmoTliY3nq6/pobnnm67lt6XnqIsnLFxuICAgICAgICBpbnRybzogYOmbhuaIkHR5cGVzY3JpcHTvvJtcbiAgICAgICAgICDlj6/ml6DnvJ3lr7nmjqUgRVNsaW5044CBUHJldHRpZXLjgIFTdHlsZWxpbnTjgIFDb21taXRsaW50IOetieWQhOenjSBsaW50IOW3peWFt++8jFxuICAgICAgICAgIOabtOWPr+S7peaOpeWFpeWNleWFg+a1i+ivlVxuICAgICAgICAgIGAsXG4gICAgICAgIHJvdXRlOiB7XG4gICAgICAgICAgcGFnZTogJ3N0YXJ0JyxcbiAgICAgICAgICBwYXJhbXM6IHtcbiAgICAgICAgICAgIGxhbmc6ICdjbidcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3TljZXpobXlupTnlKgnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAn5Z+65LqOIFJlYWN0IOWSjCBSZWFjdC1Sb3V0ZXIg55qEIFNQQSDpobnnm64nLFxuICAgICAgICBpbnRybzogYFNQQShTaW5nbGUtQXBwbGljYXRpb24tQXBwKSDljZXpobXlupTnlKjmmK/njrDlnKjnmoTliY3nq6/lvIDlj5HogIXkvb/nlKjpopHnjofmnIDpq5jnmoTkuIDnp43pobnnm67mqKHlvI/vvIxcbiAgICAgICAgICDml6DorrrmmK/pgILphY3kuo7np7vliqjnq6/nmoRINe+8jOi/mOaYr+acjeWKoeS6juS4reWQjuWPsOeahFBD6aG555uu77yM6YO95b6I5aW955qE5ruh6Laz5LqG5byA5Y+R5ZGo5pyf55+t44CB5oiQ5pys5L2O44CBXG4gICAgICAgICAg6aG555uu57uT5p6E566A5Y2V44CB5YmN5ZCO56uv5YiG56a7562J6ZyA5rGC4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnY24nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3NwYS1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3TmnI3liqHnq6/muLLmn5PlupTnlKgnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAn5Z+65LqOIFJlYWN0IOWSjCBOZXh0SnMg55qEIFNTUiDpobnnm64nLFxuICAgICAgICBpbnRybzogYOWfuuS6jiBSZWFjdCArIE5leHRKcyDnmoQgU1NSKFNlcnZlci1TaWRlLVJlbmRlcikg5pyN5Yqh56uv5riy5p+T5bqU55So6Kej5Yaz5LqGIFNFTyDlkozliY3lkI7nq6/liIbnprvnmoTpl67popjvvIxcbiAgICAgICAgICDlkIzml7bnm7jmr5Tkuo4gU1BBIOW6lOeUqO+8jOS5n+iDveacieaViOeahOmZjeS9jueZveWxj+aXtumXtO+8jFxuICAgICAgICAgIOaXoOiuuuaYryBQQyDlrpjnvZEg6L+Y5pivIE0g56uZ77yM6YO95piv5LiA5Liq5b6I5aW955qE6YCJ5oup4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnY24nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3Nzci1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3Tnu4Tku7blupMnLFxuICAgICAgICBzdWJ0aXRsZTogJ+WfuuS6jiBSZWFjdCDnmoTnu4Tku7blupPpobnnm64nLFxuICAgICAgICBpbnRybzogYOS4gOWll+WxnuS6juiHquW3seWboumYn+aIluWFrOWPuOWGhemDqOS9v+eUqOeahOe7hOS7tuW6k++8jOWHoOS5juaYr+avj+S4quWFrOWPuOWJjeerr+WboumYn+eahOagh+mFje+8m1xuICAgICAgICAgIOWAn+WKqeekvuWMuuW8gOa6kOeahOe7hOS7tuW6kyBEZW1vLVVJIOahhuaetu+8jOWmgiBkb2N644CBc3Rvcnlib29r44CBc3R5bGVndWlkaXN0IOetie+8jFxuICAgICAgICAgIOiuqee7hOS7tuW6k+eahOW8gOWPkeS4jeWGjeaYr+mBpeS4jeWPr+WPiueahOaKgOacr+mavumimOKAplxuICAgICAgICAgIGAsXG4gICAgICAgIHJvdXRlOiB7XG4gICAgICAgICAgcGFnZTogJ2RvY3MnLFxuICAgICAgICAgIHBhcmFtczoge1xuICAgICAgICAgICAgbGFuZzogJ2NuJyxcbiAgICAgICAgICAgIGFydGljbGU6ICdjb21wb25lbnQtcmVhY3QnXG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9LFxuICAgICAge1xuICAgICAgICB0aXRsZTogJ+W3peWFt+W6kycsXG4gICAgICAgIHN1YnRpdGxlOiAn57G7bG9kYXNo44CBcmFtZGHlt6XlhbflupMnLFxuICAgICAgICBpbnRybzpcbiAgICAgICAgICAn57qv6YC76L6R57uE5Lu277yf6ICm5ZCI5LqG5Lia5Yqh6ZyA5rGC55qE5Yqf6IO95qih5Z2X77yf5LiN5oOz6ICm5ZCI5Lu75L2VIFVJIOahhuaetiDigJTigJQg5bel5YW35bqT6aG555uu5b6I5Y+v6IO95piv5L2g6ZyA6KaB55qE4oCmJyxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnY24nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3Rvb2xraXQnXG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG4gICAgXSxcbiAgICBkZW1vOiBbXVxuICB9LFxuICBkb2NzOiB7XG4gICAgcGFnZVRpdGxlOiAn5Lu75oSP6ZeoIC0g5paH5qGjJ1xuICB9LFxuICBzdGFydDoge1xuICAgIHBhZ2VUaXRsZTogJ+S7u+aEj+mXqCAtIOW8gOWni+S9v+eUqCdcbiAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgbG9jYWxlOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/locales/cn.ts\n");
-
-/***/ }),
-
-/***/ "./src/locales/en.ts":
-/*!***************************!*\
-  !*** ./src/locales/en.ts ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst locale = {\n  global: {\n    logo: 'Omni-Door',\n    start: 'Start',\n    docs: 'Docs',\n    lang: '中文'\n  },\n  home: {\n    pageTitle: 'Omni-Door',\n    title: 'Omni-Door',\n    subtitle: 'Where do you want your project to go? Let any Omni-Door help you!',\n    description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.\n      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,\n    btn_start: 'Getting Started',\n    btn_docs: 'Documentation',\n    license: 'MIT',\n    why: [{\n      title: 'Many kinds of wheels are up to you',\n      subtitle: 'A complete front-end project project can be built in one line of command',\n      intro: `Integrating typescript;\n          Seamless docking of eslint, prettier, stylelint, commitlint,\n          It can also access unit-test\n          `,\n      route: {\n        page: 'start',\n        params: {\n          lang: 'en'\n        }\n      }\n    }, {\n      title: 'React-SPA',\n      subtitle: 'The SPA project based on react and react router',\n      intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,\n          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost\n          Project structure is simple, front and back end separation and other requirements…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'spa-react'\n        }\n      }\n    }, {\n      title: 'React-SSR',\n      subtitle: 'The SSR project based on react and nextjs',\n      intro: `SSR (server side render) server-side rendering application based on react + nextjs solves the problem of separation of SEO and front-end,\n          At the same time, compared with spa application, it can also effectively reduce the white screen time,\n          Whether it is PC official website or m station, it is a good choice…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'ssr-react'\n        }\n      }\n    }, {\n      title: 'React-Component',\n      subtitle: 'Component library project based on react',\n      intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;\n          With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,\n          The development of component library is no longer a distant technical problem…\n          `,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'component-react'\n        }\n      }\n    }, {\n      title: 'toolkit',\n      subtitle: 'The tool library same as lodash or ramda',\n      intro: `Pure logic component? Function modules coupled with business requirements?\n          You don't want to couple any UI Frameworks - the tool library project is probably what you need…`,\n      route: {\n        page: 'docs',\n        params: {\n          lang: 'en',\n          article: 'toolkit'\n        }\n      }\n    }],\n    demo: []\n  },\n  docs: {\n    pageTitle: 'Omni-Door - Docs'\n  },\n  start: {\n    pageTitle: 'Omni-Door - Start'\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (locale);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvbG9jYWxlcy9lbi50cz9hODRlIl0sIm5hbWVzIjpbImxvY2FsZSIsImdsb2JhbCIsImxvZ28iLCJzdGFydCIsImRvY3MiLCJsYW5nIiwiaG9tZSIsInBhZ2VUaXRsZSIsInRpdGxlIiwic3VidGl0bGUiLCJkZXNjcmlwdGlvbiIsImJ0bl9zdGFydCIsImJ0bl9kb2NzIiwibGljZW5zZSIsIndoeSIsImludHJvIiwicm91dGUiLCJwYWdlIiwicGFyYW1zIiwiYXJ0aWNsZSIsImRlbW8iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEsTUFBTUEsTUFBTSxHQUFHO0FBQ2JDLFFBQU0sRUFBRTtBQUNOQyxRQUFJLEVBQUUsV0FEQTtBQUVOQyxTQUFLLEVBQUUsT0FGRDtBQUdOQyxRQUFJLEVBQUUsTUFIQTtBQUlOQyxRQUFJLEVBQUU7QUFKQSxHQURLO0FBT2JDLE1BQUksRUFBRTtBQUNKQyxhQUFTLEVBQUUsV0FEUDtBQUVKQyxTQUFLLEVBQUUsV0FGSDtBQUdKQyxZQUFRLEVBQ04sbUVBSkU7QUFLSkMsZUFBVyxFQUFHOzhLQUxWO0FBT0pDLGFBQVMsRUFBRSxpQkFQUDtBQVFKQyxZQUFRLEVBQUUsZUFSTjtBQVNKQyxXQUFPLEVBQUUsS0FUTDtBQVVKQyxPQUFHLEVBQUUsQ0FDSDtBQUNFTixXQUFLLEVBQ0gsb0NBRko7QUFHRUMsY0FBUSxFQUNOLDBFQUpKO0FBS0VNLFdBQUssRUFBRzs7O1dBTFY7QUFTRUMsV0FBSyxFQUFFO0FBQ0xDLFlBQUksRUFBRSxPQUREO0FBRUxDLGNBQU0sRUFBRTtBQUNOYixjQUFJLEVBQUU7QUFEQTtBQUZIO0FBVFQsS0FERyxFQWlCSDtBQUNFRyxXQUFLLEVBQUUsV0FEVDtBQUVFQyxjQUFRLEVBQ04saURBSEo7QUFJRU0sV0FBSyxFQUFHOzs7V0FKVjtBQVFFQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBUlQsS0FqQkcsRUFpQ0g7QUFDRVgsV0FBSyxFQUFFLFdBRFQ7QUFFRUMsY0FBUSxFQUNOLDJDQUhKO0FBSUVNLFdBQUssRUFBRzs7O1dBSlY7QUFRRUMsV0FBSyxFQUFFO0FBQ0xDLFlBQUksRUFBRSxNQUREO0FBRUxDLGNBQU0sRUFBRTtBQUNOYixjQUFJLEVBQUUsSUFEQTtBQUVOYyxpQkFBTyxFQUFFO0FBRkg7QUFGSDtBQVJULEtBakNHLEVBaURIO0FBQ0VYLFdBQUssRUFBRSxpQkFEVDtBQUVFQyxjQUFRLEVBQ04sMENBSEo7QUFJRU0sV0FBSyxFQUFHOzs7V0FKVjtBQVFFQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBUlQsS0FqREcsRUFpRUg7QUFDRVgsV0FBSyxFQUFFLFNBRFQ7QUFFRUMsY0FBUSxFQUNOLDBDQUhKO0FBSUVNLFdBQUssRUFBRzsyR0FKVjtBQU1FQyxXQUFLLEVBQUU7QUFDTEMsWUFBSSxFQUFFLE1BREQ7QUFFTEMsY0FBTSxFQUFFO0FBQ05iLGNBQUksRUFBRSxJQURBO0FBRU5jLGlCQUFPLEVBQUU7QUFGSDtBQUZIO0FBTlQsS0FqRUcsQ0FWRDtBQTBGSkMsUUFBSSxFQUFFO0FBMUZGLEdBUE87QUFtR2JoQixNQUFJLEVBQUU7QUFDSkcsYUFBUyxFQUFFO0FBRFAsR0FuR087QUFzR2JKLE9BQUssRUFBRTtBQUNMSSxhQUFTLEVBQUU7QUFETjtBQXRHTSxDQUFmO0FBMkdlUCxxRUFBZiIsImZpbGUiOiIuL3NyYy9sb2NhbGVzL2VuLnRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgbG9jYWxlID0ge1xuICBnbG9iYWw6IHtcbiAgICBsb2dvOiAnT21uaS1Eb29yJyxcbiAgICBzdGFydDogJ1N0YXJ0JyxcbiAgICBkb2NzOiAnRG9jcycsXG4gICAgbGFuZzogJ+S4reaWhydcbiAgfSxcbiAgaG9tZToge1xuICAgIHBhZ2VUaXRsZTogJ09tbmktRG9vcicsXG4gICAgdGl0bGU6ICdPbW5pLURvb3InLFxuICAgIHN1YnRpdGxlOlxuICAgICAgJ1doZXJlIGRvIHlvdSB3YW50IHlvdXIgcHJvamVjdCB0byBnbz8gTGV0IGFueSBPbW5pLURvb3IgaGVscCB5b3UhJyxcbiAgICBkZXNjcmlwdGlvbjogYFByb3ZpZGUgZnJvbnQtZW5kIHByb2plY3RzIGZyb20gdGhlIGluaXRpYWxpemF0aW9uLCBkZXZlbG9wbWVudCwgY29uc3RydWN0aW9uLCByZWxlYXNlIGFuZCBvdGhlciBvbmUtc3RvcCBzZXJ2aWNlcy5cbiAgICAgIEl0IHN1cHBvcnRzIG1hbnkgY29tbW9uIGZyb250LWVuZCBwcm9qZWN0cyBzdWNoIGFzIHNpbmdsZSBwYWdlIGFwcGxpY2F0aW9uIChTUEEpLCBzZXJ2ZXItc2lkZSByZW5kZXJpbmcgYXBwbGljYXRpb24gKFNTUiksIGNvbXBvbmVudCBsaWJyYXJ5LCBsb2Rhc2ggbGlrZSB0b29sc2V0LCBldGMuYCxcbiAgICBidG5fc3RhcnQ6ICdHZXR0aW5nIFN0YXJ0ZWQnLFxuICAgIGJ0bl9kb2NzOiAnRG9jdW1lbnRhdGlvbicsXG4gICAgbGljZW5zZTogJ01JVCcsXG4gICAgd2h5OiBbXG4gICAgICB7XG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgICdNYW55IGtpbmRzIG9mIHdoZWVscyBhcmUgdXAgdG8geW91JyxcbiAgICAgICAgc3VidGl0bGU6XG4gICAgICAgICAgJ0EgY29tcGxldGUgZnJvbnQtZW5kIHByb2plY3QgcHJvamVjdCBjYW4gYmUgYnVpbHQgaW4gb25lIGxpbmUgb2YgY29tbWFuZCcsXG4gICAgICAgIGludHJvOiBgSW50ZWdyYXRpbmcgdHlwZXNjcmlwdDtcbiAgICAgICAgICBTZWFtbGVzcyBkb2NraW5nIG9mIGVzbGludCwgcHJldHRpZXIsIHN0eWxlbGludCwgY29tbWl0bGludCxcbiAgICAgICAgICBJdCBjYW4gYWxzbyBhY2Nlc3MgdW5pdC10ZXN0XG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnc3RhcnQnLFxuICAgICAgICAgIHBhcmFtczoge1xuICAgICAgICAgICAgbGFuZzogJ2VuJ1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgdGl0bGU6ICdSZWFjdC1TUEEnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAnVGhlIFNQQSBwcm9qZWN0IGJhc2VkIG9uIHJlYWN0IGFuZCByZWFjdCByb3V0ZXInLFxuICAgICAgICBpbnRybzogYFNQQShTaW5nbGUtQXBwbGljYXRpb24tQXBwKSAgaXMgdGhlIG1vc3QgZnJlcXVlbnRseSB1c2VkIHByb2plY3QgbW9kZSBieSBmcm9udC1lbmQgZGV2ZWxvcGVycyxcbiAgICAgICAgICBXaGV0aGVyIGl0IGlzIHRoZSBINSBzdWl0YWJsZSBmb3IgbW9iaWxlIHRlcm1pbmFsIG9yIHRoZSBQQyBwcm9qZWN0IHNlcnZpbmcgZm9yIHRoZSBtaWRkbGUgYW5kIGJhY2sgb2ZmaWNlLCBpdCBjYW4gbWVldCB0aGUgcmVxdWlyZW1lbnRzIG9mIHNob3J0IGRldmVsb3BtZW50IGN5Y2xlLCBsb3cgY29zdCwgYW5kIGxvdyBjb3N0XG4gICAgICAgICAgUHJvamVjdCBzdHJ1Y3R1cmUgaXMgc2ltcGxlLCBmcm9udCBhbmQgYmFjayBlbmQgc2VwYXJhdGlvbiBhbmQgb3RoZXIgcmVxdWlyZW1lbnRz4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnZW4nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3NwYS1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAnUmVhY3QtU1NSJyxcbiAgICAgICAgc3VidGl0bGU6XG4gICAgICAgICAgJ1RoZSBTU1IgcHJvamVjdCBiYXNlZCBvbiByZWFjdCBhbmQgbmV4dGpzJyxcbiAgICAgICAgaW50cm86IGBTU1IgKHNlcnZlciBzaWRlIHJlbmRlcikgc2VydmVyLXNpZGUgcmVuZGVyaW5nIGFwcGxpY2F0aW9uIGJhc2VkIG9uIHJlYWN0ICsgbmV4dGpzIHNvbHZlcyB0aGUgcHJvYmxlbSBvZiBzZXBhcmF0aW9uIG9mIFNFTyBhbmQgZnJvbnQtZW5kLFxuICAgICAgICAgIEF0IHRoZSBzYW1lIHRpbWUsIGNvbXBhcmVkIHdpdGggc3BhIGFwcGxpY2F0aW9uLCBpdCBjYW4gYWxzbyBlZmZlY3RpdmVseSByZWR1Y2UgdGhlIHdoaXRlIHNjcmVlbiB0aW1lLFxuICAgICAgICAgIFdoZXRoZXIgaXQgaXMgUEMgb2ZmaWNpYWwgd2Vic2l0ZSBvciBtIHN0YXRpb24sIGl0IGlzIGEgZ29vZCBjaG9pY2XigKZcbiAgICAgICAgICBgLFxuICAgICAgICByb3V0ZToge1xuICAgICAgICAgIHBhZ2U6ICdkb2NzJyxcbiAgICAgICAgICBwYXJhbXM6IHtcbiAgICAgICAgICAgIGxhbmc6ICdlbicsXG4gICAgICAgICAgICBhcnRpY2xlOiAnc3NyLXJlYWN0J1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgdGl0bGU6ICdSZWFjdC1Db21wb25lbnQnLFxuICAgICAgICBzdWJ0aXRsZTpcbiAgICAgICAgICAnQ29tcG9uZW50IGxpYnJhcnkgcHJvamVjdCBiYXNlZCBvbiByZWFjdCcsXG4gICAgICAgIGludHJvOiBgQSBzZXQgb2YgY29tcG9uZW50IGxpYnJhcmllcyBmb3IgdGhlaXIgb3duIHRlYW0gb3IgaW50ZXJuYWwgdXNlIGlzIGFsbW9zdCB0aGUgc3RhbmRhcmQgY29uZmlndXJhdGlvbiBmb3IgZnJvbnQtZW5kIHRlYW1zIG9mIGVhY2ggY29tcGFueTtcbiAgICAgICAgICBXaXRoIHRoZSBoZWxwIG9mIGNvbW11bml0eSBvcGVuIHNvdXJjZSBjb21wb25lbnQgbGlicmFyeSBkZW1vIFVJIGZyYW1ld29yaywgc3VjaCBhcyBkb2N6LCBzdG9yeWJvb2ssIHN0eWxlZ3VpZGlzdCwgZXRjLFxuICAgICAgICAgIFRoZSBkZXZlbG9wbWVudCBvZiBjb21wb25lbnQgbGlicmFyeSBpcyBubyBsb25nZXIgYSBkaXN0YW50IHRlY2huaWNhbCBwcm9ibGVt4oCmXG4gICAgICAgICAgYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnZW4nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ2NvbXBvbmVudC1yZWFjdCdcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiAndG9vbGtpdCcsXG4gICAgICAgIHN1YnRpdGxlOlxuICAgICAgICAgICdUaGUgdG9vbCBsaWJyYXJ5IHNhbWUgYXMgbG9kYXNoIG9yIHJhbWRhJyxcbiAgICAgICAgaW50cm86IGBQdXJlIGxvZ2ljIGNvbXBvbmVudD8gRnVuY3Rpb24gbW9kdWxlcyBjb3VwbGVkIHdpdGggYnVzaW5lc3MgcmVxdWlyZW1lbnRzP1xuICAgICAgICAgIFlvdSBkb24ndCB3YW50IHRvIGNvdXBsZSBhbnkgVUkgRnJhbWV3b3JrcyAtIHRoZSB0b29sIGxpYnJhcnkgcHJvamVjdCBpcyBwcm9iYWJseSB3aGF0IHlvdSBuZWVk4oCmYCxcbiAgICAgICAgcm91dGU6IHtcbiAgICAgICAgICBwYWdlOiAnZG9jcycsXG4gICAgICAgICAgcGFyYW1zOiB7XG4gICAgICAgICAgICBsYW5nOiAnZW4nLFxuICAgICAgICAgICAgYXJ0aWNsZTogJ3Rvb2xraXQnXG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG4gICAgXSxcbiAgICBkZW1vOiBbXVxuICB9LFxuICBkb2NzOiB7XG4gICAgcGFnZVRpdGxlOiAnT21uaS1Eb29yIC0gRG9jcydcbiAgfSxcbiAgc3RhcnQ6IHtcbiAgICBwYWdlVGl0bGU6ICdPbW5pLURvb3IgLSBTdGFydCdcbiAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgbG9jYWxlOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/locales/en.ts\n");
-
-/***/ }),
-
-/***/ "./src/styles/globals.css":
-/*!********************************!*\
-  !*** ./src/styles/globals.css ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = {\n\t\"hide\": \"hide___1HqNW\",\n\t\"hidden\": \"hidden___1N6-4\",\n\t\"speed\": \"speed___301xU\"\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvc3R5bGVzL2dsb2JhbHMuY3NzPzcxYWIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL3NyYy9zdHlsZXMvZ2xvYmFscy5jc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHtcblx0XCJoaWRlXCI6IFwiaGlkZV9fXzFIcU5XXCIsXG5cdFwiaGlkZGVuXCI6IFwiaGlkZGVuX19fMU42LTRcIixcblx0XCJzcGVlZFwiOiBcInNwZWVkX19fMzAxeFVcIlxufTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/styles/globals.css\n");
-
-/***/ }),
-
 /***/ 0:
-/*!*****************************************!*\
-  !*** multi private-next-pages/_app.tsx ***!
-  \*****************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! private-next-pages/_app.tsx */"./pages/_app.tsx");
+module.exports = __webpack_require__("cha2");
 
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/*! no static exports found */
+/***/ "Ea3V":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"react\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdFwiPzU4OGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react\n");
+module.exports = {
+	"hide": "hide___1HqNW",
+	"hidden": "hidden___1N6-4",
+	"speed": "speed___301xU"
+};
+
+/***/ }),
+
+/***/ "cDcd":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "cha2":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ctx_UseLocale__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("y63i");
+/* harmony import */ var _src_styles_globals_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("Ea3V");
+/* harmony import */ var _src_styles_globals_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_styles_globals_css__WEBPACK_IMPORTED_MODULE_2__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function MyApp({
+  Component,
+  pageProps
+}) {
+  var _pageProps$query;
+
+  return __jsx(_ctx_UseLocale__WEBPACK_IMPORTED_MODULE_1__[/* default */ "b"], {
+    lang: pageProps === null || pageProps === void 0 ? void 0 : (_pageProps$query = pageProps.query) === null || _pageProps$query === void 0 ? void 0 : _pageProps$query.lang
+  }, __jsx(Component, pageProps));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (MyApp);
+
+/***/ }),
+
+/***/ "y63i":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ UseLocale; });
+
+// UNUSED EXPORTS: UseLocaleProvider
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// CONCATENATED MODULE: ./src/locales/cn.ts
+const locale = {
+  global: {
+    logo: '任意门',
+    start: '开始',
+    docs: '文档',
+    lang: 'English'
+  },
+  home: {
+    pageTitle: '任意门',
+    title: '任意门',
+    subtitle: '你的项目想去哪里？不妨让任意门帮你！',
+    description: `为前端项目的创建、开发、构建、发布提供一条龙服务。
+    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
+    `,
+    btn_start: '开始使用',
+    btn_docs: '文档',
+    license: 'MIT',
+    why: [{
+      title: '各种轮子随你挑',
+      subtitle: '一行命令即可构建一个完整的前端项目工程',
+      intro: `集成typescript；
+          可无缝对接 ESlint、Prettier、Stylelint、Commitlint 等各种 lint 工具，
+          更可以接入单元测试
+          `,
+      route: {
+        page: 'start',
+        params: {
+          lang: 'cn'
+        }
+      }
+    }, {
+      title: 'React单页应用',
+      subtitle: '基于 React 和 React-Router 的 SPA 项目',
+      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
+          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
+          项目结构简单、前后端分离等需求…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'spa-react'
+        }
+      }
+    }, {
+      title: 'React服务端渲染应用',
+      subtitle: '基于 React 和 NextJs 的 SSR 项目',
+      intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，
+          同时相比于 SPA 应用，也能有效的降低白屏时间，
+          无论是 PC 官网 还是 M 站，都是一个很好的选择…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'ssr-react'
+        }
+      }
+    }, {
+      title: 'React组件库',
+      subtitle: '基于 React 的组件库项目',
+      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
+          借助社区开源的组件库 Demo-UI 框架，如 docz、storybook、styleguidist 等，
+          让组件库的开发不再是遥不可及的技术难题…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'component-react'
+        }
+      }
+    }, {
+      title: '工具库',
+      subtitle: '类lodash、ramda工具库',
+      intro: '纯逻辑组件？耦合了业务需求的功能模块？不想耦合任何 UI 框架 —— 工具库项目很可能是你需要的…',
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'toolkit'
+        }
+      }
+    }],
+    demo: []
+  },
+  docs: {
+    pageTitle: '任意门 - 文档'
+  },
+  start: {
+    pageTitle: '任意门 - 开始使用'
+  }
+};
+/* harmony default export */ var cn = (locale);
+// CONCATENATED MODULE: ./src/locales/en.ts
+const en_locale = {
+  global: {
+    logo: 'Omni-Door',
+    start: 'Start',
+    docs: 'Docs',
+    lang: '中文'
+  },
+  home: {
+    pageTitle: 'Omni-Door',
+    title: 'Omni-Door',
+    subtitle: 'Where do you want your project to go? Let any Omni-Door help you!',
+    description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.
+      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
+    btn_start: 'Getting Started',
+    btn_docs: 'Documentation',
+    license: 'MIT',
+    why: [{
+      title: 'Many kinds of wheels are up to you',
+      subtitle: 'A complete front-end project project can be built in one line of command',
+      intro: `Integrating typescript;
+          Seamless docking of eslint, prettier, stylelint, commitlint,
+          It can also access unit-test
+          `,
+      route: {
+        page: 'start',
+        params: {
+          lang: 'en'
+        }
+      }
+    }, {
+      title: 'React-SPA',
+      subtitle: 'The SPA project based on react and react router',
+      intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
+          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
+          Project structure is simple, front and back end separation and other requirements…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'spa-react'
+        }
+      }
+    }, {
+      title: 'React-SSR',
+      subtitle: 'The SSR project based on react and nextjs',
+      intro: `SSR (server side render) server-side rendering application based on react + nextjs solves the problem of separation of SEO and front-end,
+          At the same time, compared with spa application, it can also effectively reduce the white screen time,
+          Whether it is PC official website or m station, it is a good choice…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'ssr-react'
+        }
+      }
+    }, {
+      title: 'React-Component',
+      subtitle: 'Component library project based on react',
+      intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
+          With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,
+          The development of component library is no longer a distant technical problem…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'component-react'
+        }
+      }
+    }, {
+      title: 'toolkit',
+      subtitle: 'The tool library same as lodash or ramda',
+      intro: `Pure logic component? Function modules coupled with business requirements?
+          You don't want to couple any UI Frameworks - the tool library project is probably what you need…`,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'toolkit'
+        }
+      }
+    }],
+    demo: []
+  },
+  docs: {
+    pageTitle: 'Omni-Door - Docs'
+  },
+  start: {
+    pageTitle: 'Omni-Door - Start'
+  }
+};
+/* harmony default export */ var en = (en_locale);
+// CONCATENATED MODULE: ./src/context/UseLocale.tsx
+
+var __jsx = external_react_default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+const locales = {
+  cn: cn,
+  en: en
+};
+const initLang = 'cn';
+const ctxInitState = {
+  lang: initLang,
+  locale: locales[initLang],
+  setLang: lang => console.warn('初始化未完成')
+};
+const UseLocale = Object(external_react_["createContext"])(ctxInitState);
+const UseLocaleProvider = props => {
+  var _props$lang, _locales;
+
+  const setLang = Object(external_react_["useCallback"])(function (lang) {
+    let locale = locales[lang];
+
+    if (!locale) {
+      locale = ctxInitState.locale;
+      lang = ctxInitState.lang;
+    }
+
+    setState(states => _objectSpread(_objectSpread({}, states), {}, {
+      locale,
+      lang
+    }));
+  }, []);
+  const initState = {
+    lang: (_props$lang = props === null || props === void 0 ? void 0 : props.lang) !== null && _props$lang !== void 0 ? _props$lang : ctxInitState.lang,
+    locale: (_locales = locales[props === null || props === void 0 ? void 0 : props.lang]) !== null && _locales !== void 0 ? _locales : ctxInitState.locale,
+    setLang
+  };
+  const {
+    0: state,
+    1: setState
+  } = Object(external_react_["useState"])(initState);
+  return __jsx(UseLocale.Provider, {
+    value: state
+  }, props.children);
+};
+/* harmony default export */ var context_UseLocale = __webpack_exports__["b"] = (UseLocaleProvider);
 
 /***/ })
 
