@@ -16,7 +16,7 @@
     "new": "omni new",
     "build": "omni build",
     "release": "omni build && omni release && npm run deploy",
-    "deploy": "pm2 deploy ecosystem.config.js production",
+    "deploy": "pm2 deploy ecosystem.config.js production setup",
     "reload": "pm2 reload ecosystem.config.js production"
   },
   "dependencies": {
