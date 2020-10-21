@@ -30,6 +30,7 @@ apt-get update &&\
 apt-get install nodejs &&\
 apt-get install npm &&\
 apt-get install nginx &&\
+npm i -g yarn &&\
 npm i -g pm2 &&\
 npm i -g @omni-door/cli &&\
 ```
@@ -66,4 +67,9 @@ server {
 		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 	}
 }
+```
+
+### deploy and publish
+```sh
+yarn setup && yarn release
 ```
