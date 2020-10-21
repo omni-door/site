@@ -45,7 +45,7 @@ nginx &&\
 ```
 
 ### ngnix config
-```json
+```conf
 server {
 	listen       80;
 	server_name  www.omnidoor.org;
