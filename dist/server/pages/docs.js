@@ -875,11 +875,15 @@ function MDXContent(_ref) {
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
+  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
     parentName: "p"
   }, {
-    "href": "https://commitlint.js.org/"
-  }), `commitlint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
+    "href": "https://prettier.io/docs/en/install.html"
+  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `……`))), Object(react_["mdx"])("h3", null, `Toolkit 工具库项目`), Object(react_["mdx"])("ul", {
+    "className": "contains-task-list"
+  }, Object(react_["mdx"])("li", _extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -891,15 +895,27 @@ function MDXContent(_ref) {
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
+  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
     parentName: "p"
   }, {
-    "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
+    "href": "https://d.umijs.org/"
+  }), `dumi`), ` 开发和Demo框架`)), Object(react_["mdx"])("li", _extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `toolkit 工具库项目`), Object(react_["mdx"])("ul", {
-    "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
+  }, Object(react_["mdx"])("input", _extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "https://rollupjs.org/guide/en/"
+  }), `rollup`), ` 构建项目`)), Object(react_["mdx"])("li", _extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -916,22 +932,6 @@ function MDXContent(_ref) {
   }, {
     "href": "https://www.typescriptlang.org/"
   }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
-    "href": "https://rollupjs.org/guide/en"
-  }), `rollup`), ` 打包`)), Object(react_["mdx"])("li", _extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -1760,22 +1760,6 @@ function docs_en_MDXContent(_ref) {
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Comply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
-    "href": "https://commitlint.js.org/"
-  }), `commitlint`), ` standard`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
-    "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
-    parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
-    "type": "checkbox",
-    "checked": true,
-    "disabled": true
   })), ` `, `Apply `, Object(react_["mdx"])("a", docs_en_extends({
     parentName: "p"
   }, {
@@ -1796,11 +1780,11 @@ function docs_en_MDXContent(_ref) {
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
+  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
     parentName: "p"
   }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
+    "href": "https://d.umijs.org/"
+  }), `dumi`), ` 开发和Demo框架`)), Object(react_["mdx"])("li", docs_en_extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -1817,6 +1801,22 @@ function docs_en_MDXContent(_ref) {
   }, {
     "href": "https://rollupjs.org/guide/en"
   }), `rollup`), ` to package`)), Object(react_["mdx"])("li", docs_en_extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", docs_en_extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
+    parentName: "p"
+  }, {
+    "href": "https://www.typescriptlang.org/"
+  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
