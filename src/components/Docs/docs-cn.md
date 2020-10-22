@@ -47,16 +47,16 @@
 
 - [x] 遵守 [stylelint](https://stylelint.io/) 规范
 
-- [x] 遵守 [commitlint](https://commitlint.js.org/) 规范
-
 - [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
 
   ……
 
-### toolkit 工具库项目
-- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
+### Toolkit 工具库项目
+- [x] 基于 [dumi](https://d.umijs.org/) 开发和Demo框架
 
-- [x] 使用 [rollup](https://rollupjs.org/guide/en) 打包
+- [x] 使用 [rollup](https://rollupjs.org/guide/en/) 构建项目
+
+- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
 
 - [x] 遵守 [eslint](https://eslint.org/) 规范
 

@@ -47,16 +47,16 @@
 
 - [x] Comply [stylelint](https://stylelint.io/) standard
 
-- [x] Comply [commitlint](https://commitlint.js.org/) standard
-
 - [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
 
   ……
 
 ### Toolkit
-- [x] Use [typescript](https://www.typescriptlang.org/) to develop
+- [x] 基于 [dumi](https://d.umijs.org/) 开发和Demo框架
 
 - [x] Use [rollup](https://rollupjs.org/guide/en) to package
+
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
 
 - [x] Comply [eslint](https://eslint.org/) standard
 
