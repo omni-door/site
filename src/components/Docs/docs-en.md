@@ -39,9 +39,11 @@
 
 - [x] Based on [React](https://reactjs.org/)
 
-- [x] Use [typescript](https://www.typescriptlang.org/) to develop
+- [x] Use [Jest](https://jestjs.io/) to cover components unit-test
 
 - [x] Use [gulp](https://gulpjs.com/) to package
+
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
 
 - [x] Comply [eslint](https://eslint.org/) standard
 
@@ -52,7 +54,11 @@
   ……
 
 ### Toolkit
-- [x] 基于 [dumi](https://d.umijs.org/) 开发和Demo框架
+- [x] Based on [dumi](https://d.umijs.org/) which is demo and document framework for the project
+
+- [x] 使用 [mocha](https://mochajs.org/) 进行Node端的单页测试
+
+- [x] 使用 [karma](https://karma-runner.github.io/latest/index.html) 进行浏览器端的单页测试
 
 - [x] Use [rollup](https://rollupjs.org/guide/en) to package
 

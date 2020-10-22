@@ -39,9 +39,11 @@
 
 - [x] 基于 [React](https://reactjs.org/) 的组件库
 
-- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
+- [x] 使用 [Jest](https://jestjs.io/) 进行组件的单页测试
 
 - [x] 使用 [gulp](https://gulpjs.com/) 打包
+
+- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
 
 - [x] 遵守 [eslint](https://eslint.org/) 规范
 
@@ -53,6 +55,10 @@
 
 ### Toolkit 工具库项目
 - [x] 基于 [dumi](https://d.umijs.org/) 开发和Demo框架
+
+- [x] 使用 [mocha](https://mochajs.org/) 进行Node端的单页测试
+
+- [x] 使用 [karma](https://karma-runner.github.io/latest/index.html) 进行浏览器端的单页测试
 
 - [x] 使用 [rollup](https://rollupjs.org/guide/en/) 构建项目
 

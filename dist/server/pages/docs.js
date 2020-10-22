@@ -814,8 +814,8 @@ function MDXContent(_ref) {
   })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
     parentName: "p"
   }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
+    "href": "https://jestjs.io/"
+  }), `Jest`), ` 进行组件的单页测试`)), Object(react_["mdx"])("li", _extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -832,6 +832,22 @@ function MDXContent(_ref) {
   }, {
     "href": "https://gulpjs.com/"
   }), `gulp`), ` 打包`)), Object(react_["mdx"])("li", _extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", _extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "https://www.typescriptlang.org/"
+  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -900,6 +916,38 @@ function MDXContent(_ref) {
   }, {
     "href": "https://d.umijs.org/"
   }), `dumi`), ` 开发和Demo框架`)), Object(react_["mdx"])("li", _extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", _extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "https://mochajs.org/"
+  }), `mocha`), ` 进行Node端的单页测试`)), Object(react_["mdx"])("li", _extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", _extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "https://karma-runner.github.io/latest/index.html"
+  }), `karma`), ` 进行浏览器端的单页测试`)), Object(react_["mdx"])("li", _extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -1699,8 +1747,8 @@ function docs_en_MDXContent(_ref) {
   })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
     parentName: "p"
   }, {
-    "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
+    "href": "https://jestjs.io/"
+  }), `Jest`), ` to cover components unit-test`)), Object(react_["mdx"])("li", docs_en_extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -1717,6 +1765,22 @@ function docs_en_MDXContent(_ref) {
   }, {
     "href": "https://gulpjs.com/"
   }), `gulp`), ` to package`)), Object(react_["mdx"])("li", docs_en_extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", docs_en_extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
+    parentName: "p"
+  }, {
+    "href": "https://www.typescriptlang.org/"
+  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
@@ -1780,11 +1844,43 @@ function docs_en_MDXContent(_ref) {
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", docs_en_extends({
+  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
     parentName: "p"
   }, {
     "href": "https://d.umijs.org/"
-  }), `dumi`), ` 开发和Demo框架`)), Object(react_["mdx"])("li", docs_en_extends({
+  }), `dumi`), ` which is demo and document framework for the project`)), Object(react_["mdx"])("li", docs_en_extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", docs_en_extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
+    parentName: "p"
+  }, {
+    "href": "https://mochajs.org/"
+  }), `mocha`), ` 进行Node端的单页测试`)), Object(react_["mdx"])("li", docs_en_extends({
+    parentName: "ul"
+  }, {
+    "className": "task-list-item"
+  }), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", docs_en_extends({
+    parentName: "p"
+  }, {
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
+    parentName: "p"
+  }, {
+    "href": "https://karma-runner.github.io/latest/index.html"
+  }), `karma`), ` 进行浏览器端的单页测试`)), Object(react_["mdx"])("li", docs_en_extends({
     parentName: "ul"
   }, {
     "className": "task-list-item"
