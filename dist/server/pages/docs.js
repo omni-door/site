@@ -1378,6 +1378,14 @@ Options:
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
+  }, `autoBuild - 发布之前是否自动构建项目`)), Object(react_["mdx"])("li", {
+    parentName: "ul"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `autoTag - 发布到npm仓库时会自动根据当前版本号设定tag`)), Object(react_["mdx"])("li", {
+    parentName: "ul"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
   }, `git - 发布的git仓库地址`)), Object(react_["mdx"])("li", {
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
@@ -2311,6 +2319,14 @@ Options:
   }, Object(react_["mdx"])("p", {
     parentName: "li"
   }, `stylelint - whether or not process stylelint check`))))), Object(react_["mdx"])("h3", null, `release`), Object(react_["mdx"])("ul", null, Object(react_["mdx"])("li", {
+    parentName: "ul"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `autoBuild - auto build project before release process`)), Object(react_["mdx"])("li", {
+    parentName: "ul"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `autoTag - npm publish will auto set tag according to the current version`)), Object(react_["mdx"])("li", {
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
