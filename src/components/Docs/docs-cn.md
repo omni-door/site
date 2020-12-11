@@ -374,6 +374,11 @@ OMNI 会根据不同的项目类型决定整个初始化、构建、创建模板
   - stylelint - 是否进行stylelint检测
 
 ### release
+
+- autoBuild - 发布之前是否自动构建项目
+
+- autoTag - 发布到npm仓库时会自动根据当前版本号设定tag
+
 - git - 发布的git仓库地址
 
 - npm - 发布的npm仓库地址
@@ -392,6 +397,7 @@ OMNI 会根据不同的项目类型决定整个初始化、构建、创建模板
   - branch - 发布前进行分支检测，设置为空字符串则不会检测
 
 ### template 新建模板配置
+
 - root - 生成模板的根路径
 
 - typescript - 是否创建ts文件

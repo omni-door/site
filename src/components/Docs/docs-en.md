@@ -379,6 +379,11 @@ The dev-server based on express, realizing hot-update, api-proxy and other commo
   - stylelint - whether or not process stylelint check
 
 ### release
+
+- autoBuild - auto build project before release process
+
+- autoTag - npm publish will auto set tag according to the current version
+
 - git - project git repo url
 
 - npm - npm depository url
@@ -397,6 +402,7 @@ The dev-server based on express, realizing hot-update, api-proxy and other commo
   - branch - only can release in this branch, set empty string to ignore this check
 
 ### template
+
 - root - the root directory for generate template
 
 - typescript - whether or not apply typescript
