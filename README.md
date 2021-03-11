@@ -34,7 +34,7 @@ npm i -g yarn &&\
 npm i -g pm2 &&\
 npm i -g @omni-door/cli &&\
 mkdir /home/ubuntu/www/omni-door &&\
-chmod 0777 -R omni-door &&\
+chmod 0777 -R www &&\
 ```
 
 ### crt and key
