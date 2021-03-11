@@ -29,11 +29,11 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: '52.12.201.88',
+      host: '3.142.144.139',
       ref: 'origin/master',
       repo: 'git@github.com:omni-door/site.git',
       path: '/home/ubuntu/www/omni-door',
-      key: '~/.ssh/aws_oregon.pem',
+      key: '~/.ssh/aws_ohio.pem',
       'post-deploy': 'git pull && yarn reload',
       env: {
         NODE_ENV: 'production'
