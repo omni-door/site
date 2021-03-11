@@ -48,7 +48,7 @@ nginx &&\
 ```conf
 server {
 	listen       80;
-	server_name  www.omnidoor.org;
+	server_name  omnidoor.org www.omnidoor.org m.omnidoor.org;
 	rewrite ^(.*)$ https://${server_name}$1 permanent; 
 }
 server {
@@ -57,7 +57,7 @@ server {
 	ssl_certificate_key   /home/ubuntu/www/omnidoor.key;
 	ssl_protocols         TLSv1 TLSv1.1 TLSv1.2;
 	ssl_ciphers           HIGH:!aNULL:!MD5;
-	server_name           www.omnidoor.org;
+	server_name           omnidoor.org www.omnidoor.org m.omnidoor.org;
 	location / {
 		proxy_redirect off;
 		proxy_pass http://0.0.0.0:6600;
