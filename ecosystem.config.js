@@ -8,7 +8,7 @@ module.exports = {
         'node_modules',
         'logs'
       ],
-      instances: "1",
+      instances: "max",
       node_args: '--harmony',
       env_test: {
         NODE_ENV: 'test',
