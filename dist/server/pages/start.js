@@ -311,7 +311,7 @@ const BasicLayout = props => {
     className: Layout_module_default.a['layout-footer']
   }, "Copyright \xA9 2020 @omni-door"));
 };
-/* harmony default export */ var Layout = (Object(external_react_["memo"])(BasicLayout));
+/* harmony default export */ var Layout = (/*#__PURE__*/Object(external_react_["memo"])(BasicLayout));
 // CONCATENATED MODULE: ./src/components/Layout/index.ts
 
 
@@ -362,7 +362,7 @@ const Link = props => {
     route: page ? routes["nextRouter"].linkPage(page, params) : null
   }, children);
 };
-/* harmony default export */ var Link_Link = (Object(external_react_["memo"])(Link));
+/* harmony default export */ var Link_Link = (/*#__PURE__*/Object(external_react_["memo"])(Link));
 // CONCATENATED MODULE: ./src/components/Link/index.ts
 
 
@@ -537,6 +537,8 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
+/* @jsxRuntime classic */
+
 /* @jsx mdx */
 
 const layoutProps = {};
@@ -564,55 +566,48 @@ function MDXContent(_ref) {
     parentName: "p"
   }, `npx`), ` 来初始化项目：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npx @omni-door/cli init -s myProject
+  }, `npx @omni-door/cli init -s myProject
 `))), Object(react_["mdx"])("li", {
     parentName: "ol"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
   }, `若要创建多个项目，把脚手架安装到全局：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm i -g @omni-door/cli
+  }, `npm i -g @omni-door/cli
 `)), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `安装完成后执行初始化操作：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init -s myProject
+  }, `omni init -s myProject
 `)))), Object(react_["mdx"])("blockquote", null, Object(react_["mdx"])("p", {
     parentName: "blockquote"
   }, `注意: 该项目的名称为 `, Object(react_["mdx"])("inlineCode", {
     parentName: "p"
-  }, `myProject`))), Object(react_["mdx"])("h2", null, `运行开发环境`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `myProject`))), Object(react_["mdx"])("h2", null, `运行开发环境`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run dev
-`)), Object(react_["mdx"])("h2", null, `新建一个组件`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `npm run dev
+`)), Object(react_["mdx"])("h2", null, `新建一个组件`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run new
-`)), Object(react_["mdx"])("h2", null, `构建项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `npm run new
+`)), Object(react_["mdx"])("h2", null, `构建项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run build
-`)), Object(react_["mdx"])("h2", null, `发布项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `npm run build
+`)), Object(react_["mdx"])("h2", null, `发布项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run release
+  }, `npm run release
 `)));
 }
 ;
@@ -627,6 +622,8 @@ function start_en_objectWithoutProperties(source, excluded) { if (source == null
 function start_en_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 
+
+/* @jsxRuntime classic */
 
 /* @jsx mdx */
 
@@ -653,55 +650,48 @@ function start_en_MDXContent(_ref) {
     parentName: "li"
   }, `One method is use npx：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npx @omni-door/cli init -s myProject
+  }, `npx @omni-door/cli init -s myProject
 `))), Object(react_["mdx"])("li", {
     parentName: "ol"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
   }, `Otherwise you can install cli to the global：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm i -g @omni-door/cli
+  }, `npm i -g @omni-door/cli
 `)), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `Then Perform initialization after installation：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init -s myProject
+  }, `omni init -s myProject
 `)))), Object(react_["mdx"])("blockquote", null, Object(react_["mdx"])("p", {
     parentName: "blockquote"
   }, `note: The project name will be `, Object(react_["mdx"])("inlineCode", {
     parentName: "p"
-  }, `myProject`))), Object(react_["mdx"])("h2", null, `Run project`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, `myProject`))), Object(react_["mdx"])("h2", null, `Run project`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run dev
-`)), Object(react_["mdx"])("h2", null, `Create a Component`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, `npm run dev
+`)), Object(react_["mdx"])("h2", null, `Create a Component`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run new
-`)), Object(react_["mdx"])("h2", null, `Build project`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, `npm run new
+`)), Object(react_["mdx"])("h2", null, `Build project`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run build
-`)), Object(react_["mdx"])("h2", null, `Release project`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", start_en_extends({
-    parentName: "pre"
-  }, {
+  }, `npm run build
+`)), Object(react_["mdx"])("h2", null, `Release project`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `npm run release
+  }, `npm run release
 `)));
 }
 ;
@@ -727,7 +717,7 @@ const Start = props => {
     className: Start_module_default.a.start
   }, Start_jsx(Source, null));
 };
-/* harmony default export */ var Start_Start = (Object(external_react_["memo"])(Start));
+/* harmony default export */ var Start_Start = (/*#__PURE__*/Object(external_react_["memo"])(Start));
 // CONCATENATED MODULE: ./src/components/Start/index.ts
 
 
@@ -1006,7 +996,7 @@ const ctxInitState = {
   locale: locales[initLang],
   setLang: lang => console.warn('初始化未完成')
 };
-const UseLocale = Object(external_react_["createContext"])(ctxInitState);
+const UseLocale = /*#__PURE__*/Object(external_react_["createContext"])(ctxInitState);
 const UseLocaleProvider = props => {
   var _props$lang, _locales;
 

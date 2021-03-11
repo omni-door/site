@@ -300,7 +300,7 @@ const BasicLayout = props => {
     className: Layout_module_default.a['layout-footer']
   }, "Copyright \xA9 2020 @omni-door"));
 };
-/* harmony default export */ var Layout = (Object(external_react_["memo"])(BasicLayout));
+/* harmony default export */ var Layout = (/*#__PURE__*/Object(external_react_["memo"])(BasicLayout));
 // CONCATENATED MODULE: ./src/components/Layout/index.ts
 
 
@@ -351,7 +351,7 @@ const Link = props => {
     route: page ? routes["nextRouter"].linkPage(page, params) : null
   }, children);
 };
-/* harmony default export */ var Link_Link = (Object(external_react_["memo"])(Link));
+/* harmony default export */ var Link_Link = (/*#__PURE__*/Object(external_react_["memo"])(Link));
 // CONCATENATED MODULE: ./src/components/Link/index.ts
 
 
@@ -528,6 +528,8 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
+/* @jsxRuntime classic */
+
 /* @jsx mdx */
 
 const layoutProps = {};
@@ -543,519 +545,426 @@ function MDXContent(_ref) {
     mdxType: "MDXLayout"
   }), Object(react_["mdx"])("h1", null, `文档`), Object(react_["mdx"])("h2", null, `支持的项目类型简介`), Object(react_["mdx"])("h3", null, `SPA 应用`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reactjs.org/"
-  }), `React`), ` UI 框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `React`), ` UI 框架`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reacttraining.com/react-router/web/example/basic"
-  }), `React-Router`), ` 实现前端路由`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `React-Router`), ` 实现前端路由`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://webpack.js.org/"
-  }), `webpack`), ` 打包`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `webpack`), ` 打包`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `eslint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://stylelint.io/"
-  }), `stylelint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `stylelint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `采用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `prettier`), ` 美化代码格式`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `无缝支持 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `无缝支持 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://github.com/css-modules/css-modules"
-  }), `CSS Modules`), ` 和 全局CSS，无需额外配置`), Object(react_["mdx"])("p", {
+  }, `CSS Modules`), ` 和 全局CSS，无需额外配置`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `SSR 应用`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reactjs.org/"
-  }), `React`), ` 框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `React`), ` 框架`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://nextjs.org/"
-  }), `nextjs`), ` 企业级高性能 Node 框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `nextjs`), ` 企业级高性能 Node 框架`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `支持 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `支持 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://koajs.com/"
-  }), `koa`), ` 自定义 node 服务`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `koa`), ` 自定义 node 服务`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `搜索引擎友好 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `搜索引擎友好 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96"
-  }), `SEO`)), Object(react_["mdx"])("p", {
+  }, `SEO`)), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `Component 组件(库)项目`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `支持 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `支持 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://storybook.js.org/"
-  }), `storybook`), `、`, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }, `storybook`), `、`, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://docz.site/"
-  }), `docz`), `、`, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }, `docz`), `、`, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://react-styleguidist.js.org/"
-  }), `styleguidist`), ` 多种组件库Demo和文档框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `styleguidist`), ` 多种组件库Demo和文档框架`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reactjs.org/"
-  }), `React`), ` 的组件库`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `React`), ` 的组件库`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://jestjs.io/"
-  }), `Jest`), ` 进行组件的单页测试`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `Jest`), ` 进行组件的单页测试`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://gulpjs.com/"
-  }), `gulp`), ` 打包`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `gulp`), ` 打包`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `eslint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://stylelint.io/"
-  }), `stylelint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `stylelint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `采用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
+  }, `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `Toolkit 工具库项目`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `基于 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://d.umijs.org/"
-  }), `dumi`), ` 开发和Demo框架`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `dumi`), ` 开发和Demo框架`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://mochajs.org/"
-  }), `mocha`), ` 进行Node端的单页测试`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `mocha`), ` 进行Node端的单页测试`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://karma-runner.github.io/latest/index.html"
-  }), `karma`), ` 进行浏览器端的单页测试`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `karma`), ` 进行浏览器端的单页测试`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://rollupjs.org/guide/en/"
-  }), `rollup`), ` 构建项目`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `rollup`), ` 构建项目`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `遵守 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://eslint.org/"
-  }), `eslint`), ` 规范`)), Object(react_["mdx"])("li", _extends({
-    parentName: "ul"
-  }, {
+  }, `eslint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", _extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `采用 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }), ` `, `采用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
+  }, `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h2", null, `脚手架命令清单`), Object(react_["mdx"])("p", null, `你可以在命令行中简单输入 `, Object(react_["mdx"])("inlineCode", {
     parentName: "p"
-  }, `omni -h`), ` 查看所有的命令：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni -h`), ` 查看所有的命令：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `  Commands:
+  }, `  Commands:
 
     init [strategy] [options]  初始化你的项目，[strategy(策略)] 可用是stable(默认) 或 lastst
     dev [options]              omni dev -p [port]
     new <module> [options]     omni new [module] [-f | -c]
     build                      根据 [omni.config.js] 打包构建你的项目
     release [options]          根据 [omni.config.js] 发布你的项目
-`)), Object(react_["mdx"])("h3", null, `omni init`), Object(react_["mdx"])("h4", null, `初始化一个项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni init`), Object(react_["mdx"])("h4", null, `初始化一个项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init
-`)), Object(react_["mdx"])("h4", null, `用最新的依赖@lastest初始化项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni init
+`)), Object(react_["mdx"])("h4", null, `用最新的依赖@lastest初始化项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init lastest
-`)), Object(react_["mdx"])("h4", null, `初始化项目但不安装依赖`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni init lastest
+`)), Object(react_["mdx"])("h4", null, `初始化项目但不安装依赖`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init -n
-`)), Object(react_["mdx"])("h4", null, `套用模板一键初始化项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni init -n
+`)), Object(react_["mdx"])("h4", null, `套用模板一键初始化项目`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init -t [projectName]
-`)), Object(react_["mdx"])("p", null, `or`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni init -t [projectName]
+`)), Object(react_["mdx"])("p", null, `or`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init --entire [projectName]
-`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni init --entire [projectName]
+`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `使用: omni init [strategy] [options]
+  }, `使用: omni init [strategy] [options]
 
 Arguments:
 
@@ -1071,11 +980,10 @@ Arguments:
     -n, --no-install                初始化项目不安装任何依赖
     -P, --path <path>               创建项目的工作路径
     -h, --help               output usage information
-`)), Object(react_["mdx"])("h3", null, `omni dev`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni dev`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni dev
+  }, `  omni dev
 
   omni dev -p 8200 // 启动一个端口号为 8200 的开发服务
 
@@ -1084,11 +992,10 @@ Arguments:
 
   omni dev -p 8200 -h dev.domain.com // 启动一个端口号为 8200 且 host为 dev.domain.com 的 开发服务
 
-`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `使用: omni dev [options]
+  }, `使用: omni dev [options]
 
 omni dev [-p <port>] [-H <host>] [-P <path>]
 
@@ -1099,11 +1006,10 @@ Options:
   -h, --help             output usage information
 `)), Object(react_["mdx"])("h3", null, `omni start`), Object(react_["mdx"])("p", null, `用法和 `, Object(react_["mdx"])("inlineCode", {
     parentName: "p"
-  }, `omni dev`), ` 略同`), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `omni dev`), ` 略同`), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `使用: omni start [options]
+  }, `使用: omni start [options]
 
 omni start [-p <port>] [-H <host>] [-P <path>]
 
@@ -1112,22 +1018,20 @@ Options:
   -H, --hostname <host>  根据指定的hostname启动生产服务
   -P, --path <path>      启动生产服务的工作路径
   -h, --help             output usage information
-`)), Object(react_["mdx"])("h3", null, `omni new`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni new`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni new
+  }, `  omni new
 
   omni new Button // 新建一个名为 Button 的组件
 
   omni new -c // 新建一个类组件
 
   omni new -c Button // 新建一个名为 Button 的类组件
-`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `使用: omni new [name] [options]
+  }, `使用: omni new [name] [options]
 
 omni new [name] [-f | -c] [-P <path>]
 
@@ -1140,20 +1044,18 @@ Options:
   -c, --class        创建一个类组件
   -P, --path <path>  创建组件的工作路径
   -h, --help        output usage information
-`)), Object(react_["mdx"])("h3", null, `omni build`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni build`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni build
+  }, `  omni build
 
   omni build -n // 构建时避开所有预校验
 
   omni build -c $pathTo/build.config.js // 根据指定路径构建项目
-`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `使用: omni build [options]
+  }, `使用: omni build [options]
 
 根据 [omni.config.js] 的 build 字段构建项目
 
@@ -1162,11 +1064,10 @@ Options:
   -n, --no-verify      绕过所有预检直接构建
   -P, --path <path>    构建的工作路径
   -h, --help           output usage information
-`)), Object(react_["mdx"])("h3", null, `omni release`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni release`), Object(react_["mdx"])("h4", null, `各种用法`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni release
+  }, `  omni release
 
   omni release -n // 发布时避开所有预校验
 
@@ -1177,11 +1078,10 @@ Options:
   omni release -m // 发布时手动输入迭代版本号
 
   omni release -t // 发布时指定 tag 名
-`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `选项`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `使用: omni release [options]
+  }, `使用: omni release [options]
 
 根据 [omni.config.js] 的 release 字段发布项目
 
@@ -1215,11 +1115,10 @@ Options:
     parentName: "li"
   }, `middleware - 中间件配置，参考下面👇的类型：`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `{
+  }, `{
   route: string;
   callback: (req: any, res: any) => Promise<void>;
 }
@@ -1227,11 +1126,10 @@ Options:
     parentName: "li"
   }, `  or`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `(params: {
+  }, `(params: {
   ip: string;
   port: number;
   host?: string;
@@ -1251,11 +1149,10 @@ Options:
     parentName: "li"
   }, `proxy - 开发服务代理配置`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `{
+  }, `{
   route: '/api', // 代理API的本地服务的地址
   config: {
     target: 'http://www.api.com/api', // 代理API的实际地址
@@ -1266,11 +1163,10 @@ Options:
     parentName: "li"
   }, `  or`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `(params: {
+  }, `(params: {
   ip: string;
   port: number;
   host?: string;
@@ -1282,11 +1178,10 @@ Options:
 }
 `)), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `  更多配置详见 `, Object(react_["mdx"])("a", _extends({
-    parentName: "p"
-  }, {
+  }, `  更多配置详见 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://github.com/chimurai/http-proxy-middleware"
-  }), `http-proxy-middleware`))), Object(react_["mdx"])("li", {
+  }, `http-proxy-middleware`))), Object(react_["mdx"])("li", {
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
@@ -1440,11 +1335,10 @@ Options:
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `readme - `, `[true, 'mdx']`, ` (`, `[是否生成ReadMe文件, 创建md 或 mdx文件]`, `)`))), Object(react_["mdx"])("h3", null, `plugins`), Object(react_["mdx"])("p", null, `插件集合，插件需满足下面的类型：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", _extends({
-    parentName: "pre"
-  }, {
+  }, `readme - `, `[true, 'mdx']`, ` (`, `[是否生成ReadMe文件, 创建md 或 mdx文件]`, `)`))), Object(react_["mdx"])("h3", null, `plugins`), Object(react_["mdx"])("p", null, `插件集合，插件需满足下面的类型：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `type OmniPlugin = {
+  }, `type OmniPlugin = {
   name: string;
   stage: PluginStage;
   handler: PluginHandler;
@@ -1469,6 +1363,8 @@ function docs_en_objectWithoutPropertiesLoose(source, excluded) { if (source == 
 
 
 
+/* @jsxRuntime classic */
+
 /* @jsx mdx */
 
 const docs_en_layoutProps = {};
@@ -1484,483 +1380,396 @@ function docs_en_MDXContent(_ref) {
     mdxType: "MDXLayout"
   }), Object(react_["mdx"])("h1", null, `Documentation`), Object(react_["mdx"])("h2", null, `Project Type`), Object(react_["mdx"])("h3", null, `SPA`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reactjs.org/"
-  }), `React`))), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `React`))), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reacttraining.com/react-router/web/example/basic"
-  }), `React-Router`), ` to implement front-end routing`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `React-Router`), ` to implement front-end routing`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` to develop`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://webpack.js.org/"
-  }), `webpack`), ` to package`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `webpack`), ` to package`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Comply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://eslint.org/"
-  }), `eslint`), ` standard`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `eslint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Comply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://stylelint.io/"
-  }), `stylelint`), ` standard`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `stylelint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Apply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Apply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` to format code`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `prettier`), ` to format code`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Seamless support `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Seamless support `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://github.com/css-modules/css-modules"
-  }), `CSS Modules`), ` and global-css without extra configuration`), Object(react_["mdx"])("p", {
+  }, `CSS Modules`), ` and global-css without extra configuration`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `SSR`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reactjs.org/"
-  }), `React`))), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `React`))), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://nextjs.org/"
-  }), `nextjs`), ` enterprise high performance node framework`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `nextjs`), ` enterprise high performance node framework`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` to develop`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Support use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Support use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://koajs.com/"
-  }), `koa`), ` to custom node server`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `koa`), ` to custom node server`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Search engine friendly `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Search engine friendly `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96"
-  }), `SEO`)), Object(react_["mdx"])("p", {
+  }, `SEO`)), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `Component(library)`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Support multiple component library demo and document framework such as `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Support multiple component library demo and document framework such as `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://storybook.js.org/"
-  }), `storybook`), `, `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, `storybook`), `, `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://docz.site/"
-  }), `docz`), ` and `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, `docz`), ` and `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://react-styleguidist.js.org/"
-  }), `styleguidist`))), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `styleguidist`))), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://reactjs.org/"
-  }), `React`))), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `React`))), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://jestjs.io/"
-  }), `Jest`), ` to cover components unit-test`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `Jest`), ` to cover components unit-test`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://gulpjs.com/"
-  }), `gulp`), ` to package`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `gulp`), ` to package`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` to develop`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Comply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://eslint.org/"
-  }), `eslint`), ` standard`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `eslint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Comply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://stylelint.io/"
-  }), `stylelint`), ` standard`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `stylelint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Apply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Apply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` to format code`), Object(react_["mdx"])("p", {
+  }, `prettier`), ` to format code`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `Toolkit`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
-  }, Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Based on `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://d.umijs.org/"
-  }), `dumi`), ` which is demo and document framework for the project`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `dumi`), ` which is demo and document framework for the project`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://mochajs.org/"
-  }), `mocha`), ` 进行Node端的单页测试`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `mocha`), ` 进行Node端的单页测试`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `使用 `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://karma-runner.github.io/latest/index.html"
-  }), `karma`), ` 进行浏览器端的单页测试`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `karma`), ` 进行浏览器端的单页测试`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://rollupjs.org/guide/en"
-  }), `rollup`), ` to package`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `rollup`), ` to package`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Use `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://www.typescriptlang.org/"
-  }), `typescript`), ` to develop`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `typescript`), ` to develop`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Comply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://eslint.org/"
-  }), `eslint`), ` standard`)), Object(react_["mdx"])("li", docs_en_extends({
-    parentName: "ul"
-  }, {
+  }, `eslint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
     "className": "task-list-item"
-  }), Object(react_["mdx"])("p", {
+  }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, Object(react_["mdx"])("input", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
     "type": "checkbox",
     "checked": true,
     "disabled": true
-  })), ` `, `Apply `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }), ` `, `Apply `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
-  }), `prettier`), ` to format code`), Object(react_["mdx"])("p", {
+  }, `prettier`), ` to format code`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h2", null, `Commands`), Object(react_["mdx"])("p", null, `You can input `, Object(react_["mdx"])("inlineCode", {
     parentName: "p"
-  }, `omni -h`), ` in the command-line-tool to check all support commands：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni -h`), ` in the command-line-tool to check all support commands：`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `  Commands:
+  }, `  Commands:
 
     init [options] [strategy]  initialize your project, [strategy] could be stable(default) or latest
     dev [options]              omni dev [-p <port>] [-H <host>] [-P <path>]
@@ -1968,36 +1777,30 @@ function docs_en_MDXContent(_ref) {
     new [options] [name]       omni new [name] [-f | -c] [-P <path>]
     build [options]            build your project according to the [omni.config.js]'s build field
     release [options]          publish your project according to the [omni.config.js]'s release field
-`)), Object(react_["mdx"])("h3", null, `omni init`), Object(react_["mdx"])("h4", null, `Initial your project by answer several questions`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni init`), Object(react_["mdx"])("h4", null, `Initial your project by answer several questions`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init
-`)), Object(react_["mdx"])("h4", null, `Initial your project with lastest denpendencies`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni init
+`)), Object(react_["mdx"])("h4", null, `Initial your project with lastest denpendencies`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init lastest
-`)), Object(react_["mdx"])("h4", null, `Initial your project without install dependencies`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni init lastest
+`)), Object(react_["mdx"])("h4", null, `Initial your project without install dependencies`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init -n
-`)), Object(react_["mdx"])("h4", null, `Initial your project according to some template`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni init -n
+`)), Object(react_["mdx"])("h4", null, `Initial your project according to some template`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init -t [projectName]
-`)), Object(react_["mdx"])("p", null, `or`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni init -t [projectName]
+`)), Object(react_["mdx"])("p", null, `or`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `omni init --react_entire [projectName]
-`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni init --react_entire [projectName]
+`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `Usage: omni init [strategy] [options]
+  }, `Usage: omni init [strategy] [options]
 
 initialize your project, [strategy] could be stable(default) or latest
 
@@ -2015,11 +1818,10 @@ Options:
   -n, --no-install                init project without install dependencies
   -P, --path <path>               the workpath for init the project
   -h, --help                      output usage information
-`)), Object(react_["mdx"])("h3", null, `omni dev`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni dev`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni dev
+  }, `  omni dev
 
   omni dev -p 8200 // Start a dev-server with port 8200
 
@@ -2028,11 +1830,10 @@ Options:
 
   omni dev -p 8200 -h dev.domain.com // Start a dev-server with port 8200 and hostname dev.domain.com
 
-`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `Usage: omni dev [options]
+  }, `Usage: omni dev [options]
 
 omni dev [-p <port>] [-H <host>] [-P <path>]
 
@@ -2043,11 +1844,10 @@ Options:
   -h, --help             output usage information
 `)), Object(react_["mdx"])("h3", null, `omni start`), Object(react_["mdx"])("p", null, `The usage same as `, Object(react_["mdx"])("inlineCode", {
     parentName: "p"
-  }, `omni dev`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `omni dev`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `Usage: omni start [options]
+  }, `Usage: omni start [options]
 
 omni start [-p <port>] [-H <host>] [-P <path>]
 
@@ -2056,22 +1856,20 @@ Options:
   -H, --hostname <host>  start the prod-server according to the specified hostname
   -P, --path <path>      the workpath for start the prod-server
   -h, --help             output usage information
-`)), Object(react_["mdx"])("h3", null, `omni new`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni new`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni new
+  }, `  omni new
 
   omni new Button // Create a component which name is Button
 
   omni new -c // Create a component which type is class
 
   omni new -c Button // Create a component which name is Button and type is class
-`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `Usage: omni new [name] [options]
+  }, `Usage: omni new [name] [options]
 
 omni new [name] [-f | -c] [-P <path>]
 
@@ -2084,20 +1882,18 @@ Options:
   -c, --class       create a class component
   -P, --path <path>  the workpath for create component
   -h, --help        output usage information
-`)), Object(react_["mdx"])("h3", null, `omni build`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni build`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni build
+  }, `  omni build
 
   omni build -n // Build project bypass all pre-flight
 
   omni build -c $pathTo/build.config.js // Build project according to specify config path
-`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `Usage: omni build [options]
+  }, `Usage: omni build [options]
 
 build your project according to the [omni.config.js]'s build field
 
@@ -2106,11 +1902,10 @@ Options:
   -n, --no-verify      bypass all pre-check before building
   -P, --path <path>    the workpath for build project
   -h, --help           output usage information
-`)), Object(react_["mdx"])("h3", null, `omni release`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h3", null, `omni release`), Object(react_["mdx"])("h4", null, `Usage`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-sh"
-  }), `  omni release
+  }, `  omni release
 
   omni release -n // Release project bypass all pre-flight
 
@@ -2121,11 +1916,10 @@ Options:
   omni release -m // Release project that manual iteration version
 
   omni release -t // Release project that the tag will add to npm-package
-`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+`)), Object(react_["mdx"])("h4", null, `Options`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-shell"
-  }), `Usage: omni release [options]
+  }, `Usage: omni release [options]
 
 publish your project according to the [omni.config.js]'s release field
 
@@ -2159,11 +1953,10 @@ Options:
     parentName: "li"
   }, `middleware - middleware configuration:`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `{
+  }, `{
   route: string;
   callback: (req: any, res: any) => Promise<void>;
 }
@@ -2171,11 +1964,10 @@ Options:
     parentName: "li"
   }, `  or`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `(params: {
+  }, `(params: {
   ip: string;
   port: number;
   host?: string;
@@ -2195,11 +1987,10 @@ Options:
     parentName: "li"
   }, `proxy - dev-server proxy configuration`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `{
+  }, `{
   route: '/api', // Address of the local service for the proxy API
   config: {
     target: 'http://www.api.com/api', // The actual address of the proxy API
@@ -2210,11 +2001,10 @@ Options:
     parentName: "li"
   }, `  or`), Object(react_["mdx"])("pre", {
     parentName: "li"
-  }, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `(params: {
+  }, `(params: {
   ip: string;
   port: number;
   host?: string;
@@ -2226,11 +2016,10 @@ Options:
 }
 `)), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `  For more configuration, see `, Object(react_["mdx"])("a", docs_en_extends({
-    parentName: "p"
-  }, {
+  }, `  For more configuration, see `, Object(react_["mdx"])("a", {
+    parentName: "p",
     "href": "https://github.com/chimurai/http-proxy-middleware"
-  }), `http-proxy-middleware`))), Object(react_["mdx"])("li", {
+  }, `http-proxy-middleware`))), Object(react_["mdx"])("li", {
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
@@ -2384,11 +2173,10 @@ Options:
     parentName: "ul"
   }, Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `readme - `, `[true, 'mdx']`, ` (`, `[whether or not README.md, generate mdx or md file]`, `)`))), Object(react_["mdx"])("h3", null, `plugins`), Object(react_["mdx"])("p", null, `plugin must meet following types:`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", docs_en_extends({
-    parentName: "pre"
-  }, {
+  }, `readme - `, `[true, 'mdx']`, ` (`, `[whether or not README.md, generate mdx or md file]`, `)`))), Object(react_["mdx"])("h3", null, `plugins`), Object(react_["mdx"])("p", null, `plugin must meet following types:`), Object(react_["mdx"])("pre", null, Object(react_["mdx"])("code", {
+    parentName: "pre",
     "className": "language-ts"
-  }), `type OmniPlugin = {
+  }, `type OmniPlugin = {
   name: string;
   stage: PluginStage;
   handler: PluginHandler;
@@ -2423,7 +2211,7 @@ const Docs = props => {
     className: Docs_module_default.a.docs
   }, Docs_jsx(Source, null));
 };
-/* harmony default export */ var Docs_Docs = (Object(external_react_["memo"])(Docs));
+/* harmony default export */ var Docs_Docs = (/*#__PURE__*/Object(external_react_["memo"])(Docs));
 // CONCATENATED MODULE: ./src/components/Docs/index.ts
 
 
@@ -2709,7 +2497,7 @@ const ctxInitState = {
   locale: locales[initLang],
   setLang: lang => console.warn('初始化未完成')
 };
-const UseLocale = Object(external_react_["createContext"])(ctxInitState);
+const UseLocale = /*#__PURE__*/Object(external_react_["createContext"])(ctxInitState);
 const UseLocaleProvider = props => {
   var _props$lang, _locales;
 

@@ -289,7 +289,7 @@ const Home = props => {
     }, v.intro))));
   }))));
 };
-/* harmony default export */ var Home_Home = (Object(external_react_["memo"])(Home));
+/* harmony default export */ var Home_Home = (/*#__PURE__*/Object(external_react_["memo"])(Home));
 // CONCATENATED MODULE: ./src/components/Home/index.ts
 
 
@@ -465,7 +465,7 @@ const BasicLayout = props => {
     className: Layout_module_default.a['layout-footer']
   }, "Copyright \xA9 2020 @omni-door"));
 };
-/* harmony default export */ var Layout = (Object(external_react_["memo"])(BasicLayout));
+/* harmony default export */ var Layout = (/*#__PURE__*/Object(external_react_["memo"])(BasicLayout));
 // CONCATENATED MODULE: ./src/components/Layout/index.ts
 
 
@@ -516,7 +516,7 @@ const Link = props => {
     route: page ? routes["nextRouter"].linkPage(page, params) : null
   }, children);
 };
-/* harmony default export */ var Link_Link = (Object(external_react_["memo"])(Link));
+/* harmony default export */ var Link_Link = (/*#__PURE__*/Object(external_react_["memo"])(Link));
 // CONCATENATED MODULE: ./src/components/Link/index.ts
 
 
@@ -917,7 +917,7 @@ const ctxInitState = {
   locale: locales[initLang],
   setLang: lang => console.warn('初始化未完成')
 };
-const UseLocale = Object(external_react_["createContext"])(ctxInitState);
+const UseLocale = /*#__PURE__*/Object(external_react_["createContext"])(ctxInitState);
 const UseLocaleProvider = props => {
   var _props$lang, _locales;
 

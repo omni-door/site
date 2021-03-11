@@ -376,7 +376,7 @@ const ctxInitState = {
   locale: locales[initLang],
   setLang: lang => console.warn('初始化未完成')
 };
-const UseLocale = Object(external_react_["createContext"])(ctxInitState);
+const UseLocale = /*#__PURE__*/Object(external_react_["createContext"])(ctxInitState);
 const UseLocaleProvider = props => {
   var _props$lang, _locales;
 
