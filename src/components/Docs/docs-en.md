@@ -2,7 +2,7 @@
 
 ## Project Type
 
-### SPA
+### React SPA
 - [x] Based on [React](https://reactjs.org/)
 
 - [x] Based on [React-Router](https://reacttraining.com/react-router/web/example/basic) to implement front-end routing
@@ -21,7 +21,24 @@
 
   ……
 
-### SSR
+### Vue SPA
+- [x] Based on [Vue](https://vuejs.org/)
+
+- [x] Based on [Vue-Router](https://router.vuejs.org/) to implement front-end routing
+
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
+
+- [x] Use [webpack](https://webpack.js.org/) to package
+
+- [x] Comply [eslint](https://eslint.org/) standard
+
+- [x] Comply [stylelint](https://stylelint.io/) standard
+
+- [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
+
+  ……
+
+### React SSR
 - [x] Based on [React](https://reactjs.org/)
 
 - [x] Based on [nextjs](https://nextjs.org/) enterprise high performance node framework
@@ -34,7 +51,7 @@
 
   ……
 
-### Component(library)
+### React Component(library)
 - [x] Support multiple component library demo and document framework such as [storybook](https://storybook.js.org/), [docz](https://docz.site/) and [styleguidist](https://react-styleguidist.js.org/)
 
 - [x] Based on [React](https://reactjs.org/)
@@ -50,6 +67,25 @@
 - [x] Comply [stylelint](https://stylelint.io/) standard
 
 - [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
+
+  ……
+
+### Vue Component(library)
+- [x] Based on [Vue](https://vuejs.org/)
+
+- [x] Use [Jest](https://jestjs.io/) to cover components unit-test
+
+- [x] Use [gulp](https://gulpjs.com/) to package
+
+- [x] Use [typescript](https://www.typescriptlang.org/) to develop
+
+- [x] Comply [eslint](https://eslint.org/) standard
+
+- [x] Comply [stylelint](https://stylelint.io/) standard
+
+- [x] Apply [prettier](https://prettier.io/docs/en/install.html) to format code
+
+- [x] Based on [storybook](https://storybook.js.org/) which is component library demo and document framework
 
   ……
 
@@ -124,9 +160,13 @@ Arguments:
 Options:
   -rb, --react_basic [name]       create a basic React SPA project
   -rs, --react_standard [name]    create a standard React SPA project
-  -re, --react_entire [name]      create a most versatile React SPA project
+  -re, --vue_entire [name]        create a most versatile React SPA project
+  -vb, --vue_basic [name]         create a basic Vue SPA project
+  -vs, --vue_standard [name]      create a standard Vue SPA project
+  -ve, --vue_entire [name]        create a most versatile Vue SPA project
   -rS, --react_ssr [name]         create a React component library
   -rc, --react_components [name]  create a React component library
+  -vc, --vue_components [name]    create a Vue component library
   -t, --toolkit [name]            create a toolkit project
   -n, --no-install                init project without install dependencies
   -P, --path <path>               the workpath for init the project

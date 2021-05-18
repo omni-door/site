@@ -1,6 +1,6 @@
 {
   "name": "omni-door-site",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "scripts": {
     "dev": "omni dev",
     "start": "omni start",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@next/bundle-analyzer": "^9.5.1",
-    "@omni-door/cli": "^2.1.6",
+    "@omni-door/cli": "^2.4.3",
     "@types/classnames": "^2.2.10",
     "@types/koa": "^2.11.3",
     "@types/koa-bodyparser": "^4.3.0",

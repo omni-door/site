@@ -176,7 +176,7 @@ const locale = {
     title: '任意门',
     subtitle: '你的项目想去哪里？不妨让任意门帮你！',
     description: `为前端项目的创建、开发、构建、发布提供一条龙服务。
-    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
+    支持基于 React和Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
     `,
     btn_start: '开始使用',
     btn_docs: '文档',
@@ -209,6 +209,20 @@ const locale = {
         }
       }
     }, {
+      title: 'Vue单页应用',
+      subtitle: '基于 Vue3 和 Vue-Router 的 SPA 项目',
+      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
+          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
+          项目结构简单、前后端分离等需求…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'spa-vue'
+        }
+      }
+    }, {
       title: 'React服务端渲染应用',
       subtitle: '基于 React 和 NextJs 的 SSR 项目',
       intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，
@@ -234,6 +248,20 @@ const locale = {
         params: {
           lang: 'cn',
           article: 'component-react'
+        }
+      }
+    }, {
+      title: 'Vue组件库',
+      subtitle: '基于 Vue 的组件库项目',
+      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
+          借助社区开源的组件库 storybook 框架，
+          让组件库的开发不再是遥不可及的技术难题…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'component-vue'
         }
       }
     }, {
@@ -269,9 +297,9 @@ const en_locale = {
   home: {
     pageTitle: 'Omni-Door',
     title: 'Omni-Door',
-    subtitle: 'Where do you want your project to go? Let any Omni-Door help you!',
+    subtitle: 'What your project do? Leave it to Omni-Door!',
     description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.
-      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
+      It supports many front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
     btn_start: 'Getting Started',
     btn_docs: 'Documentation',
     license: 'MIT',
@@ -290,7 +318,7 @@ const en_locale = {
       }
     }, {
       title: 'React-SPA',
-      subtitle: 'The SPA project based on react and react router',
+      subtitle: 'The SPA project based on react and react-router',
       intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
           Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
           Project structure is simple, front and back end separation and other requirements…
@@ -300,6 +328,20 @@ const en_locale = {
         params: {
           lang: 'en',
           article: 'spa-react'
+        }
+      }
+    }, {
+      title: 'Vue-SPA',
+      subtitle: 'The SPA project based on vue and vue-router',
+      intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
+          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
+          Project structure is simple, front and back end separation and other requirements…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'spa-vue'
         }
       }
     }, {
@@ -318,7 +360,7 @@ const en_locale = {
       }
     }, {
       title: 'React-Component',
-      subtitle: 'Component library project based on react',
+      subtitle: 'Component library project based on React',
       intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
           With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,
           The development of component library is no longer a distant technical problem…
@@ -328,6 +370,20 @@ const en_locale = {
         params: {
           lang: 'en',
           article: 'component-react'
+        }
+      }
+    }, {
+      title: 'Vue-Component',
+      subtitle: 'Component library project based on Vue',
+      intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
+          With the help of storybook which is community open source component library framework,
+          The development of component library is no longer a distant technical problem…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'component-vue'
         }
       }
     }, {

@@ -543,7 +543,7 @@ function MDXContent(_ref) {
   return Object(react_["mdx"])(MDXLayout, _extends({}, layoutProps, props, {
     components: components,
     mdxType: "MDXLayout"
-  }), Object(react_["mdx"])("h1", null, `文档`), Object(react_["mdx"])("h2", null, `支持的项目类型简介`), Object(react_["mdx"])("h3", null, `SPA 应用`), Object(react_["mdx"])("ul", {
+  }), Object(react_["mdx"])("h1", null, `文档`), Object(react_["mdx"])("h2", null, `支持的项目类型简介`), Object(react_["mdx"])("h3", null, `React SPA 应用`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
   }, Object(react_["mdx"])("li", {
     parentName: "ul",
@@ -651,7 +651,102 @@ function MDXContent(_ref) {
     "href": "https://github.com/css-modules/css-modules"
   }, `CSS Modules`), ` 和 全局CSS，无需额外配置`), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `SSR 应用`), Object(react_["mdx"])("ul", {
+  }, `……`))), Object(react_["mdx"])("h3", null, `Vue SPA 应用`), Object(react_["mdx"])("ul", {
+    "className": "contains-task-list"
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://vuejs.org/"
+  }, `Vue`), ` UI 框架`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://router.vuejs.org/"
+  }, `Vue-Router`), ` 实现前端路由`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://www.typescriptlang.org/"
+  }, `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://webpack.js.org/"
+  }, `webpack`), ` 打包`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://eslint.org/"
+  }, `eslint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://stylelint.io/"
+  }, `stylelint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `采用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://prettier.io/docs/en/install.html"
+  }, `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `……`))), Object(react_["mdx"])("h3", null, `React SSR 应用`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
   }, Object(react_["mdx"])("li", {
     parentName: "ul",
@@ -720,7 +815,7 @@ function MDXContent(_ref) {
     "href": "https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96"
   }, `SEO`)), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `Component 组件(库)项目`), Object(react_["mdx"])("ul", {
+  }, `……`))), Object(react_["mdx"])("h3", null, `React Component 组件(库)项目`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
   }, Object(react_["mdx"])("li", {
     parentName: "ul",
@@ -833,6 +928,114 @@ function MDXContent(_ref) {
     parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
   }, `prettier`), ` 美化代码格式`), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `……`))), Object(react_["mdx"])("h3", null, `Vue Component 组件(库)项目`), Object(react_["mdx"])("ul", {
+    "className": "contains-task-list"
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://vuejs.org/"
+  }, `Vue`), ` 的组件库`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://jestjs.io/"
+  }, `Jest`), ` 进行组件的单页测试`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://gulpjs.com/"
+  }, `gulp`), ` 打包`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `使用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://www.typescriptlang.org/"
+  }, `typescript`), ` 进行开发`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://eslint.org/"
+  }, `eslint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `遵守 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://stylelint.io/"
+  }, `stylelint`), ` 规范`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `采用 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://prettier.io/docs/en/install.html"
+  }, `prettier`), ` 美化代码格式`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `基于 `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://storybook.js.org/"
+  }, `storybook`), ` 组件库Demo和文档框架`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `Toolkit 工具库项目`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
@@ -974,8 +1177,12 @@ Arguments:
     -rb, --react_basic [name]       创建一个最基本的 React 单页应用
     -rs, --react_standard [name]    创建一个标准的 React 单页应用
     -re, --react_entire [name]      创建一个全量的 React 单页应用
+    -vb, --vue_basic [name]         创建一个最基本的 Vue 单页应用
+    -vs, --vue_standard [name]      创建一个标准的 Vue 单页应用
+    -ve, --vue_entire [name]        创建一个全量的 Vue 单页应用
     -rS, --react_ssr [name]         创建一个 React SSR 应用
     -rc, --react_components [name]  创建一个 React 组件库
+    -vc, --vue_components [name]    创建一个 Vue 组件库
     -t, --toolkit [name]            创建一个工具库
     -n, --no-install                初始化项目不安装任何依赖
     -P, --path <path>               创建项目的工作路径
@@ -1378,7 +1585,7 @@ function docs_en_MDXContent(_ref) {
   return Object(react_["mdx"])(docs_en_MDXLayout, docs_en_extends({}, docs_en_layoutProps, props, {
     components: components,
     mdxType: "MDXLayout"
-  }), Object(react_["mdx"])("h1", null, `Documentation`), Object(react_["mdx"])("h2", null, `Project Type`), Object(react_["mdx"])("h3", null, `SPA`), Object(react_["mdx"])("ul", {
+  }), Object(react_["mdx"])("h1", null, `Documentation`), Object(react_["mdx"])("h2", null, `Project Type`), Object(react_["mdx"])("h3", null, `React SPA`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
   }, Object(react_["mdx"])("li", {
     parentName: "ul",
@@ -1486,7 +1693,102 @@ function docs_en_MDXContent(_ref) {
     "href": "https://github.com/css-modules/css-modules"
   }, `CSS Modules`), ` and global-css without extra configuration`), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `SSR`), Object(react_["mdx"])("ul", {
+  }, `……`))), Object(react_["mdx"])("h3", null, `Vue SPA`), Object(react_["mdx"])("ul", {
+    "className": "contains-task-list"
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://vuejs.org/"
+  }, `Vue`))), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://router.vuejs.org/"
+  }, `Vue-Router`), ` to implement front-end routing`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://www.typescriptlang.org/"
+  }, `typescript`), ` to develop`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://webpack.js.org/"
+  }, `webpack`), ` to package`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://eslint.org/"
+  }, `eslint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://stylelint.io/"
+  }, `stylelint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Apply `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://prettier.io/docs/en/install.html"
+  }, `prettier`), ` to format code`), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `……`))), Object(react_["mdx"])("h3", null, `React SSR`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
   }, Object(react_["mdx"])("li", {
     parentName: "ul",
@@ -1555,7 +1857,7 @@ function docs_en_MDXContent(_ref) {
     "href": "https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96"
   }, `SEO`)), Object(react_["mdx"])("p", {
     parentName: "li"
-  }, `……`))), Object(react_["mdx"])("h3", null, `Component(library)`), Object(react_["mdx"])("ul", {
+  }, `……`))), Object(react_["mdx"])("h3", null, `React Component(library)`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
   }, Object(react_["mdx"])("li", {
     parentName: "ul",
@@ -1668,6 +1970,114 @@ function docs_en_MDXContent(_ref) {
     parentName: "p",
     "href": "https://prettier.io/docs/en/install.html"
   }, `prettier`), ` to format code`), Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, `……`))), Object(react_["mdx"])("h3", null, `Vue Component(library)`), Object(react_["mdx"])("ul", {
+    "className": "contains-task-list"
+  }, Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://vuejs.org/"
+  }, `Vue`))), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://jestjs.io/"
+  }, `Jest`), ` to cover components unit-test`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://gulpjs.com/"
+  }, `gulp`), ` to package`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Use `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://www.typescriptlang.org/"
+  }, `typescript`), ` to develop`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://eslint.org/"
+  }, `eslint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Comply `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://stylelint.io/"
+  }, `stylelint`), ` standard`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Apply `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://prettier.io/docs/en/install.html"
+  }, `prettier`), ` to format code`)), Object(react_["mdx"])("li", {
+    parentName: "ul",
+    "className": "task-list-item"
+  }, Object(react_["mdx"])("p", {
+    parentName: "li"
+  }, Object(react_["mdx"])("input", {
+    parentName: "p",
+    "type": "checkbox",
+    "checked": true,
+    "disabled": true
+  }), ` `, `Based on `, Object(react_["mdx"])("a", {
+    parentName: "p",
+    "href": "https://storybook.js.org/"
+  }, `storybook`), ` which is component library demo and document framework`), Object(react_["mdx"])("p", {
     parentName: "li"
   }, `……`))), Object(react_["mdx"])("h3", null, `Toolkit`), Object(react_["mdx"])("ul", {
     "className": "contains-task-list"
@@ -1811,9 +2221,13 @@ Arguments:
 Options:
   -rb, --react_basic [name]       create a basic React SPA project
   -rs, --react_standard [name]    create a standard React SPA project
-  -re, --react_entire [name]      create a most versatile React SPA project
+  -re, --vue_entire [name]        create a most versatile React SPA project
+  -vb, --vue_basic [name]         create a basic Vue SPA project
+  -vs, --vue_standard [name]      create a standard Vue SPA project
+  -ve, --vue_entire [name]        create a most versatile Vue SPA project
   -rS, --react_ssr [name]         create a React component library
   -rc, --react_components [name]  create a React component library
+  -vc, --vue_components [name]    create a Vue component library
   -t, --toolkit [name]            create a toolkit project
   -n, --no-install                init project without install dependencies
   -P, --path <path>               the workpath for init the project
@@ -2297,7 +2711,7 @@ const locale = {
     title: '任意门',
     subtitle: '你的项目想去哪里？不妨让任意门帮你！',
     description: `为前端项目的创建、开发、构建、发布提供一条龙服务。
-    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
+    支持基于 React和Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
     `,
     btn_start: '开始使用',
     btn_docs: '文档',
@@ -2330,6 +2744,20 @@ const locale = {
         }
       }
     }, {
+      title: 'Vue单页应用',
+      subtitle: '基于 Vue3 和 Vue-Router 的 SPA 项目',
+      intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
+          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
+          项目结构简单、前后端分离等需求…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'spa-vue'
+        }
+      }
+    }, {
       title: 'React服务端渲染应用',
       subtitle: '基于 React 和 NextJs 的 SSR 项目',
       intro: `基于 React + NextJs 的 SSR(Server-Side-Render) 服务端渲染应用解决了 SEO 和前后端分离的问题，
@@ -2355,6 +2783,20 @@ const locale = {
         params: {
           lang: 'cn',
           article: 'component-react'
+        }
+      }
+    }, {
+      title: 'Vue组件库',
+      subtitle: '基于 Vue 的组件库项目',
+      intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
+          借助社区开源的组件库 storybook 框架，
+          让组件库的开发不再是遥不可及的技术难题…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'cn',
+          article: 'component-vue'
         }
       }
     }, {
@@ -2390,9 +2832,9 @@ const en_locale = {
   home: {
     pageTitle: 'Omni-Door',
     title: 'Omni-Door',
-    subtitle: 'Where do you want your project to go? Let any Omni-Door help you!',
+    subtitle: 'What your project do? Leave it to Omni-Door!',
     description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.
-      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
+      It supports many front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
     btn_start: 'Getting Started',
     btn_docs: 'Documentation',
     license: 'MIT',
@@ -2411,7 +2853,7 @@ const en_locale = {
       }
     }, {
       title: 'React-SPA',
-      subtitle: 'The SPA project based on react and react router',
+      subtitle: 'The SPA project based on react and react-router',
       intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
           Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
           Project structure is simple, front and back end separation and other requirements…
@@ -2421,6 +2863,20 @@ const en_locale = {
         params: {
           lang: 'en',
           article: 'spa-react'
+        }
+      }
+    }, {
+      title: 'Vue-SPA',
+      subtitle: 'The SPA project based on vue and vue-router',
+      intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
+          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
+          Project structure is simple, front and back end separation and other requirements…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'spa-vue'
         }
       }
     }, {
@@ -2439,7 +2895,7 @@ const en_locale = {
       }
     }, {
       title: 'React-Component',
-      subtitle: 'Component library project based on react',
+      subtitle: 'Component library project based on React',
       intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
           With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,
           The development of component library is no longer a distant technical problem…
@@ -2449,6 +2905,20 @@ const en_locale = {
         params: {
           lang: 'en',
           article: 'component-react'
+        }
+      }
+    }, {
+      title: 'Vue-Component',
+      subtitle: 'Component library project based on Vue',
+      intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
+          With the help of storybook which is community open source component library framework,
+          The development of component library is no longer a distant technical problem…
+          `,
+      route: {
+        page: 'docs',
+        params: {
+          lang: 'en',
+          article: 'component-vue'
         }
       }
     }, {

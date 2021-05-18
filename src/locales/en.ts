@@ -9,9 +9,9 @@ const locale = {
     pageTitle: 'Omni-Door',
     title: 'Omni-Door',
     subtitle:
-      'Where do you want your project to go? Let any Omni-Door help you!',
+      'What your project do? Leave it to Omni-Door!',
     description: `Provide front-end projects from the initialization, development, construction, release and other one-stop services.
-      It supports many common front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
+      It supports many front-end projects such as single page application (SPA), server-side rendering application (SSR), component library, lodash like toolset, etc.`,
     btn_start: 'Getting Started',
     btn_docs: 'Documentation',
     license: 'MIT',
@@ -35,7 +35,7 @@ const locale = {
       {
         title: 'React-SPA',
         subtitle:
-          'The SPA project based on react and react router',
+          'The SPA project based on react and react-router',
         intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
           Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
           Project structure is simple, front and back end separation and other requirements…
@@ -45,6 +45,22 @@ const locale = {
           params: {
             lang: 'en',
             article: 'spa-react'
+          }
+        }
+      },
+      {
+        title: 'Vue-SPA',
+        subtitle:
+          'The SPA project based on vue and vue-router',
+        intro: `SPA(Single-Application-App)  is the most frequently used project mode by front-end developers,
+          Whether it is the H5 suitable for mobile terminal or the PC project serving for the middle and back office, it can meet the requirements of short development cycle, low cost, and low cost
+          Project structure is simple, front and back end separation and other requirements…
+          `,
+        route: {
+          page: 'docs',
+          params: {
+            lang: 'en',
+            article: 'spa-vue'
           }
         }
       },
@@ -67,7 +83,7 @@ const locale = {
       {
         title: 'React-Component',
         subtitle:
-          'Component library project based on react',
+          'Component library project based on React',
         intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
           With the help of community open source component library demo UI framework, such as docz, storybook, styleguidist, etc,
           The development of component library is no longer a distant technical problem…
@@ -77,6 +93,22 @@ const locale = {
           params: {
             lang: 'en',
             article: 'component-react'
+          }
+        }
+      },
+      {
+        title: 'Vue-Component',
+        subtitle:
+          'Component library project based on Vue',
+        intro: `A set of component libraries for their own team or internal use is almost the standard configuration for front-end teams of each company;
+          With the help of storybook which is community open source component library framework,
+          The development of component library is no longer a distant technical problem…
+          `,
+        route: {
+          page: 'docs',
+          params: {
+            lang: 'en',
+            article: 'component-vue'
           }
         }
       },

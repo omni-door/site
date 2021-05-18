@@ -2,7 +2,7 @@
 
 ## 支持的项目类型简介
 
-### SPA 应用
+### React SPA 应用
 - [x] 基于 [React](https://reactjs.org/) UI 框架
 
 - [x] 基于 [React-Router](https://reacttraining.com/react-router/web/example/basic) 实现前端路由
@@ -21,7 +21,24 @@
 
   ……
 
-### SSR 应用
+### Vue SPA 应用
+- [x] 基于 [Vue](https://vuejs.org/) UI 框架
+
+- [x] 基于 [Vue-Router](https://router.vuejs.org/) 实现前端路由
+
+- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
+
+- [x] 使用 [webpack](https://webpack.js.org/) 打包
+
+- [x] 遵守 [eslint](https://eslint.org/) 规范
+
+- [x] 遵守 [stylelint](https://stylelint.io/) 规范
+
+- [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
+
+  ……
+
+### React SSR 应用
 - [x] 基于 [React](https://reactjs.org/) 框架
 
 - [x] 基于 [nextjs](https://nextjs.org/) 企业级高性能 Node 框架
@@ -34,7 +51,7 @@
 
   ……
 
-### Component 组件(库)项目
+### React Component 组件(库)项目
 - [x] 支持 [storybook](https://storybook.js.org/)、[docz](https://docz.site/)、[styleguidist](https://react-styleguidist.js.org/) 多种组件库Demo和文档框架
 
 - [x] 基于 [React](https://reactjs.org/) 的组件库
@@ -50,6 +67,25 @@
 - [x] 遵守 [stylelint](https://stylelint.io/) 规范
 
 - [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
+
+  ……
+
+### Vue Component 组件(库)项目
+- [x] 基于 [Vue](https://vuejs.org/) 的组件库
+
+- [x] 使用 [Jest](https://jestjs.io/) 进行组件的单页测试
+
+- [x] 使用 [gulp](https://gulpjs.com/) 打包
+
+- [x] 使用 [typescript](https://www.typescriptlang.org/) 进行开发
+
+- [x] 遵守 [eslint](https://eslint.org/) 规范
+
+- [x] 遵守 [stylelint](https://stylelint.io/) 规范
+
+- [x] 采用 [prettier](https://prettier.io/docs/en/install.html) 美化代码格式
+
+- [x] 基于 [storybook](https://storybook.js.org/) 组件库Demo和文档框架
 
   ……
 
@@ -121,8 +157,12 @@ Arguments:
     -rb, --react_basic [name]       创建一个最基本的 React 单页应用
     -rs, --react_standard [name]    创建一个标准的 React 单页应用
     -re, --react_entire [name]      创建一个全量的 React 单页应用
+    -vb, --vue_basic [name]         创建一个最基本的 Vue 单页应用
+    -vs, --vue_standard [name]      创建一个标准的 Vue 单页应用
+    -ve, --vue_entire [name]        创建一个全量的 Vue 单页应用
     -rS, --react_ssr [name]         创建一个 React SSR 应用
     -rc, --react_components [name]  创建一个 React 组件库
+    -vc, --vue_components [name]    创建一个 Vue 组件库
     -t, --toolkit [name]            创建一个工具库
     -n, --no-install                初始化项目不安装任何依赖
     -P, --path <path>               创建项目的工作路径

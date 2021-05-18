@@ -11,7 +11,7 @@ const locale = {
     subtitle:
       '你的项目想去哪里？不妨让任意门帮你！',
     description: `为前端项目的创建、开发、构建、发布提供一条龙服务。
-    支持基于 React 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
+    支持基于 React和Vue 的单页应用(SPA)、服务端渲染应用(SSR)、组件库、类lodash工具集等多种前端常见项目。
     `,
     btn_start: '开始使用',
     btn_docs: '文档',
@@ -49,6 +49,22 @@ const locale = {
         }
       },
       {
+        title: 'Vue单页应用',
+        subtitle:
+          '基于 Vue3 和 Vue-Router 的 SPA 项目',
+        intro: `SPA(Single-Application-App) 单页应用是现在的前端开发者使用频率最高的一种项目模式，
+          无论是适配于移动端的H5，还是服务于中后台的PC项目，都很好的满足了开发周期短、成本低、
+          项目结构简单、前后端分离等需求…
+          `,
+        route: {
+          page: 'docs',
+          params: {
+            lang: 'cn',
+            article: 'spa-vue'
+          }
+        }
+      },
+      {
         title: 'React服务端渲染应用',
         subtitle:
           '基于 React 和 NextJs 的 SSR 项目',
@@ -76,6 +92,21 @@ const locale = {
           params: {
             lang: 'cn',
             article: 'component-react'
+          }
+        }
+      },
+      {
+        title: 'Vue组件库',
+        subtitle: '基于 Vue 的组件库项目',
+        intro: `一套属于自己团队或公司内部使用的组件库，几乎是每个公司前端团队的标配；
+          借助社区开源的组件库 storybook 框架，
+          让组件库的开发不再是遥不可及的技术难题…
+          `,
+        route: {
+          page: 'docs',
+          params: {
+            lang: 'cn',
+            article: 'component-vue'
           }
         }
       },
