@@ -17,7 +17,7 @@ export const Link: FC<LinkProps> = props => {
   return (
     <NextLink
       href={href}
-      route={ page ? nextRouter.linkPage(page, params) : null}
+      route={ page ? nextRouter.linkPage(page, params!) : null}
     >
       { children }
     </NextLink>

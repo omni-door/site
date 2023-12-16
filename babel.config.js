@@ -7,14 +7,7 @@ module.exports = function (api) {
   ];
 
   const plugins = [
-    ['@babel/plugin-proposal-decorators', { legacy: true }],
-    [
-      'import',
-      {
-        libraryName: 'antd',
-        style: true
-      }
-    ]
+    ['@babel/plugin-proposal-decorators', { legacy: true }]
   ];
 
   return {

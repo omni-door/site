@@ -11,11 +11,10 @@ const paramsToStringList = (entries: [string, any][]): string[] =>
         )
         : [typeof value === 'string' || typeof value === 'number' ? `${key}=${value}` : '']),
     []
-  )
-  ;
+  );
 
 export default function paramsToQueryString(params: any): string {
-  const paramsString: string = isObject(params)
+  const paramsString: string | number = isObject(params)
     ? paramsToStringList(
       Object.keys(params)
         .sort()

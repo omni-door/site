@@ -8,7 +8,7 @@ const Configuration = {
   rules: {
     'type-enum': [2, 'always', [
       '[OMNI-DOOR]',
-      '[OMNI-SPA]',
+      '[OMNI-SITE-NEW]',
       'feat',
       'feature',
       'fix',

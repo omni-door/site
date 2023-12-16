@@ -2,9 +2,12 @@
 
 const path = require('path');
 const { nextRouter } = require('../src/routes');
-
 const serverOptions = {
+  
   port: 6600, // 服务端口号 (server port)
+  nextRouter,
+  
+  serverType: 'koa-next', // 服务类型，koa-next 和 next
   proxy:  [
     // {
     //   route: '/api',
@@ -15,8 +18,7 @@ const serverOptions = {
     // }
   ],
   // host: 'dev.domain.com', // 服务端host (server host)
-  // https: true, // 以https协议启动服务 (start server with https)
-  nextRouter
+  // https: true // 以https协议启动服务 (start server with https)
 };
 
 module.exports = {
@@ -24,12 +26,10 @@ module.exports = {
 
   dev: {
     ...serverOptions,
-    port: 6200, // 自定义开发服务端口号 (custom dev-server port)
-    // serverType: 'next',
+    port: 6200 // 自定义开发服务端口号 (custom dev-server port)
   },
 
   server: {
-    serverType: 'koa-next',
     ...serverOptions
   },
 
@@ -59,7 +59,12 @@ module.exports = {
   },
 
   release: {
-    git: 'git@github.com:omni-door/site.git', // 发布的git仓库地址 (project git repo url)
+    // 发布之前是否自动构建项目 (auto build project before release process)
+    autoBuild: false,
+
+    // 发布的git仓库地址 (project git repo url)
+    git: '',
+
     preflight: {
       test: false, // 发布前是否进行单元测试 (whether or not process unit-test)
       eslint: true, // 发布前是否进行eslint检测 (whether or not process eslint checking)
@@ -82,7 +87,7 @@ module.exports = {
     test: false,
 
     // 样式文件类型 (stylesheet type)
-    stylesheet: 'less'
+    stylesheet: 'scss'
   },
 
   plugins: []

@@ -1,29 +1,25 @@
-import { useContext } from 'react';
-import { UseLocale } from '@ctx/UseLocale';
+import * as React from 'react';
 import Layout from '@components/Layout';
-import mapCtxToProps from '@utils/mapCtxToProps';
-import type { MapCtxToProps } from '@utils/mapCtxToProps';
 import Home from '@components/Home';
+import mapCtxToProps from '@utils/mapCtxToProps';
+/* import types */
+import type { NextPage } from 'next';
+import type { MapCtxToProps } from '@utils/mapCtxToProps';
 
-function HomePage (props: MapCtxToProps) {
-  const {
-    locale: {
-      home : {
-        pageTitle
-      }
-    }
-  } = useContext(UseLocale);
+interface HomePageProps extends MapCtxToProps {}
+
+const HomePage: NextPage<HomePageProps>= props => {
   return (
     <Layout
-      title={pageTitle}
+      title={'Home'}
       page={props.page}
     >
       <Home { ...props }/>
     </Layout>
   );
-}
+};
 
-HomePage.getInitialProps = async (ctx: any) => {
+HomePage.getInitialProps = async ctx => {
   return mapCtxToProps(ctx);
 };
 

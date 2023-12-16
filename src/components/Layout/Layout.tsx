@@ -30,7 +30,9 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
       className={[styles['layout'], className].join(' ')}
     >
       <Head>
-        <title> { title } </title>
+        <title> { `${title}` } </title>
+        <meta name="description" content="omni-door website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel='icon' type='image/x-icon' href='/favicon.ico' />
       </Head>
       <Header className={styles['layout-header']}>
@@ -43,21 +45,25 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
           <Menu
             className={styles['layout-header-menu']}
             mode='horizontal'
+            style={{ width: 256 }}
             defaultSelectedKeys={[page]}
-          >
-            <Menu.Item key='start' className={styles['layout-header-menu-item']}>
-              <Link page='start' params={ {lang} }>
-                <a>{global.start}</a>
-              </Link>
-            </Menu.Item>
-            <Menu.Item key='docs' className={styles['layout-header-menu-item']}>
-              <Link page='docs' params={ {lang} }>
-                <a>{global.docs}</a>
-              </Link>
-            </Menu.Item>
-          </Menu>
+            items={[
+              {
+                key: 'start',
+                label: <Link page='start' params={ {lang} }>
+                  <a>{global.start}</a>
+                </Link>,
+              },
+              {
+                key: 'docs',
+                label: <Link page='docs' params={ {lang} }>
+                  <a>{global.docs}</a>
+                </Link>,
+              }
+            ]}
+          />
           <div className={styles['layout-header-right']}>
-            <Button size='small' className={styles['layout-header-lang']}>
+            <Button size='middle' className={styles['layout-header-lang']}>
               <Link href={`/${lang === 'cn' ? 'en' : 'cn'}/${page}`}>
                 <a>{global.lang}</a>
               </Link>
@@ -70,7 +76,7 @@ export const BasicLayout: FC<BasicLayoutProps> = props => {
         { children }
       </Content>
       <Footer className={styles['layout-footer']}>
-        Copyright © 2020 @omni-door
+        Copyright © 2020~2023 @omni-door
       </Footer>
     </Layout>
   );

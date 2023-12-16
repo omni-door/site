@@ -11,7 +11,7 @@ class NextUrlRouter extends UrlPrettifier {
     this.forEachPattern = this.forEachPattern.bind(this);
   }
 
-  linkPage (pageName, params) {
+  linkPage (pageName, params  = {}) {
     const route = this.routes.find(currentRoute => currentRoute.page === pageName);
     const obj = {
       as: '',

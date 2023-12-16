@@ -1,27 +1,5 @@
-/// <reference types='next' />
-/// <reference types='next/types/global' />
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
 
-declare module '*.css';
-
-declare module '*.less';
-
-declare module '*.scss';
-
-declare module '*.sass';
-
-declare module '*.svg';
-
-declare module '*.png';
-
-declare module '*.jpg';
-
-declare module '*.jpeg';
-
-declare module '*.gif';
-
-declare module '*.md' {
-  const content: string;
-  export default content;
-}
-
-declare module 'next-url-prettifier';
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/basic-features/typescript for more information.

@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../node_modules/.pnpm/next@12.1.6_@babel+core@7.10.5_react-dom@18.2.0_react@18.2.0_sass@1.54.9/node_modules/next/dist/client/index.js -> ../pages/_error":{id:6237,files:["static/chunks/237.5bad5642e6222dea.js"]}};
